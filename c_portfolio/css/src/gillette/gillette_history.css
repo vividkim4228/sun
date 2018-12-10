@@ -1,0 +1,8 @@
+@charset="UTF-8";
+/* ------------- gillette_history.css -----------  */
+
+
+@import url("./history/gillette_history_common.css");
+@import url("./history/gillette_history_mobile.css");
+@import url("./history/gillette_history_tablet.css");
+@import url("./history/gillette_history_pcall.css");

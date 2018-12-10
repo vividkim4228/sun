@@ -1,0 +1,66 @@
+/*   pc all    */
+@media screen and (min-width: 769px) {
+   h1{width: 160px; height: 44px;}
+  .gnb>button{display: none;}
+  .menu{background-color: #002E6D; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px; }
+  .menu>ul{width: 100%; height: 100%; float: left;}
+  .menu>ul>li{width: 20%; height: 100%; box-sizing: border-box; border-right: 1px solid #fff; float: left; color: #ccc; text-align: center; line-height: 40px;}
+  .menu>ul>li:last-child{border: 0;}
+
+  .search{width: 44px; height: 44px; float: right;}
+  .search>button{position: relative; z-index: 100;}
+  .search>button:hover + .search_bar,
+  .search>button:focus + .search_bar{display: block; margin-top: 60px;}
+
+
+/* -----------------------conBox01-----------------------*/
+
+  .mainLogo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
+  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
+  .indicator{width: auto; height: 6px; bottom: 50px; left: 50%; margin-left: -120px;} 
+  .indicator>ul>li{width: 40px; height: 100%; margin-right: 8px;float:left;}
+  .indicator>ul>li:last-child{margin-right: 0;}
+
+  .indicator>ul>li:last-child{display: none}
+
+
+/* -----------------------conBox02 & 03-----------------------*/
+  .pic_box{width: 41.666667vw/*400*/; height: 31.25vw/*300*/; position: absolute; top: 50%; left: 5%; margin-top: -15.625vw/*150*/}
+    .btn{width: 100%; height: 0; margin-top:-4.1666667vw/*40*/; line-height: 8.333334vw;}
+      .prev{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
+      .next{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
+    .pic{width: 31.25vw/*300*/; height: 31.25vw/*300*/;}
+    .product{width: 26.041667vw/*250*/; height: 26.041667vw/*250*/;min-height: 300px; position: absolute; top: 50%; right: 10%; z-index: 100;margin-top: -13.020833vw/*125*/}
+    .product>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
+    .product>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
+    .product>div{width: 8.333334vw/*80*/; height: 3.125vw/*30*/; margin-top: 2.083334vw/*20*/;}
+
+    .product_02{width: 26.041667vw/*250*/; height: 26.041667vw/*250*/;min-height: 300px; position: absolute; top: 50%; right: 10%; z-index: 100;margin-top: -13.020833vw/*125*/}
+    .product_02>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
+    .product_02>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
+    .product_02>div{width: 9.375vw/*90*/; height: 3.125vw/*30*/; margin-top: 2.083334vw/*20*/;}
+
+/* -----------------------conBox04-----------------------*/
+  #conBox04 .pic_box{position: relative; }
+  #conBox04 .pic{width: 19.761667vw/*190*/; height: 25vw/*240*/; position: absolute; bottom: 0; right: 5.208334vw/*50*/; z-index: 100}
+  #conBox04 .pic_02{width: 19.791667vw/*190*/; height: 25vw/*240*/; background-color: #F4CD00;position: absolute; top: 0; left: 5.208334vw/*50*/; }
+    .product_02{z-index: 100}
+  
+
+
+  /* -----------------------videoBox-----------------------*/
+  .v_box{width: 29.166667vw/*280*/; height: 31.25vw/*300*/; position: absolute; float: left; top: 50%; margin-top: -15.625vw/*150*/; }
+  .v_box dl{width: 100%; height: 100%; position: absolute; top: 0;}
+  .video_01{left:10%;}
+  .video_02{right:10%;}
+  .video_title{width: 14.583334vw/*140*/; height: 4.166667vw/*40*/; background-color: #006837; margin: auto; margin-bottom: 2.083334vw/*20*/;}
+  .s_wrap video{width: 100%; height: 18.75vw/*180*/; background-color: #61B4E4; margin-bottom: 2.083334vw/*20*/;}
+  .video_text{position: relative; width: 100%; height: 8.333334vw/*80*/;background-color: #39b54a;}
+  .video_text>div{position: absolute; bottom: 0; right: 0; width: 8.333334vw/*80*/; height:3.125vw/*30*/; background-color: #eeaa00;}
+
+
+  #videoBox02{display: none;}
+  #footBox{position: fixed; bottom: 0;}
+
+
+}

@@ -1,0 +1,8 @@
+@charset="UTF-8";
+/* ------------- gillette_product.css -----------  */
+
+
+@import url("./product/gillette_product_common.css");
+@import url("./product/gillette_product_mobile.css");
+@import url("./product/gillette_product_tablet.css");
+@import url("./product/gillette_product_pcall.css");

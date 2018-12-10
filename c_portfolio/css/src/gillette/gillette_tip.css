@@ -1,0 +1,8 @@
+@charset="UTF-8";
+/* ------------- gillette_tip.css -----------  */
+
+
+@import url("./tip/gillette_tip_common.css");
+@import url("./tip/gillette_tip_mobile.css");
+@import url("./tip/gillette_tip_tablet.css");
+@import url("./tip/gillette_tip_pcall.css");
