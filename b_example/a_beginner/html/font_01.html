@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- font_01.html  -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/font_01.css">
+  <title>font 이해 01</title>
+
+</head>
+<body>
+  <div id="wrap">
+    <h1>폰트의 기초 개념을 이해해보겠습니다.</h1>
+    <p>웹상에서 원하는 서체를 모두 사용할수는 없다.<br />
+    컴퓨터마다 서체가 있을수도 없을수도 있기때문.<br />
+    그래서 이를 해결하는 방법이 필요하다.</p>
+    <hr />
+    <h2>서체 규칙</h2>
+    <hr />
+    <p>
+      <ol>
+        <li>여러서체를 혼용하여 처리한다.</li>
+        <li>가급적 영문서체 먼저 사용</li>
+        <li>이름에 띄어쓰기가 있는 서체는 하나의 서체로 인지하지 못하므로, 강제로 묶음처리(" ")를 한다.</li>
+        <li>영문이 아닌 서체는 묶음처리(" ")를 한다.</li>
+        <li>가능한 한 영문 표기법을 사용한다.</li>
+        <li>이도저도 없는 서체가 나온다면 마지막에는 해당하는 서체의 군을 작성한다.</li>
+      </ol>
+  <hr />
+
+  <h2>서체의 형태</h2>
+  <hr />
+  <p>모든 서체는 그 형태가 조금씩 다르다<br />
+    <strong>굵기 표기</strong> --- strong<br />
+    <em>기울기 표기</em> --- em<br />
+    <ins>밑줄 표기</ins> --- ins<br />
+    <del>취소선 표기</del> --- del<br />
+    등이있다.<br /><br />
+    하지만 강조가 아닌 일부서체에서 형태를 가지게하거나<br />
+    기본적으로 내장되어있는 형태에서 모양을 바꾸고자 할 때에는 다음과같이 사용한다. 
+  </p><br />
+  <ol>
+    <li><span class="bold">글씨를 강제로 굵게 하기</span> / <strong class="weight_normal">굵은 글씨를 일반형태로 바꾸기</strong></li>
+    <li><sapn class="italic">글씨를 강제로 기울이기</sapn> / <em class="italic_normal">기울기 원래대로</em></li>
+    <li><sapn class="underline">글씨에 강제로 밑줄</sapn> / <ins class="underline_normal">밑줄 없애기</ins></li>
+    <li><sapn class="delete">글씨에 강제로 취소선</sapn> / <del class="delete_normal">취소선 없애기</del></li>
+  </ol>
+  <hr />
+  <h2>폰트 크기를 조정</h2>
+  <hr />
+  <p>서체의 크기는 일반형태로 pt단위를 사용한다. <br />
+      하지만, 반응형이나 동적형태, 최신브라우저 상황의 변화에 pt단위를 웹서체의 크기로 사용하지는 않는다.<br />
+      대신 em, rem, % ... 의 단위를 사용하고있다.
+  </p>
+  <section class="mini_web">
+    <h1>h1은 큰 보통 글씨로 인식. 하지만 css에서 변경가능</h1>
+    <h2>h2는 두번째로 중요한 글씨로, h1보다 작은크기로 인식된다. 하지만 역시 css에서 변경가능</h2>
+    <h3>h3는 세번째로 중요한 글씨로, h2보다 작은크기로 인식된다. 하지만 역시 css에서 변경가능</h3>
+    <h4>h4는 네번째로 중요한 글씨로, h3보다 작은크기로 인식된다. 하지만 역시 css에서 변경가능</h4>
+  </section>
+  <p>위의 내용을 통해 크기는 상황과, 디자인의 역할에 따라 달라질 수 있다는것을 알수있다.</p>
+
+<!-- =============================================== -->
+<hr />
+  <h3>단위에 따른 크기변화</h3>
+<hr />
+  <h4>pt 단위로 체크</h4>
+  <p class="pt_check size_box">큰영역으로 텍스트 36pt<br /> 
+    <span class="pt_01">절반크기. 16pt<br /> 
+      <span class="pt_02">절반크기. 8pt<br /> 
+        <span class="pt_03">두배크기. 16pt<br /> 
+          <span class="pt_04">절반크기. 8pt</span>
+        </span>
+      </span>
+    </span>
+  </p>
+  
+<!-- =============================================== -->
+ <h4>% 단위로 체크</h4>
+  <p class="per_check size_box">큰영역으로 텍스트 36pt<br /> 
+    <span class="per_01">절반크기. 18pt<br /> 
+      <span class="per_02">절반크기. 9pt<br /> 
+        <span class="per_03">두배크기. 18pt<br /> 
+          <span class="per_04">절반크기. 9pt</span>
+        </span>
+      </span>
+    </span>
+  </p>
+
+<!-- =============================================== -->
+ <h4>em 단위로 체크</h4>
+  <p class="em_check size_box">큰영역으로 텍스트 36pt<br /> 
+    <span class="em_01">절반크기. 18pt<br /> 
+      <span class="em_02">절반크기. 9pt<br /> 
+        <span class="em_03">두배크기. 18pt<br /> 
+          <span class="em_04">절반크기. 9pt</span>
+        </span>
+      </span>
+    </span>
+  </p>
+
+<!-- ================================================ -->
+  <h4>rem 단위로 체크</h4>
+  <p class="rem_check size_box">큰영역으로 텍스트 36pt<br /> 
+    <span class="rem_01">절반크기. 18pt<br /> 
+      <span class="rem_02">절반크기. 9pt<br /> 
+        <span class="rem_03">두배크기. 18pt<br /> 
+          <span class="rem_04">절반크기. 9pt</span>
+        </span>
+      </span>
+    </span>
+  </p>
+
+<!-- ================================================ -->
+<hr />
+<h3>em과 rem의 서체가 아닌 크기값으로 구분!!</h3>
+<hr />
+  <div class="px_box">w160,h160
+    <div class="px_box_01">w50%,h:50%
+      <div class="px_box_02">w50%,h:50%
+        <div class="px_box_03">w200%,h:200%
+          <div class="px_box_04">w50%,h:50%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ================================================ -->
+<hr />
+  <div class="em_box">w160,h160
+    <div class="em_box_01">w50%,h:50%
+      <div class="em_box_02">w50%,h:50%
+        <div class="em_box_03">w200%,h:200%
+          <div class="em_box_04">w50%,h:50%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr /> 
+
+<!-- ================================================ -->
+ <div class="rem_box">w160,h160
+    <div class="rem_box_01">w50%,h:50%
+      <div class="rem_box_02">w50%,h:50%
+        <div class="rem_box_03">w200%,h:200%
+          <div class="rem_box_04">w50%,h:50%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+</html>

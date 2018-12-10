@@ -1,0 +1,26 @@
+/*  rwd_ksm_02_pcfull.css  */
+
+@media screen and (min-width: 1367px) {
+  html,body{height: 100%;}
+  #wrap{height: 100%;}
+
+    #headBox{background-color: transparent;}
+    #headBox>.container{max-width: 100%; background-color: transparent;}
+    #headBox h1{width: 12.5rem; height: 100%;}
+   
+    #addBanner{margin-top: 0px; height:100%;}
+
+    #infoBox{position: relative; margin: auto; width: 80%; height: auto; min-height: 10rem; background-color: rgb(255,255,255,0.7);}
+    #infoBox:before,
+    #infoBox::before{content:" "; display: block; width: 100vw; height: 100%; background-color: #849; position: absolute; left:50%; margin-left: -50vw; z-index: -10 }
+    #infoBox p{border: 1px solid #333; box-sizing: border-box; width: 15vw; height: 12.5rem; margin: 2rem; float: left;}
+
+    #contentBox>.container{max-width: 100%; padding: 0;}
+
+    .con_in{float: left; width: 33.333333%; height: auto; min-height: 30rem;}
+    .cont_01{background-color: #393;}
+    .cont_02{background-color: #453;}
+    .cont_03{background-color: #864;}
+    
+
+}

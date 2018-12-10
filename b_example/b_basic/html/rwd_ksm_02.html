@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+    <link rel="stylesheet" href="../css/base/reset.css" />  
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/rwd_ksm_02.css" />
+
+    <!-- <link rel="stylesheet" href="../css/src/rwd_ksm_03_forIE.css" /> -->
+    <!-- cc:ie6 >>>> 조건부 주석 -->
+    <!--[if <= IE 6] -->
+    
+    <!--[if lte IE 9 ]>
+      <script src="../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../ie/ie9.min.js"</script>
+      <script src="../ie/respond/dest/respond.min.js"</script>
+
+
+      <link rel="stylesheet" href="../css/src/rwd_ksm_03_forIE.css" />
+    <![endif]-->
+
+    
+  <!-- 
+  html5shiv : html5추가코드 첨부
+  css3pie : html5/css3의 기능의 일부 버그를 해결한 코드
+      -border-radius, box-shadow, background-image:linear-gradient() 등 기능 사용시 
+      -behavior: url(PIE.htc); 를 말미에 붙여주어야 동작함
+  respond.js : ie9이하의 브라우저에서 반응형이 되도록 
+   -->
+  
+  
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <title>rwd</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <!-- #headBox -->
+      <div id="headBox">
+        <div class="container">
+          <h1>logo</h1>
+          <nav id="navBox">
+            <h2 class="hidden">navigation</h2>
+            <div class="sign_up hidden_wrap"><a href="#"><span>sign up</span></a></div>
+            <!-- * <button>
+                type="속성"  ::  submit, reset, button   -->
+            <div class="menu hidden_wrap">
+              <h3 class="hidden">global navigation</h3>
+              <button type="button"><span>메뉴</span></button> 
+
+              <div class="gnb"> 
+                <ul>
+                  <li><a href="#"><span>link_01</span></a></li>
+                  <li><a href="#"><span>link_02</span></a></li>
+                  <li><a href="#"><span>link_03</span></a></li>
+                  <li><a href="#"><span>link_04</span></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- #addBanner -->
+      <div id="addBanner">
+        <h2 class="hidden">웹페이지 광고영역</h2>
+      </div>
+
+
+      <!-- #infoBox -->
+      <div id="infoBox" class="clearfix">
+        <h2 class="hidden">infoBox</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+ 
+
+      <!-- #contentBox -->
+      <div id="contentBox">
+        <div class="container clearfix">
+          <h2 class="hidden">contentBox</h2>
+          <div class="con_in cont_01">CONT_01</div>
+          <div class="con_in cont_02">CONT_02</div>
+          <div class="con_in cont_03">CONT_03</div>
+        </div>
+      </div>
+
+
+      <!-- #footBox -->
+      <div id="footBox">
+        <div class="container">
+          <h2 class="hidden">footBox</h2>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>  
+
+
+  <!--  script   -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script>
+    
+  </script> 
+  </body>
+  </html>

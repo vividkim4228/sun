@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>clearboth 기초이해</title>
+  <style>
+    p{margin:0; padding: 0;}
+    .box{width: 600px; height: auto; min-height: 300px; border: 3px solid #555;}
+    .box1{background-color: #faa;}
+    .fl{width: 200px; height: 200px; float: left; border:7px solid #0af; box-sizing: border-box;}
+    .fl_1, .fl_3, .fl_5, .fl_7, .fl_9{background-color: #fff; border-color: #af0;}
+    .box3{overflow: auto;}
+    .box4{list-style: none; padding: 0; margin:0;}
+    .box4::after{content:" "; display: block; width: 0; height: 0; clear: both;}
+
+    .clearfix::after{content:" "; display: block; width: 0; height: 0; clear: both;}
+   
+
+
+
+  </style>
+</head>
+<body>
+  <h1>clearboth란?</h1>
+  <p>float 기능과 같이사용시 나란히 정렬됨으로써 부모의 요소가 크기값을 정확하게 인지하지 못하는 경우에 부가기능</p>
+<hr />
+  <h2>첫번째 상황</h2>
+  <div class="box box1 clearfix">
+    <div class="fl fl_1">나란히 배치상자_1</div>
+    <div class="fl fl_2">나란히 배치상자_2</div>
+    <div class="fl fl_3">나란히 배치상자_3</div>
+    <div class="fl fl_4">나란히 배치상자_4</div>
+    <div class="fl fl_5">나란히 배치상자_5</div>
+    <div class="fl fl_6">나란히 배치상자_6</div>
+    <div class="fl fl_7">나란히 배치상자_7</div>
+    <div class="fl fl_8">나란히 배치상자_8</div>
+    <div class="fl fl_9">나란히 배치상자_9</div>
+    <!-- <div class="clearfix"></div> -->
+  </div>
+
+<hr />
+  <h2>두번째 상황</h2>
+  <p class="box box2 clearfix">
+    <span class="fl fl_1">두번째 상자</span>
+    <span class="fl fl_2">두번째 상자</span>
+    <span class="fl fl_3">두번째 상자</span>
+    <span class="fl fl_4">두번째 상자</span>
+    <span class="fl fl_5">두번째 상자</span>
+    <span class="fl fl_6">두번째 상자</span>
+    <span class="fl fl_7">두번째 상자</span>
+    <span class="fl fl_8">두번째 상자</span>
+    <span class="fl fl_9">두번째 상자</span>
+    <span class="fl fl_10">두번째 상자</span>
+    <!-- <br class="clearfix" /> -->
+  </p>
+
+<hr />
+  <h2>세번째 상황</h2>
+  <div class="box box3">
+    <p class="fl fl_1">내용의 처리</p>
+    <p class="fl fl_2">내용의 처리</p>
+    <p class="fl fl_3">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+    <p class="fl fl_4">내용의 처리</p>
+  </div>
+<hr />
+  <h2>네번째 방법</h2>
+  <ul class="box box4">
+    <li class="fl fl_1">가장 권장하는 방법</li>
+    <li class="fl fl_2">가장 권장하는 방법</li>
+    <li class="fl fl_3">가장 권장하는 방법</li>
+    <li class="fl fl_4">가장 권장하는 방법</li>
+    <li class="fl fl_5">가장 권장하는 방법</li>
+    <li class="fl fl_6">가장 권장하는 방법</li>
+    <li class="fl fl_7">가장 권장하는 방법</li>
+    <li class="fl fl_8">가장 권장하는 방법</li>
+    <li class="fl fl_9">가장 권장하는 방법</li>
+    <li class="fl fl_10">가장 권장하는 방법</li>
+  </ul>
+
+<hr />
+  <h2>clear 기능을 사용하기위해 after의 개념을 익혀보자</h2>
+  <p class="ghost">before, after요소는 가상클래스라고 하며, 실제로 존재하지 않는 요소로서<br />선택자의 내부의 자식으로 가상으로 존재하도록 만들어서 처리하게 하는 기능<br /> - 기본적으로 내용을 담는 content:""; 를 사용하고<br /> - 원래 inline 요소이며, 필요시 강제로 해당내용을 display:block으로 block 처리하며 float 기능을 상쇄하는 처리를 한다<br /> - 가상클래스는 실제로 내용을 읽어주지 않는다. 눈에는 보인다 <br /> .clearfix::after{content:" "; display: block; width: 0; height: 0; clear: both;} 와 같이 적용</p>
+
+
+
+  <script></script>
+</body>
+</html>

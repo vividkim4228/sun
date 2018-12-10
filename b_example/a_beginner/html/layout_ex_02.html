@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <title>kgc인삼공사</title>
+  <style type="text/css">
+     html,body{margin: 0; width: 100%; height: 100%;}
+     h1,h2,h3,h4,h5,h6,p,div,section,ul,ol,li,dt,dd,dl{margin: 0 auto; padding: 0;}
+     ul,ol,li{list-style: none}
+
+  /* common.css */
+    .hidden{width: 0; height: 0; overflow: hidden;}
+    .clearfix{clear:both;}
+
+  /* design */
+    #wrap{width: 940px; height: auto; background-color: #ddd;}
+      
+      #headBox{width: 100%; height: 108px; background-color: #333; }
+      #headBox h1{width: 140px; height: 50px; margin: 0 auto; background-color: #aaa; text-align: center; }
+      #gnb{width: 720px; height:24px; background-color: #aaa; margin-top: 20px; margin-left: 110px;}
+        #gnb>ul{width: 100%; height: 100%; }
+        #gnb>ul>li{width: 14.285714%; height:100%; float: left; font-size: 10px; text-align:center; line-height: 24px;}
+        #gnb .odd{background-color: #777;}
+      /*--------# header -------*/
+
+      #adBox{width: 100%; height: 504px; background-color: #777; padding-top: 200px; padding-left: 278px; box-sizing: border-box;}
+        #adBox>.ad_text{width: 384px; height: 90px; background-color: #aaa; text-align: center; font-size: 20px; color: #333; line-height: 40px;}
+      /*--------# adBx --------*/
+      #conBox{width: 100%; height: auto; background-color: #ccc;}
+        #kgcBrand{width: 100%; height: 588px; background-color: #333; padding:60px 44px 38px; box-sizing: border-box; }
+          .brand_title{width: 284px; height: 50px; background-color: #ccc; font-size: 30px; text-align: center; line-height: 50px; font-weight: bold;}
+          .brand_content{width: 852px; height: 394px; margin-top: 24px; box-sizing: border-box;}
+           .brand_icon_box{width: 100%; height: 84px; background-color: #777;}
+           .brand_icon_box ul{width: 100%; height: 100%;}
+           .brand_icon_box ul li{width: 142px; height: 100%; float: left; text-align: center; font-size: 20px; line-height: 84px; }
+           .brand_icon_box ul .odd{background-color: #aaa;}
+           #kgcBrand .product{width: 284px; height: 310px; background-color: #ddd; float: left;}
+           #kgcBrand .product .product_pic{width: 100%; height: 224px; background-color: #888;}
+           #kgcBrand .product dl{width: 100%; height: 86px;}
+           #kgcBrand .product dl dt{padding-left: 10px; box-sizing: border-box; width: 100%; height: 22px; background-color: #666; }
+           #kgcBrand .product dl dd{padding-left: 10px; box-sizing: border-box; width: 100%; height: 64px; background-color: #888; font-size: 12px; line-height: 20px; }
+           #kgcBrand .product_02{border-left: 2px solid #aaa; border-right: 2px solid #aaa; box-sizing: border-box;}
+
+      /* -----------------KGC brand-------------------*/
+        #kgcEvent{width: 100%; height: 624px; background-color: #555; padding: 24px 68px 34px;  box-sizing: border-box;} 
+        .event_title{width:168px; height: 36px; background-color: #ccc; font-size: 30px; text-align: center; line-height: 36px; font-weight: bold; }
+        .event_con{margin-top: 68px; width: 800px; height: 460px;}
+          .event_left{width: 370px; height: 460px; background-color: #ccc; float: left;}
+            .event_left_text{padding-left: 10px; box-sizing: border-box; margin-top: 134px; margin-left: 22px;width: 240px; height:50px; background-color: #999; float: left; font-size: 12px; line-height: 20px;}
+            .event_left_title{padding-left: 10px; box-sizing: border-box; margin-left: 22px; width: 290px; height:50px; background-color: #999; float: left; font-size: 20px; line-height: 50px; }
+            .event_left_logo{margin-top: 166px ; margin-left: 80px; width: 210px; height:60px; background-color: #999; float: left;}
+
+          .event_right{width: 370px; height: 460px; float: right;}
+            .event_sub{width: 100%; height: 136px; background-color: #ccc;}
+            .event_margin{margin-bottom: 26px; box-sizing: border-box;}
+      /* -----------------KGC event----------------------------------------------*/
+          #kgcStore{padding-top: 74px; padding-left: 44px; box-sizing: border-box; width: 100%; height: 224px;}
+            .store_box{width: 710px; height: 82px; background-color: #666;}
+              .store_title{width: 170px; height: 44px; background-color: #aaa; float: left; text-align: center; font-size: 25px; font-weight: bold; line-height: 44px;}
+              .store_search{padding-left: 20px; box-sizing: border-box; margin-left:60px ;width: 480px; height: 44px; background-color: #aaa; float: left; line-height: 44px; font-size: 10px; }
+              .store_search .icon{margin-right: 50px; width: 44px; height: 100%; background-color: #888; float: right;}
+              .store_box .map{margin-top: 20px; margin-right: 50px;width: 84px; height: 18px; float: right; background-color: #aaa; font-size: 5px; text-align: center; line-height: 18px;}
+
+      /* --------------------KGC store--------------------------------------------*/
+
+          #kgcNews{padding-left: 80px; padding-top: 60px; box-sizing: border-box; width: 100%; height: 590px; background-color: #666;}
+            #newsBox{margin: 0px; width: 780px; height: 340px;}  
+            #newsBox .box{width: 244px; height: 100%; background-color: #ccc; float: left;}   
+            #newsBox .news, .society{margin-right: 24px;}
+                 
+            .news_title{width: 100%; height: 40px; background-color: #999; text-align: center; line-height: 40px; font-size: 20px; font-weight: bold;}
+            .news_pic{margin-top: 12px; width: 216px; height: 128px; background-color: #999; }
+            .news_text{margin-top: 46px; width: 222px; height: 90px; background-color: #999; }
+
+            .society_title{width: 100%; height: 40px; background-color: #999; text-align: center; line-height: 40px; font-size: 20px; font-weight: bold;}
+            .society_pic{margin-top: 12px; width: 216px; height: 128px; background-color: #999; }
+            .society_text{margin-top: 46px; width: 222px; height: 90px; background-color: #999; }
+
+            .recipe_title{width: 100%; height: 40px; background-color: #999; text-align: center; line-height: 40px; font-size: 20px; font-weight: bold;}
+            .recipe_pic{margin-top: 12px; width: 216px; height: 128px; background-color: #999; }
+            .recipe_text{margin-top: 46px; width: 222px; height: 90px; background-color: #999; }
+
+          #banner_box{margin-top: 20px; margin-left: 2px; width: 774px; height: 86px; background-color: #ccc; float: left;}
+            .banner_title{margin: 24px 20px; ;width: 160px; height: 38px; background-color: #999; float: left;}
+            .banner_link{margin-top: 22px; margin-left: 340px; width: 218px; height : 42px; background-color: #999; float: left;}
+
+     /* ------------------------KGC news----------------------------------------*/
+
+          #kgcSns{width: 100%; height: 660px; background-color: #aaa;}
+          #snsBox{padding-top: 70px; width: 910px; height: 576px;}
+            #snsBox .title{width: 140px; height: 40px; background-color: #666; color: #fff; font-size: 30px; text-align: center; line-height: 40px; font-weight: bold;}
+            #snsBox .icon_box{margin-top: 30px; width: 100%; height: 440px; }
+              #snsBox .icon{margin-right: 18px; width: 214px; height: 214px; background-color: #666; float: left;}
+              #snsBox .top{margin-bottom: 12px;}
+              #snsBox .last{margin-right: 0;}
+            #snsBox .arrow_box{margin-top: 16px; width: 84px; height: 34px;} 
+              .arrow_box .left{width: 34px; height: 34px; background-color: #666; color: #fff; font-size: 25px; text-align: center; line-height: 30px; font-weight: bold; float: left;}
+              .arrow_box .right{width: 34px; height: 34px; background-color: #666; color: #fff; font-size: 25px; text-align: center; line-height: 30px; font-weight: bold; float: right;}
+
+    /* --------------------------KGC sns----------------------------------------*/     
+
+          #lnbBox{padding-top: 30px; box-sizing: border-box; width: 100%; height: 420px; background-color: #666;}
+            #lnbBox .lnb_top{width: 724px; height: 154px;}
+              .lnb_top .top{margin-right: 20px; width: 104px; height: 100%; float: left;}
+              .top ul{width: 100%; height: 100%;}
+              .top .title{margin-bottom: 4px; width: 100%; height: 30px; text-align: center; text-align: center; font-size: 15px; line-height: 30px; font-weight: bold;}
+              .top li{border-bottom: 1px solid #666; box-sizing: border-box; width: 100%; height: 20px; background-color: #ccc;  text-align: center; text-align: center; font-size: 10px; line-height: 20px; }
+
+            #lnbBox .lnb_bottom{margin-top: 50px; width: 696px; height: 162px;}
+              .lnb_bottom .title{margin-bottom: 24px; width: 100px; height: 20px; background-color: #ccc; text-align: center; font-size: 12px; line-height: 20px; font-weight: bold;}
+              .lnb_bottom .bottom{margin-right: 6px; width: 72px; height: 118px;float: left;}
+                .bottom .title{margin-bottom: 14px; width: 100%; height: 20px; background-color: #ccc; text-align: center; text-align: center; font-size: 12px; line-height: 20px; font-weight: bold;}
+                .bottom li{border-bottom: 1px solid #666; box-sizing: border-box; width: 100%; height: 22px; background-color: #ccc;  text-align: center; text-align: center; font-size: 10px; line-height: 22px; }
+            #lnbBox .last{margin:0;}
+
+    /* --------------------------lnbBox----------------------------------------*/     
+            #footBox{padding-top: 10px; padding-left: 98px; box-sizing: border-box; width: 100%; height: 200px; background-color: #ccc;}
+                .fnb{width: 470px; height: 20px; float: left;}
+               .fnb_box{margin-right: 5px; width: 84px; height: 20px; background-color: #777; float: left;}
+               .box_big{margin-top: 20px; width: 734px; height: 116px; float:left;} 
+                .box_left{width: 284px; height: 100%; float:left; }
+                  .box_left h1{width: 140px; height: 50px; background-color: #999; text-align: center; float: left;}
+                  .box_left address{margin-top: 16px; width: 100%; height: 34px; background-color: #999; text-align: center; float: left; font-size: 5px; line-height: 18px; font-style: normal;}
+                  .box_left .copyright{width: 100%; height: 18px; background-color: #999; text-align: center; font-size: 5px; line-height: 18px; float: left;}
+
+                .box_right{margin-top: 16px; width: 270px; height: 100px; float:right;}
+                  .box_right .global{margin-left: 30px; width: 112px; height: 24px; background-color: #999; float: left; text-align: center; font-size: 10px; line-height: 24px;}
+                  .box_right .familly{width: 112px; height: 24px; background-color: #999; float: right; text-align: center; font-size: 10px; line-height: 24px;}
+                .box_right .sns{margin-top: 38px; width: 279px; height: 40px; float: right;}
+                  .sns_icon{width: 28px; height: 28px; margin-top: 6px; margin-right: 10px; background-color: #999; float: left;}
+                  .ccm_icon{width: 45px; height: 40px; background-color: #999; float: right;}
+    /* --------------------------footBox----------------------------------------*/
+
+  </style>
+
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>logo</h1>
+      <nav id="gnb">
+        <h2 class="hidden">gnb메뉴</h2>
+        <ul>
+          <li class="odd">브랜드</li>
+          <li>제품보기</li>
+          <li class="odd">인삼이야기</li>
+          <li>이벤트</li>
+          <li class="odd">매장안내</li>
+          <li>고객센터</li>
+          <li class="odd">회사소개</li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside id="adBox">
+      <aside class="ad_text">119년 지켜온 역사와 전통으로 <br />정성을 담아 고객님께 드립니다</aside>
+      <h2 class="hidden">광고배너</h2>         
+    </aside>
+    <section id="conBox">
+      <article id="kgcBrand">
+        <h3 class="hidden">kgc브랜드</h3>
+        <div class="brand_title">KGC BRAND</div>
+        <div class="brand_content">
+          <div class="brand_icon_box">
+            <ul>
+            <li class="odd">브랜드</li>
+            <li>브랜드</li>
+            <li class="odd">브랜드</li>
+            <li>브랜드</li>
+            <li class="odd">브랜드</li>
+            <li>브랜드</li>
+          </ul>            
+          </div>
+          <div class="product product_01">
+            <div class="product_pic"></div>
+            <dl>
+              <dt>에브리타임 30포</dt>
+              <dd>홍삼정을 언제어디서나 간편하게 섭취할수 있는 <br />휴대형 홍삼제품입니다.</dd>
+            </dl>
+          </div>
+          <div class="product product_02">
+            <div class="product_pic"></div>
+            <dl>
+              <dt>에브리타임 30포</dt>
+              <dd>홍삼정을 언제어디서나 간편하게 섭취할수 있는 <br />휴대형 홍삼제품입니다.</dd>
+            </dl>
+          </div>
+          <div class="product product_03">
+            <div class="product_pic"></div>
+            <dl>
+              <dt>에브리타임 30포</dt>
+              <dd>홍삼정을 언제어디서나 간편하게 섭취할수 있는 <br />휴대형 홍삼제품입니다.</dd>
+            </dl>
+          </div>
+        </div>        
+      </article>
+      <article id="kgcEvent">
+        <div class="event_title">KGC EVENT</div>
+        <div class="event_con"> 
+          <div class="event_left">
+            <div class="event_left_text">자연을 담다. 자연을 닮다.<br />건강을 전하는 브랜드 콜라보레이션</div>
+            <div class="event_left_title">정관장 x 힐리언스 선마을</div>
+            <div class="event_left_logo"></div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="event_right"> 
+            <div class="event_sub event_margin"></div>
+            <div class="event_sub event_margin"></div>
+            <div class="event_sub"></div>
+          </div>
+        </div>
+      </article>
+      <article id="kgcStore">
+        <div class="store_box">
+          <div class="store_title">KGC STORE</div>
+          <div class="store_search">매장명 또는 지역명 입력
+            <div class="icon"></div>
+          </div>
+          <div class="map">지도로 매장찾기</div>
+        </div>
+      </article>
+      <article id="kgcNews">
+        <div id="newsBox">
+          <div class="box news">
+            <div class="news_title">KGC뉴스</div>
+            <div class="news_pic"></div>
+            <div class="news_text"></div>
+          </div>
+          <div class="box society">
+            <div class="society_title">KGC사회공언</div>
+            <div class="society_pic"></div>
+            <div class="society_text"></div>
+          </div>
+          <div class="box recipe">
+            <div class="recipe_title">KGC레시피</div>
+            <div class="recipe_pic"></div>
+            <div class="recipe_text"></div>
+          </div>
+        </div>  
+        <div id="banner_box">
+          <div class="banner_title"></div>
+          <div class="banner_link"></div>
+        </div>
+      </article>
+      <article id="kgcSns">
+        <div id="snsBox">
+          <div class="title">KGC SNS</div>
+            <div class="icon_box">
+              <div class="icon top"></div>
+              <div class="icon top"></div>
+              <div class="icon top"></div>
+              <div class="icon top last"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon last"></div>
+            </div>
+          <div class="arrow_box">
+            <div class="left"><</div>
+            <div class="right">></div>
+          </div>  
+        </div>
+        
+      </article>
+      <article id="lnbBox">
+        <div class="lnb_top">
+          <div class="top top_01">
+           <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="top top_02">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="top top_03">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="top top_04">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="top top_05">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="top top_06 last">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lnb_bottom">
+          <div class="title">정관장 제품보기</div>
+          <div class="bottom bottom_01">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_02">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_03">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_04">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_05">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_06">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_07">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_08">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+          <div class="bottom bottom_09 last">
+            <ul>
+              <li class="title">브랜드</li>
+              <li>정관장홍삼</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer id="footBox">
+      <div class="fnb">
+        <ul>
+          <li class="fnb_box"></li>
+          <li class="fnb_box"></li>
+          <li class="fnb_box"></li>
+          <li class="fnb_box"></li>
+          <li class="fnb_box fnb_last"></li>
+        </ul>
+      </div>
+      <div class="box_big">
+        
+        
+        <div class="box_left">
+          <h1>logo</h1>
+          <address>한국인삼공사 대표 김재수 대전광역시 대덕구 벚꽃길 <br /> 고객만족센터 000.000.0000.</address>
+          <div class="copyright">copyright korea ginseng corp. all rights reserved</div>
+        </div>
+        <div class="box_right">
+          <div class="global">global site</div>
+          <div class="familly">familly site</div>
+          <div class="sns">
+            <ul>
+              <li class="sns_icon"></li>
+              <li class="sns_icon"></li>
+              <li class="sns_icon"></li>
+              <li class="sns_icon"></li>
+              <li class="sns_icon"></li>
+              <li class="sns_icon"></li>
+              <li class="ccm_icon"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+
+
+
+
+  </div>
+</body>
+</html>

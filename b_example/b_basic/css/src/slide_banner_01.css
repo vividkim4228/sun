@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* slide_banner_01.css */
+
+#wrap{width: 100%; height: 100%; background-color: #cfcfcf;}
+h1{padding: 1rem; background-color: #5af; margin-bottom: 2rem; box-shadow: 0 0.3rem 0.3rem rgba(50,50,50,0.5);}
+
+#viewBox{position: relative; margin: auto; width: 60rem; height: 450px; border: 2px solid #777;background-color: #fff;}
+  .view_indicator{position: absolute; bottom: 1rem; left: 50%; margin-left: -100px; width: 200px; height: 30px; padding-left: 1.5rem; box-sizing: border-box;}
+  
+  .view_indicator>ul{width: 100%; height: 100%;}  
+  .view_indicator>ul>li{float:left; width:1.875rem; height: 100%; margin-right: 1.5rem;}   
+  .view_indicator>ul>li:last-child{margin-right: 0;}
+  .view_indicator>ul>li>a{display: block;width: 100%; height: 100%; border-radius: 50%; background-color: rgba(255,255,255,0.7); position: relative;}
+
+  /* 색상변경 */
+  .view_indicator>ul>li>a:focus,
+  .view_indicator>ul>li>a:hover{background-color: #403;}
+
+  /*  말풍선 나오기  */
+  .view_indicator>ul>li>a:focus > span,
+  .view_indicator>ul>li>a:hover > span{width: auto; height: 2rem; background-color: #836; border-radius: 0.5rem; color:#fff; text-align: center; white-space: nowrap; position: absolute; bottom: 2.8rem; left: 50%; margin-left: -75px; z-index: 0; overflow: visible; padding:0.4rem 1rem;}
+
+  /*  삼각형 (마름모) 모양 나오기 */
+  .view_indicator>ul>li>a:focus>span:before,
+  .view_indicator>ul>li>a:hover>span:before{content:" "; display: block; width: 1rem; height: 1rem; transform: rotate(45deg); background-color: #836; position: absolute; bottom: -0.5rem; left: 38%; margin-left: -0.5em; }
+
+
+
+  .view_btn{position: absolute; top: 50%; margin-top: -2.5rem; width: 100%; height: 0; background-color: #faa;}
+  .view_btn>button{width: 2rem; height: 5rem; font-weight: bold; font-size: 3rem;}
+    .next_btn{float: right;}
+    .prev_btn{float: left;}
+  
+
+
+  .view_banner{width: 100%; height: 100%; background-color: #fd7; overflow: hidden;}
+  .view_banner_wrap{width: 300%; height: 100%;  background-color: #aad;}
+  .view_banner_wrap>div{width: -webkit- calc(100% / 3); 
+                        width: -moz- calc(100% / 3); 
+                        width: -ms- calc(100% / 3); 
+                        width: -o- calc(100% / 3); 
+                        width: calc(100% / 3); 
+                        height: 100%; float: left;}
+    .view_banner_01{background-color: #cba;}
+    .view_banner_01>iframe{width: 100%; height: 100%; background-color: #fff;}
+    
+    .view_banner_02{background-color: #ddc;}
+    .view_banner_02>iframe{width: 100%; height: 100%;}
+    .view_banner_03{background-color: #eda;}  
+    .view_banner_03>video{width: 100%; height: 100%;}  
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- background_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+    
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/background_01.css" />
+
+   
+    <!--[if lte ie 9]>
+      <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
+      <srcipt src="../ie/css3pie/PIE_IE9.js"><srcipt>
+      <srcipt src="../ie/ie9.min.js"></srcipt>
+      <srcipt src="../ie/respond/dest/respond.min.js"></srcipt>
+      <link rel="stylesheet" href="../css/src/background_01_forIE.css" />
+    <![endif]-->  
+
+ 
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>배경이미지 이해하기</title>
+
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <header id="headBox">
+        <h1>배경이미지 이해하기</h1>
+      </header>
+      <article id="bgBox_01">
+        <h2>아이콘 이미지 불러오기</h2>
+        <h3>단순 이미지 불러오기</h3>
+        <div class="icon icon_01"></div>
+        <h3>이미지 불러와서 내용크기 배치하기</h3>
+        <div class="icon icon_02"></div>
+        <h3>이미지로 내용 대체하기(IR기법:Image Replace)</h3>
+        <div class="icon icon_03">
+          <span>필요한 글자를 입력해서 내용이 보이게</span>
+        </div>
+        <h3>여러개의 아이콘이 담긴 이미지를 부분만 보이도록 하기<br/> IS기법:Image Split </h3>
+        <div class="icon icon_04"></div>
+      </article>
+      <article class="exam">
+        <h3>IS기법 연습하기</h3>
+        <ul>
+          <li><a href="#"><span>x 1, y 3 | hover: x 3, y 1 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 2, y 1 | hover: x 5, y 2 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 3, y 4 | hover: x 4, y 3 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 5, y 3 | hover: x 5, y 4 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 5, y 2 | hover: x 3, y 3 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 3, y 4 | hover: x 6, y 2 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 3, y 3 | hover: x 7, y 3 | active: x1, y1 | focus: x2, y2</span></a></li>
+          <li><a href="#"><span>x 6, y 4 | hover: x 3, y 3 | active: x1, y1 | focus: x2, y2</span></a></li>
+        </ul>
+      </article>
+      <h2>배경색상 영역에 따른 의미</h2>
+      <article id="bg_area">        
+        <h3>배경색상의 보이는 영역을 컨트롤하기</h3>
+        <div class="bg_area area_01">색상 위치 기본형</div>
+        <div class="bg_area area_02">border-box</div>
+        <div class="bg_area area_03">padding-box</div>
+        <div class="bg_area area_04">content-box</div> 
+           
+        <h3>배경이미지의 보이는 영역을 컨트롤하기</h3>
+        <div class="bg_area bg_img img_01">이미지 위치 기본형</div>
+        <div class="bg_area bg_img img_02">border-box</div>
+        <div class="bg_area bg_img img_03">padding-box</div>
+        <div class="bg_area bg_img img_04">content-box</div>
+
+      </article>
+      <article id="bgArea02">
+        <h3>배경이미지 처리방법</h3>
+        <div class="fixed">배경이미지를 고정</div>
+        <div class="scroll">배경이미지를 따라 움직이기</div>
+      </article>
+      <article id="gradient">
+        <h3>배경이미지를 그라데이션으로 처리</h3>
+        <div class="linear_01">세로형으로 처리</div>
+        <div class="linear_02">가로형으로 처리</div>
+        <div class="linear_03">대각선으로 여러개 처리</div>
+        <div class="linear_04">대각선으로 여러개 처리</div>
+        <div class="radial_01">원형 수행</div>
+      </article>
+
+
+    </div>
+
+    <!-- script(jQuery) -->
+    <script src="../js/base/jquery-3.3.1.min.js"></script>
+    <script src="../js/base/jquery-ui.min.js"></script>
+    <script src="../js/src/background_01.js"></script>
+     
+  </body>
+</html>

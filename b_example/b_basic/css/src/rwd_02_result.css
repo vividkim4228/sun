@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* rwd_02_result.css */
+
+#wrap {margin:auto; width: 100%; max-width: 960px; max-width: 60rem;  height: auto; min-height: 400px; min-height: 25rem;
+  transition: all 300ms linear;}
+
+#headBox    {width: 100%; height: 150px; height: 9.375rem;  background-color: #fa0;}
+  h1{width: 100px; width: 6.25rem;  height: 100%; background-color: #9f7;float: left;}
+  #gnb{width:45px; width:2.8125rem;width:45px; height:2.8125rem; background-color: #fff;float: right;}
+#infoBox      {width: 100%; height: 300px; height: 18.75rem; background-color: #f9f;}
+#contentBox {width: 100%; height: 400px; height: 25rem; background-color: #acc; }
+  #contentBox>ul{width: 100%;height: 100%;}
+  #contentBox>ul>li{width: 25%;height: 100%; float: left; border:1px solid #333; border:0.0625rem solid #333; box-sizing: border-box;}
+  #contentBox>ul>li:nth-child(2n){background-color: #4a3;}
+  #contentBox>ul>li:nth-child(2n-1){background-color: #43a;}
+
+  /* :nth-child(n){  }  >> 연속되어진 형태만 설정 가능하다. */
+    
+    /* <p></p>
+       <p></p>
+       <div></div>
+       <p></p>       의 경우 */
+ 
+  /* p:nth-of-type(3){  }  사용 */
+
+
+  /* .green{background-color: #5a4;}
+      .blue{background-color: #77f;} */
+
+#newsBox    {width: 100%; height: 300px; height: 18.75rem; background-color: #f70;}
+  .best_news{width: 100%;height: 100px; height: 6.25rem;background-color: #dd0;}
+  .issue_news{width: 100%;height: 200px; height: 12.5rem;background-color: #f500;}
+#footBox    {width: 100%; height: 100px; height: 6.25rem;background-color: #730;}
+  #footBox>h2{width: 100px; width: 6.25rem; height: 100%;background-color: #acf;}
+
+
+/* mob start */
+@media screen and (max-width: 480px){
+  #wrap{background-color: #ccc;}
+    #headBox {position: relative; height: 100px; height: 6.25rem;}
+      h1{width: 100%;}
+      #gnb{position: absolute; right: 20px; right: 1.25rem; top: 50%; margin-top: 22.5px; margin-top: -1.40625rem }
+    #infoBox      {height: 400px; height: 25rem;} 
+    #contentBox {height: 400px; height: 25rem;} 
+      #contentBox>ul>li{width: 50%;height: 50%; float: left;}
+      #contentBox>ul>li:nth-child(3n){background-color: #8a7;}
+      #contentBox>ul>li:nth-child(3n-1){background-color: #78a;}
+    #newsBox    {height: 300px; height: 18.75rem;} 
+    #footBox    {height: 100px; height: 6.25rem;} 
+      #footBox>h2 {margin:auto;width: 50%;}
+}
+/* mob end */
+
+
+/* tablet start */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  #wrap{background-color: #fac;}
+    #infoBox {height: 300px; height: 18.75rem;} 
+}
+/* tablet end */
+
+
+/* pc start */
+@media screen and (min-width: 769px){
+  #wrap{background-color: #acf;}
+    #infoBox {height: 450px; height: 28.125rem;} 
+    #contentBox {height: 600px;height: 37.5rem;} 
+    #newsBox    {display: none; } 
+}
+/* pc end */
+

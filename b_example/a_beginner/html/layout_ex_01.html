@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>  
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>국토발전전시관</title>
+  <style type="text/css">
+     /* reset.css */
+  html,body{margin: 0; width: 100%; height: 100%;}
+  h1,h2,h3,h4,h5,h6,p,div,ul,ol,li,dt,dd,dl{margin: 0; padding: 0;}
+  ul,ol,li{list-style: none}
+
+  /* common.css */
+    .hidden{width: 0; height: 0; overflow: hidden;}
+    .clearfix{clear:both;}
+
+  /* design */
+   #wrap{margin: 0 auto; width: 940px; height:1130px;}
+    #headBox{padding-left: 8px; box-sizing: border-box; width: 100%; height: 70px; background-color: #ccc;}
+      h1{width: 88px; height: 100%;  font-size: 2rem; color: #fff; background-color: #333; line-height: 70px; text-align: center; float: left;}
+      #gnb{margin-left: 88px;width: 604px; height: 100%; background-color: #444; font-weight: bolder; float:left; color: #fff;}
+        #gnb>ul>{width: 100%; height: 100%;}
+        #gnb>ul>.small{margin-right: 44px; border-right: 1px solid #fff; border-left: 1px solid #fff; width:42px; float: left; line-height: 70px; text-align: center; float: left; box-sizing: border-box;}
+        #gnb>ul>.middle{margin-right: 25px; border-right: 1px solid #fff; border-left: 1px solid #fff; box-sizing: border-box; width:42px; float: left; line-height: 70px; text-align: center; float: left; }
+        #gnb>ul>.big{border-right: 1px solid #fff; border-left: 1px solid #fff;box-sizing: border-box; width: 90px; float: right; line-height: 70px; text-align: center;}
+      #unb{width: 130px; height: 100%;background-color: #555; float: left;}
+        #unb>ul{width: 100%; height: 100%;}
+        #unb>ul>li{height: 100%; line-height: 70px; text-align: center; float: left; font-weight: bolder; color: #fff;}
+        #unb>ul>.lang{width: 72px;}
+        #unb>ul>.login{width: 38px;}
+      /* # ------- headBox ------------------*/
+
+      
+
+    #adBox{width: 100%; height: 432px; background-color: #999;}
+      #adMain{margin-top: 70px; margin-left: 316px;width: 306px; height: 126px; background-color: #ddd; box-sizing: border-box; float: left;}
+        #adTitle{margin-top: 8px; box-sizing: border-box; width: 100%; height: 54px; background-color: #aaa; font-weight: bold; font-size: 2rem; color: #fff; line-height: 54px; text-align: center; }
+        #adText{width: 100%; height: 58px; background-color: #aaa; text-align: center; color: #555; }
+      #lnb{margin-top: 110px; width: 940px; height: 100px; background-color: #ddd; float: left;}
+      #lnb>ul{width: 940px; height: 100%;}
+      #lnb>ul>li{width: 16.666666%; height: 100%; float: left; text-align: center; line-height: 100px;}
+      #lnb .odd{background-color: #ccc; }
+
+
+    /* # ------- adBox ------------------*/
+    #conBox{width: 100%; height: 556px; background-color: #ddd;}
+      #conWrap{margin-top: 44px; margin-left: 24px ; width: 894px; height: 440px; background-color: #aaa; float: left;}
+      #conWrap dl{width: 282px; height: auto; float: left; background-color: #777; color: #333; text-align: center; }
+      #conWrap dl .dt_top{width: 100%;height: 40px;background-color: #999; line-height: 40px;}
+      #conWrap dl .dd_top{width: 100%;height: 180px;background-color: #bbb; line-height: 180px;}
+      #conWrap dl .dt_bottom{width: 100%;height: 40px;background-color: #999; line-height: 40px; }
+      #conWrap dl .dd_bottom{width: 100%;height: 160px;background-color: #bbb; line-height: 180px;}
+      #conWrap .top{margin-right: 24px;}
+      #conWrap .bottom{margin-top: 20px; margin-right: 24px;}
+      #conWrap .bottom_last{margin-top: 20px;}
+    /* # ------- conBox ------------------*/
+
+
+
+    #footBox{width: 100%; height: 72px; background-color: #444;}
+       h1{width: 96px; height: 100%; font-size: 2rem; color: #fff; background-color: #333; line-height: 70px; text-align: center; float: left;}
+      #footBox>address{width: 310px; height: 100%; background-color: #777; font-style: normal; font-size: 10px; text-align: center; line-height: 35px; float: left; color: #fff;}
+      #personal{width: 96px; height: 100%;background-color: #aaa ;float: left; font-size: 10px; text-align: center; line-height: 70px;}
+      #famillyBox{width: 190px; height: 100%; background-color: #666; float: right;}
+      #famillyBox .link{margin-top: 20px; box-sizing: border-box; text-align: center; background-color: #ccc;width: 148px; height: 32px; float: left; line-height: 32px; font-size: 10px;}
+      #famillyBox .icon{margin-top: 20px; box-sizing: border-box; text-align: center; background-color: #ccc;width: 36px; height: 32px; float: right; line-height: 32px; font-size: 10px;}
+
+    /* # ------- footBox ------------------*/
+
+
+  </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="headBox">
+        <h1>logo</h1>
+        <nav id="gnb">
+          <h2 class="hidden">전체 메뉴</h2>
+          <ul>
+            <li class="small">관람</li>
+            <li class="small">전시</li>
+            <li class="small">교육</li>
+            <li class="small">연구</li>
+            <li class="small">소식</li>
+            <li class="middle">참여</li>
+            <li class="big">전시관소개</li>
+          </ul>
+        </nav>
+        <nav id="unb">
+          <h2 class="hidden">유틸리티 메뉴</h2>
+          <ul>
+            <li class="lang">lang</li>
+            <li class="login">login</li>
+          </ul>
+        </nav>
+       </header>
+        
+      <section id="adBox">
+        <h2 class="hidden">lnb영역 </h2>
+        <article id="adMain">
+            <h3 class="hidden">기관명</h3>
+          <article id="adTitle">국토발전전시관
+            <h3 class="hidden">국토발전전시관</h3>
+          </article>
+          <article id="adText">국토발전, 성장과 균형을 넘어 <br /> 새로운 비상으로
+            <h3 class="hidden">국토발전, 성장과 균형을 넘어 새로운 비상으로</h3>
+          </article>
+        </article>
+        <article id="lnb">
+          <h3 class="hidden">lnb아이콘</h3>
+          <ul>
+            <li class="odd">위치/교통편</li>
+            <li class="even">층별안내</li>
+            <li class="odd">편의시설</li>
+            <li class="even">단체관람</li>
+            <li class="odd">장애인관람</li>
+            <li class="even">문의하기</li>
+          </ul>
+        </article>
+      </section>
+      <section id="conBox">
+        <h2 class="hidden">본문 내용</h2>
+        <article id="conWrap">
+          <h3 class="hidden">안내</h3>
+          <dl class="top">
+            <dt class="dt_top">제목제목</dt>
+              <dd class="dd_top">내용을 입력하세요</dd>
+          </dl>
+          <dl class="top">
+            <dt class="dt_top">제목제목</dt>
+              <dd class="dd_top">내용을 입력하세요</dd>
+          </dl>
+          <dl> 
+            <dt class="dt_top">제목제목</dt>
+              <dd class="dd_top">내용을 입력하세요</dd>
+          </dl>    
+          <dl class="bottom">  
+            <dt class="dt_bottom">제목제목</dt>
+              <dd class="dd_bottom">내용을 입력하세요</dd>
+          </dl>    
+          <dl class="bottom">
+            <dt class="dt_bottom">제목제목</dt>      
+              <dd class="dd_bottom">내용을 입력하세요</dd>
+          </dl>    
+          <dl class="bottom_last">
+            <dt class="dt_bottom">제목제목</dt>
+              <dd class="dd_bottom">내용을 입력하세요</dd>
+          </dl>
+
+        </article>
+      </section>
+      <footer id="footBox">
+        <h1>logo</h1>
+        <h2 class="hidden">information 정보</h2>
+        <address>서울특별시 중구정동길 18/ 000.000.0000 <br /> copyright 국토발전전시관</address>
+        <div id="personal">개인정보처리</div>
+        <div id="famillyBox">
+          <div class="link">관련사이트</div>
+          <div class="icon">이동</div>
+        </div>
+      </footer>
+
+
+    </div>
+
+  </body>
+</html>

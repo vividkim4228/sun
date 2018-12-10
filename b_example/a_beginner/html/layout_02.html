@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>layout</title>
+	<style type="text/css">
+		html,body,h1,h2,h3,h4,h5,h5,p,div,ul,ol,li,dt,dd{margin: 0; padding: 0;}
+
+		#wrap{width: 600px; height: auto; margin:20px auto 0;}
+		#wrap>div{width: 100%}
+		/*  wrap  */
+		#header{height: 100px; background-color: #f0a;}
+
+		/*  header   */
+		#section{height: 300px;}
+			#aside{width: 33.333333%; height: 100%; background-color: #5a5; float: left;}
+			#article{width: 33.333333%; height: 100%; background-color: #222; float: left;}
+			#container{width: 33.333333%; height: 100%; background-color: #22a; float: left;}
+		/*  header  */
+		#footer{height: 100px; background-color: #acf;}
+	</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<div id="header"></div>
+		<!-- //#header -->
+
+		<div id="section">
+			<div id="aside"></div>
+			<div id="article"></div>
+			<div id="container"></div>
+		</div>
+		<!-- //#section -->
+
+		<div id="footer"></div>
+		<!-- //#footer -->
+		
+	</div>
+
+	
+</body>
+</html>

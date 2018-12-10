@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                                                                  
+	<title>css 레이아웃</title>
+	<style type="text/css">
+	html,body{width:100%; height:100%; margin:0;}
+		#wrap {width: 800px; height: auto; background-color: #acc; margin:0 auto;}
+		#wrap>div{width: 100%;}
+			#headBox {height: 200px; 
+				background-color: #aaa; c margin:0;}
+				#headBox>h1{width: 50%; height: 100px; color: #fff; 
+					background-color: #743; margin:0;}
+				#headBox>p{width: 100%; height: 70px; color: #333;
+					background-color: #ccc; margin:0;}
+			#adBox {height: 600px; background-color: #07f;}
+			#conBox {height: 900px;}
+				#conBox>h2 {width: 70%; height:60px; 
+					background-color:#fa0; color: #555; margin: 0;}
+				#conBox>p{width: 100%; height : 400px; 
+					color: #555; margin: 0;}
+				#conBox>.con_p_01{background-color: #aaf; margin: 0;}
+				#conBox>.con_p_02{background-color: #c6f; margin: 0;}
+			#footBox {width: 100%; height: 100px; 
+					background-color: #333; }
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- #headbox -->
+		<div id="headBox">
+			<h1>제목을 입력</h1>
+			<p>간단한 설명</p>
+		</div>
+		<!-- // #headbox -->
+		<div id="adBox"></div>
+		<!-- #conbox -->
+		<div id="conBox">
+			<h2>내용제목</h2>
+			<p class="con_p_01">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+			<p class="con_p_02">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<!-- // #conbox -->
+
+		<div id="footBox"></div>
+	</div>
+</body>
+</html>

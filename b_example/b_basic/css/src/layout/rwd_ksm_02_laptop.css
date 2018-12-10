@@ -1,0 +1,31 @@
+/*  rwd_ksm_02_labtop.css  */
+
+@media screen and (min-width: 769px) and (max-width: 1366px){ 
+    #addBanner{height: 32.942898vw; /* 450/1366*100 */ min-height: 28.125rem; max-height: 37.5rem;}
+    #infoBox{height: 13.125rem;}
+    #contentBox{height: 33.75rem;}
+    #footBox>.container>h2{position: static; width: 21.875rem; height: 2.8125rem; background-color: #3a5; float: left; }
+
+    #navBox{width: 31.25rem;}
+    .sign_up{width: 6rem; }
+    .menu{width: 25rem; }
+    .menu>button{display: none;}
+    .gnb{display: block; width: 100%; height: 100%; background-color: #aaf;}
+    .gnb>ul{width: 100%;height: 100%;}
+    .gnb>ul>li{float: left; padding: 0 0.5rem; width: 25%; height: 100%; ; border-right: 1px solid #fff; box-sizing: border-box; ;}
+    .gnb>ul>li:last-child{border:0;}
+    .gnb a{display: block; width: 100%; height: 100%; background-color: #faf}
+    .gnb a:hover{background-color: #a6f;}
+
+     #contentBox>.container{max-width: 100%; padding: 0;}
+    
+    #infoBox{margin: auto; width: 60rem; height: auto;}
+    #infoBox p{border: 1px solid #333; box-sizing: border-box; width: 12.5rem; height: 12.5rem; margin: 1rem; float: left;}
+
+    .con_in{float: left; width: 33.333333%; height: 100%}
+    .cont_01{background-color: #393;}
+    .cont_02{background-color: #453;}
+    .cont_03{background-color: #864;}
+
+
+    }

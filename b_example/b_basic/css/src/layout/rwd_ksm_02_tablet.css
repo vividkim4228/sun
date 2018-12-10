@@ -1,0 +1,22 @@
+/*  rwd_ksm_02_tablet.css  */
+
+@media screen and (min-width: 481px) and (max-width: 768px){ 
+  #wrap{background-color: #acf;}
+    h1{width: 22.65625vw; min-width: 8.125rem; max-width: 10.875rem; height: 5.46875vw; min-height: 1.875rem; max-height: 2.625rem;}
+    #navBox{width: 12.239583vw; min-width: 5.625rem; max-width: 5.875rem;height: 4.947916vw; min-height: 2.375rem; max-height: 2.375rem;}
+
+    .sign_up{width: 45%; }
+    .menu{width: 45%; }
+
+
+    #addBanner{height: 58.59375vw; /* 450/768*100 */ min-height: 25rem; max-height: 28.125rem;}
+    #infoBox{height: 27.34375vw; /* 210/768*100 */ min-height: 9.375rem; max-height: 13.125rem;}
+    #contentBox{height: 70.3125vw; /* 540/768*100 */ min-height: 28.125rem; max-height: 33.75rem;}
+
+    .con_in{float: left; width: 50%; height: auto; min-height: 30rem;}
+    .cont_01{background-color: #393;}
+    .cont_02{background-color: #453;}
+    .cont_03{display: none;}
+
+}   
+    

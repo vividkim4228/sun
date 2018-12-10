@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>layout_04</title>
+	<style type="text/css">
+		html,body,h1,h2,h3,h4,h5,h5,p,div,ul,ol,li,dt,dd{margin: 0 auto; padding: 0; list-style: none;}
+		#wrap{width: 960px; height:850px;}		
+		#header{width: 100%; height: 100px;background-color: #0af; text-align: center; font-size: 50px; color: #fff; float: left; font-weight: bold; line-height: 100px}
+			#header>h1{width: 30%; height: 100px; color: #fff;  		font-size: 50px ;background-color: #a05; text-align:center;float: left; line-height: 100px}
+		#nav{width: 100%; height: 50px; float:left;}
+			.menu{width: 25%; height: 100%; background-color: #fff; border: 3px solid #029; float:left; box-sizing: border-box; text-align: center; font-size: 25px; font-weight: bold;}
+		#section{width: 100%; height: 580px;}
+			#aside{width: 30%; height: 100%; background-color: #fc1 ; float: left;}
+				.aside{width: 100%; height: 16.666666%; border-bottom: 3px solid #fff; box-sizing: border-box;}
+						h3{width: 100%; height: 100%; color: #fff;  
+				font-size: 50px; background-color: #a05; float: left; text-align:center; line-height: 90px}
+			#article{width:70% ; height: 100%; float: left;}
+				.article_top{width: 100%; height: 30%; background-color: #fff; border: 3px solid #1b2;  box-sizing: border-box; float: left;}
+					.left{width: 50px; height: 100%; background-color: #0af; float: left;}
+					.right{width: 50px; height: 100%; background-color: #0af; float: right;}
+				.article{width: 100%; height: 20%; background-color: #fff; border: 3px solid #1b2;  box-sizing: border-box; float: left;}
+					.article li{width: 25%; height: 100%; background-color: #0af; border: 3px solid #fff; float: left; box-sizing: border-box; text-align: center; font-size: 30px; }
+					#article>h1{width: 100%; height: 10%; color: #fff; font-size: 40px; background-color: #a05; float: left; text-align:center;}
+		#footer{width: 100%; height: 120px; float:left;}
+			h2{width: 30%; height: 100%; color: #fff;  
+				font-size: 50px; background-color: #a05; float: left; text-align:center; line-height: 100px}
+			#adress{width:70%; height: 100%; border: 3px solid #0af; background-color: #fff; box-sizing: border-box; float: left;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">header
+			<h1>logo</h1>
+		</header>	
+		<nav id="nav">
+			<ol>
+				<li class="menu">menu</li>
+				<li class="menu">menu</li>
+				<li class="menu">menu</li>
+				<li class="menu">menu</li>
+			</ol>
+		</nav>
+		<aside id="section">
+			<aside id="aside">
+				<ol>
+					<li class="aside">
+						<h3>aside</h3>
+					</li>
+					<li class="aside"></li>
+					<li class="aside"></li>
+					<li class="aside"></li>
+					<li class="aside"></li>
+					<li class="aside"></li>
+				</ol>
+			</aside>
+			<article id="article">
+				<article class="article_top">
+					<div class="left"></div>
+					<div class="right"></div>
+				</article>
+				<h1>article</h1>
+				<article class="article">
+					<ol>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</article>
+				<article class="article">
+					<ol>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</article>
+				<article class="article">
+					<ol>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</article>
+			</article>	
+		</aside>
+		<footer id="footer">
+			<h2>footer</h2>
+			<div id="adress"></div>
+		</footer>
+	</div>
+</body>
+</html>

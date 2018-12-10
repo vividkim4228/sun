@@ -1,0 +1,91 @@
+/* try_rwd_01.css */
+
+
+#wrap{width:100%; height:2000px;
+  background-color:#5cc;}
+
+/* mobile -------------------------*/
+@media screen and (max-width:480px) { 
+        /* 가로의길이가 최대:480px일때
+        즉, ex)360px,300px...일때 적되어라 */
+  #wrap{width:100%; height:auto;
+  background-color:#add;}
+  #headBox{position:relative; width:100%; height:100px;
+  background-color:#dc1;}
+  #headBox>h1{position:absolute; top:10px; right:10px; float:right; width:45px; height:45px;
+    text-align: center; line-height:45px; font-size:1rem;  background-color:#ccc; }
+  #adBox{width:100%; height:400px; background-color:#c03;}
+  #artBox{width:100%; height:400px; background-color:#ad4;}
+    .sBox0{float:left; width:50%; height:50%; background-color:#d8c;}
+    .sBox1{float:left; width:50%; height:50%; background-color:#1cc;}
+    .sBox2{float:left; width:50%; height:50%; background-color:#d8c;}
+    .sBox3{float:right; width:50%; height:50%; background-color:#1cc;}
+  #banBox{width:100%; height:300px; background-color:#a15;}
+    .bBox1{float:left; width:100%; height:100px; background-color:#cc1;}
+    .bBox2{float:left; width:100%; height:200px; background-color:#5c1;}
+  #footBox{width:100%; height:100px;  background-color:#a99;}
+  #footBox>h1{left:50%; margin-left:-50px; width:100px; height:100px; 
+    background-color:#ccc; text-align: center; line-height: 100px;}
+
+}/* mobile end */
+
+/* tablet ------------------------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+
+   #wrap{width:100%; height:auto;
+  background-color:#add;}/*
+  #headBox{width:100%; height:150px;
+  background-color:#dc1;}
+  #headBox>h1{float:left; width:100px; height:100%;
+    background-color:#ccc; text-align: center; line-height: 100px;}}
+  #adBox{width:100%; height:300px;
+  background-color:#c03;}
+  #articlebox{width:100%; height: auto}
+  #artBox{width:100%; height:400px;
+  background-color:#ad4;}
+    .sBox0{float:left; width:25%; height:100%;
+      background-color:#d8c;}
+    .sBox1{float:left; width:25%; height:100%;
+      background-color:#1cc;}
+    .sBox2{float:left; width:25%; height:100%;
+      background-color:#d8c;}
+    .sBox3{float:right; width:25%; height:100%;
+      background-color:#1cc;}
+  #banBox{width:100%; height:300px; background-color:#a15;}
+    .bBox1{float:left; width:100%; height:100px; background-color:#cc1;}
+    .bBox2{float:left; width:100%; height:200px; background-color:#5c1;}
+  #footBox{width:100%; height:100px; background-color:#a99;}
+    #footBox>h1{width:100px; height:100px;
+    background-color:#ccc; text-align: center; line-height: 100px;}*/
+
+}/* tablet end */
+
+/* pc ------------------------- */
+@media screen and (min-width:769px) {
+
+  /*#wrap{width:100%; height:auto;
+  background-color:#add;}
+  #headBox{width:100%; height:150px;
+  background-color:#dc1;}
+  #headBox>h1{float:left; width:100px; height:100%;
+    background-color:#ccc; text-align: center; line-height: 100px;}}
+  #adBox{width:100%; height:450px;
+  background-color:#c03;}
+  #articlebox{width:100%; height: auto}
+  #artBox{width:100%; height:400px;
+  background-color:#ad4;}
+    .sBox0{float:left; width:25%; height:100%;
+      background-color:#d8c;}
+    .sBox1{float:left; width:25%; height:100%;
+      background-color:#1cc;}
+    .sBox2{float:left; width:25%; height:100%;
+      background-color:#d8c;}
+    .sBox3{float:left; width:25%; height:100%;
+      background-color:#1cc;}
+  #banBox{display:none; }   
+  #footBox{width:100%; height:100px; background-color:#a99;}
+  #footBox>h1{width:100px; height:100px;
+    background-color:#ccc; text-align: center; line-height: 100px;}*/
+
+}/* pc end */

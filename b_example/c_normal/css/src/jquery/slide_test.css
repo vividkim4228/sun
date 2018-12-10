@@ -1,0 +1,17 @@
+
+#wrap{width: 700px; height: 600px; background-color: #dcf;}
+#product{position: relative; width: 100%; height: 400px; background-color: #cad; padding-top: 30px;}
+#miniProduct{width: 85%; height: 300px; margin: auto; background-color: #dac;}
+
+.product{width: 100%; height: 100%; /*overflow: hidden;*/}
+.product ul{width: 300%; height: 100%;}
+.product li{width: 33.333333%; height: 100%; float: left; background-color: #305;}
+.product li:nth-child(2){background-color: #fac;}
+
+.indicator{position: absolute; bottom: 1rem; left:50%; margin-left:-70px ;width: 140px; height: 30px;}
+
+.indicator>ul{width: 100%; height: 100%;}
+.indicator>ul>li{width: 30px; height: 30px; float: left; margin-right: 10px;}
+.indicator>ul>li>a{border-radius: 50%; background-color: #cda;}
+.indicator .action>a{background-color: #fc0;}
+

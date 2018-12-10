@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>layout 연습</title>
+	<style type="text/css">
+		html,body,h1,h2,h3,h4,h5,h5,p,div,ul,ol,li,dt,dd{margin: 0; padding: 0; }
+
+		a:focus{color: #fff; outline:10px solid #fcd; outline-offset: 3px}	
+		p{color: white; font-size: 30px; font-weight: bold;}
+		#box {width: 600px; height: 500px; background-color: #ccc; margin: 0 auto;}
+		#box>div{width: 100%}
+		#header{height: 100px; background-color: #f3c}
+		#section{height: 300px; background-color: #da3}
+			#aside{width: 30%; height: 100%; background-color: #2d4; float: right;}
+			.section_02{width: 70%; height: 300px; float: left;}
+				#article{width: 100%; height: 50%; background-color: #444; float: left;}
+				#container{width: 100%; height: 50%; background-color: #003; float: left;}
+		#footer{height: 100px; background-color: #12f}
+
+	</style>
+
+
+</head>
+
+<body>
+	<div id="box">
+		<div id="header">	
+			<p>header</p>
+			<a href="#">header</a>
+			</div>
+		<div id="section">		
+	  	<div id class="section_02">
+	  		<div id="article">
+	  			<p>article</p>
+					<a href="#">article</a>
+	  		</div>
+	  		<div id="container">
+	  			<p>container</p>
+					<a href="#">container</a>
+				</div>
+	  	</div>
+	  	<div id="aside">
+	  		<p>aside</p>
+				<a href="#">aside</a>
+	  	</div>
+	  	
+
+		</div>
+		<div id="footer">
+		 <p>footer</p>
+		 <a href="#">footer</a>
+
+		</div>
+	</div>
+	
+	
+</body>
+</html>
