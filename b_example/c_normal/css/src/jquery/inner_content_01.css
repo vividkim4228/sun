@@ -1,8 +1,18 @@
 /* inner_content_01.css */
 
 #wrap{width: 100%; height: auto;}
-#headBox{width: 100%; height: 150px; background-color: #6cf;}
+#headBox{width: 100%; height: auto; background-color: #6cf;}
 #viewBox{width: 100%; height: 500px; background-color: #6c8;}
 #conBox{margin: auto; width: 60rem; height: 900px; background-color: #cd6;}
+
+.shop{margin: auto; width: 90%; height: auto; }
+.product{box-sizing: border-box; padding: 0.5rem; margin: 1rem; float: left; width: 15rem; height: 20rem; border: 1px solid  #333; background-color: #fff;}
+.product>dt{width: 100%; height: 1.5rem; border-bottom: 1px solid #0af; text-align: center; line-height: 1.5rem; font-weight: bold;margin-bottom: 0.3rem;}
+.product>dd{width: 100%; height: calc(100%-1.5rem)}
+.shop_img{margin-bottom: 1.5rem; width: 100%; height: 10rem; background-color: #fc0; text-align: center;}
+.product p{width: 100%; height: auto; text-align: center;  margin-bottom: 0.7rem;}
+.product p>a{margin: auto;display: block; width: 50%; height: auto; padding: 0.5rem; background-color: #05a; color: #fff; border-radius: 0.3rem}
+
+
 #footBox{margin: auto; border-top: 1px solid  #333; width: 60rem; height: 200px; background-color: #ccb;}
 
