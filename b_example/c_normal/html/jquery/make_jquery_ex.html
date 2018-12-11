@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- make_jquery.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+    
+    <link rel="stylesheet" href="../../css/base/reset.css" />
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/src/make_jquery.css" />
+
+   
+    <!--[if lte ie 9]>
+      <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
+      <srcipt src="../ie/css3pie/PIE_IE9.js"><srcipt>
+      <srcipt src="../ie/ie9.min.js"></srcipt>
+      <srcipt src="../ie/respond/dest/respond.min.js"></srcipt>
+      <link rel="stylesheet" href="../css/src/make_jquery_forIE.css" />
+    <![endif]-->  
+
+ 
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>title</title>
+
+  </head>
+  <body>
+ <!-- 아래의 코드를 jquery를 이용하여 제작하시오. -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="../../index.html">index page 이동</a></h1>
+      <nav id="gnb">
+        <h2 class="hidden"><span>global navigation</span></h2>
+        <ul>
+          <li><a href="#">link_name_01</a></li>
+          <li><a href="#">link_name_02</a></li>
+          <li><a href="#">link_name_03</a></li>
+          <li><a href="#">link_name_04</a></li>
+          <li><a href="#">link_name_05</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // #headBox -->
+    <section id="viewBox">
+      <h2>viewBox</h2>
+      <div class="view_btn">
+        <ul class="view_indi_btn">
+          <li><a href="#link_01">narr_01</a></li>
+          <li><a href="#link_02">narr_02</a></li>
+          <li><a href="#link_03">narr_03</a></li>
+          <li><a href="#link_04">narr_04</a></li>
+        </ul>
+      </div>
+      <div class="view_slide_btn">
+        <button type="button">다음내용 보기</button>
+        <button type="button">이전내용 보기</button>
+      </div>
+      <div class="view_banner">
+        <div id="link_01">
+          <h3>광고내용제목_01</h3>
+          <p>광고설명_01</p>
+          <div class="view_link"><a href="http://link_01.com">자세히보기</a></div>
+        </div>
+        <div id="link_02">
+          <h3>광고내용제목_02</h3>
+          <p>광고설명_02</p>
+          <div class="view_link"><a href="http://link_02.com">자세히보기</a></div>
+        </div>
+        <div id="link_03">
+          <h3>광고내용제목_03</h3>
+          <p>광고설명_03</p>
+          <div class="view_link"><a href="http://link_03.com">자세히보기</a></div>
+        </div>
+        <div id="link_04">
+          <h3>광고내용제목_04</h3>
+          <p>광고설명_04</p>
+          <div class="view_link"><a href="http://link_04.com">자세히보기</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- // #viewBox -->
+    <article id="newsBox">
+      <h2>newsBox</h2>
+      <div class="news_outer">
+        <!-- 뉴스 총 12개 삽입 -->
+        <div class="news_01">
+          <div class="img"><span>뉴스이미지1</span></div>
+          <dl class="news_content">
+            <dt>news_title</dt>
+            <dd>news_content</dd>
+          </dl>
+        </div>
+    </article>
+    <!-- // #newsBox -->
+    <article id="conBox">
+      <h2>conBox</h2>
+    </article>
+    <!-- // #conBox -->
+    <footer id="footBox">
+      <h2>company info</h2>
+    </footer>
+    <!-- // #footBox -->
+  </div>
+     
+  </body>
+</html>
