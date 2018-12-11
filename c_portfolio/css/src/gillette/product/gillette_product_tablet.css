@@ -1,5 +1,46 @@
 @media screen and (min-width: 481px) and (max-width: 768px){
 
+#headBox{width: 100%; height: 90px; padding: 15px 30px; box-sizing: border-box;}
+  h1{width: 280px; height: 60px; position: absolute; left: 50%; margin-left: -140px; font-size: 3rem;}
+  .gnb{width: 60px; height: 60px;}
+  .gnb>button{width: 100%;height: 100%;}
+  .menu{display: none;}
+  /*.menu>ul{width: 100%; height: 100%; margin-top: 90px;}
+  .menu>ul>li{width: 90%; height: 40px; margin: auto; margin-bottom: 10px; background-color: #ccc;}
+  .gnb>button{color:#fff; line-height: 40px; width: 100%; height: 100%; position: relative; z-index: 200}*/
+  .gnb button:focus[id="sideMenu"],
+  .gnb button:hover[id="sideMenu"]{display: block;}
+
+  .search{width: 60px; height: 60px;}
+  .search>button{position: relative; z-index: 100;}
+  .search>button:hover + .search_bar,
+  .search>button:focus + .search_bar{display: block; margin-top: 90px;}
 
 
+/*conBox ============================ */
+	.s_wrap{padding: 50px; padding-bottom: 100px; box-sizing: border-box; position: relative;}	
+	#conBox01{margin-top: 90px;}
+	#conBox02{background-color: #adadad;}
+	.title{width: 100%; height: 220px; font-size: 4rem;}
+
+	#sideMenu{display: none; padding: 10px 10px;  box-sizing: border-box; width: 40%; height: 100%; float: left; position: fixed; left: 0; z-index: 100}
+		.s_title{width: 160px; height: 40px; font-size: 1.6rem; margin: auto;margin-bottom: 50px	;}
+		.submenu{width: 80%; height: auto; margin: auto; }
+		.submenu>dl{width: 100%; height: 50%; margin-bottom: 20px;}
+		.submenu>dl>dt{margin-bottom: 10px; font-weight: bold;}
+		.submenu>dl>dd{margin-left: 6px; margin-bottom: 4px;}
+
+
+	.product{width: 300px; height: 440px; float: left; position: relative; margin-top: 50px;}
+	.pic{width: 240px; height: 440px; position: absolute; left: 60px;}
+	.product dl{width: 100%; height: 100%;}
+	.product dt{width: 60px; height: 320px; position: absolute; left: 0;}
+	.product dd{width: 240px; height: 160px; position: absolute; left: 60px; bottom: 0;}
+	.product dd div{width: 120px; height: 40px; position: absolute; right: 0; bottom: 0;}
+	.product dd div a{width: 100%; height: 100%;}
+	.more{width: 140px; height: 40px; position: absolute; bottom: 30px; right: 50px;}
+	
+	.product:nth-child(2n){float: right;}
+	
+	#footBox{float: left;}
 }
