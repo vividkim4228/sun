@@ -267,7 +267,7 @@ shop.append(product);
 // $('.product').eq(i).find('p').eq(0).text(text[i]);
 // $('.product').eq(i).find('a').attr('href',link[i]);
 
-prEq=$('.product').eq(i)
+prEq=$('.product').eq(i);
 
 prEq.find('.shop_img').css({backgroundColor:productList[i].color});
 prEq.find('p').eq(0).text(productList[i].text);
