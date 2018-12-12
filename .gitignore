@@ -16,7 +16,12 @@
 
 # design파일(psd, ai, indd, psb...)
 **/*.psd
-**/*.ai
 **/*.indd
 **/*.eps
+<<<<<<< HEAD
 **/*.ps
+=======
+**/*.psb
+
+
+>>>>>>> 49501a028bb586b92da521d7881c928b4b92de86
