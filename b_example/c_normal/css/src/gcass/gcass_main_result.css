@@ -1,0 +1,148 @@
+/* gcass_main_result.css */
+
+/*
+----- color -----
+mainColor: #fff30d
+subColor1: #777777
+subColor2: #888888
+subColor3: #575757
+textColor1: #171717
+textColor2: #ffffff
+background1: #adadad
+
+----- font -----
+fontSize(h1):
+fontSize(h2):
+fontSize(h3):
+fontSize(p):
+fontSize(strong):
+
+----- naming -----
+id: carmelCase 
+class: snake_case
+level 1: id로 사용, '영역이름' + 'Box'
+  >> level 1의 자식요소로 일부 영역을 감싸 처리할경우: '영역이름' +'_outer'
+level 2: class로 사용, '기능이름' + 'area'
+level 3: class로 사용, 'level 2 의 이름' + '_상세기능이름'
+level 4: '상세기능이름' + '_0$'
+
+단, 꼭 필요한경우에는 id 사용가능.
+
+----- margin -----
+1. margin을 사용시 상단과, 학단 둘중 하나를 사용해야하는 경우라면,  
+   상단영역에서 margin-bottom 을 사용한다.
+2. float:left 처리한 요소들에 margin을 주어야할 경우 'margin-right'로 처리한다.
+
+----- 속성 작성순서 -----
+01. display
+02. float
+03. position, z-index, top, right, left, bottom
+04. margin
+05. padding
+06. box-sizing
+07. border
+08. width, height
+09. background
+10. font
+11. etc...
+
+- vw/ vh 사용시 @media query문 내부 첫줄에 기준크기 작성
+- vw/ vh 사용시 해당수치 뒤에 주석을 달고 계산식 작성
+
+----- z-index -----
+각 영역별 큰 설정에서는 100단위로 사용
+:focus기능 처리되는 영역 : 500
+header 고정처리 : 1000
+이외에 position/ z-index 사용시 별도의 명세서에 표기 
+
+*/
+
+/*:root{
+font-size:16px;
+
+--mainColor : #fff30d;
+--subColor1 : #777777;
+--subColor2 : #888888;
+--subColor3 : #575757;
+--textColor1 : #171717;
+--textColor2 : #ffffff;
+--background1 : #adadad;
+}*/
+
+body{overflow-x:hidden;}
+#wrap{width:61.25rem; height: 53.125rem;}
+
+/* homeBox */
+#homeBox{position: relative; z-index: 100; width: 100%; height: 1.875rem; background-color: #888888}
+  #homeBox>ul{float: right; width: 27.1875rem; height: 100%;}
+  #homeBox>ul>li{float: left; width: 5.9375rem; height: 100%;}
+  #homeBox>ul>li:nth-child(2){background-color: #555;}
+  #homeBox>ul>li:last-child{background-color: #fff30d;width: 15.3125rem;}
+  #homeBox>ul>li>a:hover{background-color: #acc;}
+#homeBox:before, #homeBox::before, #footBox:before,
+#footBox::before{content:""; display: block; position: absolute; z-index: -1; top: 0; left: 50%; margin-left: -50vw; width: 100vw; height: 100%; background-color: inherit; }
+
+.box_wrap{width: 100%; height: auto; min-height: 30rem;}
+
+
+
+/* headBox */
+#headBox{float: left; position: relative; z-index: 100; padding: 3.4375rem 3.75rem 6.25rem 2.5rem; box-sizing: border-box; width: 15.625rem; height: auto; min-height: 44.375rem; background-color: #777;}
+#headBox:before,
+#headBox::before{content:""; display: block; position: absolute; z-index: -1; top: 0; left: 50%; margin-left: -50vw; width: 50vw; height: 100%; background-color: inherit;}
+h1{margin-bottom: 1.875rem; width: 100%; height: 6.5625rem; background-color: #acf;}
+#gnb{width: 100%; height: auto; min-height: 10rem; background: #acf;}
+#gnb>ul{width: 100%; height: auto;}
+#gnb>ul>li{margin-bottom: 1rem;  width: 100%; height: 2.8125rem;}
+#gnb>ul>li:last-child{margin-bottom: 0; height: 7rem;}
+#gnb>ul>li>a{display: block; border-bottom: 0.25rem solid  #fff; box-sizing: border-box; width: 100%; height: 100%;}
+#gnb>ul>li>a:focus,
+#gnb>ul>li>a:hover{border-color: #333;}
+
+
+/* viewBox */
+#viewBox{float: left; position: relative; z-index: 100; width: 45.625rem; height: auto; min-height: 44.375rem; background-color: #adadad;}
+#viewBox:before,
+#viewBox::before{content:""; display: block; position: absolute; z-index: -1; top: 0; right: 50%; margin-right: -50vw; width: 50vw; height: 100%; background-color: inherit; }
+
+#viewBox:after,
+#viewBox::after{content:""; display: block; position: absolute; top: 0; left: 0; z-index: -1; width: 100vw; height: 50px; background-color: #acf;}
+
+#viewBox .com{margin: auto; margin-top: 5rem; width: 21.25rem; height: 34.375rem; background-color: #adc; transition:all 500ms linear;}
+#viewBox:hover .com{transform:translatex(15rem); background-color: #cad;}
+/* 
+  transition: 애니메이션 기능 수행 
+  transform: 회전, 이동, 크기변환등의 형태변환 
+  translate'x' or 'y': transform 기능 내 이동처리  
+*/
+
+/*  footBox  */
+#footBox{position: relative; z-index: 100; padding: 0.625rem 2.5rem 1.75rem; box-sizing: border-box; width: 100%; height: 6.875rem;}
+
+#footBox:after,
+#footBox::after{content:""; display: block; width: 100vw; height: 0; position: absolute; z-index: 500; left: 50%; top: 0; margin-left: -50vw; border-top: 0.0625rem solid  #171717;}
+
+#footBox h2{float: left; margin-right: 1.5625rem; width: 4.5rem; height: 3rem; background-color: #acd;}
+
+/* .info_area */
+.info_area{float: left; margin-right: 1.5625rem; width: 5.625rem; height: 2.8125rem; background-color: #acd;}
+  .location{border-bottom: 0.0625rem solid  #575757; box-sizing: border-box; width: 100%; height: 1.25rem;}
+  .sns{width: 100%; height: 1.5625rem;}
+  .sns li{float: left; margin-right: 0.5rem; width: 1.5rem; height: 1.5rem; padding-top: 0.0625rem; background-color: #fff;}
+  .sns li:last-child{margin-right: 0;}
+
+/* .addr_area */
+.addr_area{float: left; width: 22.5rem; height: auto; background-color: #acd;}
+.addr_area>p{font-size: 0.8rem; letter-spacing: -0.025rem; color: #171717}
+.dash:before{content:"."; color:#575757; font-size: 0.5rem; }
+
+
+/* .more_area */
+.more_area{float: right; margin-top: -4.75rem; width: 18.75rem; height: auto; }
+
+.more_area dl{width: 100%; height: auto; margin-bottom: 0.5rem;}
+.more_area dl dt{float: left; width: 5.9375rem; height: 4.125rem; background-color: #575757; font-size: 1rem; text-align: center; color: #fff; line-height: 4.125rem;}
+.more_area dl dd{float: left; padding: 0.5rem -1rem; box-sizing: border-box; width: 12.75rem; height: 4.125rem; background-color: #fff30d; font-size: 1rem; text-indent: 1rem; line-height: 4.125rem; color: #171717; }
+.more_area dl dd a{display: block; width: 100%; height: 100%;}
+
+.more_area p{width: 100%; height: auto; text-align: justify; font-size: 0.7rem; line-height: 120%;}

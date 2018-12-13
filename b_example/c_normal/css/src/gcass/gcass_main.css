@@ -4,16 +4,16 @@
 /*=========#homeBox ==================*/
 #homeBox{width: 100%; height: 30px; background-color: #888;}
   #homeBox>ul{width: 100%; height: 100%; margin-left: 545px;}
-  #homeBox>ul>li{width: 95px; height: 100%; float: left; text-align: center; line-height: 30px;}
-  #homeBox>ul>li:last-child{width: 245px; background-color: #fff30d;}
+  #homeBox>ul>li{width: 95px; height: 100%; float: left; text-align: center; line-height: 30px; text-transform: uppercase;}
+  #homeBox>ul>li:last-child{width: 245px; background-color: #fff30d; }
 
 /*=========#headBox ==================*/
 #headBox{width: 250px; height: 710px; background-color: #777; float: left; }
-  h1{width: 150px; height: 100px; border: 2px solid  #fff; box-sizing: border-box; text-align: center; font-size: 2.5rem; line-height: 8rem; color: #fff; margin: auto; margin-top: 59px; margin-bottom: 40px;}
-  #headBox>ul{width: 140px; height: auto; margin: auto;}
-  #headBox>ul>li{width: 140px; height: 50px; border-bottom: 2px solid  #fff; font-size: 1.3rem; text-indent: 10px; color:#fff; line-height: 4rem; }
-  .qna{width: 110px; height: 110px; background-color: #fff; margin: auto; margin-top: 30px; border-radius: 55px;}
-  .qna>p{text-align: center; line-height: 110px; font-size: 2rem; font-weight: bold;}
+  h1{width: 150px; height: 100px; border: 2px solid  #fff; box-sizing: border-box; text-align: center; font-size: 2.5rem; line-height: 8rem; color: #fff; margin: auto; margin-top: 59px; margin-bottom: 40px; text-transform: uppercase;}
+  .gnb{width: 140px; height: auto; margin: auto;}
+  .gnb>li{width: 140px; height: 50px; border-bottom: 2px solid  #fff; font-size: 1.3rem; text-indent: 10px; color:#fff; line-height: 4rem; text-transform: uppercase;}
+  .qna{width: 110px; height: 110px; background-color: #fff; margin: auto; margin-top: 30px; border-radius: 55px; }
+  .qna>p{text-align: center; line-height: 110px; font-size: 2rem; font-weight: bold; text-transform: uppercase;}
 
 
 
@@ -22,18 +22,18 @@
 /*=========#viewBox ==================*/
 #viewBox{width: 730px; height: 710px; background: #999;float: right; padding: 30px; box-sizing: border-box;/* position: relative;*/}
   .view_pic{float: left;width: 330px; height: 560px; background-color: #fff; /*position: absolute; left: 60px; top: 90px;*/ }
-  .view_text{float: left;width: 330px; height: 560px; font-size: 6rem; font-weight: bold; text-align: right; /*position: absolute; right: 40px; top: 60px;*/ letter-spacing: -0.3rem;}
+  .view_text{float: left;width: 330px; height: 560px; font-size: 6rem; font-weight: bold; text-align: right; /*position: absolute; right: 40px; top: 60px;*/ letter-spacing: -0.3rem; text-transform: uppercase;}
 
 
 
 
 /*=========#footBox ==================*/
 #footBox{padding-top: 14px; box-sizing: border-box;padding-left: 55px; width: 100%; height: 110px; background-color: #f6f6f6; float: left;}
-.foot_logo{width: 60px; height: 40px; background-color: #575757; float: left; text-align: center; font-weight: bold; color:#fff; line-height: 50px;}
+.foot_logo{width: 60px; height: 40px; background-color: #575757; float: left; text-align: center; font-weight: bold; color:#fff; line-height: 50px; text-transform: uppercase;}
 .location{width: 100px; height: 40px; float: left; margin-left: 25px; margin-right: 10px;}
-  .location>p{width: 100%; height: 16px; box-sizing: border-box; border-bottom: 1px solid #333; text-align: center; font-size: 0.8rem;}
+  .location>p{width: 100%; height: 16px; box-sizing: border-box; border-bottom: 1px solid #333; text-align: center; font-size: 0.8rem; text-transform: uppercase;}
   .location>ul{width: 95px; height: 25px; margin: auto; margin-top: 2px;}
-  .location>ul>li{width: 25px; height: 25px; float: left; text-align: center; line-height: 25px; color:#fff; font-weight: bold;} 
+  .location>ul>li{width: 25px; height: 25px; float: left; text-align: center; line-height: 25px; color:#fff; font-weight: bold; text-transform: uppercase;} 
   .location>ul>li:nth-child(1){background-color: #f00;}
   .location>ul>li:nth-child(2){background-color: #4267b2; margin-left: 10px; margin-right: 10px;}
   .location>ul>li:nth-child(3){background-color: #ffe812;}
