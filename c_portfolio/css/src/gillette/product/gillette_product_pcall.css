@@ -1,7 +1,12 @@
+/* gillette_product_pcall.css */
+
 @media screen and (min-width: 769px) {
 
 #wrap{width: 3900px; height: 100%; margin-left: 180px;} 
 .s_wrap{padding-top: 70px; padding-bottom:50px;  box-sizing: border-box; width: 1300px; height: 100%; float: left; position: relative;}
+
+/* --------#headBox-----------------------*/
+
  h1{width: 160px; height: 44px;}
 .gnb>button{display: none;}
 .search{background-color: #002E6D; float: right;}

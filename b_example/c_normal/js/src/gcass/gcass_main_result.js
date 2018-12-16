@@ -9,6 +9,5 @@
   homeBox.load(commonBox + 'homeBox.html');
   headBox.load(commonBox + 'headBox.html');
   footBox.load(commonBox + 'footBox.html');
-  console.log('IIDK');
 
 })(jQuery);
