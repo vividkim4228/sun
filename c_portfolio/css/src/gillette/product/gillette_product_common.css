@@ -1,7 +1,7 @@
 #wrap{width: 100%; height: 100%; background-color: #ffa	;}
 
 /* --------#headBox-----------------------*/
-#headBox{position: fixed; padding: 8px; box-sizing: border-box; top: 0; left: 0; width: 100%; height: 60px;background-color: #333E48; z-index: 500}
+#headBox{position: fixed; padding: 8px; box-sizing: border-box; top: 0; left: 0; width: 100vw; height: 60px;background-color: #333E48; z-index: 500}
   h1{float: left; background-color: #002E6D; color: #fff; text-align: center;}
   .gnb{background-color: #002E6D; float: left;}  
   .search{background-color: #002E6D; float: right;}
@@ -24,7 +24,7 @@
   .more{background-color: #EBA900; text-align: center;}
   a{display: block; width: 100%; height: 100%;text-align: center;}
 
-#footBox{width: 100%; height: 40px; background-color: #333E48; z-index: 500;}
+#footBox{width: 100vw; height: 40px; background-color: #333E48; z-index: 500;}
   .copywright{width: 70%; height: 26px; margin: auto; margin-top: 7px; background-color: #002E6D;}
 
   

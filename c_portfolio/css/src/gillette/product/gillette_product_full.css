@@ -1,0 +1,11 @@
+/* gillette_product_full.css */
+
+@media screen and (min-width: 1280px) {
+
+#wrap{margin-left: 240px;} 
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px) {
+
+#wrap{margin-left: 180px;} 
+}
