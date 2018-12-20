@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- form_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/common.css" />
+     
+
+    <title>form에 대한 이해</title>
+    <style>
+      h1{height:auto; padding:1rem; text-align: center; margin: 0; background-color: #1B212F; color: #fff}
+      form{padding: 2rem; background-color: #B0BCCE; }
+      fieldset{padding: 1rem;}
+      legend{background-color: #627C9A; padding: 0.5rem 2rem; color: #fff; font-weight: bold; border-radius: 0.5rem;}
+      input{height: 1.8rem; width: 300px; border: 2px solid  #111; text-indent: 0.5rem; font-size: 1rem; margin-bottom: 0.4rem; background-color: #fdfdfd;}
+      fieldset{background-color: #DCE1E7;}
+      label{display: block; width: 0; height: 0; overflow: hidden;}
+
+    </style>
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <h1>form 기초개념 이해하기 01</h1>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>form에 대한 이해 01</legend>
+          <label for="searchName">검색할 자료이름을 입력하세요</label>
+          <input type="text" id="searchName" value="" placeholder="검색어를 입력하세요" />
+          <br/> <label for="id">아이디를 입력하세요</label>
+          <input type="text" id="id" value="" placeholder="아이디를 입력하세요" />
+          <br/> <label for="password">비밀번호를 입력하세요</label>
+          <input type="password" id="password" value="" placeholder="비밀번호를 입력하세요" />
+          <br/> <label for="name">이름을 입력하세요</label>
+          <input type="text" id="name" value="" placeholder="이름을 입력하세요" />
+        </fieldset>
+      </form> 
+    </div>
+     
+  </body>
+</html>

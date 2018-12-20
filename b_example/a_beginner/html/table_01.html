@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- table_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+    
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/table_01.css" />
+
+   
+    <!--[if lte ie 9]>
+      <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
+      <srcipt src="../ie/css3pie/PIE_IE9.js"><srcipt>
+      <srcipt src="../ie/ie9.min.js"></srcipt>
+      <srcipt src="../ie/respond/dest/respond.min.js"></srcipt>
+      <link rel="stylesheet" href="../css/src/table_01_forIE.css" />
+    <![endif]-->  
+
+ 
+    <!-- <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"> -->
+
+    <title>TABLE</title>
+    <style>
+      #wrap{width: 100%; height: auto;}
+      h1{background-color: #0ac; width: 100%; padding: 1rem; text-align: center;}
+      h2{width: 100%; height: auto; padding: 0.6rem; box-sizing: border-box; background-color: #fd5; text-align: center; margin-bottom: 1rem;}
+      .box{width: 80%; height: auto; margin: auto; padding: 1rem; margin-bottom: 2rem;}
+      table{margin: auto; text-align: center;}
+      caption{margin-bottom: 0.5rem;}
+/*======================================================*/
+      .box_01 table, .box_01 th, .box_01 td{border: 2px solid  #fc0; /*border-spacing: 0;*/; border-collapse: collapse;}
+      .box_01 tr{background-color: #dfdfdf;}
+      .box_01 table{border-color: #faa}
+      .box_01 tr{border-color: #ffa}
+      .box_01 th{border-color: #ac4}
+      .box_01 td{border-color: #f93}
+/* ==================================================== */
+      table, th, td{border: 1px solid  #fa0; border-collapse: collapse;}
+      th,td{padding: 0.5rem;}
+/*======================================================*/
+      .table_col_1{background-color: #acf;}
+      .table_col_2{background-color: #ada;}
+      .table_col_3{background-color: #dad;}
+      .box_04 th{background-color: #add;}
+
+    </style>
+  </head>
+  <body>
+    <!-- layout -->
+    <h1>tabel 내용 이해하기</h1>
+
+    <div class="box box_01">
+      <h2>table기초내용</h2>
+        <table summary="표를 이해하기 위한 첫번째 예시">
+          <caption>간단한 표 만들기</caption>
+          <tr>
+            <th>첫번째 셀, 제목</th>
+            <td>두번째 셀 만들기</td>
+            <td>세번째 셀 만들기</td>
+            <td>네번째 셀 만들기</td>
+          </tr>
+          <tr>
+            <th>첫번째 셀, 제목</th>
+            <td>두번째 셀 만들기</td>
+            <td>세번째 셀 만들기</td>
+            <td>네번째 셀 만들기</td>
+          </tr>
+          <tr> 
+            <th>첫번째 셀, 제목</th>
+            <td>두번째 셀 만들기</td>
+            <td>세번째 셀 만들기</td>
+            <td>네번째 셀 만들기</td>
+          </tr>
+        </table>       
+    </div>
+    <div class="box box_02">
+      <h2>table 셀 설정 기능 이해하기</h2>
+      <table>
+        <caption>테이블의 셀 기능을 추가설정</caption>
+        <tr>
+          <th>제목1</th>
+          <th>제목2</th>
+          <th>제목3</th>
+          <th colspan="2">제목4,5</th>
+        </tr>
+        <tr>
+          <td rowspan="3">1-1</td>
+          <td>1-2</td>
+          <td>1-3</td>
+          <td>1-4</td>
+          <td>1-5</td>
+        </tr>
+        <tr>
+          <td>2-2</td>
+          <td>2-3</td>
+          <td colspan="2" rowspan="2">2-4</td>
+        </tr>
+        <tr>
+          <td>3-2</td>
+          <td>3-3</td>
+        </tr>
+      </table>
+    </div>
+    <div class="box box_03">
+      <h2>예제</h2>
+      <table summary="colspan과 rowspan연습">
+        <caption>예제</caption>
+        <!-- ======================================== -->
+        <colgroup>
+          <col class="table_col_1" />
+          <col span="2" class="table_col_2" />
+          <col span="3" class="table_col_3" />
+
+        </colgroup>
+        <!-- ======================================== -->
+        <tr>
+          <td>1-1</td>
+          <td colspan="2">1-2</td>
+          <td colspan="3">1-4</td>
+        </tr>
+        <tr>
+          <td>2-1</td>
+          <td rowspan="2">2-2</td>
+          <td rowspan="3">2-3</td>
+          <td>2-4</td>
+          <td>2-5</td>
+          <td>2-6</td>
+        </tr>
+        <tr>
+          <td>3-1</td>
+          <td colspan="3" rowspan="3">3-4</td>
+        </tr>
+        <tr>
+          <td>4-1</td>
+          <td>4-2</td>
+        </tr>
+        <tr>
+          <td>5-1</td>
+          <td>5-2</td>
+          <td>5-3</td>
+        </tr>
+      </table>
+    </div>
+    <div class="box box_04">
+      <table summary="접근성을 고려한 메뉴판 제작">
+        <caption>중국집 음식가격</caption>
+        <tr>
+          <th>메뉴</th>
+          <th colspan="2">가격 및 원산지</th>
+          <th>매운맛</th>
+          <th>재료</th>
+        </tr>
+        <tr>
+          <td>짜장면</td>
+          <td scope="row">5500원</td>
+          <td>중국</td>
+          <td>* </td>
+          <td>밀가루, 양파</td>
+        </tr>
+        <tr>
+          <td>짬뽕</td>
+          <td scope="row">7000원</td>
+          <td>국내산</td>
+          <td>*****</td>
+          <td>밀가루, 해산물,양파</td>
+        </tr>
+        <tr>
+          <td>탕수육</td>
+          <td scope="row">12000원</td>
+          <td>국내산</td>
+          <td>*</td>
+          <td>고기, 찹쌀, 당근, 오이</td>
+        </tr>
+      </table>
+    </div>
+    <div class="box box_05">
+      <table summary="가계부를 통해 table의 필요성 이해하기">
+        <caption>가계부 작성</caption>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>날짜</th>
+            <th>항목</th>
+            <th>수입</th>
+            <th>지출</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>1</td>
+            <td>18.12.20</td>
+            <td>점심값</td>
+            <td>0</td>
+            <td>5,000원</td>
+            <td>된장찌개</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>18.12.20</td>
+            <td>커피</td>
+            <td>0</td>
+            <td>2,000원</td>
+            <td>아메리카노</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>-</td>
+            <td colspan="2">합계</td>
+            <td>0</td>
+            <td colspan="2">7,000원</td>
+          </tr>
+        </tfoot>
+      </table>
+
+    </div>
+
+
+
+    <!-- script(jQuery) -->
+    <!-- <script src="../js/base/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="../js/base/jquery-ui.min.js"></script> -->
+    <!-- <script src="../js/src/table_01.js"></script> -->
+     
+  </body>
+</html>
