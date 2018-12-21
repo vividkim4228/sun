@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- login_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+    
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/login_01.css" />
+
+   
+    <!--[if lte ie 9]>
+      <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
+      <srcipt src="../ie/css3pie/PIE_IE9.js"><srcipt>
+      <srcipt src="../ie/ie9.min.js"></srcipt>
+      <srcipt src="../ie/respond/dest/respond.min.js"></srcipt>
+      <link rel="stylesheet" href="../css/src/login_01_forIE.css" />
+    <![endif]-->  
+
+ 
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>login_01</title>
+
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap"> 
+      <div class="login">
+        <form action="" method="post">
+          <fieldset>
+            <legend class="hidden">login</legend>
+            <label for="id">username</label>
+            <input type="text" id="id" name="id" value="" placeholder="Username" required="" /> <br/>
+            <label for="pw">password</label>
+            <input type="password" id="pw" 이름="pw" name="pw" value="" placeholder="Password" required="" /> <br/>
+            <input type="checkbox" id="remember" name="remember" value="remember"><label for="remember">remember me</label>
+            <button type="submit">sign in</button>
+
+          </fieldset>
+          
+
+
+        </form>
+      </div>
+
+
+    </div>
+    <!-- script(jQuery) -->
+    <script src="../js/base/jquery-3.3.1.min.js"></script>
+    <script src="../js/base/jquery-ui.min.js"></script>
+    <script src="../js/src/login_01.js"></script>
+     
+  </body>
+</html>

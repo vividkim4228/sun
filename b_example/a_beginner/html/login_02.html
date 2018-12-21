@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- login_02.html.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5" />
+    
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/login_02.css" />
+
+   
+    <!--[if lte ie 9]>
+      <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
+      <srcipt src="../ie/css3pie/PIE_IE9.js"><srcipt>
+      <srcipt src="../ie/ie9.min.js"></srcipt>
+      <srcipt src="../ie/respond/dest/respond.min.js"></srcipt>
+      <link rel="stylesheet" href="../css/src/login_02.html_forIE.css" />
+    <![endif]-->  
+
+ 
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <title>login_02</title>
+
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <div class="login">
+        <form action="" method="post">
+        <h1>group company</h1>
+        <input type="text" id="id" name="id" value="" required="" placeholder="username or email">
+        <label class="hidden_wrap" for="id"><p><span>username</span></p></label>
+        <input type="password" id="pw" name="pw" value="" required="" placeholder="password">
+        <label class="hidden_wrap" for="id"><p><span>password</span></p></label>
+        <div class="remember">
+          <input type="checkbox" id="remember" name="remember" value="rememberMe">
+          <label for="remember">remember me</label>
+        </div>
+        <button type="submit">sign in</button>
+        <div class="link register"><a href="">register</a></div>
+        <div class="link forgot"><a href="">forgot your password?</a></div>
+        <div class="link back"><a href="">back to wpbrigade</a></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- script(jQuery) -->
+    <script src="../js/base/jquery-3.3.1.min.js"></script>
+    <script src="../js/base/jquery-ui.min.js"></script>
+    <script src="../js/src/login_02.html.js"></script>
+     
+  </body>
+</html>
