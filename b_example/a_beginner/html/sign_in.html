@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- sign_in.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../css/base/reset.css" />  
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/sign_in.css"/>
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../img/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <title>sign in</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <h1>회원가입</h1>
+      <form action="" method="post">
+        <fieldset>
+          <legend class="hidden">회원가입</legend>
+          <table summary="회원가입 페이지">
+            <caption class="hidden">회원가입</caption>
+            <tr>
+              <th><label for="signIn">아이디</label></th>
+              <td>
+                <input type="text" id="signIn" name="signIn" value="" required="" placeholder="아이디를 입력하세요">
+                <button type="button"><span class="hidden">아이디</span>중복확인</button>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="name">이름</label></th>
+              <td>
+                <input type="text" id="name" name="name" value="" required="" placeholder="사용자 이름을 입력하세요">
+              </td>
+            </tr>
+            <tr>
+              <th><label for="gender1">성별<span class="hidden">을 선택하세요.<br/>기본은 남성입니다.</span></label></th>
+              <td>
+                <input type="radio" id="gender1" name="gender" value="male" required="">
+                <label for="gender1">남</label>
+                <input type="radio" id="gender2" name="gender" value="female" required="">
+                <label for="gender2">여</label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="pw">암호<span class="hidden">여덟자리 이하의 비밀번호를 입력하세요</span></label>
+              </th>
+              <td>
+                <input type="password" id="pw" name="pw" value="" required="" placeholder="비밀번호를 입력하세요">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="pwRe"><span class="hidden">위에 작성된</span>  암호확인<span class="hidden">입니다. 동일하게 한번 더 입력하세요</span></label>
+              </th>
+              <td>
+                <input type="password" id="pwRe" name="pwRe" value="" required="" placeholder="비밀번호 확인">
+                <span class="in_text"></span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email1">이메일</label>
+                
+              </th>
+              <td>
+                <input type="text" id="email1" name="email1" value="" required="">
+                <label for="email2" class="hidden">메일주소를　작성，　또는　선택하세요</label>
+                <span class="in_text_02"></span>
+                <input type="text" id="email2" name="email2" value="" required="">
+                <select name="email" id="emailSel">                  
+                  <option value="naver">naver.com</option>
+                  <option value="daum">daum.net</option>
+                  <option value="gamil">gmail.com</option>
+                  <option value="">직접입력</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="add">주소</label></th>
+              <td>
+                <input type="text" id="add" name="add" value="" required="">
+                <button type="button"><a href="#">주소찾기</a></button>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="phone">휴대폰</label></th>
+              <td>
+                <input type="radio" id="phone1" name="phone" value="s" required="">
+                <label for="phone1">SKT</label>
+                <input type="radio" id="phone2" name="phone" value="k" required="">
+                <label for="phone2">KT</label>
+                <input type="radio" id="phone3" name="phone" value="l" required="">
+                <label for="phone3">LGU+</label><br/>
+
+                <select name="phone" id="phoneNum1">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                </select>
+                <label for="phoneNum1">-</label>
+                <input type="text" id="phoneNum2" name="phoneNum" value="" required="">
+                <label for="phoneNum2">-</label>
+                <input type="text" id="phoneNum3" name="phoneNum" value="" required="">
+                <label for="phoneNum1"></label>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="int">관심</label></th>
+              <td>
+                <input type="checkbox" id="int01" name="int" value="1">
+                <label for="int01">쇼핑</label>
+                <input type="checkbox" id="int02" name="int" value="2">
+                <label for="int02">게임</label>
+                <input type="checkbox" id="int03" name="int" value="3">
+                <label for="int03">여행</label>
+                <input type="checkbox" id="int04" name="int" value="4">
+                <label for="int04">기타</label>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="intr">자기소개</label></th>
+              <td>
+                <textarea name="intr" id="intr"></textarea>
+              </td>
+            </tr> 
+          </table>
+          <div class="last_btn">
+            <input type="submit" name="submit" value="확인">
+            <input type="reset" name="reset" value="다시입력">
+          </div>
+        </fieldset>        
+      </form>
+    </div>
+  <!--  script   -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/sign_in.js"></script>
+  </body>
+  </html>
