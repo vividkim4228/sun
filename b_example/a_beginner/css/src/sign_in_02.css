@@ -1,0 +1,75 @@
+/*  sign_in_02.css  */
+
+#wrap{width: 100%; height: 100%;}
+h1{width: 260px; height: 60px; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; background-position: -10px -48px; line-height: 60px; text-indent: 60px; font-size: 2.375rem;}
+.ess{width: 130px; height: 25px; float: right;}
+.ess:before{content:"*"; display: block; width: 10px; float: left; height: 25px; color:#052987; font-weight: bold; font-size: 1.5rem; margin-right: 5px; }
+form{width: 700px; height: auto; margin:40px auto;}
+table{width: 700px; height: 560px; border-collapse: collapse; margin: auto;}
+tr,th,td{margin: 0; padding: 0; box-sizing: border-box;}
+th, td{border: 1px solid #fff;}
+th{width: 200px; height: 44px; background-color: #ffa2bd; text-align: left;}
+td{width: 500px; height: 44px; background-color: #dfdfdf}
+th label{font-size: 1.125rem;margin-top: 6px;}
+label{font-size: 1.12}
+
+.num_img{width: 26px; height: 26px; margin-top: 4px; margin-left: 24px; float: left; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; margin-top: 10px;}
+tr:nth-child(1) th .num_img{background-position: -10px -10px;}
+tr:nth-child(2) th .num_img{background-position: -44px -10px;}
+tr:nth-child(3) th .num_img{background-position: -77px -10px;}
+tr:nth-child(4) th .num_img{background-position: -110px -10px;}
+tr:nth-child(5) th .num_img{background-position: -144px -10px;}
+tr:nth-child(6) th .num_img{background-position: -178px -10px;}
+tr:nth-child(7) th .num_img{background-position: -211px -10px;}
+tr:nth-child(8) th .num_img{background-position: -244px -10px;}
+tr:nth-child(9) th .num_img{background-position: -278px -10px;}
+tr:nth-child(10) th .num_img{background-position: -312px -10px;}
+i{width: 10px; float: left; height: 25px; color:#052987; font-weight: bold; font-size: 1.5rem; margin-right: 5px; font-style: normal;}
+.deco{width: 10px; height: 100%; float: right; background-color: #fe558c}
+
+th label{float: left; width: 100px; height: 30px; margin-left: 10px; line-height: 30px; font-weight: bold;}
+button,a{width: 80px; height: 30px; background-color: #052987; border-radius: 3px; color:#fff;}
+
+input{width: 230px; height: 30px; background-color: transparent; border-bottom: 1px solid  #052987; margin-left: 20px;}
+
+.id_check{width: 30px; height: 30px; float: right; margin-right: 115px; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; background-position: -44px -120px;
+}
+
+.r_check{width: 26px; height: 26px; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; background-position: -44px -170px; float: left; margin-left:24px; margin-top: 3px; margin-right: 6px;}
+.gender_box label{float: left; line-height: 30px;}
+.gender_box input{width: 0; height: 0;}
+.gender_box input:checked +label .r_check{ background-image: url(../../img/sign_in_02_icon.png); background-position: -10px -170px;}
+
+.pw_box p,.pw_box input {float: left;}
+.pw_re_box p, .pw_re_box input {float: left;}
+.pw_box p, .pw_re_box p{width: auto; height: 30px; margin-left: 15px; line-height: 30px; font-size: 14px;}
+
+.email_box input, select{width: 136px; float: left;}
+.email_box select{height: 30px; margin-left: 20px; background-color: transparent; border: none; border-bottom: 1px solid  #052987 ;}
+.in_text:before{content:"@"; float: left; line-height: 30px;}
+.email_box input:nth-of-type(2){margin-left: 0;}
+
+.phone_box{height: 88px;}
+.phone_box th{position: relative;}
+.th_wrap{width: auto; height: 30px; position: absolute; top: 10px; }
+.phone_ck{width: 0; height: 0;}
+
+.phone_box label{float: left; margin: 0 5px;line-height: 30px;}
+.phone_box input{float: left; width: 136px; margin: 0px;}
+.phone_box select{height: 30px; margin-left: 20px; background-color: transparent; border: none; border-bottom: 1px solid  #052987 ;}
+.phone_box 	input:checked +label .r_check{ background-image: url(../../img/sign_in_02_icon.png); background-position: -10px -170px;}
+#phoneNum1{margin-left: 24px;}
+
+.int_box input{width: 0; height: 0;}
+.int_box label{float: left; line-height: 30px;}
+
+.check_icon{width: 26px; height: 26px; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; background-position: -44px -215px; float: left; margin-left:24px; margin-top: 3px; margin-right: 6px;}
+.int_box input:checked +label .check_icon{ background-image: url(../../img/sign_in_02_icon.png); background-position: -10px -215px;}
+.intr_box th{position: relative;}
+.intr_box td{padding: 10px 20px 15px; box-sizing: border-box; }
+textarea{width: 460px; height: 100px; border: 1px solid  #052987;}
+
+.last_btn{width: 292px; height: 40px; margin: auto; margin-top: 18px;}
+.last_btn input{border-radius: 3px;margin: 0px; }
+.last_btn input[type="submit"]{width: 150px; height: 40px; background-image: url(../../img/sign_in_02_icon.png); background-repeat: no-repeat; background-position: -10px -258px; float: right;  font-size: 1.125rem; font-weight: bold;  text-indent: 1rem; letter-spacing: 1rem; text-shadow: 1px 1px #171717; color:#dfdfdf;}
+.last_btn input[type="reset"]{width: 110px; height: 30px; border: 1px solid  #052987; float: left; margin-top: 5px;}

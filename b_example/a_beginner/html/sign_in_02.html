@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- sign_in_02.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../css/base/reset.css" />  
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/sign_in_02.css"/>
+
+     <!--[if IE]>
+      <script src="../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../ie/ie9.min.js"</script>
+      <script src="../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../img/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <title>sign_in_02</title>
+  </head>
+  <body>
+  <!-- Layout -->
+  
+    <div id="wrap">
+    	<form action="" method="post">
+    		<h1>회원가입</h1>
+    		<fieldset>
+	    		<legend class="hidden">회원가입</legend>
+	    		<div class="ess">필수 입력사항</div>
+	    		<table summary="회원가입 페이지">
+	    			<caption class="hidden">회원가입</caption>
+	    			<tr>
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="id">아이디</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td>
+	    					<input type="text" id="id" name="id" value="" required>
+								<button type="button"><span class="hidden">아이디</span>중복확인</button>
+								<div class="id_check"></div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="userName">이름</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td><input type="text" id="userName" name="userName" value="" required></td>
+	    			</tr>
+	    			<tr class="gender_box">
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="gender1	">성별</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td>
+	    					<input type="radio" id="gender1" name="gender" value="남성" required checked>
+	    					<label for="gender1"><div class="r_check"></div>남성</label>
+	    					<input type="radio" id="gender2" name="gender" value="여성" required>
+	    					<label for="gender2"><div class="r_check"></div>여성</label>
+	    				</td>
+	    			</tr>
+	    			<tr class="pw_box">
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="pw">암호</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td>
+	    					<input type="password" id="pw" name="pw" value="" required minlength="8" maxlength="15">
+	    					<p>8~15글자 입력</p>
+	    				</td>
+						</tr>
+	    			<tr class="pw_re_box">    			
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="pwRe">암호확인</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td>
+	    					<input type="password" id="pwRe" name="pwRe" value="" required minlength="8" maxlength="15">
+	    					<p>위와 동일한 암호 입력</p>
+	    				</td>	
+
+	    			</tr>
+	    			<tr class="email_box">
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="email1">이메일</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	    				<td>
+	    					<input type="text" id="email1" name="email1" value="" required="">
+	              <label for="email2" class="hidden">메일주소를　작성，　또는　선택하세요</label>
+	              <span class="in_text"></span>
+	              <input type="text" id="email2" name="email2" value="" required="">
+	              <select name="email" id="emailSel">                  
+	                <option>메일선택</option>
+	                <option value="naver">naver.com</option>
+	                <option value="daum">daum.net</option>
+	                <option value="gamil">gmail.com</option>
+	                <option value="hotmail">hotmail.com</option>
+	              </select>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="add">주소</label>
+	    					<i>*</i>
+	    					<div class="deco"></div>
+	    				</th>
+	            <td>
+	              <input type="text" id="add" name="add" value="" required="">
+	              <button type="button"><a href="#">주소찾기</a></button>
+	            </td>
+	    			</tr>
+	    			<tr class="phone_box">
+	    				<th>
+								<div class="th_wrap">
+									<div class="num_img"></div>
+								  <label for="phoneNum1">휴대폰</label>
+								  <i>*</i>
+								</div>
+								<div class="deco"></div>    				
+							</th>
+	            <td>
+	              <input class="phone_ck" type="radio" id="phone1" name="phone" value="s" required checked>
+	              <label for="phone1"><div class="r_check"></div>SKT</label>
+	              <input class="phone_ck" type="radio" id="phone2" name="phone" value="k" required >
+	              <label for="phone2"><div class="r_check"></div>KT</label>
+	              <input class="phone_ck" type="radio" id="phone3" name="phone" value="l" required >
+	              <label for="phone3"><div class="r_check"></div>LGU+</label>
+	              <input class="phone_ck" type="radio" id="phone4" name="phone" value="e" required >
+	              <label for="phone4"><div class="r_check"></div>알뜰폰</label><br/>
+								
+	              <input type="text" id="phoneNum1" name="phoneNum" value="" required>
+	              <label for="phoneNum2">-</label>
+	              <input type="text" id="phoneNum2" name="phoneNum" value="" required>
+	              <label for="phoneNum3">-</label>
+	              <input type="text" id="phoneNum3" name="phoneNum" value="" required>
+	            </td>
+	    			</tr>
+	    			<tr class="int_box">
+	    				<th>
+								<div class="num_img"></div>
+	    					<label for="int">관심</label>
+	    						<div class="deco"></div>
+	    				</th>
+	            <td>
+	              <input type="checkbox" id="int01" name="int" value="1">
+	              <label for="int01"><div class="check_icon"></div>쇼핑</label>
+	              <input type="checkbox" id="int02" name="int" value="2">
+	              <label for="int02"><div class="check_icon"></div>게임</label>
+	              <input type="checkbox" id="int03" name="int" value="3">
+	              <label for="int03"><div class="check_icon"></div>여행</label>
+	              <input type="checkbox" id="int04" name="int" value="4">
+	              <label for="int04"><div class="check_icon"></div>기타</label>
+	            </td>
+	    			</tr>
+	    			<tr class="intr_box">
+	    				<th>
+								<div class="th_wrap">
+									<div class="num_img"></div>
+		    					<label for="intr">자기소개</label>
+		    				</div>
+								<div class="deco"></div>    				
+							</th>
+	            <td>
+	              <textarea name="intr" id="intr"></textarea>
+	            </td>
+	    			</tr>
+					</table>
+				</fieldset>
+				<div class="last_btn">
+          <input type="submit" name="submit" value="확인">
+          <input type="reset" name="reset" value="다시입력">
+         </div>
+    	</form>
+
+    </div>
+
+  <!--  script   -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/sign_in_02.js"></script>
+  </body>
+  </html>
