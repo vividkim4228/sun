@@ -8,3 +8,11 @@
 .clearfix::after{content:" "; display: block; width: 0; height: 0; clear: both;}
 
 #wrap{margin:0 auto;}
+
+.table_design thead,
+.table_design tbody,
+.table_design tfoot,
+.table_design th:first-of-type,
+.table_design th:first-of-type{border-left: 0;}
+.table_design th:last-of-type,
+.table_design th:last-of-type{border-right: 0;}
