@@ -27,46 +27,124 @@
 				<dl class="join_form clearfix">
 					<dt><label for="member_01"><i class="join_img member_01"></i>아이디<span class="hidden">를 입력하세요</span><i class="fas fa-asterisk"></i></label></dt>
 					<dd>
-						<input type="text" id="member_01" name="idName" value="" class="text-box">
+						<input type="text" id="member_01" name="idName" value="" class="text-box" placeholder="아이디를 입력하세요">
 						<button name="dupCheck" class="btn-check" type="button">중복확인</button>
 						<i class="dupl_check join_img"><!-- --></i>
 					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_02"><i class="join_img member_02"></i>이름<span class="hidden">을 입력하세요</span><i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dd>
+						<input type="text" class="text-box" name="userName" id="member_02" value="" placeholder="사용자 이름">
+					</dd>
 				</dl>
-				<dl class="join_form clearfix">
+				<dl class="join_form clearfix gender">
 					<dt><label for="member_03"><i class="join_img member_03"></i>성별<span class="hidden">을 선택해주세요</span><i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dd>
+						<input type="radio" checked name="gender" id="member_03" value="남성">
+						<label for="member_03"><i class="join_img"></i>남성</label>
+						<input type="radio" name="gender" id="member_03-1" value="여성">
+						<label for="member_03-1"><i class="join_img"></i>여성</label>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_04"><i class="join_img member_04"></i><span class="hidden">생성하실</span>암호<span class="hidden">를 입력하세요<br/>암호는 최소 8글자에서 15글자 이내로 입력하여야합니다.</span><i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dd>
+						<input type="password" id="member_04" name="pwName" value="" placeholder="암호 8~15자 내외 입력" class="text-box">
+						<label for="member_04" aria-hidden="true">8~15글자를 입력하세요</label>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_05"><i class="join_img member_05"></i>암호확인<i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dd>
+						<input type="password" id="member_05" name="pwReName" value="" placeholder="위와 같은 암호를 작성하세요" class="text-box">
+						<label for="member_05" aria-hidden="true">위와 동일한 암호 작성</label>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
-					<dt><label for="member_06"><i class="join_img member_06"></i>이메일<i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dt>
+						<label for="member_06"><i class="join_img member_06"></i>이메일<span class="hidden">주소를 입력하세요.<br/>
+						이름과 사이트명을 구분하였습니다. <em>기본@는 작성되니 기입하지 마십시오</em></span><i class="fas fa-asterisk"></i></label>
+					</dt>
+					<dd class="email">
+						<input type="text" id="member_06" name="emailId" value="" class="text-box" placeholder="이메일">
+						<span areia-hidden="true">@</span>
+						<input type="text" id="member_06-1" name="emailSite" value="" class="text-box" placeholder="이메일 주소">
+						<label for="member_06-1" class="hidden">사용하는 이메일주소의 사이트이름을 작성/선택 하세요</label>
+						
+			<!-- 			<select name="eamilSelect" id="member_06-2" class="text-box">
+							<option>메일 주소를 선택하세요</option>
+							<option value="naver.com">naver.com</option>
+							<option value="daum.net">daum.net</option>
+							<option value="gmail.com">gmail.com</option>
+							<option value="hotmail.com">hotmail.com</option>
+						</select> -->
+
+						<input type="text" id="member_06-2" name="emailSelect" value="" class="hidden">
+						<label for="member_06-2" class="hidden">사용하고 있는 이메일 사이트를 선택하세요</label>
+						<dl class="text-box">
+							<dt><button type="button">사이트 <span class="hidden">주소를 선택하세요</span></button></dt>
+							<dd>
+								<ul>
+									<li><button type="button">naver.com</button></li>
+									<li><button type="button">daum.net</button></li>
+									<li><button type="button">gmail.com</button></li>
+									<li><button type="button">hotmail.com</button></li>
+								</ul>
+							</dd>
+						</dl>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_07"><i class="join_img member_07"></i>주소<i class="fas fa-asterisk"></i></label></dt>
-					<dd></dd>
+					<dd>
+						<input type="text" id="member_07" name="addName" value="" class="text-box" placeholder="주소를 입력하세요">
+						<button name="addSearch" class="btn-check" type="button">주소검색</button>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_08"><i class="join_img member_08"></i>휴대폰</label></dt>
-					<dd></dd>
+					<dd>
+						<div class="telecom_check">
+							<input type="radio" checked name="gender" id="member_08" value="sk">
+							<label for="member_08"><i class="join_img"></i>sk t<span class="hidden">telecom</span></label>
+							<input type="radio" name="gender" id="member_08-1" value="kt">
+							<label for="member_08-1"><i class="join_img"></i>kt <span class="hidden">telecom</span></label>
+							<input type="radio" name="gender" id="member_08-2" value="lg">
+							<label for="member_08-2"><i class="join_img"></i>lg<span class="hidden"> u plus<</span></label>
+							<input type="radio" name="gender" id="member_08-3" value="other">
+							<label for="member_08-3"><i class="join_img"></i>알뜰폰</label>
+						</div>
+						<div class="tel_number">
+							<input type="text" id="telInput_01" name="telInput_01" value="" maxlength="3" placeholder="번호 앞자리" class="text-box">
+							<label for="telInput01" class="hidden">사용하고계신 휴대폰 앞자리 번호를 작성해주세요</label>
+							<span areia-hidden="true">-</span>
+							<input type="text" id="telInput_02" name="telInput_02" value="" maxlength="4" placeholder="번호 가운데" class="text-box">
+							<label for="telInput02" class="hidden">휴대폰 가운데 번호를 작성해주세요</label>
+							<span areia-hidden="true">-</span>
+							<input type="text" id="telInput_04" name="telInput_03" value="" maxlength="4" placeholder="번호 뒷자리" class="text-box">
+							<label for="telInput03" class="hidden">휴대폰 뒷자리 번호를 작성해주세요</label>
+						</div>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_09"><i class="join_img member_09"></i>관심</label></dt>
-					<dd></dd>
+					<dd class="interest">
+						<input type="checkbox" name="interest" id="member_09" value="shoping">
+							<label for="member_09"><i class="join_img"></i>쇼핑</label>
+							<input type="checkbox" name="interest" id="member_09-1" value="game">
+							<label for="member_09-1"><i class="join_img"></i>게임</label>
+							<input type="checkbox" name="interest" id="member_09-2" value="travel">
+							<label for="member_09-2"><i class="join_img"></i>여행</label>
+							<input type="checkbox" name="interest" id="member_09-3" value="etc">
+							<label for="member_09-3"><i class="join_img"></i>기타</label>
+					</dd>
 				</dl>
 				<dl class="join_form clearfix">
 					<dt><label for="member_10"><i class="join_img member_10"></i>자기소개</label></dt>
-					<dd></dd>
+					<dd>
+						<textarea name="introduce" id="member_10" cols="20" rows="6"></textarea>
+					</dd>
 				</dl>
 			</fieldset>
 			<fieldset>
@@ -78,9 +156,5 @@
 			</fieldset>
 		</form>
 	</div>
-	
-
-	<div class="borderT">외곽선 테스트</div>
-	<div class="arrT"></div>
 </body>
 </html>
