@@ -1,0 +1,163 @@
+/*  animation_01.css  */
+
+#wrap{margin: auto; width: 60rem; height:auto; min-height: 10rem; background-color: #dfdfdf;}
+h1{margin-bottom: 1rem; padding: 1rem; text-align: center; border-bottom: 1px solid  #333;}
+h2{width: 100%; height: auto; padding: 1rem; box-sizing: border-box; background-color: #59a; color:#fff; text-indent: 2rem; margin-bottom: 0.5rem;}
+.out_box{width: 100%; height: auto; min-height: 10rem; background-color: #cdcdcd;}
+.out_box>ul{width: 100%; height: auto;}
+.out_box>ul:after{content:" "; display: block; width: 100%; height: 0; clear: both;}
+.out_box>ul>li{width: 100px; height: 100px; margin: 1rem; border-radius: 50px; background-color: #0af; text-align: center; line-height: 100px; font-size: 1.5rem; color:#fff; font-weight: bold;float: left;}
+
+/* transition이란?
+    css의 변화를 animation기능으로 부드럽게 처리하는 방법 
+
+    transition-duration: 변화하는 시간 기본은 초단위. 1초=1s=1000ms; 
+    transition-property: 어떠한 속성을 변화시킬것인가;
+    transition-timing-function: 변화의 흐름에대한 속도를 어떻게 처리할것인가;
+      ease \ 빨라지다가 느리게
+      ease-in \ 점점 빠르게
+      ease-out \ 점점 느리게 
+      ease-in-out \ 빨라지다가 느리게
+      linear \ 같은속도로
+      cubic-bezier \ 사용자 지정
+  
+    transition-delay: 얼마의 시간 뒤에 transition 기능을 수행할것인가;
+
+    transition: property \ duration \ timing-function \ delay 
+     위의 순서로 한번에 사용가능, 가급적이면 순서를 지켜서 사용할것
+
+    transition 작성시 :hover \ :active \ :focus 등 기존형태의 변화를 주는 상황에서 
+    transition을 작성하면 원래대로 돌아갈때는 transition기능이 적용되지 않는다.
+     */
+
+.out_box li:nth-child(1):hover{background-color: #dad;} /*단순한 변화*/
+.out_box li:nth-child(2):hover{background-color: #fa0; height:200px; font-size:3rem ;
+                               transition-property:height,background-color;
+                               transition-duration:1000ms;}
+.out_box li:nth-child(3):hover{height: 300px; 
+                               transition-duration: 1500ms; 
+                               transition-property: height; 
+                               transition-timing-function: cubic-bezier(.31,2.32,.62,-0.49);}
+
+.out_box li:nth-child(4):hover{font-size: 4rem; 
+                               transition-property: font-size; 
+                               transition-duration: 500ms; 
+                               transition-delay: 300ms;}
+.out_box li:nth-child(5):hover{height: 300px; background-color: #fa0; border-radius: 5px; transform: translateY(3rem); transition: all 1000ms ease 500ms}
+.out_box li:nth-child(6):hover{transition:all 1000ms;}
+.out_box li:nth-child(6):hover{background-color: #af0; color:#666; text-shadow: 0.5rem 0.5rem #171717}
+.out_box li:nth-child(6):active{box-shadow: 1rem 1rem 0.3rem #fff inset; color:#fff;}
+.out_box li:nth-child(7){transition:all 2000ms ease;}
+.out_box li:nth-child(7):hover{height: 300px; background-color: #ff4; color:#223; transition-duration: 500ms;}
+
+.border{position: relative; width: 20rem; height: 25rem; background-color: #daf; margin: 2rem;}
+.wide{position: absolute; width: 0; height: 20px; background-color: #444;}
+.long{position: absolute; width: 20px; height: 0; background-color: #444;}
+.box_1{top: 0; transition: all 300ms ease 900ms}
+.box_2{bottom: 0; right: 0;transition: all 300ms ease  300ms}
+.box_3{right: 0; transition: all 300ms ease 600ms}
+.box_4{left: 0; bottom: 0; transition: all 300ms ease }
+.border:hover .box_1{width: 100%; transition: all 300ms ease }
+.border:hover .box_2{width: 100%; transition: all 300ms ease 600ms}
+.border:hover .box_3{height: 100%; transition: all 300ms ease 300ms}
+.border:hover .box_4{height: 100%; transition: all 300ms ease 900ms}
+
+/*======================================================*/
+.ani_narr{padding: 2rem; background-color: #aac;}
+.ani_narr>p{margin-bottom: 10px; line-height: 30px;}
+
+.check{width: 30px; height: 30px;}
+
+.ani_box{width: 100%; height: 62.5rem; margin-bottom: 5rem; background-color: #ad3}
+.ani_box>ul{width: 100%; height: 100%; padding-top: 1rem;}
+.ani_box li{margin: 1rem; width: 50px; height: 50px; border-radius: 25px; background-color: #046; text-align: center; line-height: 50px; color:#fff;}
+
+.ani_box li:nth-child(1){animation-name:oneFrame; 
+  animation-duration: 3000ms; 
+  animation-iteration-count: infinite; 
+  animation-fill-mode: all; 
+  animation-direction: alternate;}
+
+.ani_box li:nth-child(2){
+  animation-name: oneFrame;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;}
+
+@keyframes oneFrame {
+  0%{transform:translate(0); background-color: #fa1}
+  15%{transform:translate(15rem, 5rem)}
+  33%{transform:translate(22rem, 6.5rem)}
+  50%{transform:translate(30rem, 7.5rem)}
+  67%{transform:translate(37rem, 6.5rem)}
+  85%{transform:translate(45rem, 5rem)}
+  100%{transform:translate(60rem); background-color: #043;}
+  }
+
+.ani_box li:nth-child(3){
+  animation-name:twoFrame;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+
+@keyframes twoFrame {
+0%{transform:translate(0) rotate(0deg);}
+100%{transform: scale(3) translate(15rem) rotate(4000deg);}
+}
+
+.ani_box li:nth-child(4){
+  animation-name:threeFrame;
+  animation-duration: 1500ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: paused;
+}
+
+.ani_box li:nth-child(4):hover{animation-play-state: running;}
+
+@keyframes threeFrame {
+  0%{background-color: #f06;}
+  100%{background-color: #fa0; width: 500px; transform: rotate(110100deg) scale(2);}
+}
+
+.ani_box:hover li:nth-child(6){
+  animation:set 3000ms 6 alternate;
+}
+@keyframes set{
+  0%{}
+  50%{transform: rotate(420deg);}
+  100%{width: 500px; height: 300px; background-color: #fff;}
+}
+
+
+/*  animation: name duration count direction    */
+
+/*  animation이란?
+    움직임을 처리하는 transition과 달리, 반복성을 가지거나 복합성을 수행할때 사용하는 기술이다.  
+    
+    @keyframes{} 란?
+    animation에서 지정한 이름의 기능을 수행하기위한 처리내용, 일종의 함수이다.
+    @keyframes는 선택자 내부에 작성하는 것이 아니다. 
+    
+    animation-name:  ;              -- animation기능을 수행할 함수를 선택
+    animation-duration:  ;          -- animation의 진행 시간
+    animation-direction:  ;         -- animation 종료 후 진행방향 설정
+        >> normal \ reverse \ alternate \ alternate-reverse
+
+    animation-fill-mode:  ;         -- animation 시작전, 끝난 후에 적용
+        >> none \ forwards \ backwards \ both
+    animation-iteration-count:  ;  -- animation 반복여부 무한(infinite)
+    animation-timing-function:  ;   -- 속도조절 
+    animation-play-states:  ;       -- 멈춤 또는 재생 설정
+        >> running | 
+    animation-delay:  ;             -- 지연시간 
+
+    */
+
+    @keyframes aniName{}
+    div{animation-name:aniName;}

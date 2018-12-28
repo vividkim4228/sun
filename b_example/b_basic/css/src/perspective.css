@@ -1,0 +1,17 @@
+/*  perspective  */
+
+#wrap{margin: auto; width: 60rem; height: auto; min-height: 5rem; background-color: #dfdfdf;}
+h1{text-align: center; border-bottom: 1px solid  #333; margin-bottom: 1rem;}
+
+.per{position: relative; margin: auto; width: 90%; height: 50rem; background-color: #acf; perspective: 200px}
+120rem
+.card{float: left; width: 5rem; height: 10rem; background-color: #fa0; border-radius: 0.4rem; }
+.card1{transform: rotateY(15deg) translate(5rem);}
+.card2{float: right; transform:rotateY(-15deg);}
+
+.blade{margin: 2rem; width: 10rem; height: 10rem; transition:all 10000ms cubic-bezier(.31,2.32,.41,-1.25);}
+.blade1{background-image: url(../../img/blade_1.png); background-size: 100%; background-repeat: no-repeat; margin-bottom: 30rem;}
+.blade2{float: right; background-image: url(../../img/blade_2.png); background-size: 100%; background-repeat: no-repeat; }
+.card:hover+.blade1{transform:translate(30rem, 30rem) rotate(50000deg)}
+.card:hover~.blade2{transform:translate(-23rem, -26rem) rotate(50000deg);}
+
