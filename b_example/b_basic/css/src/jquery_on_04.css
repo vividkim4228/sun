@@ -1,0 +1,13 @@
+/* jquery_on_04.css */
+
+#wrap{width: 100%; height: 100%; background-color: #EAE4E2;}
+
+#wrap>div{padding: 1rem; box-sizing: border-box; width: 100%; height: 100%; color:#CD2C6C; font-weight: bold;}
+
+h2{font-size: 3rem; border: 2px solid  #CD2C6C; border-left: 0; border-right: 0; text-indent: 1rem; }
+
+.layout_01{background-color: #B6DFE9;}
+.layout_02{background-color: #87D1DF;}
+.layout_03{background-color: #5EBED2;}
+.layout_04{background-color: #4D8992;}
+.layout_05{background-color: #6B7C8C;}

@@ -1,0 +1,39 @@
+/* jquery_on_02.css */
+
+#wrap{ margin: auto; width: 60rem; height: auto; min-height: 30rem; background-color: #D8EEE7; color:#171717;}
+
+h1{padding: 0.5rem; text-align: center; margin-bottom: 1rem; background-color: #84C2B0;}
+
+h2{padding: 0.3rem; background-color: #8BD0B4; margin-bottom: 1rem; text-align: center;}
+
+.mouse_event{margin: auto; width: 90%; height: 8.75rem; }
+.mouse_event>p{ width: 40%; height: auto; background-color: #aBdaB4; padding: 1rem; box-sizing: border-box;}
+
+.mouseenter{float: left;}
+.mouseover{float: right;}
+
+.mouse_event>p>strong{display: block; width: 90%; height: 2rem; background-color: #EAE1D7; padding: 0.4rem; margin: 0.1rem; }
+
+/*===================================================*/
+
+.change{margin:auto; margin-bottom: 1rem; width: 90%; height: 5rem; border-bottom: 1px solid  #333;}
+label[for="sel"]{width: 100%; height: 1.5rem; }
+#Sel{width: 300px; height: 2rem; background-color: #FAFAFA;}
+.change>p{margin-top: 1rem; width: 100%; height: 2rem;background-color: transparent; text-indent: 1rem;}
+
+/*==================================================*/
+
+#wrap{height: 500rem; background-image: linear-gradient(#D8EEE7, #5EBED2);}
+
+.position{position: relative; padding: 2rem; box-sizing: border-box; width: 400px; height: 70px; background-color: #aBdaB4; color:#333; border-radius: 1rem; margin-left: 3rem;}
+
+.fix{position: absolute; width: 300px; height: 30px; background-color: #EAE1D7 ; border-radius: 0.5rem;}
+
+.offset{width: 100%; height: auto; padding: 2rem; box-sizing: border-box;}
+.offset>p{width: 360px;height: 2rem; }
+.por{float: left; }
+.pof{float: right;  position: fixed; left: 50%;}
+.offset>p>span{display: block; float: right; width: 70%;height: 100%;background-color: #fff; }
+
+/* hover 는 스마트폰 기준으로보면 터치와 같다.*/
+.pof:hover{background-color: #fac; color:#f0a; font-size: 2rem}
