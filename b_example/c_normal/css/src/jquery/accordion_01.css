@@ -1,0 +1,34 @@
+/* accordion_01.css */
+
+#wrap{margin: auto; width: 100%; height: auto; min-height: 10rem; background-color: #adf;}
+/* #headBox =========================================== */
+#headBox{width: 100%; height: 10rem; background-color: #E3E5DB;}
+h1{float: left; width: 200px; height: 70px; color:fff; background-color: #45625D; font-size: 1.2rem; color:#fff; text-align: center; line-height: 70px;}
+h2{width: 100%; height: 30px; font-size: 1.2rem; border-bottom: 1px solid  #333; text-indent: 1rem; margin-bottom: 1rem; }
+#gnb{float: left; width: calc(100% - 400px); position: absolute; left: 50%; transform: translateX(-50%); z-index: 1;}
+#gnb dl{float: left; width: 20%; height: auto; background-color: #171717;}
+#gnb dl:last-of-type dt a{border: 0;}
+#gnb dt{width: 100%; height: auto; line-height: 4.375rem;}
+#gnb dt a{display: block; width: 100%; height: 100%; font-weight: bold; font-size: 1.2rem; border-right: 1px solid  #fff; color:#f0f1f2;box-sizing: border-box; text-align: center;}
+#gnb dd{width: 100%; height: auto;}
+#gnb dd ul{width: 100%; height: 13rem; display: none;}
+#gnb dd li{width: 100%; height: 3rem; line-height: 2.5rem;  color:#f0f1f2; text-align: center; font-size: 0.9rem; }
+
+
+/* #conBox =========================================== */
+#conBox{padding: 1rem; box-sizing: border-box; width: 100%; height: auto; min-height: 10rem; background-color: #E0DDCE;}
+.accordion{margin: auto; width: 70%; min-width: 600px; height: auto; min-height: 5rem; border: 2px solid  #fff;}
+.accordion>dl{width: 100%; height: auto;}
+.accordion dt{width: 100%; height: 40px; border-bottom: 1px solid  #fff; background-color: #D9BCA5;}
+.accordion dt>button{width: 100%; height: 100%; border: 0; background-color: transparent; cursor: pointer; color:#333; text-align: left; text-indent: 1rem; font-size: 1.2rem; font-family: "맑은고딕"}
+.accordion dt>button:focus,
+.accordion dt>button:hover{background-color: #a98C65; font-weight: bold;}
+
+.accordion i {display: block; float: right; margin-top: 0.3rem; margin-right: 1rem;}
+.active i{transform:rotateX(180deg);}
+
+.accordion dd{padding: 1rem; box-sizing: border-box; width: 100%; height: 7rem; background-color: #EBD4CC; display: none;}
+
+
+/* #footBox =========================================== */
+#footBox{padding: 1rem; box-sizing: border-box; width: 100%; height: 10rem; background-color: #E3E5DB;}
