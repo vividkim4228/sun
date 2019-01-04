@@ -26,7 +26,7 @@
   accorBtn.on('focus',function(e){
     e.preventDefault;
 
-         var _this = $(this);
+    var _this = $(this);
     var dd = $(this).parent().next('dd');
     // dd.css({display:'block'});
     // dd.slideToggle();
