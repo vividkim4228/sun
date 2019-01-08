@@ -33,7 +33,7 @@
 
 <!--  headBox  -->
       <header id="headBox">
-     		<h1>GILLETTE</h1>
+     		<h1><span class="hidden">GILLETTE</span></h1>
         <div class="gnb hidden_wrap">
         	<button type="button"><span>메뉴버튼</span></button>
         	<div class="menu">
@@ -58,8 +58,12 @@
 <!--   conBox   -->
 			<article id="conBox01" class="s_wrap">
         <h2 class="hidden">메인화면</h2>
-        <div class="mainLogo">GILLETTE</div>
-        <video></video>
+        <div class="main_logo"></div>
+        <div class="main_video">
+          <video autoplay loop muted="muted">
+           <source src = "../video/main_video.mp4" type = "video/mp4">
+          </video>
+        </div>
         <div class="sns_box">
           <div class="facebook"></div>
           <div class="youtube"></div>
@@ -80,17 +84,31 @@
         <h2 class="hidden">제품정보01</h2>
 				<div class="pic_box">
 					<div class="btn hidden_wrap">
-						<div class="next"><button type="button"><span>다음사진</span>&gt;</button></div>
-            <div class="prev"><button type="button"><span>이전사진</span>&lt;</button></div>
+						<div class="next"><button type="button"><span>다음사진</span></button></div>
+            <div class="prev"><button type="button"><span>이전사진</span></button></div>
 					</div>
 					<div class="pic"></div>
 				</div>
 				<div class="product"> 
 					<dl>
-            <dt>Fusion<br />Proshield<br />Flexball</dt>
-            <dd>Lorem ipsum dolor sit amet.</dd>
+            <dt><span class="hidden"><span class="hidden">Fusion Proshield Flexball</span></dt>
+            <dd>
+              <ul class="product_icon_box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="product_explain">
+                <li>프로쉴드</br>윤활스트립</li>
+                <li>프레시전</br>트리머</li>
+                <li>얇고 정교한</br>5중 면도날</li>
+                <li>플렉스볼</br>기술</li>
+                
+              </ul>
+            </dd>
           </dl>
-					<div><a href="#">제품구매</a></div>
+					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
 			</article>
 
@@ -98,17 +116,17 @@
         <h2 class="hidden">제품정보02</h2>
         <div class="pic_box">
 					<div class="btn hidden_wrap">
-						<div class="next"><button type="button"><span>다음사진</span>&gt;</button></div>
-            <div class="prev"><button type="button"><span>이전사진</span>&lt;</button></div>
+						<div class="next"><button type="button"><span>다음사진</span></button></div>
+            <div class="prev"><button type="button"><span>이전사진</span></button></div>
 					</div>
 					<div class="pic"></div>
 				</div>
 				<div class="product">
 					<dl>
-            <dt>Fusion<br />Proshield<br />Flexball</dt>
+            <dt><span class="hidden">Fusion Proglide</span></dt>
             <dd>Lorem ipsum dolor sit amet.</dd>
           </dl>
-					<div><a href="#">제품구매</a></div>
+					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
       </article>
 
@@ -116,8 +134,8 @@
         <h2 class="hidden">제품정보03</h2>
         <div class="pic_box">
         	<div class="btn hidden_wrap">
-						<div class="next"><button type="button"><span>다음사진</span>&gt;</button></div>
-            <div class="prev"><button type="button"><span>이전사진</span>&lt;</button></div>
+						<div class="next"><button type="button"><span>다음사진</span></button></div>
+            <div class="prev"><button type="button"><span>이전사진</span></button></div>
 					</div>
           <div class="pic"></div>
           <div class="pic_02"></div>
@@ -127,14 +145,14 @@
             <dt>Fusion<br />Proshield<br />Flexball</dt>
             <dd>Lorem ipsum dolor sit amet.</dd>
           </dl>
-					<div><a href="#">제품구매</a></div>
+					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
 				<div class="product_02">
 					<dl>
             <dt>Fusion<br />Proshield<br />Flexball</dt>
             <dd>Lorem ipsum dolor sit amet.</dd>
           </dl>
-					<div><a href="#">제품구매</a></div>
+					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
       </article>
 

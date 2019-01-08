@@ -1,52 +1,84 @@
 #wrap{width: 500%; height: 100%; background-color: #fa7;}
 /* ============ haadBox ================================== */
-#headBox{position: fixed; padding: 8px; box-sizing: border-box;top: 0; width: 100%; height: 60px;background-color: #333E48; z-index: 500}
-  h1{float: left; background-color: #002E6D; color: #fff; text-align: center;}
-  .gnb{background-color: #002E6D; float: left;}  
-  .search{background-color: #002E6D; float: right;}
+#headBox{position: fixed; padding: 8px; box-sizing: border-box;top: 0; width: 100%; height: 60px;background-color: #0e0e0e; z-index: 500}
+  h1{float: left; background-image: url(../../../../img/gillette/html_img/main/mob/logo.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
+  .gnb{float: left; background-image: url(../../../../img/gillette/html_img/main/mob/menu_btn.png); background-size: 80%; background-repeat: no-repeat; background-position: center;}  
+  .search{float: right; background-image: url(../../../../img/gillette/html_img/main/mob/search_btn.png); background-size: 80%; background-repeat: no-repeat; background-position: center;}
   .search_bar{background-color: #002E6D; float: right; width: 100%; height: 100%; position: absolute; top: 0; right: 0; display: none;}
   
 
-.s_wrap{width: 20%; height: 100%; background-color: #D1D3D3; box-sizing: border-box; border:1px solid #333; float: left; padding-top: 60px; padding-bottom:40px ; position: relative;}
-/* ============ conBox01 ================================== */
+.s_wrap{width: 20%; height: 100%; background-color: #D1D3D3; box-sizing: border-box; float: left; padding-top: 60px; padding-bottom:40px ; position: relative;}
 
-  #conBox01 video{width: 100%; height: 100%;}
-  .mainLogo{background-color: #002E6D; color: #fff; font-weight: bold; text-align: center; z-index: 100}
-  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 10px; left: 10px;}
-    .facebook{width: 100%; height: 40px; background: #003DA6; margin-bottom: 10px;}
-    .youtube{width: 100%; height: 40px; background-color: #f00;}
+
+/* ============ conBox common================================ */
+
+  .product dd ul{width: 100%; height: 48%; margin-bottom: 4%;}
+  .product dd ul:last-child{margin-bottom: 0;}
+  .product dd ul li{width: 25%; height: 100%; float: left;
+  }
+  .product_icon_box li{background-repeat: no-repeat; background-size: auto 100%; background-position: center;}
+  .product_icon_box li:nth-child(1){background-image: url(../../../../img/gillette/html_img/main/mob/product_icon_01.png);}
+  .product_icon_box li:nth-child(2){background-image: url(../../../../img/gillette/html_img/main/mob/product_icon_02.png);}
+  .product_icon_box li:nth-child(3){background-image: url(../../../../img/gillette/html_img/main/mob/product_icon_03.png);}
+  .product_icon_box li:nth-child(4){background-image: url(../../../../img/gillette/html_img/main/mob/product_icon_04.png);}
+  .purchase_btn{background-color: #ee6600; position: absolute;}
+  .purchase_btn a{display: block; width: 100%; height: 100%; color:#fff; text-align: center; font-weight: 600;
+  }
 
   .indicator{position: fixed; z-index: 500 }
   .indicator>ul{width: 100%; height: 100%;}
   .indicator>ul>li{background-color: #fb2;}
   .indicator>ul>li:last-child{margin: 0;}
 
+/* ============ conBox01 ================================== */
+
+  .main_video{width: 100%; height: 100%; position: relative;
+   overflow: hidden;}
+  #conBox01 video{position: absolute; left: 50%; transform: translateX(-50%); height: 100%; width: auto;}
+  .main_logo{background-color: rgba(0,0,0,0.8); background-image: url(../../../../img/gillette/html_img/main/mob/logo.png); background-size: 90% auto ; background-repeat: no-repeat; background-position: center;z-index: 100}
+  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 10px; left: 10px;}
+  .sns_box div{width: 100%; height: 40px; background-image: url(../../../../img/gillette/html_img/main/mob/sns_box.png); background-size: 100%; background-repeat: no-repeat; margin-bottom: 10px;}
+  .facebook{background-position: top; border-radius: 0.5rem}
+  .youtube{background-position: bottom; border-radius: 0.5rem}
+  .product_explain{text-align: center; color:#fff;}
+
+  
 
 /* ============ conBox02 ================================== */
   .pic_box{position: absolute;}
   .btn{width: 100%; height: 0; position: absolute; top: 50%; text-align: center; line-height: 16.666666vw;}
-    .next{float: right; background-color: #EEAA00;}
-    .prev{float: left; background-color: #EEAA00;}
+    .next{float: right; background-image: url(../../../../img/gillette/html_img/main/mob/next_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+    .prev{float: left; background-image: url(../../../../img/gillette/html_img/main/mob/prev_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+  
+  .s_wrap{background-image: linear-gradient(#171717 40%, #031a46)
+  }
+  #conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/mob/product_01.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
+  #conBox02 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/mob/proshield_logo.png); background-size: 100%; background-repeat: no-repeat; background-position: center;}
+  #conBox02 .product>dl>dd{}
 
-  .pic{background-color: #F8EB60; margin: auto;}
+
+/* ============ conBox03 ================================== */
+  #conBox03 .pic{background-image: url(../../../../img/gillette/html_img/main/mob/product_02.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
+  #conBox03 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/mob/proglide_logo.png); background-size: 100%; background-repeat: no-repeat;}
+  #conBox03 .product>dl>dd{background-color: #39B54A;}
+
+
+/* ============ conBox04 ================================== */
+  .pic{margin: auto;}
   .pic_02{background-color: #F4CD00; position: absolute;}
 
 
-  .product{background-color: #A3D783;}
+  .product{background-image: url(../../../../img/gillette/html_img/main/mob/main_bg_02.png); background-size: auto 100% ; background-repeat: no-repeat; background-position: center;}
   .product>dl{width: 100%; height: auto;}
-  .product>dl>dt{background-color: #006837; margin: auto;color:#fff; font-weight: bold; font-size: 1.5rem;}
-  .product>dl>dd{background-color: #39B54A; margin: auto;color:#fff; text-align: center;}
-  .product>div{background-color: #EEAA00; margin: auto;}
    a{display: block; width: 100%; height: 100%;text-align: center;}
   
   .product_02{background-color: #A4C7E2;}  
   .product_02>dl{width: 100%; height: auto;}
   .product_02>dl>dt{background-color: #2F7DE1; margin: auto;color:#fff; font-weight: bold; font-size: 1.5rem;}
   .product_02>dl>dd{background-color: #61B4E4; margin: auto;color:#fff; text-align: center;}
-  .product_02>div{background-color: #EEAA00; margin: auto;}
-
+  
   .video_title{background-color: #006837;}
-  .s_wrap video{background-color: #61B4E4;}
+  .s_wrap video{background-color: #171717;}
   .video_text{background-color: #39b54a;}
   .video_text>div{background-color: #eeaa00;}
   

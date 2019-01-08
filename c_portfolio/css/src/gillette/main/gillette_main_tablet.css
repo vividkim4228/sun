@@ -24,7 +24,7 @@
 
 /* --------#conBox01 ----------------------------------------*/
   #conBox01{padding-bottom:0;}
-  .mainLogo{width: 70.3125vw/*540...*/; height: 20.833333vw/*160...*/; font-size: 16vw;line-height: 20.833333vw; position: absolute; top: 50%; left: 50%; margin-top: -10.416666vw/*80...*/; margin-left: -35.15625vw/*270*/;}
+  .main_logo{width: 70.3125vw/*540...*/; height: 20.833333vw/*160...*/; font-size: 16vw;line-height: 20.833333vw; position: absolute; top: 50%; left: 50%; margin-top: -10.416666vw/*80...*/; margin-left: -35.15625vw/*270*/;}
   .indicator{width: 6px; height: auto; top: 50%; right: 2px; margin-top: -120px;}
   .indicator>ul>li{width: 100%; height: 40px; margin-bottom: 8px;}
   .indicator>ul>li:last-child{display: none}
@@ -34,12 +34,12 @@
 /* --------#conBox02 & 03---------------------------------*/
 
   .pic_box{width: 75.52083vw/*580...*/; height: 80.72916vw/*620...*/; right:6.510416vw/*50...*/;}
-    .pic{width: 59.895833vw/*460...*/; height: 80.729166vw/*620...*/; }
+    .pic{width: 59.895833vw/*460...*/; height: 93.75vw/*900...*/; }
     .btn{width: 100%; height: 0; margin-top:-5.208333vw/*40...*/;}
       .prev{width: 5.208333vw/*40...*/; height: 15.625vw/*120...*/;} 
       .next{width: 5.208333vw/*40...*/; height: 15.625vw/*120...*/;} 
 
-  .product{width: 100%; height: 65.104166vw/*500...*/;position: absolute; bottom: 0;}
+  .product{width: 100%; height: 65.104166vw/*500...*/; position: absolute; bottom: 0; background-size: 100% auto; }
   .product>dl{width: 100%; height: 100%;}
   .product>dl>dt{width: 49.479166vw/*380...*/; height: 15.625vw/*120...*/; margin-bottom: 3.90625vw/*30...*/; position: absolute; bottom: 26.04166vw/*200...*/; left: 3.90625vw/*30...*/;}
   .product>dl>dd{width: 49.479166vw/*380...*/; height: 22.135416vw/*170...*/; position: absolute; bottom:3.90625vw/*30...*/; left: 3.90625vw/*30...*/;}

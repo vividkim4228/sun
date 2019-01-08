@@ -1,8 +1,8 @@
 /*   pc all    */
 @media screen and (min-width: 769px) {
-   h1{width: 160px; height: 44px;}
+   h1{width: 160px; height: 44px;  background-size: 100% auto }
   .gnb>button{display: none;}
-  .menu{background-color: #002E6D; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px; }
+  .menu{background-color: #002E6D; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
   .menu>ul{width: 100%; height: 100%; float: left;}
   .menu>ul>li{width: 20%; height: 100%; box-sizing: border-box; border-right: 1px solid #fff; float: left; color: #ccc; text-align: center; line-height: 40px;}
   .menu>ul>li:last-child{border: 0;}
@@ -14,8 +14,8 @@
 
 
 /* -----------------------conBox01-----------------------*/
-
-  .mainLogo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
+  #conBox01 video{height: auto; width: 100%; top: -15%; }
+  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
   .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
   .indicator{width: auto; height: 6px; bottom: 50px; left: 50%; margin-left: -120px;} 
   .indicator>ul>li{width: 40px; height: 100%; margin-right: 8px;float:left;}
