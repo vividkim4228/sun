@@ -1,35 +1,42 @@
 /*   pc all    */
 @media screen and (min-width: 769px) {
-   h1{width: 160px; height: 44px;  background-size: 100% auto }
+   h1{width: 160px; height: 44px;  background-size: 100% auto; left:8px; transform:translate(0, -50%);}
   .gnb>button{display: none;}
   .menu{float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
   .menu>ul{width: 100%; height: 100%; float: left;}
-  .menu>ul>li{width: 20%; height: 100%;float: left; color: #f0f1f2; text-align: center; line-height: 40px; font-size: 13px; letter-spacing: 2px; font-weight: 600;}
-  .menu>ul>li:last-child{border: 0;}
+  .menu>ul>li{width: 20%; height: 100%;float: left; }
+  .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 13px; letter-spacing: 2px; font-weight: 600;}
 
   .search{width: 44px; height: 44px; float: right;}
   .search>button{position: relative; z-index: 100;}
   .search>button:hover + .search_bar,
   .search>button:focus + .search_bar{display: block; margin-top: 60px;}
+ 
 
-
-/* -----------------------conBox01-----------------------*/
-  #conBox01 video{height: auto; width: 100%; top: -15%; }
-  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
-  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
+/* -----------------------common-----------------------*/
+  
+  .s_wrap{overflow: hidden;}
   .indicator{width: auto; height: 6px; bottom: 50px; left: 50%; margin-left: -120px;} 
   .indicator>ul>li{width: 40px; height: 100%; margin-right: 8px;float:left;}
   .indicator>ul>li:last-child{margin-right: 0;}
 
   .indicator>ul>li:last-child{display: none}
+  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
+
+/* -----------------------conBox01-----------------------*/
+  #conBox01 video{height: auto; width: 100%; top: -15%; }
+  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
+  #conBox01 .sns_box{display: none;}
 
 
 /* -----------------------conBox02 & 03-----------------------*/
-  .pic_box{width: 41.666667vw/*400*/; height: 31.25vw/*300*/; position: absolute; top: 50%; left: 5%; margin-top: -15.625vw/*150*/}
+  #conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_01.png); background-size: 80% auto; background-position: top;  }
+  .pic_box{width: 41.666667vw/*400*/; height: 31.25vw/*300*/; position: absolute; top: 50%; left: 5%; margin-top: -15.625vw/*150*/
+    }
     .btn{width: 100%; height: 0; margin-top:-4.1666667vw/*40*/; line-height: 8.333334vw;}
       .prev{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
       .next{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
-    .pic{width: 31.25vw/*300*/; height: 31.25vw/*300*/;}
+    .pic{width: 100%/*350*/; height: 80vh;}
     .product{width: 26.041667vw/*250*/; height: 26.041667vw/*250*/;min-height: 300px; position: absolute; top: 50%; right: 10%; z-index: 100;margin-top: -13.020833vw/*125*/}
     .product>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
     .product>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
@@ -39,6 +46,9 @@
     .product_02>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
     .product_02>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
     .product_02>div{width: 9.375vw/*90*/; height: 3.125vw/*30*/; margin-top: 2.083334vw/*20*/;}
+
+/* -----------------------conBox04-----------------------*/
+   #conBox03 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_02.png); background-size: 80% auto; background-position: top; }
 
 /* -----------------------conBox04-----------------------*/
   #conBox04 .pic_box{position: relative; }

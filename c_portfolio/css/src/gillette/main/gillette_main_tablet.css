@@ -1,11 +1,12 @@
 /* ============  gillette_tablet.css  ============ */ 
 @media screen and (min-width: 481px) and (max-width: 768px){
+
   #wrap{width: 100%; height: 100%;}
   .s_wrap{width: 100%; height: 100%; position: relative;}
 
 /* --------#headBox-----------------------*/
   #headBox{width: 100%; height: 90px; padding: 15px 30px; box-sizing: border-box;}
-  h1{width: 280px; height: 60px; position: absolute; left: 50%; margin-left: -140px;}
+  h1{width: 280px; height: 60px; }
   .gnb{width: 60px; height: 60px;}
   .gnb>button{width: 100%;height: 100%;}
   .menu{display: none;}
@@ -21,10 +22,14 @@
   .search>button:focus + .search_bar{display: block; margin-top: 90px;}
 
   
+/* --------#conBox01 ----------------------------------------*/
+
 
 /* --------#conBox01 ----------------------------------------*/
+
   #conBox01{padding-bottom:0;}
-  .main_logo{width: 70.3125vw/*540...*/; height: 20.833333vw/*160...*/; font-size: 16vw;line-height: 20.833333vw; position: absolute; top: 50%; left: 50%; margin-top: -10.416666vw/*80...*/; margin-left: -35.15625vw/*270*/;}
+  .main_logo{width: 70.3125vw/*540px*/; height: 20.833333vw/*160px*/; font-size: 16vw;line-height: 20.833333vw; position: absolute; top: 50%; left: 50%; margin-top: -10.416666vw/*80px*/; margin-left: -35.15625vw/*270*/;}
+  .main_video video{min-height: 100%; min-height:100%; width: auto; height: auto; }
   .indicator{width: 6px; height: auto; top: 50%; right: 2px; margin-top: -120px;}
   .indicator>ul>li{width: 100%; height: 40px; margin-bottom: 8px;}
   .indicator>ul>li:last-child{display: none}
@@ -33,45 +38,59 @@
 
 /* --------#conBox02 & 03---------------------------------*/
 
-  .pic_box{width: 75.52083vw/*580...*/; height: 80.72916vw/*620...*/; right:6.510416vw/*50...*/;}
-    .pic{width: 59.895833vw/*460...*/; height: 93.75vw/*900...*/; }
-    .btn{width: 100%; height: 0; margin-top:-5.208333vw/*40...*/;}
-      .prev{width: 5.208333vw/*40...*/; height: 15.625vw/*120...*/;} 
-      .next{width: 5.208333vw/*40...*/; height: 15.625vw/*120...*/;} 
+  .pic_box{width: 75.52083vw/*580px*/; height: 80.72916vw/*620px*/; right:6.510416vw/*50px*/;}
+  .pic{width: 59.895833vw/*460px*/; height: 93.75vw/*900px*/; top: 15%; }
+  .btn{width: 100%; height: 0; margin-top:-5.208333vw/*40px*/;}
+    .prev{width: 5.208333vw/*40px*/; height: 15.625vw/*120px*/;} 
+    .next{width: 5.208333vw/*40px*/; height: 15.625vw/*120px*/;} 
 
-  .product{width: 100%; height: 65.104166vw/*500...*/; position: absolute; bottom: 0; background-size: 100% auto; }
+  .product{width: 100%; height: 52.083333vw/*400px*/;position: absolute; bottom: 0; background-image: url(../../../../img/gillette/html_img/main/main_bg_02_tab.png); background-size: auto 100%;  background-position: top; z-index: 200;}
   .product>dl{width: 100%; height: 100%;}
-  .product>dl>dt{width: 49.479166vw/*380...*/; height: 15.625vw/*120...*/; margin-bottom: 3.90625vw/*30...*/; position: absolute; bottom: 26.04166vw/*200...*/; left: 3.90625vw/*30...*/;}
-  .product>dl>dd{width: 49.479166vw/*380...*/; height: 22.135416vw/*170...*/; position: absolute; bottom:3.90625vw/*30...*/; left: 3.90625vw/*30...*/;}
-  .product>div{width: 23.4375vw/*180...*/; height: 7.8125vw/*60...*/; position: absolute; bottom:3.90625vw/*30...*/; right: 3.90625vw/*30...*/;}
+  .product>dl>dt{width: 54.6875vw/*420px*/;height: 16.927083vw/*130px*/; position: absolute; top:70px; left:6.510416vw/*50px*/;}
+  .product>dl>dd{width: 54.6875vw/*420px*/; height: auto; position: absolute; bottom:3.90625vw/*30px*/; left: 3.90625vw/*30px*/;}
+  .product_icon_box{padding-top: 30px; width: 100%; height: 13.671875vw/*105px*/; box-sizing: border-box;}
+  .product li{width: 25%; height: 100%; float: left; background-size: 50%}  
+  .product li:last-child{margin-right: 0}
+  .product_explain{width: 100%; height: 3.90625vw/*30px*/;}
+  .product_explain li{margin-top:15px; font-size: 13px; line-height: 16px;}
 
-  .product_02{width: 100%; height: 65.104166vw/*500...*/;position: absolute; bottom: 0;}
-  .product_02>dl{width: 100%; height: 100%;}
-  .product_02>dl>dt{width: 49.479166vw/*380...*/; height: 15.625vw/*120...*/; margin-bottom: 3.90625vw/*30...*/; position: absolute; bottom:26.04166vw/*200...*/; left: 3.90625vw/*30...*/;}
-  .product_02>dl>dd{width: 49.479166vw/*380...*/; height: 22.135416vw/*170...*/; position: absolute; bottom:3.90625vw/*30...*/; left: 3.90625vw/*30...*/;}
-  .product_02>div{width: 23.4375vw/*180...*/; height: 7.8125vw/*60...*/; position: absolute; bottom:3.90625vw/*30...*/; right: 3.90625vw/*30...*/;}
+  .purchase_btn{width: 23.4375vw/*180px*/; height: 7.8125vw/*60px*/; position: absolute; bottom:3.90625vw/*30px*/; right: 3.90625vw/*30px*/; }
+  .purchase_btn a{font-size: 1.5rem; line-height: 7.8125vw/*60px*/; letter-spacing: 5px; }
+
 
 
 /* --------#conBox04---------------------------------*/
+  #conBox04 .product{height: 55.989583vw/*430px*/;}
+  #conBox04 .pic_box{position: absolute; right:3.90625vw/*30px*/; top: 6.510416vw/*60px*/;}
+  #conBox04 .pic{width: 53.385416vw/*410px*/; height: 55.989583vw/*430px*/; position: absolute; right: 3.90625vw/*30px*/; bottom:30.53125vw/*150px*/; z-index: 100;}
+  #conBox04 .pic_02{width: 42.96875vw/*330px*/; height: 48.170833vw/*370px*/; top: 0; left: 6.510416vw/*50px*/}
+  #conBox04 .product dl dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); height: 26.04166vw/*200px*/; position: absolute; left:6.510416vw/*50px*/; background-size: auto 80%; background-position: left}
+    
+  
 
-  #conBox04 .pic_box{position: absolute; right:3.90625vw/*30...*/;}
-  #conBox04 .pic{width: 41.666667vw/*320...*/; height: 55.989583vw/*430...*/; position: absolute; top: 0; left: 6.510416vw/*50...*/;}
-  #conBox04 .pic_02{width: 41.666667vw/*320...*/; height: 55.989583vw/*430...*/; right: 6.510416vw/*50...*/;bottom: 0;}
-    .product_02{z-index: 100}
+
+  .product_02{z-index: -100}
+  
+  #conBox04 .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png);}
+  .product_02{width: 100%; height: 65.104166vw/*500px*/;position: absolute; bottom: 0;}
+  .product_02>dl{width: 100%; height: 100%;}
+  .product_02>dl>dd{width: 49.479166vw/*380px*/; height: 22.135416vw/*170px*/; position: absolute; bottom:3.90625vw/*30px*/; left: 3.90625vw/*30px*/;}
+  .product_02>div{width: 23.4375vw/*180px*/; height: 7.8125vw/*60px*/; position: absolute; bottom:3.90625vw/*30px*/; right: 3.90625vw/*30px*/;}
 
   
 /* --------#videoBox-----------------------*/
-  .v_box{width: 94%/*70......*/; height:auto/*220......*/; margin: auto;  position: relative;}
-  .video_01{margin-top: 30.53125vw/*150...*/;}
-  .video_02{margin-top: 13.53125vw/*150...*/;}
+  .v_box{width: 95%; height:auto;  position: relative; left: 50%; transform: translateX(-50%);}
+  .video_01{position: absolute; top: 20%; }
+  .video_02{position: absolute; bottom: 10%;}
   
-  .v_box dl{width: 9.114583vw; height: 28.64583vw;}
-  .video_title{width: 20.833333vw/*160...*/; height: 6.510416vw/*50...*/; position: absolute; right: 7.8125vw/*60...*/;}
-  .s_wrap video{width: 52.083333vw/*400...*/; height: 28.645833vw/*220...*/;}
-  .video_text{width: 36.458333vw/*280...*/; height: 20.083333vw/*160...*/; position: absolute; right: 0; bottom: 0;}
-  .video_text>div{width: 16.927083vw/*130...*/; height: 5.208333vw/*40...*/; position: absolute; bottom: 0; right: 0;}
-
+  .v_box dl{width: 100%; height: 260px;}
+  .video_title{position: absolute; padding: 0 1rem; width: auto; height: 6.510416vw/*50px*/; left: 50%; transform: translateX(-50%); line-height: 6.510416vw; font-size: 5.208333vw/*40px*/; }
+  .s_wrap video{position: absolute; width: 50%; height:26.041666vw/*200px*/; min-height:180px ;left: 0; bottom: 0;}
+  .video_text{width: 50%; height: 26.041666vw/*200px*/; min-height:180px ; position: absolute; right: 0; bottom: 0; padding: 1rem; box-sizing: border-box;}
+  
+  
   #videoBox02{display: none;}
+  .video_link{display: none;}
 
 /* --------#footBox-----------------------*/
   #footBox{float: left;}

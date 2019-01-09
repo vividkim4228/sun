@@ -40,11 +40,11 @@
         	<div class="menu">
 	          <h2 class="hidden">메뉴</h2>	
 	     			<ul>
-	     				<li>제품구입</li>
-	     				<li>면도 팁</li>
-	     				<li>질레트 역사</li>
-	            <li>이벤트 및 행사</li>
-	     				<li>고객센터</li>
+	     				<li><a href="#">제품구입</a></li>
+	     				<li><a href="#">면도 팁</a></li>
+	     				<li><a href="#">질레트 역사</a></li>
+	            <li><a href="#">이벤트 및 행사</a></li>
+	     				<li><a href="#">고객센터</a></li>
 	     			</ul>	
      			</div>    
         </div>    		
@@ -62,7 +62,7 @@
         <div class="main_logo"></div>
         <div class="main_video">
           <video preload="preload" autoplay loop muted="muted">
-           <source src = "../video/main_video.mp4" type = "video/mp4">
+           <source src = "../video/main_video.webm" type = "video/webm">
           </video>
         </div>
         <div class="sns_box">
@@ -105,7 +105,6 @@
                 <li>프레시전</br>트리머</li>
                 <li>얇고 정교한</br>5중 면도날</li>
                 <li>플렉스볼</br>기술</li>
-                
               </ul>
             </dd>
           </dl>
@@ -125,7 +124,20 @@
 				<div class="product">
 					<dl>
             <dt><span class="hidden">Fusion Proglide</span></dt>
-            <dd>Lorem ipsum dolor sit amet.</dd>
+            <dd>
+              <ul class="product_icon_box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="product_explain">
+                <li>프로쉴드</br>윤활스트립</li>
+                <li>프레시전</br>트리머</li>
+                <li>얇고 정교한</br>5중 면도날</li>
+                <li>플렉스볼</br>기술</li>
+              </ul>
+            </dd>
           </dl>
 					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
@@ -143,15 +155,39 @@
 				</div>
 				<div class="product">
 					<dl>
-            <dt>Fusion<br />Proshield<br />Flexball</dt>
-            <dd>Lorem ipsum dolor sit amet.</dd>
+            <dt>
+              <span class="hidden">Fusion<br />Proshield<br />Flexball</span>
+            </dt>
+            <dd>
+              <ul class="product_icon_box">
+                <li><span class="hidden">쿨링 테크놀로지</span></li>
+                <li><span class="hidden">프레시전 트리머</span></li>
+                <li><span class="hidden">얇고 정교한 5중면도날</span></li>                
+              </ul>
+              <ul class="product_explain">
+                <li>프로쉴드</br>윤활스트립</li>
+                <li>프레시전</br>트리머</li>
+                <li>얇고 정교한</br>5중 면도날</li> 
+              </ul>
+            </dd>
           </dl>
 					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
-				<div class="product_02">
+				<div class="product product_02">
 					<dl>
-            <dt>Fusion<br />Proshield<br />Flexball</dt>
-            <dd>Lorem ipsum dolor sit amet.</dd>
+            <dt><span class="hidden">Fusion<br />Proshield<br />Flexball</span></dt>
+            <dd>
+              <ul class="product_icon_box">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="product_explain">
+                <li>쿨링</br>테크놀로지</li>
+                <li>프로쉴드</br>윤활스트립</li>
+                <li>얇고 정교한</br>5중 면도날</li>
+              </ul>
+            </dd>
           </dl>
 					<div class="purchase_btn"><a href="#">제품구매</a></div>
 				</div>
@@ -163,25 +199,41 @@
 				<div class="v_box video_01">
           <h3 class="hidden">질레트 클럽</h3>
           <dl>
-            <dt class="video_title"></dt>
-            <dd><video>  </video></dd>          
+            <dt class="video_title">gillette club</dt>
+            <dd class="video_wrap">
+              <video preload="" controls="" poster="../img/gillette/html_img/main/gillette_club.png">
+                <source src = "../video/gillette_club.webm" type = "video/webm">
+              </video>
+            </dd>          
             <dd class="video_text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              <div><a href="#">바로가기</a></div>
+              <h4>질레트 1년 면도팩</h4>
+              <p>가장 합리적인 가격의 질레트 1년 면도팩(12카트)을 만나보세요.</p>
+              <h4>질레트 정기배송팩</h4>
+              <p>
+                10% 즉시할인 정기배송 서비스! <br/>
+                원하는 날짜에 질레트 4카트 정기배송을 신청하세요.
+              </p>
             </dd>
+            <div class="video_link"><a href="#">바로가기</a></div>
           </dl>
-				</div>
+        </div>
 				<div class="v_box video_02">
           <h3 class="hidden">질레트 광고</h3>
           <dl>
-            <dt class="video_title">                        </dt>
-            <dd><video>  </video></dd>          
+            <dt class="video_title">gillette x son</dt>
+            <dd class="video_wrap">
+              <video preload="preload" controls="" poster="../img/gillette/html_img/main/son_gillette.png">
+                <source src = "../video/son_gillette.webm" type = "video/webm">
+              </video>
+            </dd>          
             <dd class="video_text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              <div><a href="#">바로가기</a></div>
+              <p>최고가 되는 순간까지 한계에 도전해온 손흥민, 그리고 최상의 면도를 위해 <br/>
+                끝없이 도전해온 질레트가 만났다! <br/>
+                질레트의 초정밀 나노텍 면도날로 더 부드럽고 편안하게 면도하세요.</p>
             </dd>
+            <div class="video_link"><a href="#">바로가기</a></div>
           </dl>
-				</div>
+        </div>
 			</article>
 
       <article id="videoBox02" class ="s_wrap">
@@ -189,12 +241,18 @@
         <div class="v_box video_02">
           <h3 class="hidden">질레트 광고</h3>
           <dl>
-            <dt class="video_title"></dt>
-            <dd><video>  </video></dd>          
+            <dt class="video_title">gillette x son</dt>
+            <dd class="video_wrap">
+              <video preload="preload" controls="" poster="../img/gillette/html_img/main/son_gillette.png">
+                <source src = "../video/son_gillette.webm" type = "video/webm">
+              </video>
+            </dd>          
             <dd class="video_text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              <div><a href="#">바로가기</a></div>
+              <p>최고가 되는 순간까지 한계에 도전해온 손흥민, 그리고 최상의 면도를 위해 <br/>
+                끝없이 도전해온 질레트가 만났다! <br/>
+                질레트의 초정밀 나노텍 면도날로 더 부드럽고 편안하게 면도하세요.</p>
             </dd>
+            <div class="video_link"><a href="#">바로가기</a></div>
           </dl>
         </div>
       </article>
@@ -202,8 +260,9 @@
 <!--   footBox   -->
 			<footer id="footBox">
         <h2 class="hidden">footer</h2>
-				<div class="copywright">
-          <h3 class="hidden">copywright</h3>    
+				<div class="copyright">
+          <h3 class="hidden">copyright</h3>
+          <div>©2018 PROCTER & GAMBLE</div>
         </div>
 			</footer>
   </div>

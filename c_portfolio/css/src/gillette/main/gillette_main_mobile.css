@@ -2,13 +2,15 @@
 @media screen and (max-width: 480px){
 #wrap{width: 100%; height: 100%;}
   .s_wrap{width: 100%; height: 100%; position: relative; padding-bottom: 0; float: none;}
+
 /* --------#headBox-----------------------*/
 
 #headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
-  h1{width: 180px; height: 40px; position: absolute; left: 50%; margin-left: -90px; }
+
+  h1{width: 180px; height: 35px;  }
   .gnb{width: 40px; height: 40px; text-align: center;}
   .menu{display: none;}
-  .menu>ul{width: 100%; height: 100%; margin-top: 60px;}
+  .menu>ul{width: 100%; height: 100%; margin-top: 30px;}
   .menu>ul>li{width: 90%; height: 30px; margin: auto; margin-bottom: 10px; background-color: #ccc;}
 
   .gnb>button{color:#fff; line-height: 40px; width: 100%; height: 100%; position: relative; z-index: 200;}
@@ -24,62 +26,83 @@
 
 
 /* --------#conBox common---------------------------------*/
-  .product_icon_box{padding-top: 30px; box-sizing: border-box;}
-  .product_explain{padding-top: 20px; box-sizing: border-box; font-size: 11px; line-height: 16px;}
+
+  .product_icon_box{padding-top: 4.166666vw/*20px*/; box-sizing: border-box;}
+  .product_explain{padding-top: 4.166666vw/*20px*/; box-sizing: border-box; font-size: 11px; line-height: 16px;}
 
   .indicator{width: 6px; height: auto; top: 50%; right: 2px; margin-top: -140px;}
   .indicator>ul>li{width: 100%; height: 40px; margin-bottom: 8px;}
 
-  .purchase_btn{width: 25vw/*120...*/; height: 8.333333vw/*40...*/; bottom: 4.166666vw/*20...*/; right: 4.166666vw/*20...*/; line-height: 8.3333333vw; font-size: 1rem;}
-    .pic_box{width: 81.25vw/*400/...*/; height: 83.333333vw /*400/...*/ ; top: 15%; left:50%; margin-left:-40vw;}
-    .pic{width: 62.5vw /*300/...*/; height: 127.083333vw /*610...*/ }
-    .btn{width: 100%; height: 0; margin-top:-40px }
-    .btn div{width: 7.291666vw /*35...*/ ; height: 16.666666vw /*80...*/;}
-    .product{width: 100%; height: 79.16667vw /*380...*/; position: absolute; bottom: 0;}
-    .product>dl{width: 100%; height: 100%;}
-    .product>dl>dt{width: 58.333333vw/*280...*/; height: 20.833333vw/*100...*/; margin-bottom: 2.083334vw/*10...*/; position: absolute; bottom: 35.41667vw/*170...*/; left: 4.166666vw/*20...*/;}
-    .product>dl>dd{width: 58.333333vw/*280...*/; height: 29.16667vw/*140...*/; position: absolute; bottom: 4.166666vw/*20...*/; left: 4.166666vw/*20...*/;}
+  .purchase_btn{width: 25vw/*120px*/; height: 8.333333vw/*40px*/; bottom: 2.083333vw/*10px*/; right: 6.25vw/*30px*/; line-height: 8.3333333vw; font-size: 1rem; letter-spacing: 3px;}
+  .pic_box{width: 81.25vw/*400px*/; height: 83.333333vw /*400px*/ ; top: 15%; left:50%; margin-left:-40vw;}
+  .pic{width: 62.5vw /*300px*/; height: 127.083333vw /*610px*/; }
+  .btn{width: 100%; height: 0; margin-top:-40px }
+  .btn div{width: 7.291666vw /*35px*/ ; height: 16.666666vw /*80px*/;}
+  .product{width: 100%; height: 79.16667vw /*380px*/; position: absolute; bottom: 0; z-index: 100;}
+  .product>dl{width: 100%; height: 100%;}
+  .product>dl>dt{width: 58.333333vw/*280px*/; height: 29.166666vw/*140px*/; position: absolute; bottom: 27.083333vw/*130px*/; left: 6.25vw/*30px*/;}
+  .product dd{width: 58.333333vw/*280px*/; height: 25vw/*120px*/; min-width: 220px; position: absolute; bottom: 4.166666vw/*20px*/; left: 4.166666vw/*20px*/;}
 
 
 /* --------#conBox01-----------------------*/
   #conBox01{padding-top: 0;}
-  #conBox01 video{position: absolute;}
-  .main_logo{width: 70.833333vw/*340...*/; height: 25vw/*120...*/; font-size: 3rem;line-height: 25vw; position: absolute; top: 50%; left: 50%; margin-top: -12.5vw/*60...*/; margin-left: -35.416667vw/*170...*/;}
+  .main_logo{width: 70.833333vw/*340px*/; height: 25vw/*120px*/; font-size: 3rem;line-height: 25vw; position: absolute; top: 50%; left: 50%; margin-top: -12.5vw/*60px*/; margin-left: -35.416667vw/*170px*/;}
   
+/* --------#conBox02---------------------------------*/
+.product dd ul{width: 100%; height: 48%; margin-bottom: 4%;}
+.product dd ul:last-child{margin-bottom: 0;}
+.product dd ul li{width: 25%; height: 100%; float: left;
+  }
   
+/* --------#conBox04----------------------------------*/
 
-/* --------#conBox02 common---------------------------------*/
+  #conBox04 .pic_box{width: 91.666667vw/*440px*/; height: 83.333333vw; margin-left: -45.833334vw;}
+  #conBox04 .pic{position: absolute; width: 62.5vw/*300px*/; height: 70.833334vw/*340px*/; right: 10.416666vw/*50px*/; bottom: 0; z-index: 1;}
+  #conBox04 .pic_02{width: 62.5vw /*300px*/; height: 70.833334vw/*340px*/; position: absolute; top: 0; left: 10.416666vw/*50.px*/;  }
 
-  
+  #conBox04 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); background-size: auto 100%; background-repeat: no-repeat;} 
+  #conBox04 .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
+
+  #conBox04 ul li{width: 33.333333%;}
+  .product_02 .product_icon_box li:nth-child(1){background-image: url(../../../../img/gillette/html_img/main/product_icon_05.png);}
+  .product_02{position: relative; z-index: -100}
+  #conBox04 .product>dl>dt{bottom: 31.25vw/*150px*/; width: 62.5vw/*300px*/; }
     
 
-  .product_02{width: 100%; height: 79.16667vw /*380...*/; position: absolute; bottom: 0;}
-    .product_02>dl{width: 100%; height: 100%;}
-    .product_02>dl>dt{width: 41.666667vw/*200...*/; height: 25vw/*120...*/; margin-bottom: 2.083334vw/*10...*/; position: absolute; bottom: 35.41667vw/*170...*/; left: 4.166666vw/*20...*/;}
-    .product_02>dl>dd{width: 58.333333vw/*280...*/; height:29.16667vw/*140...*/; position: absolute; bottom:4.166666vw/*20...*/; left: 4.166666vw/*20...*/;}
-    .product_02>div{width: 22.91667vw/*110...*/; height: 8.333333vw/*40...*/ ;position: absolute; bottom:4.166666vw/*20...*/; right: 4.166666vw/*20...*/;}
-
-/* --------#conBox04--------------------------------------------*/
-
-  #conBox04 .pic_box{width: 91.666667vw/*440...*/; height: 83.333333vw; margin-left: -45.833334vw;}
-  #conBox04 .pic{width: 62.5vw /*300...*/; height: 70.833334vw/*340...*/; position: absolute; top: 0; left: 10.416666vw/*50....*/;}
-    .pic_02{width: 62.5vw/*300...*/; height: 70.833334vw/*340...*/; right: 10.416666vw/*50...*/; bottom: 0;}
- 
-/* --------#videoBox-----------------------*/
+/* --------#videoBox01-----------------------*/
   
-  #videoBox02{height: 95%;}
   .v_box{width: 100%; height: 104.166667vw; margin: auto; position: absolute; top: 50%; left: 50%;margin-left: -50%; margin-top: -52.0833vw;}
-    .v_box dl{width: 100%; height: auto; position: absolute; top: 0;}
-    .video_title{width: 41.666666vw/*200...*/; height: 14.583333vw/*70...*/; margin: auto; margin-bottom: 8.333333vw /*40...*/;}
-    .video_text{width: 89.583333vw/*430...*/; height: 29.166666vw/*140...*/; margin: auto; position: relative;}
-    .video_text>div{width: 29.166667vw/*140...*/; height: 8.333333vw /*40...*/; position: absolute; bottom: 0; right: 0;}
-    .v_box video{width: 89.583333vw/*430...*/ ; height: 47.916667vw/*230...*/; margin: auto; margin-bottom: 4.166667vw /*230...*/;}
+    .video_wrap{width: 100%; height: 46.875vw/*225px*/;}
+    .v_box dl{width: 83.333333vw/*400px*/; height: auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+    .video_title{width:100%; height: 12.5vw/*60px*/; margin: auto; text-align: center; font-size: 10vw; line-height: 12.5vw;}
+    .video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 83.333333vw/*400px*/; height: 37.5vw/*180px*/; min-height: 165px ;margin: auto; }  
+
+    .video_link{width: 25vw/*120px*/; height: 8.333333vw/*40px*/;  line-height: 8.3333333vw; margin: 20px auto; }
+    .video_link>a{letter-spacing: 3px; }
+
+
+    .v_box video{width: 100%; height:100%; margin: auto; margin-bottom: 4.166667vw /*230px*/;}
+    #videoBox01 .video_02{display: none;}
+  
+/* --------#videoBox02-----------------------*/
+  #videoBox02{height: 95%;}
 
  
 /* --------#footBox-----------------------*/
   #footBox{float: left;}
+  .copyright{line-height: 26px}
 
 
+}
 
+
+/*  max-width 359px ==================================*/
+@media screen and (max-width: 359px){
+  h1{width: 40%; height: 100%; background-size: 100% auto }
+  #headBox>div{width: 10%; height: 80%; position: absolute; top: 50%; transform: translateY(-50%);}
+  .search{right: 15px; }
+  .purchase_btn{bottom:35vw; font-size: 0.6875rem; letter-spacing: 2px;}
+  #conBox04 .purchase_btn{bottom:30.41667vw}
+  .product dd{width: 90%; left: 0; left: 50%; transform: translateX(-50%);}
 
 }
