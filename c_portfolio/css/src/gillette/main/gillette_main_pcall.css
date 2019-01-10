@@ -24,8 +24,7 @@
   .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
 
 /* -----------------------conBox01-----------------------*/
-  #conBox01 video{height: auto; width: 100%; top: -15%; }
-  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; position: absolute; top: 50%; left: 50%; margin-top: -8.3333334vw; margin-left: -32.291667vw;}
+  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; }
   #conBox01 .sns_box{display: none;}
 
 
@@ -74,3 +73,4 @@
 
 
 }
+

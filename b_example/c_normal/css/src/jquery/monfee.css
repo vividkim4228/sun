@@ -1,0 +1,49 @@
+/*   monfee.css   */
+.container{margin: auto; padding: 0; height: 60rem; height: 100%; background-color: rgba(0,0,0,0.3); }
+.con_plus{width: 80%; max-width: 80%}
+*:focus{outline:5px solid #fa0}
+
+
+#wrap{position: relative; width: 100%; height: 100%; min-width: 60rem ;min-height: 10rem; background-color: #fc0;}
+
+/* --headBox ------------------------------------ */
+#headBox{position: absolute; bottom: 0; width: 100%; height: 120px; background-color: #fff; z-index: 1000; box-shadow: 0 0.5rem 0.5rem rgba(23,23,23,0.6);}
+#headBox>.container{position: relative;}
+
+#headBox>.container:before,
+#headBox>.container::before{content:""; display: block; position: absolute; top: 110%; left: 2rem; width: 150px; height: 150px; background-image: url("../../../img/monfee/character.svg"); background-position: 50%; background-size: contain; background-repeat: no-repeat;}
+
+#headBox>.container:after,
+#headBox>.container::after{content:""; display: block; position: absolute; top: 100%; left:0; z-index: -1; width: 100%; height: 150%; background-color: rgba(170,51,0,0.5);}
+
+
+h1{float: left; width: 220px; height: 100%; background-color: #a30;}
+h1>a{background-image: url(../../../img/monfee/h1_logo.png); background-size: 80% auto;}
+#gnb{float: right; width: 620px; height: 100%;}
+#gnb .list{width: 100%; height: 100%;}
+#gnb dl{float: left; padding: 0 0.5rem; box-sizing: border-box; width: 25%; height: 100%; background-color: #fff;}
+#gnb dl dt{padding: 1.5rem 0; box-sizing: border-box; width: 100%; height: 100%; position: relative;}
+#gnb dl dt a{display: block; width: 100%; height: 100%; position: relative; }
+#gnb dl dt a span{position: absolute; display: block; width: 100%; top: 50%; transform: translateY(-50%); height: auto; font-size: 1.75rem; font-weight: bold; padding-left: 0.5rem; box-sizing: border-box; }
+
+#gnb dl dt a:hover,
+#gnb dl dt a:focus{border-bottom: 0.3rem solid  #a30;}
+
+#gnb dl dd{padding-top: 30px; width: 100%; height: auto; }
+#gnb dl dd a{display: block; margin-bottom: 0.2rem; width: 100%; height: auto; color: #fff;}
+
+
+/* --adBanner ------------------------------------ */
+#adBanner{width: 100%; height: calc(100% - 120px); background-color: #a5a;}
+/* --bestNews ------------------------------------ */
+#bestNews{margin-top: 120px; width: 100%; height: 3200px; background-color: #bbb;}
+.news{width: 100%; height: 1080px;}
+.issue_text{width: 100%; height: 860px; background-color: #d3a;}
+.issue_icon{width: 100%; height: 480px; background-color: #dfa;}
+.content_text{width: 100%; height: 600px; background-color: #aef;}
+.meterial_icon{width: 100%; height: 196px; background-color: #a3a;}
+
+/* --location ------------------------------------ */
+#location{width: 100%; height: 350px; background-color: #fff;}
+/* --footBox ------------------------------------ */
+#footBox{width: 100%; height: 400px; background-color: #656565;}

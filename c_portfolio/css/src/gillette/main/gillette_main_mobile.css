@@ -46,7 +46,7 @@
 
 /* --------#conBox01-----------------------*/
   #conBox01{padding-top: 0;}
-  .main_logo{width: 70.833333vw/*340px*/; height: 25vw/*120px*/; font-size: 3rem;line-height: 25vw; position: absolute; top: 50%; left: 50%; margin-top: -12.5vw/*60px*/; margin-left: -35.416667vw/*170px*/;}
+  .main_logo{width: 70.833333vw/*340px*/; height: 25vw/*120px*/; font-size: 3rem; line-height: 25vw;}
   
 /* --------#conBox02---------------------------------*/
 .product dd ul{width: 100%; height: 48%; margin-bottom: 4%;}
@@ -71,13 +71,13 @@
 
 /* --------#videoBox01-----------------------*/
   
-  .v_box{width: 100%; height: 104.166667vw; margin: auto; position: absolute; top: 50%; left: 50%;margin-left: -50%; margin-top: -52.0833vw;}
+  .v_box{width: 100%; height: auto; position: absolute; top: 20%; left: 50%; transform:translateX(-50%);}
     .video_wrap{width: 100%; height: 46.875vw/*225px*/;}
     .v_box dl{width: 83.333333vw/*400px*/; height: auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
-    .video_title{width:100%; height: 12.5vw/*60px*/; margin: auto; text-align: center; font-size: 10vw; line-height: 12.5vw;}
+    .video_title{width:100%; height: 12.5vw/*60px*/; font-size: 10vw; line-height: 12.5vw;}
     .video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 83.333333vw/*400px*/; height: 37.5vw/*180px*/; min-height: 165px ;margin: auto; }  
 
-    .video_link{width: 25vw/*120px*/; height: 8.333333vw/*40px*/;  line-height: 8.3333333vw; margin: 20px auto; }
+    .video_link{width: 25vw/*120px*/; height: 8.333333vw/*40px*/;  line-height: 8.3333333vw; margin: 20px auto 0; }
     .video_link>a{letter-spacing: 3px; }
 
 
@@ -90,7 +90,7 @@
  
 /* --------#footBox-----------------------*/
   #footBox{float: left;}
-  .copyright{line-height: 26px}
+  
 
 
 }

@@ -27,10 +27,9 @@
 
 /* ============ conBox01 ================================== */
 
-  .main_video{width: 100%; height: 100%; position: relative;
-   overflow: hidden;}
-  #conBox01 video{position: absolute; left: 50%; transform: translateX(-50%); height: 100%; width: auto;}
-  .main_logo{background-color: rgba(0,0,0,0.8); background-image: url(../../../../img/gillette/html_img/main/logo.png); background-size: 90% auto ; background-repeat: no-repeat; background-position: center;z-index: 100}
+  .main_video{width: 100%; height: 100%; position: relative; overflow: hidden;}
+ .main_video video{position: absolute; width: auto; height: auto; min-width: 100%; min-height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  .main_logo{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0,0,0,0.8); background-image: url(../../../../img/gillette/html_img/main/logo.png); background-size: 90% auto ; background-repeat: no-repeat; background-position: center;z-index: 100;}
   .sns_box{width: 40px; height: 90px; position: absolute; bottom: 10px; left: 10px;}
   .sns_box div{width: 100%; height: 40px; background-image: url(../../../../img/gillette/html_img/main/sns_box.png); background-size: 100%; background-repeat: no-repeat; margin-bottom: 10px;}
   .facebook{background-position: top; border-radius: 0.3rem}
@@ -42,8 +41,8 @@
 /* ============ conBox02 ================================== */
   .pic_box{position: absolute;}
   .pic{margin: auto; position: absolute; left: 50%; transform: translateX(-50%); }
-  .btn{width: 100%; height: 0; position: absolute; top: 50%; text-align: center; line-height: 16.666666vw;}
-    .next{float: right; background-image: url(../../../../img/gillette/html_img/main/next_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+  .btn{width: 100%; height: 0; position: absolute; top: 50%;}
+    .next{float: right; background-image: url(../../../../img/gillette/html_img/main/next_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center; }
     .prev{float: left; background-image: url(../../../../img/gillette/html_img/main/prev_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
   
   .s_wrap{background-image: linear-gradient(#171717 40%, #031a46)
@@ -72,7 +71,7 @@
   .product_02>dl{width: 100%; height: auto;}
   .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
   
-  .video_title{background-color: rgba(0,0,0,0.3); font-weight: 700; color:#fff; text-transform: uppercase; }
+  .video_title{background-color: rgba(0,0,0,0.3); font-weight: 700; color:#fff; text-transform: uppercase; text-align: center;  }
   .s_wrap video{width: 100%; height: 100%;}
   .video_text{background-color: rgba(0,0,0,0.3); color:#fff;}
   .video_link{background-color: #ee6600; }
@@ -82,5 +81,6 @@
   
   
   #footBox{width: 100%; height: 40px; background-color: #0e0e0e;}
-  .copyright{width: 70%; height: 26px; margin: auto; margin-top: 7px;}
+  .copyright{width: 70%; height: 26px; margin: auto; margin-top: 7px; line-height: 26px}
   .copyright div{display: block; width: 100%; height: 100%; color:#fff; text-align: center; font-weight: 600; font-size: 0.6875rem;}
+
