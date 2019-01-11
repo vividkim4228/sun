@@ -5,7 +5,7 @@
   .menu{float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
   .menu>ul{width: 100%; height: 100%; float: left;}
   .menu>ul>li{width: 20%; height: 100%;float: left; }
-  .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 13px; letter-spacing: 2px; font-weight: 600;}
+  .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 14px; letter-spacing: 2px; word-spacing: -3px;font-weight: 600;}
 
   .search{width: 44px; height: 44px; float: right;}
   .search>button{position: relative; z-index: 100;}
@@ -13,64 +13,82 @@
   .search>button:focus + .search_bar{display: block; margin-top: 60px;}
  
 
-/* -----------------------common-----------------------*/
+/* ======================common======================*/
   
   .s_wrap{overflow: hidden;}
-  .indicator{width: auto; height: 6px; bottom: 50px; left: 50%; margin-left: -120px;} 
-  .indicator>ul>li{width: 40px; height: 100%; margin-right: 8px;float:left;}
+  .indicator{width: 100%; height: 8px; bottom: 40px; left: 50%; transform: translateX(-50%); border-radius: 50%;} 
+  .indicator:hover{height: 12px;}
+  .indicator>ul>li{width: 20%; height: 100%; float:left; border-radius: 4px;}
+  .indicator>ul>li:first-child{background-color: #ff6600;}
   .indicator>ul>li:last-child{margin-right: 0;}
 
   .indicator>ul>li:last-child{display: none}
-  .sns_box{width: 40px; height: 90px; position: absolute; bottom: 60px; left: 20px;}
+  .sns_box{display: none;}
 
-/* -----------------------conBox01-----------------------*/
+  
+
+/* ======================conBox01======================*/
   .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; }
-  #conBox01 .sns_box{display: none;}
 
-
-/* -----------------------conBox02 & 03-----------------------*/
-  #conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_01.png); background-size: 80% auto; background-position: top;  }
-  .pic_box{width: 41.666667vw/*400*/; height: 31.25vw/*300*/; position: absolute; top: 50%; left: 5%; margin-top: -15.625vw/*150*/
-    }
+/* ===================conBox02 & 03======================*/
+  #conBox02,#conBox03,#conBox04{background-image: url("../../../../img/gillette/html_img/main/bg_pc.png");}
+  #conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_01.png); background-size: 80% auto; background-position: top;}
+  .pic_box{width: 41.666667vw/*400*/; height: 31.25vw/*300*/; position: absolute; top: 50%; left: 5%; margin-top: -15.625vw/*150*/}
     .btn{width: 100%; height: 0; margin-top:-4.1666667vw/*40*/; line-height: 8.333334vw;}
       .prev{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
       .next{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
     .pic{width: 100%/*350*/; height: 80vh;}
-    .product{width: 26.041667vw/*250*/; height: 26.041667vw/*250*/;min-height: 300px; position: absolute; top: 50%; right: 10%; z-index: 100;margin-top: -13.020833vw/*125*/}
-    .product>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
-    .product>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
-    .product>div{width: 8.333334vw/*80*/; height: 3.125vw/*30*/; margin-top: 2.083334vw/*20*/;}
+    .product{position: absolute; bottom: 0; right: 0; width: 60%; height: 100%; z-index: 100;margin-top: -13.020833vw/*125*/; background-image: url("../../../../img/gillette/html_img/main/pc_product_bg.png"); background-repeat: no-repeat; background-size: 100% 100%; background-position: center;}
+    .product>dl{position: absolute; top: 50%; left: 30%; transform: translateY(-50%); width: 34.375vw/*330px*/; height: 29.166666vw/*280px*/;}
+    .product>dl>dt{width: 31.25vw/*300px*/; height: 10.416666vw/*100px*/; margin-left: 20px; background-size: contain; }
+    .product_text{width: 100%; height: 8.854166vw/*85px*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
+    .product_icon_box{width: 100%; height: 4.166666vw/*40px*/; margin-bottom: 10px;}
 
-    .product_02{width: 26.041667vw/*250*/; height: 26.041667vw/*250*/;min-height: 300px; position: absolute; top: 50%; right: 10%; z-index: 100;margin-top: -13.020833vw/*125*/}
-    .product_02>dl>dt{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
-    .product_02>dl>dd{width: 21.875vw/*210*/; height: 7.291667vw/*70*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
-    .product_02>div{width: 9.375vw/*90*/; height: 3.125vw/*30*/; margin-top: 2.083334vw/*20*/;}
+    .product_explain{width: 100%; height: 3.645833vw/*35px*/; }
+    .product li{width: 25%; height: 100%; font-size: 13px; line-height: 1.6;}
 
-/* -----------------------conBox04-----------------------*/
-   #conBox03 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_02.png); background-size: 80% auto; background-position: top; }
+    .purchase_btn{position: absolute; width: 9.375vw/*90px*/; height: 3.125vw/*30px*/; bottom: 0; right: 0; }
+    .purchase_btn a{font-size: 1.35416vw; line-height: 3.125vw; letter-spacing: 0.3rem;}
+    .product_02{z-index: -100}
 
-/* -----------------------conBox04-----------------------*/
+/* ======================conBox04======================*/
+  #conBox03 .pic{background-image: url(../../../../img/gillette/html_img/main/pc_product_02.png); background-size: 80% auto; background-position: top; }
+
+/* ======================conBox04======================*/
   #conBox04 .pic_box{position: relative; }
-  #conBox04 .pic{width: 19.761667vw/*190*/; height: 25vw/*240*/; position: absolute; bottom: 0; right: 5.208334vw/*50*/; z-index: 100}
-  #conBox04 .pic_02{width: 19.791667vw/*190*/; height: 25vw/*240*/; background-color: #F4CD00;position: absolute; top: 0; left: 5.208334vw/*50*/; }
-    .product_02{z-index: 100}
+  #conBox04 .product>dl{height: 31.25vw/*300px;*/}
+  #conBox04 .product dt{height: 12.5vw/*120px;*/; background-position: left;}
+
+  #conBox04 .pic{width: 22.916666vw/*220*/; height: 25vw/*240*/; position: absolute; bottom: 0; right: 5.208334vw/*50*/; z-index: 100; border-radius: 2.5rem; box-shadow: 1.5rem 1.5rem 1rem rgba(0,0,0,0.6)}
+  #conBox04 .pic_02{width: 18.75vw/*180*/; height: 20.833333vw/*200*/; position: absolute; top: 0; left: 5.208334vw/*50*/; }
+    
   
 
 
-  /* -----------------------videoBox-----------------------*/
-  .v_box{width: 29.166667vw/*280*/; height: 31.25vw/*300*/; position: absolute; float: left; top: 50%; margin-top: -15.625vw/*150*/; }
-  .v_box dl{width: 100%; height: 100%; position: absolute; top: 0;}
+  /* ===================videoBox======================*/
+  .v_box{width: 35%; height: 70%; float: left; top: 50%; transform: translateY(-50%);}
+  .v_box dl{width: 100%; height: auto; position: relative;}
   .video_01{left:10%;}
   .video_02{right:10%;}
-  .video_title{width: 14.583334vw/*140*/; height: 4.166667vw/*40*/; background-color: #006837; margin: auto; margin-bottom: 2.083334vw/*20*/;}
-  .s_wrap video{width: 100%; height: 18.75vw/*180*/; background-color: #61B4E4; margin-bottom: 2.083334vw/*20*/;}
-  .video_text{position: relative; width: 100%; height: 8.333334vw/*80*/;background-color: #39b54a;}
-  .video_text>div{position: absolute; bottom: 0; right: 0; width: 8.333334vw/*80*/; height:3.125vw/*30*/; background-color: #eeaa00;}
-
-
+  .video_title{padding: 1rem; box-sizing: border-box; width: 100%; height: auto;  font-size: 2.5vw;}
+  .v_box video{width: 100%; height:30%; background-color: #000;}
+  .video_text{padding: 1rem; box-sizing: border-box; width: 100%; height: auto;}
+  .video_text p{width: 100%; height: auto; font-size: 0.75rem; line-height: 1.6;}
+  .video_link{position: absolute; bottom: 0; right: 0; width: 8.333334vw/*80*/; height:3.125vw/*30*/; }
+  
+  .video_02 .video_link{display: none;}
   #videoBox02{display: none;}
+
+/*=================footBox==========================*/
   #footBox{position: fixed; bottom: 0;}
-
-
+  .copyright{width: 800px; }
+  .copyright p{width: auto; height: auto; float: left; margin-right: 2rem; }
+  .copy_wrap{float: left; width: auto; height: 100%; }
+  .copy_wrap p{height: 13px; line-height: 13px}
+  .copy_wrap p:nth-child(1){float: none;}
+  .copy_wrap p:nth-child(3){float: right;}
+  .sns_box_foot{float: left; width: 60px; height: 26px; }
+  .sns_box_foot div{width: 26px; height: 100%; float: left; }
+  .sns_box_foot .youtube{float: right; }
 }
 

@@ -30,18 +30,15 @@
   .product_icon_box{padding-top: 4.166666vw/*20px*/; box-sizing: border-box;}
   .product_explain{padding-top: 4.166666vw/*20px*/; box-sizing: border-box; font-size: 11px; line-height: 16px;}
 
-  .indicator{width: 6px; height: auto; top: 50%; right: 2px; margin-top: -140px;}
-  .indicator>ul>li{width: 100%; height: 40px; margin-bottom: 8px;}
-
-  .purchase_btn{width: 25vw/*120px*/; height: 8.333333vw/*40px*/; bottom: 2.083333vw/*10px*/; right: 6.25vw/*30px*/; line-height: 8.3333333vw; font-size: 1rem; letter-spacing: 3px;}
+  .purchase_btn{width: 20.833333vw/*100px*/; height: 8.333333vw/*40px*/; bottom: 2.083333vw/*10px*/; right: 6.25vw/*30px*/; line-height: 8.3333333vw; font-size: 0.875rem; letter-spacing: 3px;}
   .pic_box{width: 81.25vw/*400px*/; height: 83.333333vw /*400px*/ ; top: 15%; left:50%; margin-left:-40vw;}
   .pic{width: 62.5vw /*300px*/; height: 127.083333vw /*610px*/; }
   .btn{width: 100%; height: 0; margin-top:-40px }
   .btn div{width: 7.291666vw /*35px*/ ; height: 16.666666vw /*80px*/;}
-  .product{width: 100%; height: 79.16667vw /*380px*/; position: absolute; bottom: 0; z-index: 100;}
+  .product{background-image: url(../../../../img/gillette/html_img/main/main_bg_02_mob.png); width: 100%; height: 79.16667vw /*380px*/; position: absolute; bottom: 0; z-index: 100;}
   .product>dl{width: 100%; height: 100%;}
   .product>dl>dt{width: 58.333333vw/*280px*/; height: 29.166666vw/*140px*/; position: absolute; bottom: 27.083333vw/*130px*/; left: 6.25vw/*30px*/;}
-  .product dd{width: 58.333333vw/*280px*/; height: 25vw/*120px*/; min-width: 220px; position: absolute; bottom: 4.166666vw/*20px*/; left: 4.166666vw/*20px*/;}
+  .product_text{width: 58.333333vw/*280px*/; height: 25vw/*120px*/; min-width: 220px; position: absolute; bottom: 4.166666vw/*20px*/; left: 4.166666vw/*20px*/;}
 
 
 /* --------#conBox01-----------------------*/
@@ -58,9 +55,8 @@
 
   #conBox04 .pic_box{width: 91.666667vw/*440px*/; height: 83.333333vw; margin-left: -45.833334vw;}
   #conBox04 .pic{position: absolute; width: 62.5vw/*300px*/; height: 70.833334vw/*340px*/; right: 10.416666vw/*50px*/; bottom: 0; z-index: 1;}
-  #conBox04 .pic_02{width: 62.5vw /*300px*/; height: 70.833334vw/*340px*/; position: absolute; top: 0; left: 10.416666vw/*50.px*/;  }
+  #conBox04 .pic_02{width: 62.5vw /*300px*/; height: 70.833334vw/*340px*/; position: absolute; top: 0; left: 10.416666vw/*50.px*/; }
 
-  #conBox04 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); background-size: auto 100%; background-repeat: no-repeat;} 
   #conBox04 .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
 
   #conBox04 ul li{width: 33.333333%;}
@@ -71,14 +67,14 @@
 
 /* --------#videoBox01-----------------------*/
   
-  .v_box{width: 100%; height: auto; position: absolute; top: 20%; left: 50%; transform:translateX(-50%);}
+  .v_box{width: 100%; height: auto; top: 20%; left: 50%; transform:translateX(-50%);}
     .video_wrap{width: 100%; height: 46.875vw/*225px*/;}
     .v_box dl{width: 83.333333vw/*400px*/; height: auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
     .video_title{width:100%; height: 12.5vw/*60px*/; font-size: 10vw; line-height: 12.5vw;}
     .video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 83.333333vw/*400px*/; height: 37.5vw/*180px*/; min-height: 165px ;margin: auto; }  
 
     .video_link{width: 25vw/*120px*/; height: 8.333333vw/*40px*/;  line-height: 8.3333333vw; margin: 20px auto 0; }
-    .video_link>a{letter-spacing: 3px; }
+    .video_link>a{letter-spacing: 3px; font-size: 0.875rem; }
 
 
     .v_box video{width: 100%; height:100%; margin: auto; margin-bottom: 4.166667vw /*230px*/;}
@@ -86,12 +82,15 @@
   
 /* --------#videoBox02-----------------------*/
   #videoBox02{height: 95%;}
-
+  #videoBox02 .video_link{display: none;}
  
 /* --------#footBox-----------------------*/
   #footBox{float: left;}
-  
+  .copyright p{display: none;}
+  .copy_wrap p:nth-child(1){display: block;}
 
+  .sns_box_foot{display: none;}
+  
 
 }
 
