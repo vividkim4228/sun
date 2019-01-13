@@ -1,5 +1,5 @@
 /* ============  gillette_tablet.css  ============ */ 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 800px){
 
   #wrap{width: 100%; height: 100%;}
   .s_wrap{width: 100%; height: 100%; position: relative;}
@@ -23,7 +23,7 @@
 
   
 /* --------#conBox01 ----------------------------------------*/
-
+.indicator{height: calc(100% - 90px);}
 
 /* --------#conBox01 ----------------------------------------*/
 
@@ -77,13 +77,12 @@
 
   
 /* --------#videoBox-----------------------*/
- .v_box{width: 80%; height: 80%; margin: auto; top: 50%; left: 50%; transform: translate(-50%, -47%);}
+ .v_box{width: 75.520833vw/*580px*/; height: 107.412187vw/*825px*/; top: ; left: 50%; transform: translateX(-50%);}
+    .video_title{width:100%; height: 9.76562vw/*75px*/;font-size: 6vw; line-height: 9.76562vw;}
     .video_wrap{width: 100%; height: auto;}
     .v_box video{width: 100%; height:100%;}
-    
     .v_box dl{width: 100%; height: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
-    .video_title{width:100%; height: auto;font-size: 8vw; line-height: 12.5vw;}
-    .video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 100%/*400px*/; height: 30%/*230px*/; min-height: 165px;}  
+    .video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 100%; height: 36.458333vw/*280px*/; min-height: 200px;}  
     .video_text h4{font-size: 1rem;}
     .video_text p{font-size: 0.875rem; line-height: 1.6rem;}
 

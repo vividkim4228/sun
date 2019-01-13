@@ -8,23 +8,21 @@
   .search_bar{background-color: #002E6D; float: right; width: 100%; height: 100%; position: absolute; top: 0; right: 0; display: none;}
 
 /* sideMenu--------------------------------*/
-#sideMenu{background-color: #99ABC5;}
-  .s_title{background-color: #002e6d; text-align: center; font-weight: bold; color: #fff;}
-
-  .s_wrap{width: 100%; height: auto; background-color: #CFD2D3;}
-	#conBox02{background-color: #adadad;}
-
-	.title{background-color: #006837; margin: auto; text-align: center; font-size: 3rem;}
+#sideMenu{background-color: #171717;}
+  .s_wrap{width: 100%; height: auto; background-image: linear-gradient(90deg, #171717 50% , #031a46) ;}
+  .sub_menu a{color:#fff; text-align:left;}
+	.title{background-image: linear-gradient(150deg, #000, transparent 80%); margin: auto; text-align: center; font-size: 3rem; }
 	.product{position: relative; margin: auto; width: 100%; height: 200px; }
-  .pic{background-color: #FFEB5C;}
+  .pic{background-color: #000; box-shadow: 0.7rem 0.7rem 0.5rem rgba(0,0,0,0.5);}
   .product dl {width: auto; height: auto; float: left;}
-  .product dt {background-color: #006837;}
-  .product dd {background-color: #8CC63F;}
-  .product dd div {background-color: #EBA900;}
-  .more{background-color: #EBA900; text-align: center;}
+  .product dt {background-color: transparent;}
+  .product dd {background-color: #202020;}
+  .product dd div {background-color: #ee6600;}
+  .purchase_btn a{color:#fff; font-weight: 600; }
+  .more{background-color: #ee6600; text-align: center;}
   a{display: block; width: 100%; height: 100%;text-align: center;}
 
-#footBox{width: 100vw; height: 40px; background-color: #333E48; z-index: 500;}
+#footBox{width: 100%; height: 40px; background-color: #333E48; z-index: 500;}
   .copywright{width: 70%; height: 26px; margin: auto; margin-top: 7px; background-color: #002E6D;}
 
   
