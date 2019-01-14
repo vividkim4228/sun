@@ -79,11 +79,13 @@ h1>a{background-image: url(../../../img/monfee/h1_logo.png); background-size: 80
 
 #adBanner .view_outer ul {width: 500%; height: 100%;}
 #adBanner .view_outer li {float: left; width: 20%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;}
-#adBanner .view_outer li:nth-child(1){background-color: #1a4;background-image: url("../../../img/monfee/adBanner/slide_01.png");}
-#adBanner .view_outer li:nth-child(2){background-color: #245;background-image: url("../../../img/monfee/adBanner/slide_02.png");}
-#adBanner .view_outer li:nth-child(3){background-color: #376;background-image: url("../../../img/monfee/adBanner/slide_03.png");}
-#adBanner .view_outer li:nth-child(4){background-color: #447;background-image: url("../../../img/monfee/adBanner/slide_04.png");}
-#adBanner .view_outer li:nth-child(5){background-color: #538;background-image: url("../../../img/monfee/adBanner/slide_05.png");}
+
+
+.ban_01{background-color: #1a4;background-image: url("../../../img/monfee/adBanner/slide_01.png");}
+.ban_02{background-color: #245;background-image: url("../../../img/monfee/adBanner/slide_02.png");}
+.ban_03{background-color: #376;background-image: url("../../../img/monfee/adBanner/slide_03.png");}
+.ban_04{background-color: #447;background-image: url("../../../img/monfee/adBanner/slide_04.png");}
+.ban_05{background-color: #538;background-image: url("../../../img/monfee/adBanner/slide_05.png");}
 
 
 

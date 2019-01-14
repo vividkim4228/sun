@@ -9,7 +9,6 @@
   wrap.prepend('<header id="headBox"></header>');
   var headBox = $('#headBox');
   var allUrl = './all/'
-  console.log('sadfklj')
   headBox.load(allUrl + 'header.html');
 
   // section#adBanner 생성 및 adBanner.html 불러오기

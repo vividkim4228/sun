@@ -2,11 +2,11 @@
 @media screen and (min-width: 801px) {
    h1{width: 160px; height: 44px;  background-size: 100% auto; left:8px; transform:translate(0, -50%);}
   .gnb>button{display: none;}
-  .menu{float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
+  .menu{display: block; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
   .menu>ul{width: 100%; height: 100%; float: left;}
   .menu>ul>li{width: 20%; height: 100%;float: left; }
   .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 14px; letter-spacing: 2px; word-spacing: -3px;font-weight: 600;}
-
+  .menu a:hover{border: none; border-bottom: 3px solid  #fff; }
   .search{width: 44px; height: 44px; float: right;}
   .search>button{position: relative; z-index: 100;}
   .search>button:hover + .search_bar,
@@ -38,7 +38,7 @@
       .prev{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
       .next{width: 3.125vw/*30*/; height: 8.333334vw/*80*/;} 
     .pic{width: 100%/*350*/; height: 80vh;}
-    .product{position: absolute; bottom: 0; right: 0; width: 60%; height: 100%; z-index: 100;margin-top: -13.020833vw/*125*/; background-image: url("../../../../img/gillette/html_img/main/pc_product_bg.png"); background-repeat: no-repeat; background-size: 100% 100%; background-position: center;}
+    .product{position: absolute; bottom: 0; right: 0; width: 55%; height: 100%; z-index: 100;margin-top: -13.020833vw/*125*/; background-image: url("../../../../img/gillette/html_img/main/pc_product_bg.png"); background-repeat: no-repeat; background-size: 100% 100%; background-position: center;}
     .product>dl{position: absolute; top: 50%; left: 30%; transform: translateY(-50%); width: 34.375vw/*330px*/; height: 29.166666vw/*280px*/;}
     .product>dl>dt{width: 31.25vw/*300px*/; height: 10.416666vw/*100px*/; margin-left: 20px; background-size: contain; }
     .product_text{width: 100%; height: 8.854166vw/*85px*/; min-height: 90px; margin-top: 2.083334vw/*20*/;}
@@ -74,9 +74,7 @@
   .v_box video{width: 100%; height: 17.708333vw/*170px*/; background-color: #000;}
   .video_text{padding: 1rem; box-sizing: border-box; width: 100%; height: 12.5vw /*120px*/}
   .video_text p{width: 100%; height: auto; line-height: 1.6;}
-  .video_link{position: absolute; bottom: 0; right: 0; width: 9.375vw/*90px*/; height:3.125vw/*30*/; line-height: 3.125vw;}
   
-  .video_02 .video_link{display: none;}
   #videoBox02{display: none;}
 
 /*=================footBox==========================*/
