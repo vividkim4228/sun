@@ -100,8 +100,21 @@ h1>a{background-image: url(../../../img/monfee/h1_logo.png); background-size: 80
 
 /* --bestNews ------------------------------------ */
 #bestNews{margin-top: 120px; width: 100%; height: 3200px; background-color: #bbb;}
-.news{width: 100%; height: 1080px;}
-.issue_text{width: 100%; height: 860px; background-color: #d3a;}
+.news{padding: 2rem 0; width: 100%; height: auto; min-height: 3rem; background-color: #fff;}
+.news h3{width: 100%; margin-bottom: 1rem; height: auto; font-size: 1.5rem; text-decoration: underline;}
+.news_list{float: left; width: 24%; height: 400px; margin-right: 1.333333%; margin-bottom: 1rem;}
+.news_list:nth-of-type(4n){margin-right: 0;}
+.news_list a{display: block; width: 100%; height: 100%;}
+.news_list a:hover .img_list:before,
+.news_list a:focus .img_list:before{content:""; display: block; position: absolute; width: 100%; height: 100%; background-color: rgba(170,51,0,0.7);}
+
+.news_list .img_list{position: relative; width: 100%; height: 260px; border-radius: 0.3rem; background-repeat: no-repeat; background-position: 50% 50%; overflow: hidden; background-size: cover; background-color: #cdc;} 
+.news_list dl{padding: 0.3rem; box-sizing: border-box; width: 100%; height: 150px; background-color: #fff;}
+.news_list dt{margin-bottom: 5px; width: 100%; height: 20px; font-size: 1.25rem; font-weight: bold;}
+.news_list dd{width: 100%; height: 125px; }
+
+
+.issue_text{width: 100%; height: 860px; background-color: #5cf;}
 .issue_icon{width: 100%; height: 480px; background-color: #dfa;}
 .content_text{width: 100%; height: 600px; background-color: #aef;}
 .meterial_icon{width: 100%; height: 196px; background-color: #a3a;}

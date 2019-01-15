@@ -23,8 +23,7 @@
   
 // - 감싸는 영역의 크기를 (갯수 * 100%) 만큼으로 변경
   var len = viewBannerList.length;
-  viewBanner.css({width: len*100+'%', marginLeft:-100 + '%', position:'relative', top:0, left:0, transition:'left 500ms ease'
-});
+  viewBanner.css({width: len*100+'%', marginLeft:-100 + '%', position:'relative', top:0, left:0});
 
 // - 첫번째 배너가 첫번째로 보이게 하기위해 전체를 왼쪽으로 이동
 // 좌,우 버튼을 클릭하던 인디케이터를 클릭하던 공통의 기능을 하는 변수가 하나 필요함.
@@ -33,7 +32,7 @@
   var SlideBanner = function(i){
     indiLi.removeClass('active');
     indiLi.eq(showI).addClass('active');
-    viewBanner.css({left:i*-100+'%'});
+    viewBanner.stop(true,true).animate({left:i*-100+'%'},500);
     console.log(i);
   };
 
@@ -47,12 +46,18 @@
     e.preventDefault();
     
     if(showI >= len-2){
-      showI = len-2;
+      viewBanner.css({left:100+'%'});
+
+      showI=0
+      // viewBanner.animate({left:showI*-100+'%'},500);
+      // indiLi.removeClass('active');
+      // indiLi.eq(showI).addClass('active');
+
+      SlideBanner(showI);
     }else{
       showI += 1;
+      SlideBanner(showI);
     };
-    console.log(showI)
-    SlideBanner(showI);
   });
 
 // prev btn 클릭시 showI에 -1
@@ -73,31 +78,47 @@
 */
 
 // 2차 기능처리 
+  // prevBtn.on('click',function(e){
+  //   e.preventDefault();
+  //   if(showI <= 0 ){
+  //     showI= -1;
+  //     viewBanner.css({left:showI * -100 + '%'});
+
+  //     // 0.5초 뒤에 마지막 위치로 이동.
+  //     // setTimeout(function(){},500);
+  //     setTimeout(function(){
+  //       showI = len -2;
+  //       console.log(showI);
+  //       viewBanner.css({left:showI * - 100 + '%',
+  //         transition:'none'});
+
+  //     setTimeout(function(){
+  //       viewBanner.css({transition:'left 500ms ease'});
+  //     },1);
+
+  //     },500);
+  //   }else{
+  //     showI-=1;
+  //     SlideBanner(showI);
+  //   };
+    
+  // });
+// 3차 기능처리 
   prevBtn.on('click',function(e){
     e.preventDefault();
-    if(showI <= 0 ){
-      showI= -1;
-      viewBanner.css({left:showI * -100 + '%'});
-
-      // 0.5초 뒤에 마지막 위치로 이동.
-      // setTimeout(function(){},500);
-      setTimeout(function(){
-        showI = len -2;
-        console.log(showI);
-        viewBanner.css({left:showI * - 100 + '%',
-          transition:'none'});
-
-      setTimeout(function(){
-        viewBanner.css({transition:'left 500ms ease'});
-      },1);
-
-      },500);
+    if(showI <=0){
+      showI=-1;
+      indiLi.removeClass('active');
+      indiLi.eq(showI).addClass('active');
+      viewBanner.animate({left:showI*-100+'%'},500,function(){
+        showI=len-2;
+        viewBanner.css({left:showI *-100+'%'});
+      });
     }else{
-      showI-=1;
+      showI -=1;
       SlideBanner(showI);
-    };
-    
-  });
+    }
+  })
 
 // 인디케이터
   var indicator = banner.find('.indicator');

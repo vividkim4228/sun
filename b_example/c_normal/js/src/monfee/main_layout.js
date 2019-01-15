@@ -18,5 +18,9 @@
 
   adBanner.load(mainUrl + 'adBanner.html');
 
+  // news.html 생성하기
+  var bestNews = $('#bestNews');
+  bestNews.find('h2').after('<div class="news"></div>');
+  $('.news').load(mainUrl + 'news.html');
 
 })(jQuery);
