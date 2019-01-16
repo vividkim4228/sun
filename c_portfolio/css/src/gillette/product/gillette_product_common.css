@@ -23,7 +23,7 @@
 #sideMenu{background-color: #171717;}
   .sub_menu{line-height: 2.083333vw/*20px*/;}
   .sub_menu a{float: left; width: 80%; min-width: 120px; color:#fff; text-align:left;}
-  .sub_menu i{float: right; width: 20px; height: 100%; line-height: 2.083333vw/*20px*/; color: #font-family: fantasy;;}
+  .sub_menu i{float: right; width: 20px; height: 100%; line-height: 2.083333vw/*20px*/; color: #fff;}
 
 
 
