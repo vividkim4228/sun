@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 480px){
 
-/* --------#headBox-----------------------*/
+/* ==========#headBox=========================*/
 #headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
   h1{width: 180px; height: 40px; position: absolute; left: 50%; margin-left: -90px; }
   .gnb{width: 40px; height: 40px; text-align: center;}
@@ -20,24 +20,45 @@
   .search>button:hover + .search_bar,
   .search>button:focus + .search_bar{display: block; margin-top: 60px;}
   
-/* sideMenu --------------------------------*/
-#sideMenu{display: none; padding: 2.083333vw/*10px...*/ 2.083333vw/*10px...*/;  box-sizing: border-box; width: 40%; height: 100%; float: left; position: fixed; left: 0; z-index: 100}
-  .s_title{width: 12.5vw/*160px...*/; height: 8.333333vw/*40px...*/; font-size: 1.6rem; margin: auto;margin-bottom: 10.416666vw/*50px...*/  ;}
+/* =============sideMenu ========================*/
+#sideMenu{display: none; padding: 2.083333vw/*10px*/ 2.083333vw/*10px*/;  box-sizing: border-box; width: 40%; height: 100%; float: left; position: fixed; left: 0; z-index: 100}
+  .s_title{width: 12.5vw/*160px*/; height: 8.333333vw/*40px*/; font-size: 1.6rem; margin: auto; margin-bottom: 10.416666vw/*50px*/  ;}
   .submenu{width: 80%; height: auto; margin: auto; }
-  .submenu>dl{width: 100%; height: 50%; margin-bottom: 41.666666vw/*20px...*/;}
-  .submenu>dl>dt{margin-bottom: 2.083333vw/*10px...*/; font-weight: bold;}
-  .submenu>dl>dd{margin-left: 1.25vw/*6px...*/; margin-bottom: 0.833333vw/*4px...*/;}
+  .submenu>dl{width: 100%; height: 50%; margin-bottom: 41.666666vw/*20px*/;}
+  .submenu>dl>dt{margin-bottom: 2.083333vw/*10px*/; font-weight: bold;}
+  .submenu>dl>dd{margin-left: 1.25vw/*6px*/; margin-bottom: 0.833333vw/*4px*/;}
 
-/* conBox01---------------------------------*/
-.s_wrap{padding-top: 80px}
-.title{width: 37.5vw/*180px...*/; height: 12.5vw/*60px...*/; margin: auto;}
-.con_wrap{width: 83.333333vw/*400px...*/; height: 108.333333vw/*520px...*/; margin: auto; margin-top: 4.1666666vw/*20px...*/;}
-.con_01{width: 91.666666vw/*440px...*/; height: 120.833333vw/*580px...*/;}
-.con_wrap>ul{width: 100%; height: 100%;}
-.con_wrap>ul>li{width: 50%; height: 50%; float: left;
-}
-.tip_title{width: 22.916666vw/*110px...*/; height: 6.25vw/*30px...*/; margin-left: 4.166666vw/*20px...*/; margin-top: 80%;}
-.sub_text{width: 41.666666vw/*200px...*/; height: 20.833333vw/*100px...*/; margin-top: 33.333333vw/*160px...*/;}
-.more{width: 22.916666vw/*110px...*/; height: 6.25vw/*30px...*/;  float: right; margin-top: 4.166666vw/*20px...*/; margin-right: 8.333333vw/*40px...*/;}
+/* ==============conBox01=======================*/
+.s_wrap{padding: 80px 0}
+.title{width: 400px; height: 45px/*60px*/; margin: 35px auto; font-size: 2.625rem; line-height: 45px; }
+
+.con_wrap{width: 380px; height: 430px; margin: auto ;}
+.con_01{width: 400px; height: 560px; }
+
+.tip_title{width: 190px; height: 270px; float: left;}
+.tip_title{margin-bottom: 20px;}
+.tip_title:nth-child(2n){float: right;}
+.tip_title:nth-child(3),.con_wrap dl:nth-child(4){margin-bottom: 0;}
+
+.tip_title dt{left: 0; bottom: 80px; width: 100%; height: 30px; font-size: 13px;}
+.tip_title dt a{left: 4%; width: 70%; height: auto; border-left: 3px solid  #e60; text-indent: 0.5rem;} 
+.tip_title dd{left: 0; bottom: 0; padding: 5px 10px 5px 20px; width: 100%; height: 80px; font-size: 9px; line-height: 1.6;}
+
+/*===============con_02========================*/
+
+.face_shaving{margin: auto; width: 100%; height: 100%; }
+.face_shaving li{width: 100%; height: 100px; margin-bottom: 10px;}
+.face_shaving li:last-child{margin-bottom: 0;}
+.sub_text{padding: 0.3rem 0.8rem; height: auto; width: auto; font-size: 13px;}
+.sub_text:first-child{top: 5%; border-left: 5px solid  #e60;}
+.sub_pic{float: left; width: 300px; height: 100%; background-color: #daa;}
+.sub_pic:nth-child(2n){float: right;}
+.face_shaving li:nth-child(2n) .sub_text{right: 0;}
+.sub_text_2{top: 35%;}
+
+.more{width: 22.916666vw/*110px*/; height: 6.25vw/*30px*/;  float: right; margin-top: 4.166666vw/*20px*/; margin-right: 8.333333vw/*40px*/;}
+
 #conBox05{padding-bottom: 30px;}
+
+/*==============footBox=====================*/
 #footBox{float: left;}

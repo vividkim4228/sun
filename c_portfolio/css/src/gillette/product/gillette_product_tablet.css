@@ -38,7 +38,7 @@ h1{width: 280px; height: 60px;}
 .pic{width: 100%; height: 57.291666vw/*440px...*/;}
 .product dl{width: 100%; height: 100%;} 
 .product dt{bottom: 22.786458vw/*175px*/; left: 1.302083vw/*10px*/; z-index: 100; width: 36.458333vw/*280px*/; height: auto; font-size: 4.166666vw/*32px*/; line-height: 1.2; text-shadow: 0.3rem 0.3rem 0.2rem rgba(0,0,0,0.6) } 
-.product dd{padding: 5.859375vw/*45px*/ 1.302083vw/*10px*/ 1.302083vw/*10px*/; box-sizing: border-box; width: 100%; height: 27.34375vw/*210px*/;}
+.product dd{padding: 6.510416vw/*50px*/ 1.302083vw/*10px*/ 1.302083vw/*10px*/; box-sizing: border-box; width: 100%; height: 27.34375vw/*210px*/;}
 .product dd ul{height: 19.53125vw/*150px*/;}
 .product dd ul:nth-child(1){width: 6.510416vw/*50px*/;}
 .product dd ul:nth-child(2){width: 29.947916vw/*230px*/; }
@@ -46,15 +46,14 @@ h1{width: 280px; height: 60px;}
 
 /*product_icon */
 .product dd li{width: 100%; height: 25%;font-size: 11px; background-size: auto 70%}
-.product dd ul:nth-child(2) li{padding-top: 1.302083vw/*10px*/; box-sizing: border-box;}
 
-.product dd li i{position: absolute; top: 50%; transform: translateY(-50%);:float: left; margin-left: 1.666666vw/*16px*/; display: block; width: 5px; height: 0.8333333vw/*8px*/; border-left: 2px solid  #fff;}
+.product dd li i{margin-left: 0.6510416vw/*5px*/; height:1.822916vw/*14px*/; }
 .product dd li p{float: left; width: auto; height: 1.302083vw/*10px*/; text-align: left; text-indent: 2.5vw/*24px*/; line-height: 1.302083vw/*10px*/;	}
 
 
 
-
-.btn{width: 13.02083vw/*10px*/; height: 3.90625vw/*30px*/; line-height: 3.90625vw/*30px*/; font-size: 11px; letter-spacing: 3px;}
+.star{right: 1.302083vw/*10px*/; bottom: 6.510416vw/*50px*/; width: 13.02083vw/*100px*/; height: 2.604166vw/*20px*/; font-size: 1.171875vw/*9px*/; line-height: 2.604166vw/*20px*/;}
+.btn{width: 13.02083vw/*100px*/; height: 3.90625vw/*30px*/; line-height: 3.90625vw/*30px*/; font-size: 11px; letter-spacing: 3px;}
 .purchase_btn {right: 1.302083vw/*10px*/; bottom: 1.302083vw/*10px*/;}
 .more{bottom: 3.90625vw/*30px*/; right: 6.510416vw/*50px*/;}
 

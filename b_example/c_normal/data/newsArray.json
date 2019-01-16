@@ -1,0 +1,9 @@
+[
+  {"link":"url_1","pic":"menu_01.png","tit":"title_a","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_2","pic":"menu_02.png","tit":"title_b","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_3","pic":"menu_03.png","tit":"title_c","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_4","pic":"menu_04.png","tit":"title_d","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_5","pic":"menu_05.png","tit":"title_e","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_6","pic":"menu_06.png","tit":"title_f","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."},
+  {"link":"url_7","pic":"menu_07.png","tit":"title_g","con":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, repellat."}
+  ]

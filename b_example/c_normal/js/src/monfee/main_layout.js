@@ -23,4 +23,8 @@
   bestNews.find('h2').after('<div class="news"></div>');
   $('.news').load(mainUrl + 'news.html');
 
+  // issue_text.html 불러오기 
+  bestNews.children('.news').after('<div class="issue_text"></div>');
+  $('.issue_text').load(mainUrl + 'issue_text.html');
+
 })(jQuery);
