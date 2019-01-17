@@ -1,0 +1,42 @@
+/* gillette_history_mobile */
+@media screen and (max-width: 480px){
+
+#wrap{width: 100%; height: auto;}
+
+/* ===========headBox=========================*/
+#headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
+
+h1{width: 180px; height: 35px;  }
+.gnb{width: 40px; height: 40px; text-align: center;}
+.menu{display: none; padding: 20px;}
+.menu>ul{width: 100%; height: 100%; margin-top: 60px;}
+.menu>ul>li{width: 90%; height: 30px; margin: auto; margin-bottom: 10px;}
+
+.search{width: 40px; height: 40px;}
+.search_bar{height: 60px;}
+
+/* sidemenu */
+#sideMenu{display: none;}
+
+/* conBox */
+
+#conBox{ margin-top: 60px; width: 100%; height: auto;}
+.v_line{top: 230px; width: 60px; height: calc(100% - 230px);}
+.history{width: 100%; height: 340px;}
+.history_01{width: 100%; height: 230px; background-color: #dfd;}
+.history_02{margin-top: 70px;}
+
+.history dl{padding: 1rem; float: left; box-sizing: border-box; width: calc(50% - 30px); height: 100%; text-align: right; }
+.history:nth-of-type(2n) dl{float: right; text-align: left; }
+#conBox .history_01 dl{float: left; width: 50%;}
+.history dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.8rem; font-weight: 600;}
+.history dd{width: 100%; height: auto; line-height: 1.8; font-size: 11px;}
+
+.num_box{top: 0; left: 45%; width: 115px; height: 160px;}
+.history:nth-of-type(2n) .num_box{left: auto; right: 45%;}
+.pic_box{right: 0; width: 50%; height: 100%;}
+.history:nth-of-type(2n) .pic_box{left: 0; background-position: top right ;}
+
+
+
+}
