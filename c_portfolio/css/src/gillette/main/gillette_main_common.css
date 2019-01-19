@@ -1,3 +1,5 @@
+/*gillette_main_common.css*/
+
 #wrap{width: 500%; height: 100%; background-color: #fa7; font-family: "나눔고딕", nanumgothic, sans-serif;}
 /* ============ haadBox ================================== */
 #headBox{position: fixed; z-index: 1000; padding: 8px; box-sizing: border-box;top: 0; left: 0; width: 100%; height: 60px; background-color: #0e0e0e; box-shadow:0 0.3rem 0.3rem rgba(0,0,0,0.5);}
@@ -7,7 +9,7 @@
   .gnb:focus .menu,
   .gnb:hover .menu{display: block;}
   
-  .menu{display: none; position: fixed; z-index: 1000; top: 0;left: 0; width: 45vw; height: 100vh;  background-color: #0e0e0e;}
+  .menu{display: none; position: fixed; z-index: 1000; top: 0;left: 0; width: 45vw; height: 100vh;  background-color: inherit;}
   .menu a{display: block; width: 100%; height: 100%; text-align: left;}
   .menu a:hover{border-right: 3px solid  #fff; } 
    
@@ -66,8 +68,9 @@
     .next{float: right; background-image: url(../../../../img/gillette/html_img/main/next_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center; }
     .prev{float: left; background-image: url(../../../../img/gillette/html_img/main/prev_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
   
-  .s_wrap{background-image: linear-gradient(#171717 40%, #031a46)
-  }
+  /*.s_wrap{background-image: linear-gradient(#171717 40%, #031a46)}*/
+  .s_wrap{background-color: #f0f1f2;}
+
 #conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/product_01.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
 #conBox02 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_logo.png);}
 

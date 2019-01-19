@@ -6,7 +6,7 @@
 .m_wrap{width: auto; height: 100%;}
 .s_wrap{padding-top: 80px; padding-bottom:60px; padding-right: 50px;  box-sizing: border-box; width: calc(100%/3); height: 100%; float: left; position: relative;}
 
-/* --------#headBox-----------------------*/
+/* ===========headBox=========================*/
 
 h1{width: 160px; height: 44px;  background-size: 100% auto; left:8px; transform:translate(0, -50%);}
 .gnb>button{display: none;}

@@ -1,0 +1,27 @@
+/* ================  mobile ====================  */
+@media screen and (max-width: 480px){
+
+#wrap{width: 100%; height: auto;}
+
+/* ===========headBox=========================*/
+#headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
+
+h1{width: 180px; height: 35px;  }
+.gnb{width: 40px; height: 40px; text-align: center;}
+.menu{display: none; padding: 20px;}
+.menu>ul{width: 100%; height: 100%; margin-top: 60px;}
+.menu>ul>li{width: 90%; height: 30px; margin: auto; margin-bottom: 10px;}
+
+.search{width: 40px; height: 40px;}
+.search_bar{height: 60px;}
+
+/*conBox*/
+#conBox{margin-top: 60px; width: 100%; height: auto;}
+.title{width: 100%; height: 100px; line-height: 90px; font-size: 2rem;}
+#conBox ul{width: 430px; height: auto; margin: auto;}
+#conBox li{width: 100%; height: 50px;}
+#conBox .num{float: left; width: 80px; height: 100%; font-size: 2rem; line-height: 30px;}
+#conBox .num p{width: 40px; height: 100%; text-align: right;}
+#conBox .text{width: 100%; height: 100%; font-size: 11px; line-height: 50px; font-weight: 600; }
+
+}

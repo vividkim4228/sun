@@ -1,0 +1,74 @@
+/*  gillette_history_pcall.css  */
+
+@media screen and (min-width: 769px) {
+
+#wrap{width: 100%; height: 100%;}
+
+/*================headBox=========================*/
+   h1{width: 160px; height: 44px;  background-size: 100% auto; left:8px; transform:translate(0, -50%);}
+  .gnb>button{display: none;}
+  .menu{display: block; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
+  .menu>ul{width: 100%; height: 100%; float: left;}
+  .menu>ul>li{width: 20%; height: 100%;float: left; }
+  .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 14px; letter-spacing: 2px; word-spacing: -3px;font-weight: 600;}
+  .menu a:hover{border: none; border-bottom: 3px solid  #fff; }
+  .search{width: 44px; height: 44px; float: right;}
+  .search>button{position: relative; z-index: 100;}
+  .search>button:hover + .search_bar,
+  .search>button:focus + .search_bar{display: block; margin-top: 60px;}
+
+/*  sideMenu   */
+#sideMenu{position: fixed; left: 0; z-index: 100; padding: 70px 1.041666vw/*10px*/; box-sizing: border-box; width: 18.75vw/*180px*/; min-width: 180px; max-width: 240px; height: 100vh;}
+.sub_menu{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 100%; height: 240px; overflow: auto; }
+.sub_menu ul{width: 100%; height: 100%;}
+.sub_menu li{width: 100%; height: calc(100% / 7); font-weight: 600;}
+.sub_menu li.center a{font-size: 30px; margin: 0.5rem 0;}
+.sub_menu li.second a{font-size: 21px; opacity: 0.75}
+.sub_menu li.third a{font-size: 15px; opacity: 0.5}
+.sub_menu li.fourth a{font-size: 11px; opacity: 0.25}
+.sub_menu a{width: 100%; height: 100%; }
+
+/* conBox */
+
+#conBox{width: 100%; height: 100%;}
+.history{width: 100%; height: 100%; padding: 60px 0 40px 180px; box-sizing: border-box; background-color: #171717;}
+.v_line{display: none;}
+.h_line{position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 100%; height: 100px; background-color: #fff;}
+.num_box{left: 20.833333vw/*200*/;; top: 50%; transform: translateY(-50%); width: 140px; height: 50px;}
+.pic_box{top: 0; right: 0; width: 50%; height: 100%; background-size: 100%; background-position: 70%; background-size: 70%;}
+.history dl{position: absolute; top: 0; left: 20.833333vw/*200*/; width: 35%; height: 100%; line-height: 1.6; z-index: 100; }
+.history dt{position: absolute; bottom: calc(50% + 70px); width: 100%; height: auto; font-size: 3rem; }
+.history dd{position: absolute; top: calc(50% + 70px); width: 100%; height: auto; font-size: 16px; background-color: rgba(23,23,23,0.8); padding: 0.5rem; }
+
+
+/*=======bg setting=========*/
+.history:nth-of-type(3) .pic_box{background-position: 70% 100%}
+.history:nth-of-type(7) .pic_box{background-position: 70% 100%}
+.history:nth-of-type(8) .pic_box{background-position: center;}
+.history:nth-of-type(9) .pic_box{background-position: center;}
+.history:nth-of-type(10) .pic_box{background-position: right;}
+.history:nth-of-type(11) .pic_box{background-position: right}
+.history:nth-of-type(12) .pic_box{background-position: 70% 100%}
+.history:nth-of-type(13) .pic_box{background-position: 70% 100%}
+.history:nth-of-type(14) .pic_box{background-position: 70% 100%}
+.history:nth-of-type(15) .pic_box{background-position: 70% 100%}
+
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px) {
+
+.history{padding: 60px 0 40px 180px;}
+.num_box{left: 200px;}
+.history dl{left: 200px;}
+}
+
+@media screen and (min-width: 1280px) {
+.history{padding: 60px 0 40px 240px;}
+.num_box{left: 260px;}
+.history dl{left: 260px;}
+}
+
+
+
