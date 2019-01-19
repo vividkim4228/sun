@@ -51,7 +51,7 @@
 .con_wrap ul li:last-child{margin-bottom: 0;}
 .sub_text{left:3%; padding: 0.3rem 0.7rem; height: auto; width: auto; font-size: 11px; letter-spacing: 2px}
 .sub_text:first-child{bottom: 20%; border-left: 5px solid  #e60;}
-.sub_pic{width: 100%; height: 100%; background-color: #daa;}
+.sub_pic{width: 100%; height: 100%; background-color: #daa; }
 .sub_text_2{left: calc(3% + 5px); bottom: calc(20% - 25px); }
 
 .more{display: none;}
