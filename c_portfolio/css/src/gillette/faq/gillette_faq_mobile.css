@@ -1,7 +1,7 @@
 /* ================  mobile ====================  */
 @media screen and (max-width: 480px){
 
-#wrap{width: 100%; height: auto;}
+#wrap{width: 100%; height: 100%;}
 
 /* ===========headBox=========================*/
 #headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
@@ -16,12 +16,22 @@ h1{width: 180px; height: 35px;  }
 .search_bar{height: 60px;}
 
 /*conBox*/
-#conBox{margin-top: 60px; width: 100%; height: auto;}
-.title{width: 100%; height: 100px; line-height: 90px; font-size: 2rem;}
-#conBox ul{width: 430px; height: auto; margin: auto;}
-#conBox li{width: 100%; height: 50px;}
-#conBox .num{float: left; width: 80px; height: 100%; font-size: 2rem; line-height: 30px;}
-#conBox .num p{width: 40px; height: 100%; text-align: right;}
-#conBox .text{width: 100%; height: 100%; font-size: 11px; line-height: 50px; font-weight: 600; }
+#conBox{margin-top: 60px;}
+  .title{width: 100%; height: 100px; line-height: 90px; font-size: 2rem;}
+  #conBox .con_01{padding-top:100px; box-sizing: border-box; }
+  .question{width: 430px; height: auto; margin: auto;}
+  .question li{width: 100%; height: 50px;}
+  .question li button{width: 100%; height: 100%; text-align: left;}
+  .question .num{float: left; width: 80px; height: 100%; font-size: 2rem; line-height: 30px;}
+  .question .num p{width: 40px; height: 100%; text-align: right;}
+  .question .text{width: 100%; height: 100%; font-size: 11px; line-height: 50px; font-weight: 600; }
+
+  .answer{top: 0; left: 0; width: 100%; height: 100%;}
+  .answer li{padding: 2rem; width: 70%; height: 60%;}
+  .answer li button{display: block; width: 35px; height: 35px; float: right;}
+  .answer li p:nth-of-type(1){width: 35px; height: 35px; font-size: 2rem; font-weight: 800;}
+  .answer li p:nth-of-type(2){margin-top: 3.125vw/*30px*/;width: 100%; height: 80%; background-color: #ddd; line-height: 1.6}
+  .answer li{display: none;}
+  .answer li:nth-child(1){display: block;}
 
 }

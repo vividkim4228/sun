@@ -5,16 +5,16 @@
   .s_wrap{width: 100%; height: 100%; position: relative;}
 
 /* ===========headBox=========================*/
-  #headBox{width: 100%; height: 90px; padding: 15px 30px; box-sizing: border-box;}
-  h1{width: 280px; height: 60px; }
-  .gnb{width: 60px; height: 60px;}
+  #headBox{width: 100%; height: 70px; padding: 15px 20px; box-sizing: border-box;}
+  h1{width: 280px; height: 45px; }
+  .gnb{width: 45px; height: 45px;}
   .menu{padding: 30px;}
   .menu>ul{width: 100%; height: 100%; margin-top: 90px;}
   .menu>ul>li{width: 90%; height: 40px; margin: auto; margin-bottom: 10px;}
   .menu a{line-height: 40px;}
   .gnb>button{width: 100%; height: 100%;}
   
-  .search{width: 60px; height: 60px;}
+  .search{width: 45px; height: 45px;}
   .search_bar{height: 90px;}
   
 /* --------#conBox01 ----------------------------------------*/
@@ -27,48 +27,19 @@
     
 
 /* --------#conBox02 & 03---------------------------------*/
-
-  .pic_box{width: 78.125vw/*600px*/; height: 104.166666vw/*620px*/; right:6.510416vw/*50px*/;  top: 15%; }
-  .pic{width: 59.895833vw/*460px*/; height: 93.75vw/*800px*/;}
-  .btn{width: 100%; height: 0; top: 25vh; }
-    .prev{width: 5.208333vw/*40px*/; height: 15.625vw/*120px*/; background-size: 100%} 
-    .next{width: 5.208333vw/*40px*/; height: 15.625vw/*120px*/; background-size: 100%} 
-
-  .product{width: 100%; height: 52.083333vw/*400px*/;position: absolute; bottom: 0; background-image: url(../../../../img/gillette/html_img/main/main_bg_02_tab.png); background-size: auto 100%;  background-position: top; z-index: 200;}
-  .product>dl{width: 100%; height: 100%;}
-
-  .product>dl>dt{width: 54.6875vw/*430px*/;height: 16.927083vw/*130px*/; position: absolute; top: 20%; left:6.510416vw/*50px*/;}
-
-  .product_text{width: 58.59375vw/*430px*/; height: auto; position: absolute; bottom:3.90625vw/*30px*/; left: 3.90625vw/*30px*/;}
-
-  .product_icon_box{padding-top: 30px; width: 100%; height: 13.671875vw/*105px*/; box-sizing: border-box;}
-  .product li{width: 25%; height: 100%;background-size: 50%}  
-  .product li:last-child{margin-right: 0}
-  .product_explain{width: 100%; height :auto;}
-  .product_explain li{margin-top:15px; font-size: 13px; line-height: 16px;}
-
-  .purchase_btn{width: 23.4375vw/*180px*/; height: 7.8125vw/*60px*/; position: absolute; bottom:3.90625vw/*30px*/; right: 3.90625vw/*30px*/; }
-  .purchase_btn a{font-size: 1.5rem; line-height: 7.8125vw/*60px*/; letter-spacing: 5px; }
-
+.s_wrap{overflow: hidden;}
+.icon_wrap{display: none;}
+.background{top: 0; right: 0; width: 35%; height: 100%; }
+.background::after{top: 0; left: 95%; width: 100%; height: 100%;}
+.text_wrap{top: 50%; ;left: 4.557291vw/*35px*/; transform: translateY(-50%);width: 50.78125vw/*390px*/; height: 48.177083vw/*370px*/; }
+.text_wrap dt{width: 100%; height: 15.625vw/*120px*/; }
+.text_wrap dd{width: 90%; height: 20.18229vw/*155px*/; margin-top: 3.90625vw/*30px*/; font-size: 11px; line-height: 1.6;}
+.text_wrap .purchase_btn{margin-top: 0; float: left; width: 30%}
+.pic_wrap{top: 50%; right: 4.557291vw/*35px*/; transform: translateY(-40%); width: 39.0625vw/*300px*/; height: 104.166666vw/*800px*/;}
 
 
 /* --------#conBox04---------------------------------*/
-  #conBox04 .product{height: 55.989583vw/*430px*/;}
-  #conBox04 .pic_box{position: absolute; top: 15%;}
-  #conBox04 .pic{width: 53.385416vw/*410px*/; height: 55.989583vw/*430px*/; left: 60%; top: 10%; z-index: 100; }
-  #conBox04 .pic_02{width: 42.96875vw/*330px*/; height: 48.170833vw/*370px*/; top: 0; left: 6.510416vw/*50px*/}
-  #conBox04 .product dl dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); height: 26.04166vw/*200px*/; position: absolute; left:6.510416vw/*50px*/; background-size: auto 80%; background-position: left}
-    
-  
-
-
-  .product_02{z-index: -100}
-  
-  #conBox04 .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png);}
-  .product_02{width: 100%; height: 65.104166vw/*500px*/;position: absolute; bottom: 0;}
-  .product_02>dl{width: 100%; height: 100%;}
-  .product_02>dl>dd{width: 49.479166vw/*380px*/; height: 22.135416vw/*170px*/; position: absolute; bottom:3.90625vw/*30px*/; left: 3.90625vw/*30px*/;}
-  .product_02>div{width: 23.4375vw/*180px*/; height: 7.8125vw/*60px*/; position: absolute; bottom:3.90625vw/*30px*/; right: 3.90625vw/*30px*/;}
+ .product{width: 100%; height: 100%;}
 
   
 /* --------#videoBox-----------------------*/

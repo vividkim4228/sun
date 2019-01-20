@@ -22,16 +22,10 @@
 .s_wrap{width: 20%; height: 100%; box-sizing: border-box; float: left; padding-top: 60px; padding-bottom:40px ; position: relative; background-repeat: no-repeat; background-size: cover; background-position: center;}
 
 
-/* ============ conBox common================================ */
+/* ============ indicator================================ */
   
-  .product_icon_box li{background-repeat: no-repeat; background-size: auto 100%; background-position: center;}
-  .product_icon_box li:nth-child(1){background-image: url(../../../../img/gillette/html_img/main/product_icon_01.png);}
-  .product_icon_box li:nth-child(2){background-image: url(../../../../img/gillette/html_img/main/product_icon_02.png);}
-  .product_icon_box li:nth-child(3){background-image: url(../../../../img/gillette/html_img/main/product_icon_03.png);}
-  .product_icon_box li:nth-child(4){background-image: url(../../../../img/gillette/html_img/main/product_icon_04.png);}
-  .purchase_btn{background-color: #ee6600; position: absolute;}
-   a{display: block; width: 100%; height: 100%;text-align: center; font-weight: 600; color:#fff; }
-  
+
+    
   .indicator{position: fixed; bottom: 0; right: 0; z-index: 500; width: 8px; height: calc(100% - 60px);  border-radius: 50%;} 
   .indicator:hover{height: 12px;}
   .indicator>ul{width: 100%; height: 100%;background-color: rgba(255,255,255,0.3);}
@@ -53,43 +47,49 @@
   .facebook{background-position: top; border-radius: 0.3rem}
   .youtube{background-position: bottom; border-radius: 0.3rem}
 
-  .product_explain{text-align: center; color:#fff;}
+  .explain_box{text-align: center; color:#fff;}
  
-  .product{background-size: auto 100% ; background-repeat: no-repeat; background-position: center;}
-  .product>dl{width: 100%; height: auto;}
-  
-  .product>dl>dt{background-size: contain; background-repeat: no-repeat;}
-  .product li{ float: left; }
+  .icon_wrap{background-size: auto 100% ; background-repeat: no-repeat; background-position: center;}
+  .icon_wrap li{ float: left;}
 
 /* ============ conBox02 ================================== */
-  .pic_box{position: absolute;}
-  .pic{margin: auto; position: absolute; left: 50%; transform: translateX(-50%); }
-  .btn{width: 100%; height: 0; position: absolute; top: 50%;}
-    .next{float: right; background-image: url(../../../../img/gillette/html_img/main/next_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center; }
-    .prev{float: left; background-image: url(../../../../img/gillette/html_img/main/prev_btn.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
-  
-  /*.s_wrap{background-image: linear-gradient(#171717 40%, #031a46)}*/
+  .background{position: absolute; transform: skew(-20deg);background-color: #171717; }
+  .background::after{content: ""; position: absolute; display: block; background-color: #171717}
+  .pic_wrap{position: absolute;}
   .s_wrap{background-color: #f0f1f2;}
+  .text_wrap{position: absolute;}
+  .text_wrap dd{float: left;}
+  .text_wrap dt{float: left; background-repeat: no-repeat; background-size: auto 100%; background-position: left;}
+  .text_wrap .purchase_btn{float: right;}
 
-#conBox02 .pic{background-image: url(../../../../img/gillette/html_img/main/product_01.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
-#conBox02 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_logo.png);}
+#conBox02 .pic_wrap{background-image: url(../../../../img/gillette/html_img/main/product_01.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
+#conBox02 .text_wrap>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_logo.png);}
 
+  .icon_box li{background-repeat: no-repeat; background-size: auto 100%; background-position: center;}
+  .icon_box li:nth-child(1){background-image: url(../../../../img/gillette/html_img/main/product_icon_01.png);}
+  .icon_box li:nth-child(2){background-image: url(../../../../img/gillette/html_img/main/product_icon_02.png);}
+  .icon_box li:nth-child(3){background-image: url(../../../../img/gillette/html_img/main/product_icon_03.png);}
+  .icon_box li:nth-child(4){background-image: url(../../../../img/gillette/html_img/main/product_icon_04.png);}
 
+  .purchase_btn{font-weight: 700; color: }
 /* ============ conBox03 ================================== */
-#conBox03 .pic{background-image: url(../../../../img/gillette/html_img/main/product_02.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
-#conBox03 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proglide_logo.png);}
+#conBox03 .pic_wrap{background-image: url(../../../../img/gillette/html_img/main/product_02.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center;}
+#conBox03 .text_wrap dt{background-image: url(../../../../img/gillette/html_img/main/proglide_logo.png);}
 
 
 /* ============ conBox04 ================================== */
-#conBox04 .pic{margin: auto; background-image: url(../../../../img/gillette/html_img/main/product_03.png); background-size: contain; background-repeat: no-repeat; }
-#conBox04 .product>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); background-repeat: no-repeat;}
+
+#conBox04{position: relative;}
+#conBox04 .product{position: absolute; top: 0; left: 0;}
+#conBox04 .pic_wrap .pic{margin: auto; background-image: url(../../../../img/gillette/html_img/main/product_03.png); background-size: contain; background-repeat: no-repeat; }
+#conBox04 .text_wrap dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); background-repeat: no-repeat;}
   .pic_02{position: absolute; background-image: url(../../../../img/gillette/html_img/main/product_04.png); background-size: contain; background-repeat: no-repeat; }
-  .pic_02::after{content:""; display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); border-radius: 1.5rem}
+  .pic_02::after{content:""; display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); border-radius: 1.875vw/*18px*/}
   
   .product_02{position: relative; z-index: -100}
   .product_02>dl{width: 100%; height: auto;}
   .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
-  
+  .icon_wrap{position: absolute;}
 
 /*==========videoBox================================*/
   .v_box{position: absolute;}
