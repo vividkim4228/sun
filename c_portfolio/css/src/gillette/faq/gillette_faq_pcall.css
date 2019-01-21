@@ -9,15 +9,16 @@
 h1{width: 160px; height: 44px; background-size: 100% auto; left:8px; transform:translate(0, -50%);}
 .gnb>button{display: none;}
 .menu{display: block; float: left; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; min-width: 500px; height: 60px;}
-.menu::after{content:""; display: none; position: fixed; top: 60px; left: -40%; z-index: -1; width: 110vw; height: 0; background-color: #0e0e0e;}
+.menu::after{content:""; display: block; position: fixed; top: 60px; left: -40%; z-index: -1; width: 110vw; height: 0; background-color: #0e0e0e;}
 .menu.menu_active::after{display: block; height: 400%; transition: all 500ms ease;}
-.menu.menu_active dd{display: block; transition: all 500ms ease;}
 
 
 .menu dl{width: 20%; height: 100%; float: left; text-align: center;}
 .menu dl dt{padding:0 1.666666vw/*16px*/; box-sizing: border-box; width: 100%; height: 100%; margin-bottom: 20px;}
-.menu dl dd{display: none; margin-top: 20px; padding:0 1rem; box-sizing: border-box; width: 100%; height: 20px;}
 .menu dt a{color: #f0f1f2; text-align: center; line-height: 60px; font-size: 14px; letter-spacing: 2px; word-spacing: -3px; font-weight: 500;}
+
+
+.menu dl dd{display: none; margin-top: 20px; padding:0 1rem; box-sizing: border-box; width: 100%; height: 20px;}
 .menu dd a{color: #f0f1f2; text-align: center; line-height: 20px; font-size: 12px; letter-spacing: 2px; word-spacing: -3px;}
 
 .menu dt a:hover{border: none; border-bottom: 3px solid  #fff; }
@@ -40,9 +41,10 @@ h1{width: 160px; height: 44px; background-size: 100% auto; left:8px; transform:t
 
 .question li{width: 100%; height: 5.2083333vw/*50px*/; margin-bottom: 1.0416666vw;/*10px*/;}
 .question li button{width: 100%; height: 100%;}
-.question .num{float: left; width: 6.25vw/*60px*/; height: 100%; background-position: left;}
-.question .num p{text-indent: 2.083333vw/*20px*/;}
-.question .text{margin-left: 6.25vw/*60px*/; margin-top: 1.041666vw/*10px*/; width: 37.5vw/*360px*/; height: 3.125vw/*30px*/; line-height: 3.125vw/*30px*/; text-indent: 1rem; text-align: left; font-size: 14px;}
+.question .num{width: 6.25vw/*60px*/; height: 80%;}
+.question .num::before{height: 5.2083333vw;/*50px*/; top: -10%;}
+.question .num p{width: 100%; height: 100%; font-size: 3rem; text-indent: 20px;}
+.question .text{left: 6.25vw/*60px*/; width: 80%; height: 3.125vw/*30px*/; max-height: 50px; text-indent: 1rem; text-align: left; font-size: 14px;}
 
 .answer{top: 0; left: 0; width: 100%; height: 100%;}
 .answer li{padding: 2rem; width: 70%; height: 60%;}
@@ -64,8 +66,9 @@ h1{width: 160px; height: 44px; background-size: 100% auto; left:8px; transform:t
   .question li{width: 100%; height: 70px; margin-bottom: 10px; transition: all 500ms ease;}
   .question li button{width: 100%; height: 100%;}
   .question .num{width: 60px; text-indent: 0;}
-  .question .num p {line-height: 50px;}
-  .question .text{margin-left: 60px; width: 90%; margin-top: 10px; height: 50px; line-height: 65px;}
+  .question .num::before{height: 70px;}
+  .question .num p {line-height: 30px; font-size: 2rem; text-indent: 0;}
+  .question .text{left: 60px; width: 90%; height: 50px; line-height: 65px;}
   .question .text p {line-height: 50px;}
 
 }
