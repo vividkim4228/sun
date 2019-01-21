@@ -11,7 +11,7 @@
   .gnb:hover .menu{display: block;}
   
   .menu{display: none; position: fixed; z-index: 1000; top: 0;left: 0; width: 45vw; height: 100vh;}
-  .menu a{display: block; width: 100%; height: 100%; text-align: left;}
+  .menu a{display: block; width: 100%; height: 100%; text-align: left; color: #f0f1f2; text-align: center;}
   .menu a:hover{border-right: 3px solid  #fff; } 
    
   .search{float: right; background-image: url(../../../../img/gillette/html_img/main/search_btn.png); background-size: 70%; background-repeat: no-repeat; background-position: center;}
@@ -24,8 +24,12 @@
 .con_02{display: none; position: absolute; top: 0; left: 0;width: 100%; height: 100%;}
 
 .title{color:#fff; text-align: center; font-weight: 800; text-transform: uppercase;}
-.num{background-image: url("../../../../img/gillette/html_img/faq/effect.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; color:#f0f1f2; font-weight: 700;}
-.text{background-image: url("../../../../img/gillette/html_img/faq/q_bg.png"); background-size: 100%; background-repeat: no-repeat; background-position: center;}
+.question li{transform: skew(-30deg); transition: all 500ms ease;}
+.num{box-shadow: 0.6rem 0 0.3rem rgba(0,0,0,0.4);}
+.num p{transform: skew(30deg); color:#f0f1f2; width:100%; height: 100%; font-size: 2rem; line-height: 3.125vw/*30px*/;  font-weight: 600;}
+.text{background-color: #f0f1f2;}
+.text p{transform: skew(30deg);}
+
 .answer{display: none; position: absolute; background-color: rgba(0,0,0,0.8);}
 .answer li{display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f0f1f2;}
 .answer li button{background-image: url("../../../../img/gillette/html_img/faq/close_icon.png"); background-repeat: no-repeat; background-size: contain;}

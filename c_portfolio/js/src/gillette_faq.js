@@ -12,13 +12,12 @@
 
  	qLi.on('mouseenter',function(e){
  		e.preventDefault;
- 		$(this).css({'transform':'translateX('+10+'px)',
- 									'transition': 'transform 500ms ease'});
+ 		$(this).css({'transform':'translateX('+10+'px) skew('+-30+'deg)'});
  	});
 
  	qLi.on('mouseleave',function(e){
  		e.preventDefault;
- 		$(this).css({'transform':'translateX('+0+')'});
+ 		$(this).css({'transform':'translateX('+0+')skew('+-30+'deg)'});
  	});
 	
 	qLi.on('click',function(e){
@@ -37,6 +36,7 @@
  		con02.fadeOut(500);
  		answer.fadeOut(500);
  		answer.children('li').fadeOut(500);
+    
 	});
 
 })(jQuery);
