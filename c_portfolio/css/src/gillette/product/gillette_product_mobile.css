@@ -25,23 +25,27 @@
   #sideMenu{display: none;}
 
 /*====================conBox====================*/
-
-.s_wrap{padding: 60px 0 40px; box-sizing: border-box; float: left; width: 100%; height: auto; }
+#conBox01{padding-top: 60px;}
+.s_wrap{padding: 0 0 60px; box-sizing: border-box; float: left; width: 100%; height: auto; }
   .title{width: 100%; height: 140px; }
-  .product_wrap{margin: 50px auto; width: 420px; height: 580px; }
-  .product{margin-right: 20px; margin-bottom: 20px ;width: 200px; height: 280px; box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2)}
+  .product_wrap{margin: 50px auto; width: 87.5vw/*420px*/; height: auto; }
+  .product{margin-right: 4.166666vw/*20px*/; margin-bottom: 20px ;width: 41.66666vw/*200px*/; height: 58.333333vw/*280px*/; box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2)}
 
   .product:nth-child(2n){margin-right: 0}
-  .product dl{padding: 10px; box-sizing: border-box; width: 100%; height: 85px;}
-  .product dt{margin-bottom: 10px; width: 100%; height: 40px; font-size: 18px;}
-  .product dd:nth-of-type(1){margin-bottom: 10px; width: 100%; height: 65px; font-size: 11px;}
+  .product:nth-last-child(1),
+  .product:nth-last-child(2){margin-bottom: 0;}
+  .product dl{padding: 10px; box-sizing: border-box; width: 100%; height: 17.083333vw/*85px*/;}
+  .product dt{margin-bottom: 2.083333vw/*10px*/; width: 100%; height: 8.333333vw/*40px*/; font-size: 18px;}
+  .product dd:nth-of-type(1){margin-bottom: 2.083333vw/*10px*/; width: 100%; height: 65px; font-size: 11px;}
   .product dd:nth-of-type(1) p{width: 100%; height: auto;}
-  .product dd:nth-of-type(1) p:nth-child(1){margin-bottom: 5px; font-weight: 700;}
-  .product dd:nth-of-type(2){width: 100%; height: 20px; font-size: 8px;} 
+  .product dd:nth-of-type(1) p:nth-child(1){margin-bottom: 1.041666vw/*5px*/; font-weight: 700;}
 
-  .more{float: right; margin-right: 30px; width: 110px; height: 45px; background-color: #ee6600;}
-  .more a{display: block; width: 100%; height: 25px;}
-  .more i{display: block; width: 100%; height: 20px;}
+  .product dd:nth-of-type(2){width: 100%; height: 4.166666vw/*20px*/; font-size: 8px;} 
+
+  .more{float: right; margin-right: 4.166666vw/*20px*/; width: 80px; height: 45px;}
+  .more a{display: block; width: 100%; height: 100%; }
+  .more p{width: 100%; height: 25px; font-size: 13px; line-height: 30px; font-weight: 600;}
+  .more i{display: block; width: 100%; height: 20px; }
 
 
 /*===================footBox===================*/

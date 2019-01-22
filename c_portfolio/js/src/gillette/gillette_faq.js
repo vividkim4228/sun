@@ -11,17 +11,17 @@
  
 
  	qLi.on('mouseenter',function(e){
- 		e.preventDefault;
+ 		e.preventDefault();
  		$(this).css({'transform':'translateX('+10+'px) skew('+-30+'deg)'});
  	});
 
  	qLi.on('mouseleave',function(e){
- 		e.preventDefault;
+ 		e.preventDefault();
  		$(this).css({'transform':'translateX('+0+')skew('+-30+'deg)'});
  	});
 	
 	qLi.on('click',function(e){
- 		e.preventDefault;
+ 		e.preventDefault();
  		var uI = $(this).parent('ul').index();
  		var lI = $(this).index();
  		var aLi = answer.eq(uI).children('li').eq(lI);
@@ -32,7 +32,7 @@
  	});
 
  	close.on('click',function(e){
- 		e.preventDefault;
+ 		e.preventDefault();
  		con02.fadeOut(500);
  		answer.fadeOut(500);
  		answer.children('li').fadeOut(500);
