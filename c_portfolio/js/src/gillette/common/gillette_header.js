@@ -2,13 +2,20 @@
 
 (function($){
   var menu = $('.menu');
-  var menuTitle = menu.find('dt');
-  menuTitle.on('mouseenter',function(e){
-    menu.addClass('menu_active');
-  });
+  var menuTitle = menu.find('a');
+  var subMenu = $('.sub_menu');
 
-  menuTitle.on('mouseleave',function(e){
-    menu.removeClass('menu_active');
-  });
+  menuTitle.on({'focus':function(e){subMenu.slideDown()},
+                'blur':function(e){subMenu.slideUp()}
+              });
+  menu.on({'mouseenter':function(e){subMenu.slideDown()},
+           'mouseleave':function(e){subMenu.slideUp()}
+              });
+
+
+      // 'mouseenter focus',function(e){subMenu.slideDown()}},{
+      // 'mouseleave focus',function(e){subMenu.slideUp()}});
+
+ 
 
 })(jQuery);

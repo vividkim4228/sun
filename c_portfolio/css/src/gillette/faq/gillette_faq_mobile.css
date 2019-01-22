@@ -1,7 +1,7 @@
 /* ================  mobile ====================  */
 @media screen and (max-width: 480px){
 
-#wrap{width: 100%; height: 100%; min-height: 800px }
+#wrap{width: 100%; height: 100%; min-height: 900px }
 
 /* ===========headBox=========================*/
 #headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
@@ -21,10 +21,12 @@ h1{width: 180px; height: 35px;  }
   #conBox .con_01{padding-top:100px; box-sizing: border-box; }
   .question{width: 83.333333vw/*400px*/; height: auto; margin: auto;}
 
-  .question li{margin-top: 10px; width: 100%; height: 50px;}
+  .question li{margin-top: 10px; width: 100%; height: 60px;}
   .question li button{position: relative; width: 100%; height: 100%; text-align: left;}
-  .question .num{position: absolute; top: 50%; left: 0; z-index: 100; transform: translateY(-50%); width: 40px; height: 100%;}
+  .question .num{width: 40px; height: 85%;}
+  .question .num::before{height: 60px; top: -10%;}
   .question .num p{line-height: 30px;}
+
   .question .text{position: absolute; top: 50%; left: 40px; transform: translateY(-50%); width: 85%; height: auto; min-height: 40px;}
   .question .text p{position: absolute; top: 50%; transform: translateY(-50%) skew(30deg); padding: 0 1rem ; box-sizing: border-box; width: 100%; height: auto; font-size: 11px; line-height: 1.6; text-indent: 0.5rem;}
 
