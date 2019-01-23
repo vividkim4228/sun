@@ -1,20 +1,6 @@
 /*  gillette_main_pcall.css    */
 @media screen and (min-width: 801px) {
 
-/*================headBox=========================*/
-   h1{width: 160px; height: 44px;  background-size: 100% auto; left:8px; transform:translate(0, -50%);}
-  .gnb>button{display: none;}
-  .menu{display: block; float: left; position: absolute; top: 50%; left: 50%; width: 50vw; min-width: 500px; height: 40px; margin-left: -25vw; margin-top: -20px;}
-  .menu>ul{width: 100%; height: 100%; float: left;}
-  .menu>ul>li{width: 20%; height: 100%;float: left; }
-  .menu a{color: #f0f1f2; text-align: center; line-height: 40px; font-size: 14px; letter-spacing: 2px; word-spacing: -3px;font-weight: 600;}
-  .menu a:hover{border: none; border-bottom: 3px solid  #fff; }
-  .search{width: 44px; height: 44px; float: right;}
-  .search>button{position: relative; z-index: 100;}
-  .search>button:hover + .search_bar,
-  .search>button:focus + .search_bar{display: block; margin-top: 60px;}
- 
-
 /* ======================common======================*/
   
   .s_wrap{overflow: hidden;}
@@ -77,17 +63,6 @@
   
   #videoBox02{display: none;}
 
-/*=================footBox==========================*/
-  #footBox{position: fixed; bottom: 0;}
-  .copyright{width: 800px; }
-  .copyright p{width: auto; height: auto; float: left; margin-right: 2rem; }
-  .copy_wrap{float: left; width: auto; height: 100%; }
-  .copy_wrap p{height: 13px; line-height: 13px}
-  .copy_wrap p:nth-child(1){float: none;}
-  .copy_wrap p:nth-child(3){float: right;}
-  .sns_box_foot{float: left; width: 60px; height: 26px; }
-  .sns_box_foot div{width: 26px; height: 100%; float: left; }
-  .sns_box_foot .youtube{float: right; }
 }
 
 @media screen and (min-width: 1366px){

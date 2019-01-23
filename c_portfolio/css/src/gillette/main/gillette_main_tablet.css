@@ -4,18 +4,6 @@
   #wrap{width: 100%; height: 100%;}
   .s_wrap{width: 100%; height: 100%; position: relative;}
 
-/* ===========headBox=========================*/
-  #headBox{width: 100%; height: 70px; padding: 15px 20px; box-sizing: border-box;}
-  h1{width: 280px; height: 45px; }
-  .gnb{width: 45px; height: 45px;}
-  .menu{padding: 30px;}
-  .menu>ul{width: 100%; height: 100%; margin-top: 90px;}
-  .menu>ul>li{width: 90%; height: 40px; margin: auto; margin-bottom: 10px;}
-  .menu a{line-height: 40px;}
-  .gnb>button{width: 100%; height: 100%;}
-  
-  .search{width: 45px; height: 45px;}
-  .search_bar{height: 90px;}
   
 /* --------#conBox01 ----------------------------------------*/
 .indicator{height: calc(100% - 90px);}
@@ -51,12 +39,6 @@
     .video_text p{font-size: 0.875rem; line-height: 1.6rem;}
     #videoBox01 .video_02{display: none;}
   
-
-/* --------#footBox-----------------------*/
-  #footBox{float: left;}
-  .copyright p{display: none;}
-  .copy_wrap p:nth-child(1){display: block;}
-  .sns_box_foot{display: none;}
 }
 
 @media screen and (min-width: 481px ) and (max-width: 640px ){

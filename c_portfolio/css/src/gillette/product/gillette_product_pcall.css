@@ -4,29 +4,6 @@
 
 #wrap{width: 400vw ; height: 100%; margin-left: 18.75vw/*180px*/;} 
 
-/* ===========headBox=========================*/
-
-h1{width: 160px; height: 44px; background-size: 100% auto; left:8px; transform:translateY(-50%);}
-.menu_btn{display: none;}
-.menu{display: block; float: left; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 60px;  min-width: 600px; max-width: 800px;}
-.menu div{padding: 0 1rem; box-sizing: border-box; width: 20%; height: 100%; float: left; font-size: 14px; line-height: 60px;}
-
-.sub_menu{display: none; position: fixed; top: 60px; left: 0; z-index: -1; width: 100%; height: 15rem; background-color: #0e0e0e;}
-.sub_container{margin: auto; width: 60%; height: 100%; min-width: 600px; max-width: 800px;}
-
-.sub_menu ul{float: left; width: 20%; height: 100%;}
-.sub_menu li{margin-top: 20px; width: 100%; height: 20px;}
-.sub_menu li a{display: block; width: 100%; height: 100%; text-align: center; font-size: 11px; color:#f0f1f2;}
-
-
-.search>button{position: relative; z-index: 100;}
-.search>button:hover + .search_bar,
-.search>button:focus + .search_bar{display: block; margin-top: 60px;}
-
-.menu a:hover{border: none; border-bottom: 3px solid  #fff; }
-.sub_menu a:hover{border: none; font-size: 13px; font-weight: 500;}
-
-.search{width: 44px; height: 44px; float: right;}
 
 /*  sideMenu   */
 #sideMenu{position: fixed; left: 0; z-index: 100; width: 18.75vw/*180px*/; min-width: 180px; max-width: 240px; height: 100%;}
@@ -39,36 +16,24 @@ h1{width: 160px; height: 44px; background-size: 100% auto; left:8px; transform:t
 .side_sub_menu a{display: block; width: 100%; height: 100%;}
 
 /*============conBox========================*/
-.s_wrap{position: relative; padding: 60px 0 40px; box-sizing: border-box; float: left; width: calc(100% / 3); height: 100%; }
-  .title{position: relative; top: 50%; left: 10px; transform: translateY(-50%); width: 140px; height: 360px; }
-  .product_wrap{position: absolute; top: 50%; left: 190px; transform: translateY(-50%); width: 920px; height: 280px; }
-  .product{width: 200px; height: 280px; margin-right: 30px; box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2)}
+.s_wrap{position: relative; padding: 60px 0 40px; box-sizing: border-box; float: left; width: calc(100% / 3); height: 100%; min-width: 1400px}
+  .title{position: relative; top: 50%; left: 10px; transform: translateY(-50%); width: 14.583333vw/*140px*/; height: 37.5vw/*360px*/; }
+  .product_wrap{position: absolute; top: 50%; left: 19.791666vw/*190px*/; transform: translateY(-50%); width: 95.833333vw/*920px*/; height: 29.166666vw/*280px*/; min-width: 1050px; min-height:340px ; }
+  .product{width: 20.833333vw/*200px*/; height: 29.166666vw/*280px*/; min-width: 240px; min-height: 340px; margin-right: 30px; box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2); }
   .product:last-child{margin-right: 0}
-  .product dl{padding: 5px 10px; box-sizing: border-box; width: 100%; height: 85px;}
-  .product dt{margin-bottom: 10px; width: 100%; height: 45px; font-size: 20px;}
-  .product dd:nth-of-type(1){margin-bottom: 5px; width: 100%; height: 60px; font-size: 11px;}
+  .product dl{padding: 1.0416666vw/*10px*/; box-sizing: border-box; width: 100%; height: auto; }
+  .product dt{margin-bottom: 15px; width: 100%; height: auto; font-size: 2.0833333vw/*20px*/;}
+  .product dd:nth-of-type(1){margin-bottom: 15px; width: 100%; height: auto; font-size: 11px;}
+  .product dd{line-height: 1.6;}
+
   .product dd:nth-of-type(1) p{width: 100%; height: auto;}
   .product dd:nth-of-type(1) p:nth-child(1){margin-bottom: 5px; font-weight: 700;}
   .product dd:nth-of-type(2){width: 100%; height: 15px; font-size: 9px;} 
 
-  .more{float: right; margin-right: 50px; width: 110px; height: 45px;}
+  .more{float: right; margin-right: 50px; height: 45px;}
   .more a{display: block; width: 100%; height: 100%; }
   .more p{display: block; width: 100%; height: 25px;}
-  .more i{display: block; width: 100%; height: 20px;}
-
-/*============footBox===========================*/
-
-#footBox{position: fixed; left: 0; bottom: 0;}
-.copyright{width: 800px; }
-.copyright p{width: auto; height: auto; float: left; margin-right: 2rem; }
-.copy_wrap{float: left; width: auto; height: 100%; }
-.copy_wrap p{height: 13px; line-height: 13px}
-.copy_wrap p:nth-child(1){float: none;}
-.copy_wrap p:nth-child(3){float: right;}
-.sns_box_foot{float: left; width: 60px; height: 26px; }
-.sns_box_foot div{width: 26px; height: 100%; float: left; }
-.sns_box_foot .youtube{float: right; }
-}
-
+  .more i{display: block; width: 100%; height: 20px; background-size: auto 100%}
 
 }
+

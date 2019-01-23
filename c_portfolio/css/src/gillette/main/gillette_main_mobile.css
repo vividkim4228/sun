@@ -3,21 +3,6 @@
 #wrap{width: 100%; height: 100%;}
   .s_wrap{width: 100%; height: 100%; position: relative; padding-bottom: 0; float: none;}
 
-/* --------#headBox-----------------------*/
-
-#headBox{width: 100%; height: 60px; padding: 10px 15px; box-sizing: border-box; }
-
-h1{width: 180px; height: 35px;  }
-.gnb{width: 40px; height: 40px; text-align: center;}
-.menu{display: none; padding: 20px;}
-.menu>ul{width: 100%; height: 100%; margin-top: 60px;}
-.menu>ul>li{width: 90%; height: 30px; margin: auto; margin-bottom: 10px;}
-
-.search{width: 40px; height: 40px;}
-.search_bar{height: 60px;}
-
-
-
 /* --------#conBox common---------------------------------*/
 
 .product_icon_box{padding-top: 4.166666vw/*20px*/; box-sizing: border-box;}
@@ -69,22 +54,11 @@ h1{width: 180px; height: 35px;  }
 /* --------#videoBox02-----------------------*/
 #videoBox02{height: 95%;}
 
-/* --------#footBox-----------------------*/
-#footBox{float: left;}
-.copyright p{display: none;}
-.copy_wrap p:nth-child(1){display: block;}
-
-.sns_box_foot{display: none;} 
-
 }
 
 
 /*  max-width 359px ==================================*/
 @media screen and (max-width: 359px){
-  h1{width: 40%; height: 100%; background-size: 100% auto }
-  #headBox{position:absolute;}
-  #headBox>div{width: 10%; height: 80%; position: absolute; top: 50%; transform: translateY(-50%);}
-  .search{right: 15px; }
   .purchase_btn{bottom:30.41667vw/*150px*/; font-size: 0.6875rem; letter-spacing: 2px;}
   .v_box{top: 10%;}
 }

@@ -1,0 +1,41 @@
+/*gillette_footer.css*/
+
+/*common*/
+
+#footBox{width: 100%; height: 40px; background-color: #0e0e0e; z-index: 500;}
+.copyright{width: 70%; height: 26px; margin: auto; margin-top: 7px; line-height: 26px}
+.copyright p{font-size: 6px; color: #fff; text-align: center; }
+.sns_box_foot div{width: 100%; height: 40px; background-image: url(../../../../img/gillette/html_img/main/sns_box.png); background-size: 100%; background-repeat: no-repeat; margin-bottom: 10px;}
+.facebook{background-position: top; border-radius: 0.3rem}
+.youtube{background-position: bottom; border-radius: 0.3rem}
+
+/*mobile*/
+@media screen and (max-width: 480px){
+  #footBox{float: left;}
+  .copyright p{display: none;}
+  .copy_wrap p:nth-child(1){display: block;}
+  .sns_box_foot{display: none;} 
+}
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+  #footBox{float: left;}
+  .copyright p{display: none;}
+  .copy_wrap p:nth-child(1){display: block;}
+  .sns_box_foot{display: none;}
+}
+/*pc*/
+@media screen and (min-width: 769px) {
+  #footBox{position: fixed; bottom: 0; left: 0;}
+  .copyright{width: 800px; }
+  .copyright p{width: auto; height: auto; float: left; margin-right: 2rem; }
+  .copy_wrap{float: left; width: auto; height: 100%; }
+  .copy_wrap p{height: 13px; line-height: 13px}
+  .copy_wrap p:nth-child(1){float: none;}
+  .copy_wrap p:nth-child(3){float: right;}
+  .sns_box_foot{float: left; width: 60px; height: 26px; }
+  .sns_box_foot div{width: 26px; height: 100%; float: left; }
+  .sns_box_foot .youtube{float: right; }
+}
+
+
+

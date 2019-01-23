@@ -1,54 +1,50 @@
 // gillette_product.js
 
 (function($){
+	
 	var product = $('.product').children('a');
 	var dl = product.find('dl');
 	var winW = $(window).width();
 	var moreA = $('.more').children('a');
 	
-	// console.log(product);
+	console.log(winW);
 
 	product.on('mouseenter',function(e){
  		e.preventDefault();
 		var thisDl = $(this).find('dl');
+		var thisDt = $(this).find('dt').eq(0);
 		var thisDd = $(this).find('dd').eq(0);
-
  		winW = $(window).width();
 
- 		thisDd.fadeIn();
+ 		thisDd.stop(true,false).slideDown();
+ 		thisDt.stop(true,false).animate({'marginBottom':10+'px'});
 
- 		if(winW <= 463){
- 			thisDl.animate({'height':31.25+'vw'});
- 		}else if(winW >463 && winW <=750){
- 			thisDl.animate({'height':26.692708+'vw'});
- 		}else{thisDl.animate({'height':15.625+'vw'});};
  	});
 
 	product.on('mouseleave',function(e){
 		e.preventDefault();
 		
 		var thisDl = $(this).find('dl');
+		var thisDt = $(this).find('dt').eq(0);
 		var thisDd = $(this).find('dd').eq(0);
 
-		thisDd.fadeOut();
-
-		if(winW <= 463){
- 			thisDl.animate({'height':17.083333+'vw'});
- 		}else if(winW >463 && winW <=750){
- 			thisDl.animate({'height':16.927083+'vw'});
- 		}else{thisDl.animate({'height':8.854166+'vw'});};
+		winW = $(window).width();
+		thisDd.stop(true,false).slideUp();
+ 		thisDt.stop(true,false).animate({'marginBottom':15+'px'});
  	
- 		});
+ 	});
 
 	moreA.on('mouseenter',function(e){
 		var thisI = $(this).find('i');
-		thisI.animate({backgroundPositionX:100+'%'},500,"swing");
+		thisI.stop(true,false).animate({backgroundPositionX:100+'%'},500,"swing");
 	});
 
 	moreA.on('mouseleave',function(e){
 		var thisI = $(this).find('i');
-		thisI.animate({backgroundPositionX:0+'%'},500,"swing");
+		thisI.stop(true,false).animate({backgroundPositionX:0+'%'},500,"swing");
 	});
+
+	$(window).resize(function(){location.reload();});
 
 
 })(jQuery);
