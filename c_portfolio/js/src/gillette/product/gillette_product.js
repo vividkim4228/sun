@@ -16,7 +16,7 @@
 		var thisDd = $(this).find('dd').eq(0);
  		winW = $(window).width();
 
- 		thisDd.stop(true,false).slideDown();
+ 		thisDd.stop(true,false).slideDown(700);
  		thisDt.stop(true,false).animate({'marginBottom':10+'px'});
 
  	});
@@ -29,7 +29,7 @@
 		var thisDd = $(this).find('dd').eq(0);
 
 		winW = $(window).width();
-		thisDd.stop(true,false).slideUp();
+		thisDd.stop(true,false).slideUp(700);
  		thisDt.stop(true,false).animate({'marginBottom':15+'px'});
  	
  	});

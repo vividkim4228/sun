@@ -10,11 +10,19 @@
   var searchBar = $('.search_bar');
   var searchInput = searchBar.children('input');
 
-  menuDt.on({'focus':function(e){menuDd.stop(true,false).fadeIn(),menuBg.stop(true,false).slideDown();},
-             'blur':function(e){menuDd.stop(true,false).fadeOut(),menuBg.stop(true,false).slideUp();}
+  menuDt.on({'focus':function(e){
+                menuDd.stop(true,false).delay(300).fadeIn(400),
+                menuBg.stop(true,false).slideDown(500);},
+             'blur':function(e){
+                menuDd.stop(true,false).fadeOut(400),
+                menuBg.stop(true,false).delay(200).slideUp(500);}
               });
-  menu.on({'mouseenter':function(e){menuDd.stop(true,false).fadeIn(),menuBg.stop(true,false).slideDown();},
-           'mouseleave':function(e){menuDd.stop(true,false).fadeOut(),menuBg.stop(true,false).slideUp();}
+  menu.on({'mouseenter':function(e){
+            menuDd.stop(true,false).delay(300).fadeIn(400),
+            menuBg.stop(true,false).slideDown(500)},
+           'mouseleave':function(e){
+            menuDd.stop(true,false).fadeOut(400),
+            menuBg.stop(true,false).delay(200).slideUp(500)}
               });
 
   searchBtn.on({'focus':function(e){

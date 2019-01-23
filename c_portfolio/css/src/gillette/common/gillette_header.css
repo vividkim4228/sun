@@ -6,8 +6,6 @@
   h1 a{display: block; width: 100%; height: 100%; }
   .menu_btn{float: left; background-image: url(../../../../img/gillette/html_img/main/menu_btn.png); background-size: 70%; background-repeat: no-repeat; background-position: center;}
   .menu_btn>button{position: relative; z-index: 200; width: 100%; height: 100%; color:#fff;}
-  .menu_btn:focus .sub_menu,
-  .menu_btn:hover .sub_menu{display: block;}
   
   .menu{display: none; position: fixed; z-index: 1000; top: 0;left: 0; width: 45vw; height: 100vh;}
   .menu a{display: block; width: 100%; height: 100%; box-sizing: border-box; text-align: left; color: #f0f1f2; text-align: center;}
@@ -32,11 +30,7 @@
   .menu>ul{width: 100%; height: 100%; margin-top: 60px;}
   .menu>ul>li{width: 90%; height: 30px; margin: auto; margin-bottom: 10px; background-color: #ccc;}
 
-  .gnb>button{color:#fff; line-height: 40px; width: 100%; height: 100%; position: relative; z-index: 200;}
-  .gnb button:focus + .menu,
-  .gnb button:hover + .menu{display: block; width: 45vw; height: 100vh; position: fixed; top: 0;left: 0; background-color: #002E6D; z-index:100}
-
-
+  
   .search{width: 40px; height: 40px;}
   .search>button{position: relative; z-index: 100;}
   .search>button:hover + .search_bar,
