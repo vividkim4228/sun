@@ -1,8 +1,6 @@
 /* gillette_product_full.css */
 @media screen and (min-width: 769px) and (max-width: 960px) {
- #wrap{margin-left: 180px;} 
-  h1{left: 50%; transform: translate(-50%, -50%);}
-  .menu{display: none;}
+ #wrap{margin-left: 180px;}
   
 }
 

@@ -19,6 +19,7 @@
   lastLi.clone(true).prependTo(pr);
   prLi = pr.children('li');
   lilen = prLi.length;
+  console.log(lilen)
 
   pr.css({width:lilen*100+'%',
           marginLeft:-100+'%',

@@ -27,8 +27,8 @@
   .icon_wrap li{ float: left;}
 
 /* ============ conBox02 ================================== */
-  .background{position: absolute; transform: skew(-20deg);background-color: #171717; }
-  .background::after{content: ""; position: absolute; display: block; background-color: #171717}
+  .background{position: absolute; transform: skew(-20deg);background-color: #0c4da2; }
+  .background::after{content: ""; position: absolute; display: block; background-color: #0073ce}
   .pic_wrap{position: absolute;}
   .s_wrap{background-color: #f0f1f2;}
   .text_wrap{position: absolute;}
