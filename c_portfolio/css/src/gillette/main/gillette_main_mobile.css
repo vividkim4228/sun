@@ -28,6 +28,11 @@
 .product dd ul:last-child{margin-bottom: 0;}
 .product dd ul li{width: 25%; height: 100%; float: left;
   }
+
+.purchase{width: auto; height: 45px;}
+.purchase a{display: block; width: auto; height: 100%; }
+.purchase p{width: auto; height: 25px; font-size: 13px; line-height: 30px; font-weight: 600;}
+.purchase i{display: block; width: 100%; height: 20px; }
   
 /* --------#conBox04----------------------------------*/
 
