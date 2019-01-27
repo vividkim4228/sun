@@ -1,15 +1,18 @@
 // gillette_product.js
 
 (function($){
-	
-	var product = $('.product').children('a');
-	var dl = product.find('dl');
-	var winW = $(window).width();
-	var moreA = $('.more').children('a');
-	
+	var product   =  $('.product');
+	var productA  =  product.children('a');
+	var dl        =  productA.find('dl');
+	var winW      =  $(window).width();
+	var moreA     =  $('.more').children('a');
+	var con01Product = $('#conBox01').find('.product');
+	var con02Product = $('#conBox02').find('.product');
+	var con03Product = $('#conBox03').find('.product');
+
 	console.log(winW);
 
-	product.on('mouseenter',function(e){
+	productA.on('mouseenter',function(e){
  		e.preventDefault();
 		var thisDl = $(this).find('dl');
 		var thisDt = $(this).find('dt').eq(0);
@@ -21,7 +24,7 @@
 
  	});
 
-	product.on('mouseleave',function(e){
+	productA.on('mouseleave',function(e){
 		e.preventDefault();
 		
 		var thisDl = $(this).find('dl');
@@ -34,17 +37,17 @@
  	
  	});
 
-	moreA.on('mouseenter',function(e){
-		var thisI = $(this).find('i');
-		thisI.stop(true,false).animate({backgroundPositionX:100+'%'},500,"swing");
-	});
-
-	moreA.on('mouseleave',function(e){
-		var thisI = $(this).find('i');
-		thisI.stop(true,false).animate({backgroundPositionX:0+'%'},500,"swing");
-	});
-
 	$(window).resize(function(){location.reload();});
 
+
+	for(i=0; i<4; i+=1){
+		var k = i+1;
+	 	con01Product.eq(i).css({backgroundImage:'url("../../../../img/gillette/html_img/product/conBox_01/product_0'+k+'.png")'});
+	}
+
+	for(i=0; i<4; i+=1){
+		var k = i+1;
+	 	con02Product.eq(i).css({backgroundImage:'url("../../../../img/gillette/html_img/product/conBox_02/product_0'+k+'.png")'});
+	}
 
 })(jQuery);

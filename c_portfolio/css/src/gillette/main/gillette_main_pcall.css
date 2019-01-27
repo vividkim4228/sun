@@ -2,12 +2,13 @@
 @media screen and (min-width: 801px) {
 
 /* ======================common======================*/
+ 
+  .m_wrap{position: relative; width: 500%; height: 100%;}
+  .s_wrap{width: 20%; height: 100%;  box-sizing: border-box; float: left; padding-top: 60px; padding-bottom:40px;}
   
-  .s_wrap{overflow: hidden;}
   .indicator{width: 100%; height: 8px; top: auto; bottom: 40px; left: 50%; transform: translateX(-50%); border-radius: 50%;} 
   .indicator:hover{height: 12px;}
   .indicator>ul>li{width: 20%; height: 100%; float:left; border-radius: 4px;}
-  .indicator>ul>li:first-child{background-color: #ff6600;}
   .indicator>ul>li:last-child{margin-right: 0;}
 
   .indicator>ul>li:last-child{display: none}
@@ -17,8 +18,8 @@
 
 /* ======================conBox01======================*/
   #conBox01{background-color: transparent; padding: 0}
-  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw; }
-
+  .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw;}
+  .scroll_btn{position: absolute; top: 50%; bottom: auto; right: 0; left: auto; transform: translateY(-50%); width: 46px; height: 50px; background-image: url("../../../../img/gillette/html_img/main/right_btn.png");}
 /* ===================conBox02 & 03======================*/
   .background{ top: 0; right: -10%; width: 40%; height: 100%;}
   .background::after{top: 0; right: -50%; width: 100%; height: 100%;}
@@ -45,10 +46,9 @@
 /* ======================conBox03======================*/
   #conBox03 .pic_wrap{right: 16.666666vw/*160px*/; background-size: auto 90%; background-position: 0% 100%;}
 /* ======================conBox04======================*/
-  #conBox04 .product{width: 100%; height: 100%;}
-  #conBox04 .pic_wrap{right: 9.375vw/*90px*/; width: 28.125vw/*270px*/; height: 28.125vw/*270px*/; background-size: 80% auto; background-position: 15% 100%}
-  #conBox04 .pic{width: 22.916666vw/*220*/; height: 25vw/*240*/; position: absolute; bottom: 0; right: 0; z-index: 100; border-radius: 1.5625vw/*15px*/; box-shadow: 1.5rem 1.5rem 1rem rgba(0,0,0,0.6)}
-  #conBox04 .pic_02{width: 18.75vw/*180*/; height: 20.833333vw/*200*/; position: absolute; top: 0; left: 0; }
+  #conBox04 .pic_wrap{right: 9.375vw/*90px*/; width: 39.583333vw/*380px*/; height: 28.125vw/*270px*/; background-size: 80% auto; background-position: 15% 100%}
+  #conBox04 .pic{width: 18.75vw/*180*/; height: 20.833333vw/*200*/;border-radius: 1.5625vw/*15px*/; box-shadow: 1.5rem 1.5rem 1rem rgba(0,0,0,0.6)}
+  #conBox04 .pic_active{width: 22.916666vw/*220*/; height: 25vw/*240*/; }
     
   
 
@@ -56,14 +56,14 @@
   /* ===================videoBox======================*/
   
   #videoBox01 .background{width: 60%;}
-  .v_box{width: 31.25vw/*300px*/; height: auto; min-height: 330px;  float: left; top: 50%; transform: translateY(-45%);}
+  .v_box{width: 31.25vw/*300px*/; height: 37.5vw/*360px*/; min-height: 330px; max-height: 650px; float: left; top: 50%; transform: translateY(-45%);}
   .v_box dl{width: 100%; height: 100%; position: relative;}
   .video_01{left:10%;}
-  .video_02{right:10%;}
-  .video_title{box-sizing: border-box; width: 100%; height: 4.166666vw/*40px*/; font-size: 2.5vw; line-height: 4.166666vw/*40px*/; background-color: transparent;}
-  .v_box video{width: 100%; height: 17.708333vw/*170px*/; background-color: #000;}
-  .video_text{padding: 1.5625vw/*15px*/; box-sizing: border-box; width: 100%; height: auto; background-color: transparent; text-align: center;}
-  .video_text h4{margin-bottom: 5px ;}
+  .video_02{left: auto; right:10%;}
+  .video_title{box-sizing: border-box; width: 100%; height: 4.166666vw/*40px*/; font-size: 2.5vw; line-height: 4.166666vw/*40px*/;}
+  .v_box video{width: 100%; height: 17.708333vw/*170px*/;}
+  .video_text{padding: 1.5625vw/*15px*/; box-sizing: border-box; width: 100%; height: auto; }
+  .video_text h4{margin-bottom: 5px; border-color: #0e0e0e}
   .video_text p{margin-bottom: 10px; width: 100%; height: auto; line-height: 1.6;}
   .video_text p:nth-of-type(2){margin-bottom: 0;}
   .video_01 .video_title{color:#0e0e0e;}

@@ -1,64 +1,58 @@
 /* ================  mobile ====================  */
 @media screen and (max-width: 480px){
-#wrap{width: 100%; height: 100%;}
-  .s_wrap{width: 100%; height: 100%; position: relative; padding-bottom: 0; float: none;}
 
-/* --------#conBox common---------------------------------*/
+ 
+/* --------#conBox01 ----------------------------------------*/
+.indicator{height: calc(100% - 60px);}
 
-.product_icon_box{padding-top: 4.166666vw/*20px*/; box-sizing: border-box;}
-.product_explain{padding-top: 4.166666vw/*20px*/; box-sizing: border-box; font-size: 11px; line-height: 16px;}
+/* --------#conBox01 ----------------------------------------*/
 
-.purchase_btn{width: 20.833333vw/*100px*/; height: 8.333333vw/*40px*/; bottom: 2.083333vw/*10px*/; right: 6.25vw/*30px*/; line-height: 8.3333333vw; font-size: 0.875rem; letter-spacing: 3px;}
-.pic_box{width: 81.25vw/*400px*/; height: 83.333333vw /*400px*/ ; top: 15%; left:50%; margin-left:-40vw;}
-.pic{width: 62.5vw /*300px*/; height: 127.083333vw /*610px*/; }
-.btn{width: 100%; height: 0; margin-top:-40px }
-.btn div{width: 7.291666vw /*35px*/ ; height: 16.666666vw /*80px*/;}
-.product{background-image: url(../../../../img/gillette/html_img/main/main_bg_02_mob.png); width: 100%; height: 79.16667vw /*380px*/; position: absolute; bottom: 0; z-index: 100;}
-.product>dl{width: 100%; height: 100%;}
-.product>dl>dt{width: 58.333333vw/*280px*/; height: 29.166666vw/*140px*/; position: absolute; bottom: 31.25vw/*150px*/; left: 6.25vw/*30px*/; background-position: bottom;}
-.product_text{width: 58.333333vw/*280px*/; height: 25vw/*120px*/; min-width: 220px; position: absolute; bottom: 4.166666vw/*20px*/; left: 4.166666vw/*20px*/;}
+#conBox01{padding-bottom:0;}
+ .main_logo{width: 70.3125vw/*540px*/; height: 20.833333vw/*160px*/; font-size: 16vw;line-height: 20.833333vw; }
+    
 
+/* --------#conBox02 & 03---------------------------------*/
+.s_wrap{overflow: hidden;}
+.icon_wrap{display: none;}
+.background{top: 0; right: 0; width: 35%; height: 100%; }
+.background::after{top: 0; left: 95%; width: 100%; height: 100%;}
+.text_wrap{top: 50%; ;left: 4.557291vw/*35px*/; transform: translateY(-50%);width: 50.78125vw/*390px*/; height: auto; }
+.text_wrap dt{margin-bottom: 3.90625vw/*30px*/; width: 100%; height: 15.625vw/*120px*/; }
+.text_wrap dd{margin-bottom: 3.90625vw/*30px*/; width: 90%; height: auto;  font-size: 11px; line-height: 1.8;}
+.pic_wrap{top: 50%; right: 4.557291vw/*35px*/; transform: translateY(-40%); width: 39.0625vw/*300px*/; height: 75%;}
 
-/* --------#conBox01-----------------------*/
-#conBox01{padding-top: 0;}
-.main_logo{width: 70.833333vw/*340px*/; height: 25vw/*120px*/; font-size: 3rem; line-height: 25vw;}
+.purchase{margin-right: 5.2083333vw/*40px*/;}
+.purchase p{padding: 0.3rem 0.8rem; font-size: 11px; }
+
+/* --------#conBox04---------------------------------*/
+#conBox04 .text_wrap{top: auto; bottom: 3.90625vw/*30px*/; left: 50%; transform: translateX(-50%); width: 80.729166vw/*620px*/;}
+#conBox04 .pic_wrap{top: 45%; left: 50%; transform: translateX(-50%) translateY(-70%); width: 81.25vw/*390px*/; height: 57.291666vw/*275px*/;}
+#conBox04 .pic{width: 37.5vw/*180px*/; height: 41.666666vw/*200px*/;}
+#conBox04 .pic_active{width: 46.875vw/*225px*/; height: 51.0416666vw/*245px*/;}
+#conBox04 .pic_02:after{border-radius: 3.125vw/*15px*/}
+
+#conBox04 .text_wrap dt{margin-bottom: 10px; }
+#conBox04 .text_wrap dd{width: 101%; margin-bottom: 30px}
+	.btn button{background-image: url("../../../../img/gillette/html_img/main/arrow_tab.png");width: 3.90625vw/*30px*/; height: 10.416666vw/*80px*/;}
+
+#conBox04 .purchase{position: absolute; bottom: 0; right: 0; margin: 0; }
   
-/* --------#conBox02---------------------------------*/
-.product dd ul{width: 100%; height: 48%; margin-bottom: 4%;}
-.product dd ul:last-child{margin-bottom: 0;}
-.product dd ul li{width: 25%; height: 100%; float: left;
-  }
+/* --------#videoBox-----------------------*/
+#conBox04 .background,
+#videoBox01 .background,
+#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(80deg)}
+#conBox04 .background::after,
+#videoBox01 .background::after,
+#videoBox02 .background::after{width: 300%; height: 100%;}
 
-.purchase{width: auto; height: 45px;}
-.purchase a{display: block; width: auto; height: 100%; }
-.purchase p{width: auto; height: 25px; font-size: 13px; line-height: 30px; font-weight: 600;}
-.purchase i{display: block; width: 100%; height: 20px; }
-  
-/* --------#conBox04----------------------------------*/
+.v_box{width: 75vw/*360px*/;}
+.video_title{padding: 1rem; box-sizing: border-box; width:100%; height:auto; font-size: 8vw;}
 
-#conBox04 .pic_box{width: 91.666667vw/*440px*/; height: 83.333333vw; margin-left: -45.833334vw;}
-#conBox04 .pic{position: absolute; width: 62.5vw/*300px*/; height: 70.833334vw/*340px*/; right: 10.416666vw/*50px*/; bottom: 0; z-index: 1;}
-#conBox04 .pic_02{width: 62.5vw /*300px*/; height: 70.833334vw/*340px*/; position: absolute; top: 0; left: 10.416666vw/*50.px*/; }
-
-#conBox04 .product_02>dl>dt{background-image: url(../../../../img/gillette/html_img/main/proshield_chill_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
-
-#conBox04 ul li{width: 33.333333%;}
-.product_02 .product_icon_box li:nth-child(1){background-image: url(../../../../img/gillette/html_img/main/product_icon_05.png);}
-.product_02{position: relative; z-index: -100}
-#conBox04 .product>dl>dt{bottom: 31.25vw/*150px*/; width: 62.5vw/*300px*/; }
-  
-
-/* --------#videoBox01-----------------------*/
-
-.v_box{width: 83.333333vw/*400px*/; height: 106.25vw/*510px*/; top: 55%; left: 50%; transform:translate(-50%, -50%);}
-.video_title{width:100%; height: 12.5vw/*60px*/; font-size: 10vw; line-height: 12.5vw;}
-.video_text{position: relative; padding: 1rem; box-sizing: border-box; width: 83.333333vw/*400px*/; height: 37.5vw/*180px*/; min-height: 165px ;margin: auto; }  
-
+.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto; color:#0e0e0e;}
+.video_text h4{font-size: 0.8125rem;}
+.video_text p{font-size: 0.6875rem; line-height: 2; margin-bottom: 10px	 }
 #videoBox01 .video_02{display: none;}
-
-/* --------#videoBox02-----------------------*/
-#videoBox02{height: 95%;}
-
+  
 }
 
 

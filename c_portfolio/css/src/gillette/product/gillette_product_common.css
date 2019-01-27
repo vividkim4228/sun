@@ -1,29 +1,35 @@
 #wrap{width: 100%; height: 100%; background-color: #ffa	;}
 
-/* ==========sideMenu =========================*/
-#sideMenu{background-color: #171717;}
-  .side_sub_menu{line-height: 2.083333vw/*20px*/;}
-  .side_sub_menu a{width: 80%; min-width: 120px; color:#fff; text-align:left;}
-  .side_sub_menu i{margin-left: 10px; width: 20px; height: 100%; line-height: 2.083333vw/*20px*/; color: #fff;}
-
 /*============conBox===========================*/
+#conBox01 .title{background-image: url("../../../../img/gillette/html_img/product/title_01_wide.png");} 
+#conBox02 .title{background-image: url("../../../../img/gillette/html_img/product/title_02_wide.png");}
+.title{background-repeat: no-repeat; background-size: 80%; background-position: center;}
 .s_wrap{background-color: #f0f1f2;}
 .title{background-color: #171717;}
-.product{position: relative; float: left; background-color: #fff;  box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2)}
+.product{position: relative; float: left; background-color: #fff; background-size: auto 90%; background-repeat: no-repeat; background-position: 80% 100%;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2);}
+.blade{background-size: 70%; background-position: 50% 30%;}
 .product a{display: block; width: 100%; height: 100%;}
 .product dl{position: absolute; bottom: 0; left: 0; box-sizing: border-box; background-color: rgba(238,238,238,0.9); transition: all 700ms ease;}
 .product dt{text-transform: uppercase; font-weight: 600; }
 .product dd:nth-of-type(1){display: none;}
+.product dd:nth-of-type(2){background-image: url("../../../../img/gillette/html_img/product/star_5.svg");  background-size:contain; background-repeat: no-repeat; background-position: left;}
+.product dd:nth-of-type(2) p {width: 100%; height: 100%; text-indent: 4.5rem; }
 /*.product dd:nth-of-type(2){position: absolute;}*/
 
 
 
 
 
-.more{width: auto;}
-.more a{color:#ee6600; font-weight: 700;}
-.more i{background-image: url("../../../../img/gillette/html_img/product/right_arrow.svg"); background-repeat: no-repeat;
- background-size: auto 80%; background-position: left;}
+.more{float: right; width: auto; height: auto;}
+.more a{display: inline-block; z-index: 10; position: relative; width: auto; height: auto; color: #ee6600; transition: all 700ms ease}
+.more p{display: inline-block;}
+.more a::before{position: absolute; z-index: -1; content: ""; display: block; width: 0; height: 100%; background-color: #ee6600; transition: all 700ms ease}
+
+.more a:hover,
+.more a:focus{color:#fff; }
+.more a:hover::before,
+.more a:focus::before{width: 100%;}
   
 }
 

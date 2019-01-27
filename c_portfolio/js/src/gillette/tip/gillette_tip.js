@@ -11,8 +11,8 @@ var subPic = ul.children('li').children('.sub_pic');
 // 메인 이미지 넣기
 var i=0;
 for(; i<4; i++){
-k=i+1;
-tipTitle.eq(i).children('a').css({backgroundImage:'url("../img/gillette/html_img/tip/tip_title_0'+k+'.jpg")'});
+  k=i+1;
+  tipTitle.eq(i).children('a').css({backgroundImage:'url("../img/gillette/html_img/tip/tip_title_0'+k+'.jpg")'});
 }
 
 // 팁 이미지 넣기
@@ -30,21 +30,6 @@ for(; i<4; i++){
  sciencePic.css({backgroundImage:'url("../img/gillette/html_img/tip/science/science_0'+k+'.jpg")'});
 };
 
-
-
-// 더보기버튼
-
-var moreA = $('.more').children('a');
-
-moreA.on('mouseenter',function(e){
-    var thisI = $(this).find('i');
-    thisI.stop(true,false).animate({backgroundPositionX:100+'%'},500,"swing");
-  });
-
-  moreA.on('mouseleave',function(e){
-    var thisI = $(this).find('i');
-    thisI.stop(true,false).animate({backgroundPositionX:0+'%'},500,"swing");
-  });
 
 
 
