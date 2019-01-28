@@ -58,10 +58,33 @@
   }
 
 // 메뉴버튼
+  var menuDp = menu.css('display')
     menuBtn.on('click',function(e){
-        e.preventDefault();
-        menu.slideToggle(700);
-    });
+      e.preventDefault();
+      // menu.stop(true,false).css({display:'block'})
+      // menu.stop(true,false).animate({left:0},800)
+      menu.addClass('menu_active')
+      console.log(menuDp)
+  });
+
+ 
+    // menuBtn.on('click',function(e){
+    //   e.preventDefault();
+    //    if(menuDp = 'block'){
+    //   menu.stop(true,false).animate({left:-60+'vw'});
+    //   }
+    //   })
+  
+
+    // menuBtn.on('click',function(e){
+    //       e.preventDefault();
+    //       var menuLeft = menu.css('left');
+    //       console.log(menuLeft)
+    //       if(menuLeft= 0+ 'px'){
+    //       menu.animate({left:-60+'vw'})
+    //       }
+    //     });
+
 // 검색버튼 
   // searchBtn.on('focus',function(e){
   //                 e.preventDefault();

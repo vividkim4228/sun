@@ -12,9 +12,14 @@ var indiLi    =  $('.indicator').find('li');
 var mob       =  480;
 var tab       =  800;
 var pc        =  1366;
-var n         =  0;
 var myDevice;
-
+var n         =  0;
+//  =============================
+// $('.indicator>ul>li').on('click',function(e){
+//   e.preventDefault();
+//   console.log($(this).index());
+// })
+//  =============================
 
 // 기기별 새로고침 
 var Device = function(w){
@@ -41,46 +46,74 @@ $(window).on('resize',function(){
 
 // 인디케이터 함수 설정
 
-var indiEffect = function(){
+var indiActive = function(){
     indiLi.eq(n).addClass('active');
     indiLi.eq(n).siblings('li').removeClass('active');
 }
 
-// 최초 함수 실행
-  indiEffect();
 
+
+var hClick = function(){
+    indiLi.on('click', function(e){
+      e.preventDefault();
+      n = $(this).index();
+      $(this).addClass('active');
+      $(this).siblings('li').removeClass('active');
+      mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800);
+  });
+};
+
+var vClick = function(){
+    indiLi.on('click', function(e){
+      e.preventDefault();
+      n = $(this).index();
+      $(this).addClass('active');
+      $(this).siblings('li').removeClass('active');
+      mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800);
+      console.log(n);
+  });
+};
+
+// 최초 함수 실행
+  indiActive();
 
 // 가로스크롤 함수 설정
+// 가로 이동
+var hScroll = function(){
+  mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800)
+}
+// 세로 이동 
+var vScroll = function(){
+  mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800)
+}
+
 var horizontalScroll = function(){
   $('body').on('mousewheel',function(e){
     e.preventDefault();
     var wheelDelta = e.originalEvent.wheelDelta;
     if(wheelDelta<0){
-      if(n<4){
+        if(n<4){
         n+=1;
-        mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800);
-        indiEffect();
+        hScroll();
       }else{
         n=4;
-        indiEffect();
       }
-    }else{
-      if(n>0){
+      }else{
+        if(n>0){
         n-=1;
-        mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800)
-        indiEffect();
+        hScroll();
       }else{
         n=0;
-        indiEffect();
     }
   }
-});
+  indiActive();
+  });
   scrollBtn.on('click',function(e){
     e.preventDefault();
     n=1;
-    mWrap.stop(true,false).animate({marginLeft:-100+'vw'},800);
-});
-
+    hScroll();
+    indiActive();
+  });
 }
 
 // 세로스크롤 함수 설정
@@ -91,36 +124,36 @@ var verticalScroll = function(){
     if(wheelDelta<0){
       if(n<5){
         n+=1;
-        mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800);
-        indiEffect();
+        vScroll();
       }else{
         n=5;
-        indiEffect();
       }
-    }else{
+      }else{
       if(n>0){
         n-=1;
-        mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800);
-        indiEffect();
+        vScroll();
       }else{
-        n=0;
-        indiEffect();
+        n=0;        
     }
   }
+  indiActive();
+  console.log(n);
 });
   scrollBtn.on('click',function(e){
       e.preventDefault();
       n=1;
-      mWrap.stop(true,false).animate({marginTop:-100+'vh'},800);
-      indiEffect();
+      vScroll();
+      indiActive();
   });
 }
 
 // 창크기에 따라 스크롤방식 변경
 if(winW>800){
   horizontalScroll();
+  hClick();
 }else{
   verticalScroll();
+  vClick();
 }
 
 // 제품사진 바꾸기

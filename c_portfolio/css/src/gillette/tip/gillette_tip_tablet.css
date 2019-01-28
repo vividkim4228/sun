@@ -12,7 +12,7 @@
   .submenu>dl>dd{margin-left: 1.25vw/*6px*/; margin-bottom: 0.833333vw/*4px*/;}
 
 /*===================conBox===================*/
-.s_wrap{padding: 70px 0 40px}
+.s_wrap{padding-top: 70px;}
 .title{width: 100%; height: 150px; font-size: 3rem; line-height: 150px;}
 .con_wrap{margin: 50px auto; width: 78.125vw/*600px*/; height: auto;}
 .con_wrap_01{width: 83.333333vw/*640px*/; height: 117.171875vw/*900px*/;}
@@ -26,7 +26,7 @@
 
 .tip_title dl{padding: 15px 10px; width: 100%; height: auto; min-height: 100px }
 .tip_title dt{margin-bottom: 10px; width: 100%; height: auto; font-size: 14px; text-indent: 5px;}
-.tip_title dd{padding-left: 10px; width: 100%; height: auto; min-height: 75px; font-size: 11px; line-height: 1.6;}
+.tip_title dd{padding-left: 10px; width: 100%; height: auto; min-height: 70px; font-size: 11px; line-height: 1.6;}
 
 /*===================conBox02===================*/
 .con_wrap ul{margin: auto; width: 100%; height: 100%; }
@@ -47,9 +47,8 @@
 
 .sub_pic{float: left; width: 62.5vw/*480px*/; height: 100%;}
 
-.more{float: right; margin-right: 10.9375vw/*84px*/; width: auto; height: 45px;}
-  .more a{display: block; width: 100%; height: 100%; }
-  .more p{display: block; width: 100%; height: 25px;}
-  .more i{display: block; width: 100%; height: 20px;}
+.more{margin-right: 5.2083333vw/*40px*/;}
+.more p{padding: 0.3rem 0.8rem; font-size: 11px; }
+
 
 #conBox05{padding-bottom: 30px;}

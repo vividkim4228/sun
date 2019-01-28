@@ -14,9 +14,3 @@
   .question .text p {line-height: 50px;}
 
 }
-
-@media screen and (min-width: 769px) and (max-width: 960px) {
-  h1{left: 50%; transform: translate(-50%, -50%);}
-  .menu{display: none;}
-  
-}

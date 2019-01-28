@@ -22,7 +22,7 @@
   .product dd:nth-of-type(2){width: 100%; height: 3.125vw/*15px*/; font-size: 8px;} 
   .product dd:nth-of-type(2) p{line-height: 3.125vw/*15px*/; text-indent:  15vw/*72px*/} 
 
-  .more{margin-right: 4.166666vw/*20px*/;}
+  .more{margin-top: 6.25vw/*30px*/;}
   .more p{padding: 0.3rem 0.8rem; font-size: 11px; }
 
 

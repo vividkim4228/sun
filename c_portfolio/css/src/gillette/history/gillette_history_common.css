@@ -3,20 +3,20 @@
 #wrap{width: 100%; height: auto; }
   
 /* sideMenu */
-#sideMenu{background-color: #171717;}
+#sideMenu{background-color: #f0f1f2;}
   .sub_menu{line-height: 2.083333vw/*20px*/;}
-  .sub_menu a{float: left; display: block; color:#fff; text-align:center;}
+  .sub_menu a{float: left; display: block; color:#0e0e0e; text-align:center;}
 
 
 /* common */
 
-#conBox{position: relative; background-color: #171717;}
-.v_line{position: absolute; left: 50%; transform: translateX(-50%); background-color: #fff; }
+#conBox{position: relative; padding-bottom: 50px;}
+.v_line{position: absolute; left: 50%; transform: translateX(-50%); background-color: #021333; }
 .history{position: relative;}
-.history dl{position: absolute; color:#fff;}
+.history dl{position: absolute; color:#0e0e0e;}
 .history dt{font-weight: 600;}
 .num_box{position: absolute; background-repeat: no-repeat; background-size: contain; background-position: center;}
-.pic_box{position: absolute; background-repeat: no-repeat; background-position: top left; }
+.pic_box{position: absolute; background-repeat: no-repeat; background-position: top left; background-size: contain; }
 
 .history:nth-of-type(3) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_02_tab.png");}
 .history:nth-of-type(4) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_03_tab.png");}

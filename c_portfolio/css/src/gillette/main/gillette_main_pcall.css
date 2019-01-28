@@ -10,8 +10,8 @@
   .indicator:hover{height: 12px;}
   .indicator>ul>li{width: 20%; height: 100%; float:left; border-radius: 4px;}
   .indicator>ul>li:last-child{margin-right: 0;}
-
   .indicator>ul>li:last-child{display: none}
+
   .sns_box{display: none;}
 
   
@@ -66,7 +66,7 @@
   .video_text h4{margin-bottom: 5px; border-color: #0e0e0e}
   .video_text p{margin-bottom: 10px; width: 100%; height: auto; line-height: 1.6;}
   .video_text p:nth-of-type(2){margin-bottom: 0;}
-  .video_01 .video_title{color:#0e0e0e;}
+  .video_01 .video_title a{color:#0e0e0e;}
   .video_01 .video_text{color:#0e0e0e;}
   .video_02 .video_text {position: relative;}
   .video_02 .video_text p {line-height: 1.8;}

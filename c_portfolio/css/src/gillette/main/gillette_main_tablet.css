@@ -5,7 +5,7 @@
 
 /* --------#conBox01 ----------------------------------------*/
 .indicator{height: calc(100% - 70px);}
-
+.indicator:hover{width: 12px;}
 /* --------#conBox01 ----------------------------------------*/
 
 #conBox01{padding-bottom:0;}
