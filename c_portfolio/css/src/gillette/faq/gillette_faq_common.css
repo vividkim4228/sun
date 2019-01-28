@@ -13,10 +13,11 @@
 .question .num::before{content:""; position: absolute; display: block; width: 100%; background-color: #f0f1f2}
 .num p{position: absolute; transform: skew(30deg); color:#0e0e0e; width:100%; height: 100%; font-size: 2rem; line-height:30px;  font-weight: 600;}
 .text{position: absolute; top: 50%; transform: translateY(-50%); background-color: #fff; border: 2px solid  rgba(0,0,0,0.3); border-left: none; border-radius: 0 0.2rem 0.2rem 0; transition: all 700ms ease;}
-.text:hover,
-.text:focus{background-color: #171717;}
-.text:hover p,
-.text:focus p{color: #f0f1f2}
+.question li:hover .text,
+.question li:focus .text{background-color: #171717;}
+.question li:hover .text p,
+.question li:focus .text p{color: #f0f1f2	}
+
 .text p{position: absolute; top: 50%; transform: translateY(-50%) skew(30deg); color:#0e0e0e; transition: all 700ms ease; }
 
 .answer{display: none; position: absolute; background-color: rgba(0,0,0,0.8);}
