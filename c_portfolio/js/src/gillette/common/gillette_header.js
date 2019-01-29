@@ -63,8 +63,17 @@
       e.preventDefault();
       // menu.stop(true,false).css({display:'block'})
       // menu.stop(true,false).animate({left:0},800)
-      menu.addClass('menu_active')
+      menu.toggleClass('menu_active')
       console.log(menuDp)
+  });
+
+// 메뉴버튼 애니메이션
+  menuBtn.each(function(e){
+    var $this = $(this);
+      $this.on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    })
   });
 
  
@@ -101,5 +110,9 @@
                   e.preventDefault();
                   searchBar.slideUp(500);
                   });
+
+
+
+
 
 })(jQuery);

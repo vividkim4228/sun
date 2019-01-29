@@ -19,6 +19,7 @@
 /* ======================conBox01======================*/
   #conBox01{background-color: transparent; padding: 0}
   .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw;}
+  
   .scroll_btn{position: absolute; top: 50%; bottom: auto; right: 0; left: auto; transform: translateY(-50%); width: 46px; height: 50px; background-image: url("../../../../img/gillette/html_img/main/right_btn.png");}
 /* ===================conBox02 & 03======================*/
   .background{ top: 0; right: -10%; width: 40%; height: 100%;}
@@ -49,7 +50,7 @@
   #conBox04 .pic_wrap{right: 9.375vw/*90px*/; width: 39.583333vw/*380px*/; height: 28.125vw/*270px*/; background-size: 80% auto; background-position: 15% 100%}
   #conBox04 .pic{width: 18.75vw/*180*/; height: 20.833333vw/*200*/;border-radius: 1.5625vw/*15px*/; box-shadow: 1.5rem 1.5rem 1rem rgba(0,0,0,0.6)}
   #conBox04 .pic_active{width: 22.916666vw/*220*/; height: 25vw/*240*/; }
-    
+  #conBox04 .product dd{color:#0e0e0e;}
   
 
 
@@ -66,8 +67,8 @@
   .video_text h4{margin-bottom: 5px; border-color: #0e0e0e}
   .video_text p{margin-bottom: 10px; width: 100%; height: auto; line-height: 1.6;}
   .video_text p:nth-of-type(2){margin-bottom: 0;}
-  .video_01 .video_title a{color:#0e0e0e;}
   .video_01 .video_text{color:#0e0e0e;}
+  .video_02 .video_title a{color:#fff;}
   .video_02 .video_text {position: relative;}
   .video_02 .video_text p {line-height: 1.8;}
   #videoBox02{display: none;}

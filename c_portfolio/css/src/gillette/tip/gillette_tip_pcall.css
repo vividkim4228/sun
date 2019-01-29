@@ -1,21 +1,19 @@
 /* gillette_tip_pcall.css */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
 	
 #wrap{width: 600%; height: 100%;} 
 .s_wrap{position: relative; top: 60px; box-sizing: border-box; width:calc(100% / 6); height: calc(100% - 100px); float: left;}
 
 /*===================conBox===================*/
+.title{font-size: 2.625rem; padding: 1.5rem 0;}
 
-.title{width: 400px; height: 45px/*60px*/; margin: 10px auto; font-size: 2.625rem; line-height: 45px; }
-#conBox01 .title{display: block;}
-
-.con_wrap_01{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 87vw/*835px*/; height: 29.166666vw/*280px*/; min-width: 750px; padding: 0;}
+.con_wrap_01{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -45%); width: 87vw/*835px*/; height: 29.166666vw/*280px*/; min-width: 750px; padding: 0;}
 
 .tip_title{margin-right: 2.6041666vw/*25px*/; width: 19.791666vw/*190px*/; height: 100%; min-width: 170px; min-height: 310px; transition: all 600ms ease;}
 .tip_title:last-child{margin-right: 0;}
 .tip_title a {background-size: auto 21.875vw/*210px*/}
-.tip_title dl{padding:1.0416666vw/*10px*/ 0.5208333vw/*5px*/;width: 100%; height: auto;  min-height: 150px; }
+.tip_title dl{padding:1.0416666vw/*10px*/ 0.5208333vw/*5px*/;width: 100%; height: auto;  min-height: 140px; }
 .tip_title dt{margin-bottom: 1.0416666vw/*10px*/; height: auto; width: auto; font-size: 16px; text-indent: 0.6rem;}
 .tip_title dd{padding-left: 10px; width: 100%; min-height: 90px; font-size: 13px; line-height: 1.6;}
 
@@ -49,6 +47,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 959px) {
-
-.con_01{padding: 0;}
+  .tip_title dl{min-height: 130px; }
+  .tip_title dd{padding-left: 8px; width: 100%; min-height: 70px; font-size: 11px;
 }

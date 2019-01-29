@@ -16,7 +16,7 @@
 .s_wrap{overflow: hidden;}
 .icon_wrap{display: none;}
 .background{top: 0; right: 0; width: 35%; height: 100%; }
-.background::after{top: 0; left: 95%; width: 100%; height: 100%;}
+.background::after{top: 0; left: 96%; width: 200%; height: 100%;}
 .text_wrap{top: 50%; ;left: 4.557291vw/*35px*/; transform: translateY(-50%);width: 50.78125vw/*390px*/; height: auto; }
 .text_wrap dt{margin-bottom: 3.90625vw/*30px*/; width: 100%; height: 15.625vw/*120px*/; }
 .text_wrap dd{margin-bottom: 3.90625vw/*30px*/; width: 90%; height: auto;  font-size: 11px; line-height: 1.8;}
@@ -41,15 +41,15 @@
 /* --------#videoBox-----------------------*/
 #conBox04 .background,
 #videoBox01 .background,
-#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(80deg)}
+#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(-80deg)}
 #conBox04 .background::after,
 #videoBox01 .background::after,
-#videoBox02 .background::after{width: 300%; height: 100%;}
+#videoBox02 .background::after{width: 500%; height: 100%;}
 
 .v_box{width: 75vw/*360px*/;}
 .video_title{padding: 1rem; box-sizing: border-box; width:100%; height:auto; font-size: 8vw;}
 
-.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto; color:#0e0e0e;}
+.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto; color:#f0f1f2;}
 .video_text h4{font-size: 0.8125rem;}
 .video_text p{font-size: 0.6875rem; line-height: 2; margin-bottom: 10px	 }
 #videoBox01 .video_02{display: none;}

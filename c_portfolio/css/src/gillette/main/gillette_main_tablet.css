@@ -26,7 +26,7 @@
 .purchase p{padding: 0.3rem 0.8rem; font-size: 11px; }
 
 /* --------#conBox04---------------------------------*/
-#conBox04 .text_wrap{z-index: 100; top: auto; bottom: 3.90625vw/*30px*/; left: 50%; transform: translateX(-50%); width: 80.729166vw/*620px*/;}
+#conBox04 .text_wrap{z-index: 100; top: auto; bottom: calc(3.90625vw + 40px)/*30px*/; left: 50%; transform: translateX(-50%); width: 80.729166vw/*620px*/;}
 #conBox04 .pic_wrap{top: 50%; left: 50%; transform: translateX(-50%) translateY(-70%); width: 80.729166vw/*620px*/; height: 57.291666vw/*440px*/;}
 #conBox04 .pic{width: 37.760416vw/*290px*/; height: 42.31770vw/*325px*/; }
 #conBox04 .pic::after{border-radius: 4.557291vw/*35px*/}
@@ -43,15 +43,15 @@
 /* --------#videoBox-----------------------*/
 #conBox04 .background,
 #videoBox01 .background,
-#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(80deg)}
+#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(-80deg)}
 #conBox04 .background::after,
 #videoBox01 .background::after,
-#videoBox02 .background::after{width: 300%; height: 100%;}
+#videoBox02 .background::after{width: 500%; height: 100%;}
 
 .v_box{width: 75vw/*360px*/;}
 .video_title{padding: 2rem 0 1rem; box-sizing: border-box; width:100%; height:auto; font-size: 7vw;}
 
-.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto; color:#0e0e0e;}
+.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto;}
 .video_text h4{font-size: 0.8125rem;}
 .video_text p{font-size: 0.6875rem; line-height: 2; margin-bottom: 10px	 }
 #videoBox01 .video_02{display: none;}

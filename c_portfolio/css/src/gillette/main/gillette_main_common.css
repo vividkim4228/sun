@@ -3,12 +3,7 @@
 #wrap{width: 100%; height: 100%; font-family: "나눔바른고딕", nanumgothic, Futura, sans-serif; overflow: hidden;}
 .m_wrap{position: relative; width: 100%; height: 500%}
 .s_wrap{position: relative; width: 100%; height: 20%; overflow: hidden; padding-bottom: 0; float: none;}
-
-/* ============ scroll_btn =============================== */
-  .scroll_btn{position: absolute; z-index: 500; width: 50px; height: 46px; bottom: 0; left: 50%; transform: translateX(-50%); background-image: url("../../../../img/gillette/html_img/main/down_btn.png"); background-repeat: no-repeat;
-   background-size: contain; background-position: left;}
-  .scroll_btn button{width: 100%; height: 100%;}  
-  .scroll_btn:hover{background-color: rgba(0,0,0,0.8);}
+ 
 
 /* ============ indicator ================================ */
   .indicator{position: fixed; bottom: 0; right: 0; z-index: 2000; width: 0.5rem; height: calc(100% - 3.75rem);  border-radius: 50%; transition: all 400ms ease} 
@@ -31,7 +26,7 @@
 
 /* ============ conBox02 ================================== */
   .background{position: absolute; transform: skew(-20deg); background-color: #021333;}
-  .background::after{content: ""; position: absolute; display: block; background-color: #021333}
+  .background::after{content: ""; position: absolute; display: block; background-color: inherit;}
 
   .product{width: 100%; height: 100%;}
   .pic_wrap{position: absolute;}
@@ -83,6 +78,7 @@
 #conBox04 .pic_active{z-index: 100; top: auto; bottom: 0; left: auto; right: 15%;}
 #conBox04 .pic_active::after{display: none;}
 
+#conBox04 .product dd{color:#fff;}
 #conBox04 .product_01 dt{background-image: url(../../../../img/gillette/html_img/main/proshield_blades.png); background-repeat: no-repeat;}
   .product_02 dt{background-image: url(../../../../img/gillette/html_img/main/proglide_blades.png); background-size: auto 100%; background-repeat: no-repeat;}
   
@@ -103,11 +99,11 @@
   .video_wrap{width: 100%; height: auto;}
   .v_box video{width: 100%; height:100%; border-radius: 0.3rem;}
   .v_box dl{width: 100%; height: 100%;}
-  .video_title{font-weight: 700; color:#fff; text-transform: uppercase; text-align: center;  }
-  .video_title a{display: block; width: 100%; height: 100%; color:#f0f1f2;}
+  .video_title{font-weight: 700; text-transform: uppercase; text-align: center;}
+  .video_title a{display: block; width: 100%; height: 100%; color:#0e0e0e;}
   /*.s_wrap video{width: 100%; height: 100%;}*/
   .video_text{color:#fff; text-align: center; }
-  .video_text h4{margin-bottom: 5px; padding: 0 0.3rem 0.2rem; display: inline-block;  width: auto; height: auto; font-size: 13px; border-bottom: 1px solid  #0e0e0e;}
+  .video_text h4{margin-bottom: 5px; padding: 0 0.3rem 0.2rem; display: inline-block;  width: auto; height: auto; font-size: 13px; border-bottom: 1px solid  #fff}
   .video_text p{font-size: 11px; line-height: 16px;}
 
 

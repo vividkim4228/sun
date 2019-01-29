@@ -1,6 +1,7 @@
 (function($){
   var conBox  =  $('#conBox');
   var winW    =  $(window).width();
+  var history =  $('.history')
   var n       =  0;
   var mob     =  480;
   var tab     =  768;
@@ -33,19 +34,20 @@ $(window).on('resize',function(){
 // 가로스크롤
 
 var hScroll = function(){
-  conBox.stop(true,false).animate({marginLeft:n*-100/14+'%'},800)
+  conBox.stop(true,false).animate({marginLeft:n*-100+'%'},800)
   }
 
 var horizontalScroll = function(){
-  $('body').on('mousewheel',function(e){
+  conBox.on('mousewheel',function(e){
+    var historyLen = history.length;
     e.preventDefault();
     var wheelDelta = e.originalEvent.wheelDelta;
     if(wheelDelta<0){
-      if(n<13){
+      if(n<historyLen-1){
         n+=1;
         hScroll();
       }else{
-        n=13;
+        n=historyLen-1;
       }
     }else{
       if(n>0){

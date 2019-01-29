@@ -121,6 +121,8 @@ var verticalScroll = function(){
   $('body').on('mousewheel',function(e){
     e.preventDefault();
     var wheelDelta = e.originalEvent.wheelDelta;
+    
+      console.log(wheelDelta);
     if(wheelDelta<0){
       if(n<5){
         n+=1;
