@@ -133,11 +133,19 @@ var hScroll = function(){
 }
 
 // 세로 이동 
-var vScroll = function(){
-    indiActive();
-  mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800,function(){
-    contentShow();    
-  })
+// var vScroll = function(){
+//     indiActive();
+//   mWrap.stop(true,false).animate({marginTop:n*-100+'%'},800,function(){
+//     contentShow();    
+//   })
+// }
+var sWrapLen = sWrap.length;
+var sWrapLen2;
+
+if(winW>800){
+  sWrapLen2 = sWrapLen -2;
+}else{
+  sWrapLen2 = sWrapLen -1;
 }
 
 var horizontalScroll = function(){
@@ -145,19 +153,21 @@ var horizontalScroll = function(){
     e.preventDefault();
     var wheelDelta = e.originalEvent.wheelDelta;
     if(wheelDelta<0){
-      if(n<4){
+      if(n<sWrapLen2){
         n+=1;
         hScroll();
       }else{
-        n=4;
+        n=sWrapLen2;
       }
+    }else{
       if(n>0){
         n-=1;
         hScroll();
       }else{
         n=0;
       }
-  }
+    
+    }
   });
   scrollBtn.on('click',function(e){
     e.preventDefault();
@@ -167,115 +177,66 @@ var horizontalScroll = function(){
 }
 
 // 세로스크롤 함수 설정
-var verticalScroll = function(){
-  $('body').on('mousewheel',function(e){
-    e.preventDefault();
-    var wheelDelta = e.originalEvent.wheelDelta;
-    if(wheelDelta<0){
-      if(n<5){
-        n+=1;
-        vScroll();
-      }else{
-        n=5;
-      }
+// var verticalScroll = function(){
+//   $('body').on('mousewheel',function(e){
+//     e.preventDefault();
+//     var wheelDelta = e.originalEvent.wheelDelta;
+//     if(wheelDelta<0){
+//       if(n<5){
+//         n+=1;
+//         vScroll();
+//       }else{
+//         n=5;
+//       }
+//     }else{
+//       if(n>0){
+//         n-=1;
+//         vScroll();
+//       }else{
+//         n=0;        
+//     }
+//   }
+// });
+//   scrollBtn.on('click',function(e){
+//       e.preventDefault();
+//       n=1;
+//       vScroll();
+//   });
+// }
 
-      if(n>0){
-        n-=1;
-        vScroll();
-      }else{
-        n=0;        
-    }
-  }
-});
-  scrollBtn.on('click',function(e){
-      e.preventDefault();
-      n=1;
-      vScroll();
-  });
-}
-
-// 창크기에 따라 스크롤방식 변경
-if(winW>800){
-  horizontalScroll();
-  hClick();
-}else{
-  verticalScroll();
-  vClick();
-}
-
+horizontalScroll();
 // 모바일, 태블릿 터치로 스크롤하기
 
-var mousedownY;
-var mousedownX;
-var mouseupY;
-var mouseupX;
+var touchstartX;
+var touchendX;
 var  xDif;
 var  yDif;
 
-var mobileHscroll = function(){
-$(window).on('mousedown',function(e){
-  mousedownY = e.originalEvent.clientY;
-  mousedownX = e.originalEvent.clientX;
-});
 
-$(window).on('mouseup',function(e){
-  mouseupY = e.originalEvent.clientY;
-  mouseupX = e.originalEvent.clientX;
-  xDif = mousedownX - mouseupX;
-  yDif = mousedownY - mouseupY;
-  console.log(xDif);
-  console.log(yDif);
-  if(xDif >= 20 ){
-    if(n<4){
-        n+=1;
-        hScroll();
-      }else{
-        n=4;
-      }
-  }else if(xDif <= -20){
-    if(n>0){
-        n-=1;
-        hScroll();
-      }else{
-        n=0;
-      }
-  }
-});
-}
-    
-var mobileVscroll = function(){
-$(window).on('mousedown',function(e){
-  mousedownY = e.originalEvent.clientY;
-  mousedownX = e.originalEvent.clientX;
-});
+  $(window).on('touchstart',function(e){
+   touchstartX = e.originalEvent.changedTouches[0].screenX;
+  });
 
-$(window).on('mouseup',function(e){
-  mouseupY = e.originalEvent.clientY;
-  mouseupX = e.originalEvent.clientX;
-  xDif = mousedownX - mouseupX;
-  yDif = mousedownY - mouseupY;
-  console.log(xDif);
-  console.log(yDif);
-  if(yDif >= 20 ){
-    if(n<4){
-        n+=1;
-        vScroll();
-      }else{
-        n=4;
-      }
-  }else if(yDif <= -20){
-    if(n>0){
-        n-=1;
-        vScroll();
-      }else{
-        n=0;
-      }
-  }
-});
-}
-
-mobileVscroll();
-
+  $(window).on('touchend',function(e){
+    touchendX = e.originalEvent.changedTouches[0].screenX;
+    xDif = touchstartX - touchendX;
+    console.log(xDif);
+    if(xDif >= 20 ){
+      if(n<5){
+          n+=1;
+          hScroll();
+        }else{
+          n=5;
+        }
+    }else if(xDif <= -20){
+      if(n>0){
+          n-=1;
+          hScroll();
+        }else{
+          n=0;
+        }
+    }
+  });
 
 
 })(jQuery);

@@ -20,7 +20,6 @@
   #conBox01{background-color: transparent; padding: 0}
   .main_logo{width: 64.583334vw/*620...*/; height: 16.666667vw/*160...*/; font-size: 14vw;line-height: 16.666667vw;}
   
-  .scroll_btn{position: absolute; top: 50%; bottom: auto; right: 0; left: auto; transform: translateY(-50%); width: 46px; height: 50px; background-image: url("../../../../img/gillette/html_img/main/right_btn.png");}
 /* ===================conBox02 & 03======================*/
   .background{ top: 0; right: -10%; width: 40%; height: 100%;}
   .background::after{top: 0; right: -50%; width: 100%; height: 100%;}
