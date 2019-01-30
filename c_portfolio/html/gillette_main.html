@@ -8,9 +8,7 @@
     
     
     <link rel="stylesheet" href="../css/base/reset.css" />
-    <link rel="stylesheet" href="../css/base/common.css" />
-    <link rel="stylesheet" href="../css/src/gillette/common/gillette_header.css"/>
-    <link rel="stylesheet" href="../css/src/gillette/common/gillette_footer.css"/>
+    <link rel="stylesheet" href="../css/base/common.css" />    
     <link rel="stylesheet" href="../css/src/gillette/gillette_main.css" />
 
    
@@ -33,11 +31,15 @@
   <body>
 <!-- layout -->
     <div id="wrap">
+      <div id="logoBox">
+        <div class="main_logo">
+          <div class="main_logo_bg"></div>
+        </div>
+      </div>
       <div class="m_wrap">
   <!--   conBox   -->
         <article id="conBox01" class="s_wrap">
           <h2 class="hidden">메인화면</h2>
-          <div class="main_logo"></div>
           <div class="main_video">
             <video preload autoplay loop muted="muted">
              <source src = "../video/main_video.webm" type = "video/webm">
@@ -56,8 +58,8 @@
               <li><a href="#conBox02"><span></span></a></li>
               <li><a href="#conBox03"><span></span></a></li>
               <li><a href="#conBox04"><span></span></a></li>
-              <li><a href="#videoBox01"><span>05</span></a></li>
-              <li><a href="#videoBox02"><span>06</span></a></li>
+              <li><a href="#conBox05"><span></span></a></li>
+              <li><a href="#conBox06"><span></span></a></li>
             </ul>
           </div>
         </article>  
@@ -171,7 +173,7 @@
         </article>
   
   <!--   videoBox   -->
-        <article id="videoBox01" class ="s_wrap">
+        <article id="conBox05" class ="s_wrap">
           <h2 class="hidden">동영상</h2>
           <div class="background"></div>
           <div class="v_box video_01">
@@ -210,7 +212,7 @@
             </dl>
           </div>
         </article>
-        <article id="videoBox02" class ="s_wrap">
+        <article id="conBox06" class ="s_wrap">
           <h2 class="hidden">동영상(모바일용)</h2>
           <div class="background"></div>
           <div class="v_box video_02">

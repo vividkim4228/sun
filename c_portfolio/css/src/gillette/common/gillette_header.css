@@ -24,11 +24,11 @@
   .menu{position: fixed; z-index: 500; top: 0; box-sizing: border-box; height: 100vh; background-color: #0e0e0e; transition: left 800ms ease; }
   .menu.menu_active{left: 0;}
 
-  .menu dt{font-size: 14px; box-sizing: border-box; }
+  .menu dt{position: relative; font-size: 14px; box-sizing: border-box; }
   .menu dd{display: none; font-size: 12px; width: 100%; height: auto; margin-bottom: 10px;}
   .menu a{display: block; width: 100%; height: 100%; box-sizing: border-box; text-align: left; color: #f0f1f2; text-align: center;}
-
-  .menu dl:hover dt{font-weight: bold; border-bottom: 3px solid  #fff;;}
+  .menu .dt_border{position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #fff; transition: all 500ms ease}
+  .menu dl:hover .dt_border{width: 100%;}
   .menu dd a:hover,
   .menu dd a:focus{font-size: 13px; font-weight: 700;}
 
@@ -88,7 +88,8 @@ h1{width: 160px; height: 44px; background-size: auto 80%; left:8px; transform:tr
 .menu dt{width: 100%; height: 100%; line-height: 60px;}
 .menu dd{margin-top: 10px; width: 100%; height: auto;}
 .menu dd a{display: block; width: 100%; height: 100%; text-align: center; color:#f0f1f2; line-height: 30px;}
-.menu dt a:focus{border: none; border-bottom: 3px solid  #fff; }
+
+.menu .dt_border{height: 4px;}
 
 .menu_bg{display: none; position: fixed; top: 60px; left: -100%; z-index: -1; width: 200vw; height: 15rem;}
 

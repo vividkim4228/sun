@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- tabmenu.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../css/base/reset.css" />  
+    <link rel="stylesheet" href="../css/base/common.css" />
+    <link rel="stylesheet" href="../css/src/tabmenu.css"/>
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <!-- <link rel="apple-touch-icon" href="../../ie/favicon.png"> -->
+    <!-- link:favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.ico"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.png"> -->
+    <title>tabmenu</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      
+      <header id="headBox"></header>
+      <section id="viewBox"></section>
+      <article id="conBox">
+        <h2>content</h2>
+        <div class="multi_tab">
+          <h3>멀티 탭메뉴 만들기</h3>
+          <ul class="step_01">
+            <li><button type="button" data-link="tab_01">menu_01</button></li>
+            <li><button type="button" data-link="tab_02">menu_02</button></li>
+            <li><button type="button" data-link="tab_03">menu_03</button></li>
+            <li><button type="button" data-link="tab_04">menu_04</button></li>
+            <li><button type="button" data-link="tab_05">menu_05</button></li>
+          </ul>
+          <div class="tab_view">
+            
+          </div>
+        </div>
+      </article>
+      <footer id="footBox"></footer>
+    </div>
+  <!--  script   -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/tabmenu.js"></script>
+  </body>
+  </html>

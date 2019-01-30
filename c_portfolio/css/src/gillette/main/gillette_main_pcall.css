@@ -25,18 +25,19 @@
   .background{ top: 0; right: -10%; width: 40%; height: 100%;}
   .background::after{top: 0; right: -50%; width: 100%; height: 100%;}
   
-  .pic_wrap{position: absolute; top: 50%; right: 25vw/*25px*/; transform: translateY(-50%); width: 18.75vw/*180px*/; height: 41.666666vw/*400px*/; }
+  .pic_wrap{position: absolute; top: 50%; right: 20vw; transform: translateY(-50%); width: 18.75vw/*180px*/; height: 41.666666vw/*400px*/;} 
   #conBox02 .pic_wrap{background-image: url(../../../../img/gillette/html_img/main/pc_product_01.png); background-position: 0 100%; background-size: 90%;}
   
-  .text_wrap{top: 50%; left: 15%; transform: translateY(-50%); width: 31.25vw/*300px*/; height: 18.75vw/*180px*/; min-width: 300px }
+  .text_wrap{top: 50%; left: 10%; transform: translateY(-50%); width: 31.25vw/*300px*/; height: 18.75vw/*180px*/; min-width: 300px;}
   .text_wrap dt{width: 100%; height: 6.25vw/*60px*/; margin-bottom: 3.125vw/*15px*/; }
   .text_wrap dd{width: 100%; margin-bottom: 3.125vw/*30px*/; height: auto; font-size: 1.145833vw/*11px*/; line-height: 1.6; }
   .text_wrap .purchase_btn{margin-top: 0; box-sizing: border-box; width: 30%; height: 3.125vw/*30px*/;}
   .text_wrap .purchase_btn a{display: block; width: 100%; height: 100%; line-height: 1.5625vw/*15px*/; text-indent: 1.5625vw/*15px*/;}
   .text_wrap .purchase_btn p{width: 100%; height: 50%;}
   .text_wrap .purchase_btn i{display: block; width: 100%; height: 50%;}
-  .icon_wrap{top: 50%; right: 8.333333vw/*80px*/; transform: translateY(-45%);width: 16.666666vw/*160px*/; height: 16.666666vw/*160px*/; min-width: 140px; }
-  .icon_wrap .icon_box{float: left; width: 4.166666vw/*40px*/; height: 100%; }
+  .icon_wrap{top: 50%; right: 5vw; transform: translateY(-45%);width: 16.666666vw/*160px*/; height: 16.666666vw/*160px*/; min-width: 140px;}
+  
+  .icon_wrap .icon_box{float: left; width: 4.166666vw/*40px*/; height: 100%;  }
   .icon_wrap .explain_box{float: left; width: 12.5vw/*120px*/; height: 100%;}
   .icon_wrap li{width: 100%; height: 20%; font-size: 1.145833vw/*11px*/; line-height: 4.6875vw/*45px*/; text-align: left; text-indent: 0.5rem; background-size: auto 70%}
 
@@ -45,25 +46,27 @@
   .purchase p{padding: 0rem 1rem; width: auto; height: auto; text-align: center; line-height: 30px;}
  
 /* ======================conBox03======================*/
-  #conBox03 .pic_wrap{right: 16.666666vw/*160px*/; background-size: auto 90%; background-position: 0% 100%;}
+  #conBox03 .pic_wrap{right: 10vw; background-size: auto 90%; background-position: 0% 100%;}
+
 /* ======================conBox04======================*/
-  #conBox04 .pic_wrap{right: 9.375vw/*90px*/; width: 39.583333vw/*380px*/; height: 28.125vw/*270px*/; background-size: 80% auto; background-position: 15% 100%}
+  #conBox04 .pic_wrap{right: 5vw; width: 39.583333vw/*380px*/; height: 28.125vw/*270px*/; background-size: 80% auto; background-position: 15% 100%}
   #conBox04 .pic{width: 18.75vw/*180*/; height: 20.833333vw/*200*/;border-radius: 1.5625vw/*15px*/; box-shadow: 1.5rem 1.5rem 1rem rgba(0,0,0,0.6)}
   #conBox04 .pic_active{width: 22.916666vw/*220*/; height: 25vw/*240*/; }
   #conBox04 .product dd{color:#0e0e0e;}
   
 
+  
 
   /* ===================videoBox======================*/
   
-  #videoBox01 .background{width: 60%;}
+  #conBox05 .background{width: 60%;}
   .v_box{width: 31.25vw/*300px*/; height: 37.5vw/*360px*/; min-height: 330px; max-height: 650px; float: left; top: 50%; transform: translateY(-45%);}
   .v_box dl{width: 100%; height: 100%; position: relative;}
   .video_01{left:10%;}
   .video_02{left: auto; right:10%;}
-  .video_title{box-sizing: border-box; width: 100%; height: 4.166666vw/*40px*/; font-size: 2.5vw; line-height: 4.166666vw/*40px*/;}
-  .v_box video{width: 100%; height: 17.708333vw/*170px*/;}
-  .video_text{padding: 1.5625vw/*15px*/; box-sizing: border-box; width: 100%; height: auto; }
+  .video_title{box-sizing: border-box; width: 100%; height: 4.166666vw/*40px*/; font-size: 2.5vw; line-height: 4.166666vw/*40px*/; margin-bottom: 30px;}
+  .v_box video{width: 100%; height: 17.708333vw/*170px*/; margin-bottom: 30px;}
+  .video_text{padding: 1.5625vw/*15px*/; box-sizing: border-box; width: 100%; height: auto;  margin-top: 20px;}
   .video_text h4{margin-bottom: 5px; border-color: #0e0e0e}
   .video_text p{margin-bottom: 10px; width: 100%; height: auto; line-height: 1.6;}
   .video_text p:nth-of-type(2){margin-bottom: 0;}
@@ -71,8 +74,17 @@
   .video_02 .video_title a{color:#fff;}
   .video_02 .video_text {position: relative;}
   .video_02 .video_text p {line-height: 1.8;}
-  #videoBox02{display: none;}
+  #conBox06{display: none;}
+
   
+  /* active animation ===============================*/
+  
+  .text_wrap.active{left: 15%;}
+  .pic_wrap.active{right: 25vw;}
+  .icon_wrap.active{right: 8.333333vw; /*80px*/;}
+  #conBox03 .pic_wrap.active{right: 16.666666vw/*160px*/;}
+  #conBox04 .pic_wrap.active{left: auto; right: 7.8125vw/*75px*/}
+
 }
 
 @media screen and (min-width: 1366px){

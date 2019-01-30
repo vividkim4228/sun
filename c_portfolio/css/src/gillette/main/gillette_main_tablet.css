@@ -17,17 +17,17 @@
 .icon_wrap{display: none;}
 .background{top: 0; right: 0; width: 35%; height: 100%; }
 .background::after{top: 0; left: 95%; width: 100%; height: 100%;}
-.text_wrap{top: 50%; left: 4.557291vw/*35px*/; transform: translateY(-50%);width: 50.78125vw/*390px*/; height: auto; }
+.text_wrap{top: 50%; left: 0 ; transform: translateY(-50%);width: 50.78125vw/*390px*/; height: auto; }
 .text_wrap dt{margin-bottom: 3.90625vw/*30px*/; width: 100%; height: 15.625vw/*120px*/; }
 .text_wrap dd{margin-bottom: 3.90625vw/*30px*/; width: 90%; height: auto;  font-size: 11px; line-height: 1.8;}
-.pic_wrap{top: 50%; right: 4.557291vw/*35px*/; transform: translateY(-40%); width: 39.0625vw/*300px*/; height: 75%;}
+.pic_wrap{top: 50%; right: 0; transform: translateY(-40%); width: 39.0625vw/*300px*/; height: 75%;}
 
 .purchase{margin-right: 5.2083333vw/*40px*/;}
 .purchase p{padding: 0.3rem 0.8rem; font-size: 11px; }
 
 /* --------#conBox04---------------------------------*/
-#conBox04 .text_wrap{z-index: 100; top: auto; bottom: calc(3.90625vw + 40px)/*30px*/; left: 50%; transform: translateX(-50%); width: 80.729166vw/*620px*/;}
-#conBox04 .pic_wrap{top: 50%; left: 50%; transform: translateX(-50%) translateY(-70%); width: 80.729166vw/*620px*/; height: 57.291666vw/*440px*/;}
+#conBox04 .text_wrap{z-index: 100; top: auto; bottom: 0; left: 50%; transform: translateX(-50%); width: 80.729166vw/*620px*/;}
+#conBox04 .pic_wrap{top: 45%; left: 50%; transform: translateX(-50%) translateY(-70%); width: 80.729166vw/*620px*/; height: 57.291666vw/*440px*/;}
 #conBox04 .pic{width: 37.760416vw/*290px*/; height: 42.31770vw/*325px*/; }
 #conBox04 .pic::after{border-radius: 4.557291vw/*35px*/}
 #conBox04 .pic_active{width: 46.875vw/*360px*/; height: 50.78125vw/*390px*/;}
@@ -42,21 +42,28 @@
 
 /* --------#videoBox-----------------------*/
 #conBox04 .background,
-#videoBox01 .background,
-#videoBox02 .background{left: 30%;  width: 150%; height: 100%; transform: skew(-80deg)}
+#conBox05 .background,
+#conBox06 .background{left: 30%;  width: 150%; height: 100%; transform: skew(-80deg)}
 #conBox04 .background::after,
-#videoBox01 .background::after,
-#videoBox02 .background::after{width: 500%; height: 100%;}
+#conBox05 .background::after,
+#conBox06 .background::after{width: 500%; height: 100%;}
 
 .v_box{width: 75vw/*360px*/;}
-.video_title{padding: 2rem 0 1rem; box-sizing: border-box; width:100%; height:auto; font-size: 7vw;}
-
-.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto;}
+.video_title{padding: 2rem 0 1rem; box-sizing: border-box; width:100%; height:auto; font-size: 7vw; margin-bottom: 20px;}
+.video video{margin-bottom: 10px;}
+.video_text{position: relative; padding: 1rem 0.5rem; box-sizing: border-box; width: 100%; height: auto; margin-top: 10px;}
 .video_text h4{font-size: 0.8125rem;}
 .video_text p{font-size: 0.6875rem; line-height: 2; margin-bottom: 10px	 }
-#videoBox01 .video_02{display: none;}
+#conBox05 .video_02{display: none;}
   
-  
+/* active animation*/
+
+  .text_wrap.active{left: 4.557291vw/*35px*/; }
+  .pic_wrap.active{right: 4.557291vw/*35px*/;}
+  .icon_wrap.active{right: 8.333333vw; /*80px*/;}
+  #conBox04 .pic_wrap.active{top: 50%;}
+  #conBox04 .text_wrap.active{bottom: 5.208333vw/*40px*/}
+
 }
 
 @media screen and (min-width: 481px ) and (max-width: 640px ){
