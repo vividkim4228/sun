@@ -6,11 +6,11 @@ var shaving    = $('.shaving');
 var style      = $('.style');
 var manscaping = $('.manscaping');
 var science    = $('.science');
-var ul = $('.con_wrap').children('ul')
-var subPic = ul.children('li').children('.sub_pic');
-var mob     =  480;
-var tab     =  800;
-var pc      =  1366;
+var ul         = $('.con_wrap').children('ul')
+var subPic     = ul.children('li').children('.sub_pic');
+var mob        =  480;
+var tab        =  800;
+var pc         =  1366;
 var myDevice;
 
 // 기기별 새로고침 
@@ -31,10 +31,10 @@ var beforeDevice = Device(winW);
 $(window).on('resize',function(){
   var nowW = $(window).width();
   var afterDevice = Device(nowW);
-  // console.log(beforeDevice, afterDevice);
-  if(beforeDevice !== afterDevice){location.reload();}
+   if(beforeDevice !== afterDevice){
+     location.reload(true);
+   }
 });
-
 
 
 
@@ -61,30 +61,65 @@ for(; i<4; i++){
  sciencePic.css({backgroundImage:'url("../img/gillette/html_img/tip/science/science_0'+k+'.jpg")'});
 };
 
-
-var n = 0;
-
-var hScroll = function(){
-  $(window).on('mousewheel',function(e){
-      e.preventDefault();
-      var wheelDelta = e.originalEvent.wheelDelta;
-      if(wheelDelta>0){
-        if(n<=0){
-          n=0
-        }else{
-          n-=180;
-          $(this).scrollLeft(n);
-        }
-      }else{
-        n+=180;
-        $(this).scrollLeft(n);
-      }
-      console.log(n);
-      })
+// m_wrap의 가로값 설정
+  var mWrap    =  $('.m_wrap');
+  var sWrap    =  $('.s_wrap');
+  var sWrapLen =  sWrap.length;
+if(winW > 800){
+  mWrap.css({width:sWrapLen*100+'%'})
+  sWrap.css({width:100/sWrapLen+'%'})
 }
 
+// 가로스크롤 이동
+var go = true
+var n  =  0;
+
+var hScroll = function(){
+  mWrap.animate({marginLeft:n*-100+'%'},1500,'easeOutQuint',function(){
+      go = true
+    });
+}
+
+var horizontalScroll = function(){
+  
+  $('body').on('mousewheel DOMMouseScroll',function(e){
+    e.preventDefault();
+    sLen = sWrap.length -1;
+  if(go){ 
+    go = false;    
+    var e = e.originalEvent
+    var delta
+    if(e.wheelDelta){
+      delta = e.wheelDelta;
+    }else{
+      delta = e.detail*-40;
+    }
+
+    if(delta<0){
+      if(n<sLen){
+        n+=1;        
+      }else{
+        n=sLen;
+      }
+    }else{
+      if(n>0){
+        n-=1;
+      }else{
+        n=0;
+      }     
+    }
+     hScroll();
+  }
+  });
+}
+  // scrollBtn.on('click',function(e){
+  //   e.preventDefault();
+  //   n=1;
+  //   hScroll();
+  // });
+
 if(winW>800){
-  hScroll();
+horizontalScroll();
 }
 
 })(jQuery);

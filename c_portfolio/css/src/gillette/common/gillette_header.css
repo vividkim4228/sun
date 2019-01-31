@@ -24,13 +24,21 @@
   .menu{position: fixed; z-index: 500; top: 0; box-sizing: border-box; height: 100vh; background-color: #0e0e0e; transition: left 800ms ease; }
   .menu.menu_active{left: 0;}
 
-  .menu dt{position: relative; font-size: 14px; box-sizing: border-box; }
-  .menu dd{display: none; font-size: 12px; width: 100%; height: auto; margin-bottom: 10px;}
-  .menu a{display: block; width: 100%; height: 100%; box-sizing: border-box; text-align: left; color: #f0f1f2; text-align: center;}
+  .menu dl{width: 100%; height: auto; margin-bottom: 1rem;}
+  .menu a{display: block; width: 100%; height: 100%; text-align: left; color: #f0f1f2;}
+
+  .menu dt{position: relative; display: inline-block; margin: 10px 0; width: auto; height: 35px; font-size: 14px; }
+  .menu dt a{font-size: 1.5rem; font-weight: 500; }
+
+  .menu dd{display: none; font-size: 12px; width: 100%; height: auto; margin-bottom: 20px;}
+  .menu dd li{width: 100%; height: 20px; margin-bottom: 20px;}
+  .menu dd a{font-size: 1.2rem; text-indent: 1rem; line-height: 25px; }
+
   .menu .dt_border{position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #fff; transition: all 500ms ease}
+
   .menu dl:hover .dt_border{width: 100%;}
   .menu dd a:hover,
-  .menu dd a:focus{font-size: 13px; font-weight: 700;}
+  .menu dd a:focus{font-weight: 700;}
 
   .menu_bg{background-color:  #0e0e0e;}
   .search_wrap{float: right;}
@@ -48,12 +56,7 @@
   h1{width: 180px; height: 40px;}
   .menu_btn{width: 45px; height: 45px;}
   .menu{left: -80vw; width: 80vw; padding: 80px 30px;}
-  .menu dl{width: 100%; height: auto; margin-bottom: 1rem;}
-  .menu dt{display: inline-block; width: auto; height: 25px; margin: 5px 0;}
-  .menu dd li{width: 100%; height: 20px; margin-bottom: 10px; }
-  .menu a{line-height: 20px; text-align: left;}
-  .menu dd a{text-indent: 1rem; line-height: 20px; }
-    
+      
   .search_wrap{width: 45px; height: 45px;}
   .search_bar{top: 60px; right: 0; width: 100%; height: 50px; background-color: #0e0e0e}
   .search_bar input{margin: 10px auto; width: 200px; height: 30px}
@@ -65,11 +68,6 @@
   h1{width: 280px; height: 45px; }
   .menu_btn{width: 45px; height: 45px;}
   .menu{left: -60vw; padding: 100px 40px; width: 60vw; }
-  .menu dl{width: 100%; height: auto; margin-bottom: 1rem;}
-  .menu dt{display: inline-block; width: auto; height: 25px;margin: 5px 0;}  
-  .menu dd li{width: 100%; height: 20px; margin-bottom: 10px; }
-  .menu a{line-height: 20px; text-align: left;}
-  .menu dd a{text-indent: 1rem; line-height: 20px; }
   
   .search_wrap{width: 45px; height: 45px;}
   .search_bar{top: 70px; right: 0; width: 100%; height: 60px; background-color: #0e0e0e}
@@ -84,10 +82,11 @@ h1{width: 160px; height: 44px; background-size: auto 80%; left:8px; transform:tr
 .menu_btn{display: none;}
 .menu{display: block; float: left; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 60px;  min-width: 700px; max-width: 800px; background-color: transparent;}
 .menu dl{padding: 0 1rem; box-sizing: border-box; width: 20%; height: auto; float: left;}
-.menu dd li{margin-bottom: 12px;}
-.menu dt{width: 100%; height: 100%; line-height: 60px;}
+.menu dt{margin: 0; width: 100%; height: 100%; line-height: 60px;}
+.menu dt a{display: block; width: 100%; height: 100%; text-align: center; line-height: 60px; font-size: 14px;}
 .menu dd{margin-top: 10px; width: 100%; height: auto;}
-.menu dd a{display: block; width: 100%; height: 100%; text-align: center; color:#f0f1f2; line-height: 30px;}
+.menu dd li{margin-bottom: 12px;}
+.menu dd a{display: block; width: 100%; height: 100%; text-align: center; line-height: 30px; font-size: 11px; text-indent: 0;}
 
 .menu .dt_border{height: 4px;}
 

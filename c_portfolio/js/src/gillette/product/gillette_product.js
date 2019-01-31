@@ -15,7 +15,7 @@
 	var tab       =  800;
 	var pc        =  1366;
 	var myDevice;
-	var n 			  =  0;
+	
 
 // 기기별 새로고침 
 	var Device = function(w){
@@ -40,40 +40,58 @@
 	});
 
 // 가로스크롤 이동
-	var horizontalScroll = function(){
-  $('body').on('mousewheel',function(e){
+var go = true
+var n  =  0;
+
+var hScroll = function(){
+  mWrap.animate({marginLeft:n*-100+'%'},1500,'easeOutQuint',function(){
+      go = true
+    });
+}
+
+var horizontalScroll = function(){
+  
+  $('body').on('mousewheel DOMMouseScroll',function(e){
     e.preventDefault();
-    var wheelDelta = e.originalEvent.wheelDelta;
-    var sWrapLen = sWrap.length;
-    if(wheelDelta<0){
-        if(n<sWrapLen-1){
-        n+=1;
-        hScroll();
+    sLen = sWrap.length -1;
+  if(go){ 
+    go = false;    
+    var e = e.originalEvent
+    var delta
+    if(e.wheelDelta){
+      delta = e.wheelDelta;
+    }else{
+      delta = e.detail*-40;
+    }
+
+    if(delta<0){
+      if(n<sLen){
+        n+=1;        
       }else{
-        n=sWrapLen-1;
+        n=sLen;
       }
-      }else{
-        if(n>0){
+    }else{
+      if(n>0){
         n-=1;
-        hScroll();
       }else{
         n=0;
+      }     
     }
+     hScroll();
   }
   });
+}
   // scrollBtn.on('click',function(e){
   //   e.preventDefault();
   //   n=1;
   //   hScroll();
   // });
-}
+
 if(winW>800){
 horizontalScroll();
 }
 
-var hScroll = function(){
-  mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800)
-}
+
 
 
 // 마우스 올렸을때 효과

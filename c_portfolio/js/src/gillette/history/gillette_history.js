@@ -31,39 +31,144 @@ $(window).on('resize',function(){
 });
 
 
-// 가로스크롤
+// 가로스크롤 이동
+var go = true
+var n  =  0;
 
 var hScroll = function(){
-  conBox.stop(true,false).animate({marginLeft:n*-100+'%'},800)
-  }
+  conBox.animate({marginLeft:n*-100+'%'},1000,'easeOutQuint',function(){
+      go = true
+    });
+}
 
 var horizontalScroll = function(){
-  conBox.on('mousewheel',function(e){
-    var historyLen = history.length;
+  
+  $(conBox).on('mousewheel DOMMouseScroll',function(e){
     e.preventDefault();
-    var wheelDelta = e.originalEvent.wheelDelta;
-    if(wheelDelta<0){
-      if(n<historyLen-1){
-        n+=1;
-        hScroll();
+    hLen = history.length -1;
+  if(go){ 
+    go = false;    
+    var e = e.originalEvent
+    var delta;
+
+    if(e.wheelDelta){
+      delta = e.wheelDelta;
+    }else{
+      delta = e.detail*-40;
+    }
+
+    if(delta<0){
+      if(n<hLen){
+        n+=1;        
       }else{
-        n=historyLen-1;
+        n=hLen;
       }
     }else{
       if(n>0){
         n-=1;
-        hScroll();
       }else{
         n=0;
+      }     
     }
+     hScroll();
   }
-  console.log(n);
-});
+  });
+}
+  // scrollBtn.on('click',function(e){
+  //   e.preventDefault();
+  //   n=1;
+  //   hScroll();
+  // });
+
+if(winW>800){
+horizontalScroll();
 }
 
-if(winW>768){
-  horizontalScroll();
+// 사이드메뉴 
+var sideMenu  =  $('#sideMenu');
+var subMenu   =  sideMenu.children('div');
+var subUl     =  subMenu.children('ul');
+var subLi     =  subUl.children('li');
+
+
+// 마지막요소 3개 앞에 붙여넣기 
+subLi.eq(-1).prependTo(subUl);
+subLi.eq(-2).prependTo(subUl);
+subLi.eq(-3).prependTo(subUl);
+
+//기본상태 
+subLi  =  subUl.children('li');
+subLi.eq(0).addClass('fourth')
+subLi.eq(1).addClass('third')
+subLi.eq(2).addClass('second')
+subLi.eq(3).addClass('center')
+subLi.eq(4).addClass('second')
+subLi.eq(5).addClass('third')
+subLi.eq(6).addClass('fourth')
+
+var upWheel = function(){
+  subLi.eq(-1).prependTo(subUl);
+  subLi.removeClass();
+  subLi.eq(0).addClass('fourth');
+  subLi.eq(1).addClass('third');
+  subLi.eq(2).addClass('second');
+  subLi.eq(3).addClass('center');
+  subLi.eq(4).addClass('second');
+  subLi.eq(5).addClass('third');
+  subLi.eq(6).addClass('fourth');
 }
 
+var downWheel = function(){
+  subLi.eq(0).appendTo(subUl);
+  subLi.removeClass();
+  subLi.eq(1).addClass('fourth');
+  subLi.eq(2).addClass('third');
+  subLi.eq(3).addClass('second');
+  subLi.eq(4).addClass('center');
+  subLi.eq(5).addClass('second');
+  subLi.eq(6).addClass('third');
+  subLi.eq(7).addClass('fourth');
+}
+
+var subClick = function(){
+  n = $(this).eq();
+  subLi.eq(0).appendTo(subUl);
+  subLi.removeClass();
+  subLi.eq(1).addClass('fourth');
+  subLi.eq(2).addClass('third');
+  subLi.eq(3).addClass('second');
+  subLi.eq(4).addClass('center');
+  subLi.eq(5).addClass('second');
+  subLi.eq(6).addClass('third');
+  subLi.eq(7).addClass('fourth');
+}
+
+
+subMenu.on('mousewheel DOMMouseScroll',function(e){
+  subLi  =  subUl.children('li');
+  var e = e.originalEvent
+  var delta;
+  
+  if(e.wheelDelta){
+    delta = e.wheelDelta;
+  }else{
+    delta = -e.detail;
+  }
+
+  // if(n>=14){
+  //   n=14
+  // }else if(n<0){
+  //   n=14
+  // }
+
+  if(delta >0 ){
+    n-=1
+    upWheel();
+  }else{
+    n+=1
+    downWheel();
+  }
+  console.log(delta)
+})
 
 })(jQuery);

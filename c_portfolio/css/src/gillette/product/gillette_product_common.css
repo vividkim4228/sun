@@ -19,17 +19,9 @@
 
 
 
-
-
 .more{float: right; width: auto; height: auto;}
-.more a{display: inline-block; z-index: 10; position: relative; width: auto; height: auto; color: #ee6600; transition: all 700ms ease}
+.more a{display: inline-block; z-index: 10; position: relative; width: auto; height: auto; color: #fff; background-color: #ee6600; transition: all 700ms ease}
 .more p{display: inline-block;}
-.more a::before{position: absolute; z-index: -1; content: ""; display: block; width: 0; height: 100%; background-color: #ee6600; transition: all 700ms ease}
-
-.more a:hover,
-.more a:focus{color:#fff; }
-.more a:hover::before,
-.more a:focus::before{width: 100%;}
   
 }
 

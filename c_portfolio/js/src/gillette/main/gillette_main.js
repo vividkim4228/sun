@@ -52,13 +52,14 @@ var mainLogoBg = $('.main_logo_bg');
 
 var mainLogoAni = function(){
   mainLogo.fadeIn(1000);
-  mainLogoBg.delay(1700).animate({width:150+'%'},900);
-  logoBox.delay(2300).animate({width:0},1000,function(){
+  mainLogoBg.delay(2000).animate({width:150+'%'},1000,'easeOutCirc');
+  logoBox.delay(2150).animate({width:0},500,'easeInCirc',function(){
     logoBox.css({height:0, display:'none'})
   });
 }
 
-mainLogoAni();
+logoBox.css({display:'none'})
+// mainLogoAni();
 
 
 // 인디케이터 함수 설정
@@ -80,16 +81,16 @@ var hClick = function(){
   });
 };
 
-var vClick = function(){
-    indiLi.on('click', function(e){
-      e.preventDefault();
-      n = $(this).index();
-      $(this).addClass('active');
-      $(this).siblings('li').removeClass('active');
-      mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800);
-      setTimeout(function(){contentShow()},500);
-  });
-};
+// var vClick = function(){
+//     indiLi.on('click', function(e){
+//       e.preventDefault();
+//       n = $(this).index();
+//       $(this).addClass('active');
+//       $(this).siblings('li').removeClass('active');
+//       mWrap.stop(true,false).animate({marginTop:n*-100+'vh'},800);
+//       setTimeout(function(){contentShow()},500);
+//   });
+// };
 
 
 // 최초 함수 실행
@@ -124,51 +125,55 @@ var contentShow = function(){
 
 // 가로스크롤 함수 설정
 // 가로 이동
+var sWrapLen = sWrap.length;
+var sLen;
+
+if(winW>800){
+  sLen = sWrapLen -2;
+}else{
+  sLen = sWrapLen -1;
+}
 
 var hScroll = function(){
     indiActive();
-  mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},800,function(){
-    contentShow();
-   })
-}
-
-// 세로 이동 
-// var vScroll = function(){
-//     indiActive();
-//   mWrap.stop(true,false).animate({marginTop:n*-100+'%'},800,function(){
-//     contentShow();    
-//   })
-// }
-var sWrapLen = sWrap.length;
-var sWrapLen2;
-
-if(winW>800){
-  sWrapLen2 = sWrapLen -2;
-}else{
-  sWrapLen2 = sWrapLen -1;
-}
-
-var horizontalScroll = function(){
-  $('body').on('mousewheel',function(e){
-    e.preventDefault();
-    var wheelDelta = e.originalEvent.wheelDelta;
-    if(wheelDelta<0){
-      if(n<sWrapLen2){
-        n+=1;
-        hScroll();
-      }else{
-        n=sWrapLen2;
-      }
-    }else{
-      if(n>0){
-        n-=1;
-        hScroll();
-      }else{
-        n=0;
-      }
-    
+    setTimeout(contentShow(),800);
+    mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},1500,'easeOutQuint',function(){
+      go = true
+    });
     }
-  });
+
+// 가로스크롤 중복이동 방지 
+var go = true
+var horizontalScroll = function(){
+  
+    $('body').on('mousewheel DOMMouseScroll',function(e){
+      e.preventDefault();
+    if(go){ 
+      go = false;    
+      var e = e.originalEvent
+      var delta
+      if(e.wheelDelta){
+        delta = e.wheelDelta;
+      }else{
+        delta = e.detail*-40;
+      }
+
+      if(delta<0){
+        if(n<sLen){
+          n+=1;        
+        }else{
+          n=sLen;
+        }
+      }else{
+        if(n>0){
+          n-=1;
+        }else{
+          n=0;
+        }     
+      }
+       hScroll();
+    }
+    });    
   scrollBtn.on('click',function(e){
     e.preventDefault();
     n=1;
@@ -176,35 +181,9 @@ var horizontalScroll = function(){
   });
 }
 
-// 세로스크롤 함수 설정
-// var verticalScroll = function(){
-//   $('body').on('mousewheel',function(e){
-//     e.preventDefault();
-//     var wheelDelta = e.originalEvent.wheelDelta;
-//     if(wheelDelta<0){
-//       if(n<5){
-//         n+=1;
-//         vScroll();
-//       }else{
-//         n=5;
-//       }
-//     }else{
-//       if(n>0){
-//         n-=1;
-//         vScroll();
-//       }else{
-//         n=0;        
-//     }
-//   }
-// });
-//   scrollBtn.on('click',function(e){
-//       e.preventDefault();
-//       n=1;
-//       vScroll();
-//   });
-// }
-
 horizontalScroll();
+hClick();
+
 // 모바일, 태블릿 터치로 스크롤하기
 
 var touchstartX;
@@ -220,13 +199,12 @@ var  yDif;
   $(window).on('touchend',function(e){
     touchendX = e.originalEvent.changedTouches[0].screenX;
     xDif = touchstartX - touchendX;
-    console.log(xDif);
     if(xDif >= 20 ){
-      if(n<5){
+      if(n<sLen){
           n+=1;
           hScroll();
         }else{
-          n=5;
+          n=sLen;
         }
     }else if(xDif <= -20){
       if(n>0){

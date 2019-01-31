@@ -11,7 +11,7 @@
   .submenu>dl>dd{margin-left: 1.25vw/*6px*/; margin-bottom: 0.833333vw/*4px*/;}
 
 /* ==============conBox01=======================*/
-.s_wrap{padding-top: 60px; box-sizing: border-box; float: left; width: 100%; height: auto;}
+.s_wrap{padding-top: 60px; box-sizing: border-box; width: 100%; height: auto;}
 .title{width: 100%; height: 100px; font-size: 2rem; line-height: 100px;}
 .con_wrap{margin: 50px auto 0; width: 83.333333vw/*400px*/; height: auto; }
 .con_wrap_01{width: 87.5vw/*420px*/; height: auto; }
@@ -23,7 +23,7 @@
 .tip_title a{background-size: auto 37.5vw/*180px*/;}
 .tip_title a:hover{background-size: auto 41.666666vw/*200px*/;}
 .tip_title dl{padding: 10px; width: 100%; height: auto; /*min-height: 70px;*/}
-.tip_title dt{margin-bottom: 10px; width: 100%; height: auto; font-size: 13px; text-indent: 5px;}
+.tip_title dt{margin-bottom: 10px; width: 100%; height: auto; font-size: 13px; text-indent: 5px; border-left: 4px solid  #e60;}
 
 .tip_title dd{padding-left: 10px; width: 100%; height: auto; min-height:50px; font-size: 8px;}
 
@@ -46,8 +46,8 @@
 .con_wrap ul li:hover .sub_pic{transform: translateY(-5px); background-size: 110%}
 .con_wrap ul li:hover .sub_text{transform: translateY(3px);}
 
-.more{margin-top: 4.166666vw/*20px*/;}
-.more p{padding: 0.3rem 0.8rem; font-size: 11px; }
+.more{margin-top: 4.166666vw/*20px*/; margin-right: 4.166666vw/*20px*/;}
+.more p{padding: 0.5rem 1rem; font-size: 11px; }
 
 #conBox05{padding-bottom: 30px;}
 

@@ -2,11 +2,6 @@
 
 #wrap{width: 100%; height: auto;}
   
-/* sideMenu */
-#sideMenu{background-color: #f0f1f2;}
-  .sub_menu{line-height: 2.083333vw/*20px*/;}
-  .sub_menu a{float: left; display: block; color:#0e0e0e; text-align:center;}
-
 /* common */
 
 #conBox{position: relative; padding-bottom: 40px; box-sizing: border-box;}
@@ -48,7 +43,7 @@
 .history:nth-of-type(17) .num_box{background-image: url("../../../../img/gillette/html_img/history/num_16.png");}
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
 .history:nth-of-type(3) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_02_pc.png");}
 .history:nth-of-type(4) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_03_pc.png");}
 .history:nth-of-type(5) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_04_pc.png");}

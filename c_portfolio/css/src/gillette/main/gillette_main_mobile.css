@@ -63,9 +63,3 @@
   .icon_wrap.active{right: 8.333333vw; /*80px*/;}
   #conBox04 .pic_wrap.active{left: 50%;}
 
-
-/*  max-width 359px ==================================*/
-@media screen and (max-width: 359px){
-  .purchase_btn{bottom:30.41667vw/*150px*/; font-size: 0.6875rem; letter-spacing: 2px;}
-  .v_box{top: 10%;}
-}

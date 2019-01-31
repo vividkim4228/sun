@@ -27,7 +27,7 @@
   .pic_wrap{position: absolute; top: 50%; right: 20vw; transform: translateY(-50%); width: 18.75vw/*180px*/; height: 41.666666vw/*400px*/;} 
   #conBox02 .pic_wrap{background-image: url(../../../../img/gillette/html_img/main/pc_product_01.png); background-position: 0 100%; background-size: 90%;}
   
-  .text_wrap{top: 50%; left: 10%; transform: translateY(-50%); width: 31.25vw/*300px*/; height: 18.75vw/*180px*/; min-width: 300px;}
+  .text_wrap{top: 50%; left: 0%; transform: translateY(-50%); width: 31.25vw/*300px*/; height: 18.75vw/*180px*/; min-width: 300px;}
   .text_wrap dt{width: 100%; height: 6.25vw/*60px*/; margin-bottom: 3.125vw/*15px*/; }
   .text_wrap dd{width: 100%; margin-bottom: 3.125vw/*30px*/; height: auto; font-size: 1.145833vw/*11px*/; line-height: 1.6; }
   .text_wrap .purchase_btn{margin-top: 0; box-sizing: border-box; width: 30%; height: 3.125vw/*30px*/;}
@@ -41,8 +41,14 @@
   .icon_wrap li{width: 100%; height: 20%; font-size: 1.145833vw/*11px*/; line-height: 4.6875vw/*45px*/; text-align: left; text-indent: 0.5rem; background-size: auto 70%}
 
 
-  .purchase a{font-size: 13px}
-  .purchase p{padding: 0rem 1rem; width: auto; height: auto; text-align: center; line-height: 30px;}
+.purchase{position: absolute; bottom: 5.2083333vw/*40px*/; right: 6.7708333vw/*65px*/ }
+.purchase a{background-color: transparent; color: #ee6600; transition: all 700ms ease; font-size: 13px;}
+.purchase a::before{position: absolute; z-index: -1; content: ""; display: block; width: 0; height: 100%; background-color: #ee6600; transition: all 700ms ease}
+.purchase p{padding: 0rem 1rem; width: auto; height: auto; text-align: center; line-height: 30px;}
+.purchase a:hover,
+.purchase a:focus{color:#fff; }
+.purchase a:hover::before,
+.purchase a:focus::before{width: 100%;}
  
 /* ======================conBox03======================*/
   #conBox03 .pic_wrap{right: 10vw; background-size: auto 90%; background-position: 0% 100%;}
@@ -69,7 +75,7 @@
   .video_text h4{margin-bottom: 5px; border-color: #0e0e0e}
   .video_text p{margin-bottom: 10px; width: 100%; height: auto; line-height: 1.6;}
   .video_text p:nth-of-type(2){margin-bottom: 0;}
-  .video_01 .video_text{color:#0e0e0e;}
+  .video_01 .video_text a{color:#0e0e0e;}
   .video_02 .video_title a{color:#fff;}
   .video_02 .video_text {position: relative;}
   .video_02 .video_text p {line-height: 1.8;}
