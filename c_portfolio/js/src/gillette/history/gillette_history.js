@@ -92,83 +92,104 @@ var subLi     =  subUl.children('li');
 
 
 // 마지막요소 3개 앞에 붙여넣기 
-subLi.eq(-1).prependTo(subUl);
-subLi.eq(-2).prependTo(subUl);
-subLi.eq(-3).prependTo(subUl);
+// subLi.eq(-1).prependTo(subUl);
+// subLi.eq(-2).prependTo(subUl);
+// subLi.eq(-3).prependTo(subUl);
+subLi.slice(-3).prependTo(subUl);
 
 //기본상태 
-subLi  =  subUl.children('li');
-subLi.eq(0).addClass('fourth')
-subLi.eq(1).addClass('third')
-subLi.eq(2).addClass('second')
-subLi.eq(3).addClass('center')
-subLi.eq(4).addClass('second')
-subLi.eq(5).addClass('third')
-subLi.eq(6).addClass('fourth')
 
-var upWheel = function(){
-  subLi.eq(-1).prependTo(subUl);
-  subLi.removeClass();
-  subLi.eq(0).addClass('fourth');
-  subLi.eq(1).addClass('third');
-  subLi.eq(2).addClass('second');
-  subLi.eq(3).addClass('center');
-  subLi.eq(4).addClass('second');
-  subLi.eq(5).addClass('third');
-  subLi.eq(6).addClass('fourth');
-}
+// subLi.eq(4).addClass('second')
+// subLi.eq(5).addClass('third')
+// subLi.eq(6).addClass('fourth')
 
-var downWheel = function(){
-  subLi.eq(0).appendTo(subUl);
-  subLi.removeClass();
-  subLi.eq(1).addClass('fourth');
-  subLi.eq(2).addClass('third');
-  subLi.eq(3).addClass('second');
-  subLi.eq(4).addClass('center');
-  subLi.eq(5).addClass('second');
-  subLi.eq(6).addClass('third');
-  subLi.eq(7).addClass('fourth');
-}
-
-var subClick = function(){
-  n = $(this).eq();
-  subLi.eq(0).appendTo(subUl);
-  subLi.removeClass();
-  subLi.eq(1).addClass('fourth');
-  subLi.eq(2).addClass('third');
-  subLi.eq(3).addClass('second');
-  subLi.eq(4).addClass('center');
-  subLi.eq(5).addClass('second');
-  subLi.eq(6).addClass('third');
-  subLi.eq(7).addClass('fourth');
-}
-
-
-subMenu.on('mousewheel DOMMouseScroll',function(e){
+var WheelData = function(n){
+  var wheel = n | false;
+  if(wheel < 0){
+    subLi.eq(-1).prependTo(subUl);
+  }else if(wheel > 0){
+    subLi.eq(0).appendTo(subUl);
+  }
   subLi  =  subUl.children('li');
-  var e = e.originalEvent
-  var delta;
+  subLi.removeAttr('class');
+  subLi.eq(0).add(subLi.eq(6)).addClass('fourth');
+  subLi.eq(1).add(subLi.eq(5)).addClass('third');
+  subLi.eq(2).add(subLi.eq(4)).addClass('second');
+  subLi.eq(3).addClass('center');
+  subLi  =  subUl.children('li');
+  go=true;
+};
+WheelData();
+
+
+// var upWheel = function(){
+//   subLi.eq(-1).prependTo(subUl);
+//   subLi.removeClass();
+//   subLi.eq(0).addClass('fourth');
+//   subLi.eq(1).addClass('third');
+//   subLi.eq(2).addClass('second');
+//   subLi.eq(3).addClass('center');
+//   subLi.eq(4).addClass('second');
+//   subLi.eq(5).addClass('third');
+//   subLi.eq(6).addClass('fourth');
+// }
+
+// var downWheel = function(){
+//   subLi.eq(0).appendTo(subUl);
+//   subLi.removeClass();
+//   subLi.eq(1).addClass('fourth');
+//   subLi.eq(2).addClass('third');
+//   subLi.eq(3).addClass('second');
+//   subLi.eq(4).addClass('center');
+//   subLi.eq(5).addClass('second');
+//   subLi.eq(6).addClass('third');
+//   subLi.eq(7).addClass('fourth');
+// }
+
+// var subClick = function(){
+//   n = $(this).eq();
+//   subLi.eq(0).appendTo(subUl);
+//   subLi.removeClass();
+//   subLi.eq(1).addClass('fourth');
+//   subLi.eq(2).addClass('third');
+//   subLi.eq(3).addClass('second');
+//   subLi.eq(4).addClass('center');
+//   subLi.eq(5).addClass('second');
+//   subLi.eq(6).addClass('third');
+//   subLi.eq(7).addClass('fourth');
+// }
+
+var go=true;
+subMenu.on('mousewheel DOMMouseScroll',function(e){
+  // subLi  =  subUl.children('li');
+  if(go){
+    go=false;
   
-  if(e.wheelDelta){
-    delta = e.wheelDelta;
-  }else{
-    delta = -e.detail;
-  }
+    var e = e.originalEvent;
+    var delta;
+    
+    if(e.wheelDelta){
+      delta = e.wheelDelta;
+    }else{
+      delta = -e.detail;
+    }
 
-  // if(n>=14){
-  //   n=14
-  // }else if(n<0){
-  //   n=14
-  // }
+    // if(n>=14){
+    //   n=14
+    // }else if(n<0){
+    //   n=14
+    // }
 
-  if(delta >0 ){
-    n-=1
-    upWheel();
-  }else{
-    n+=1
-    downWheel();
+    // if(delta >0 ){
+    //   n-=1
+    //   upWheel();
+    // }else{
+    //   n+=1
+    //   downWheel();
+    // }
+    // console.log(delta)
+    WheelData(delta);
   }
-  console.log(delta)
-})
+});
 
 })(jQuery);
