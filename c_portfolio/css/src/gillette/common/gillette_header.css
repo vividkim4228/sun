@@ -2,7 +2,7 @@
 
 /*common*/
 #headBox{position: fixed; z-index: 1000; box-sizing: border-box; top: 0; left: 0; width: 100%; height: 60px; background-color: #0e0e0e; }
-  h1{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); float: left; background-image: url(../../../../img/gillette/html_img/main/logo.png); background-size: auto 85%; background-repeat: no-repeat; background-position: center;}
+  h1{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); float: left; background-image: url(../../../../img/gillette/html_img/main/logo_gillette.svg); background-size: auto 70%; background-repeat: no-repeat; background-position: center;}
   h1 a{display: block; width: 100%; height: 100%; }
 
   .menu_btn{position: relative; z-index: 800; float: left; width: 50px; height: 44px; transition: all 500ms ease;}
@@ -21,8 +21,7 @@
   .menu_btn.active span:nth-of-type(4) {width: 13px; bottom: 17px; left: 50%; transform: translateX(-18px) rotate(45deg)}
   
     
-  .menu{position: fixed; z-index: 500; top: 0; box-sizing: border-box; height: 100vh; background-color: #0e0e0e; transition: left 800ms ease; }
-  .menu.menu_active{left: 0;}
+  .menu{display: none; position: fixed; z-index: 500; top: 0; left: 0; box-sizing: border-box; height: 100vh; background-color: #0e0e0e;}
 
   .menu dl{width: 100%; height: auto; margin-bottom: 1rem;}
   .menu a{display: block; width: 100%; height: 100%; text-align: left; color: #f0f1f2;}
@@ -56,7 +55,7 @@
   h1{width: 180px; height: 40px;}
   .menu_btn{width: 45px; height: 45px;}
   .menu{left: -80vw; width: 80vw; padding: 80px 30px;}
-      
+  
   .search_wrap{width: 45px; height: 45px;}
   .search_bar{top: 60px; right: 0; width: 100%; height: 50px; background-color: #0e0e0e}
   .search_bar input{margin: 10px auto; width: 200px; height: 30px}

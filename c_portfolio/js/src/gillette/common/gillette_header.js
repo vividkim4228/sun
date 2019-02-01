@@ -58,21 +58,34 @@
   }
 
 // 메뉴버튼
-  var menuDp = menu.css('display')
+  
+
     menuBtn.on('click',function(e){
       e.preventDefault();
+      var menuDp = menu.css('display')
+      var menuW  = menu.outerWidth();
+      console.log(menuW)
       // menu.stop(true,false).css({display:'block'})
       // menu.stop(true,false).animate({left:0},800)
-      menu.toggleClass('menu_active')
+      // menu.toggleClass('menu_active')
+      if(menuDp == 'none'){
+        menu.css({display:'block'});
+        menu.animate({left:0},500);
+      }else{
+        menu.animate({left:-menuW},500,function(){
+          menu.css({display:'none'});
+        });
+        
+      }
       console.log(menuDp)
   });
 
 // 메뉴버튼 애니메이션
   menuBtn.each(function(e){
-    var $this = $(this);
-      $this.on('click', function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
+    $(this).on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('active');
+
     })
   });
 

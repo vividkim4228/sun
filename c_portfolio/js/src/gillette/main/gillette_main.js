@@ -50,16 +50,23 @@ var logoBox    = $('#logoBox')
 var mainLogo   = $('.main_logo')
 var mainLogoBg = $('.main_logo_bg');
 
+// var mainLogoAni = function(){
+//   mainLogo.fadeIn(1000);
+//   mainLogoBg.delay(2000).animate({width:150+'%'},500,'linear');
+//   logoBox.delay(2400).animate({width:0},400,'linear',function(){
+//     logoBox.css({height:0, display:'none'})
+//   });
+// }
 var mainLogoAni = function(){
   mainLogo.fadeIn(1000);
-  mainLogoBg.delay(2000).animate({width:150+'%'},1000,'easeOutCirc');
-  logoBox.delay(2150).animate({width:0},500,'easeInCirc',function(){
+  mainLogoBg.delay(2000).animate({width:100+'%'},1500,'easeInOutExpo');
+  logoBox.delay(2500).animate({width:0},1500,'easeInOutExpo',function(){
     logoBox.css({height:0, display:'none'})
   });
 }
 
-logoBox.css({display:'none'})
-// mainLogoAni();
+// logoBox.css({display:'none'})
+mainLogoAni();
 
 
 // 인디케이터 함수 설정

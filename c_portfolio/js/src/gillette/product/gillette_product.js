@@ -123,12 +123,12 @@ horizontalScroll();
 
 	for(i=0; i<4; i+=1){
 		var k = i+1;
-	 	con01Product.eq(i).css({backgroundImage:'url("../../../../img/gillette/html_img/product/conBox_01/product_0'+k+'.png")'});
+	 	con01Product.eq(i).css({backgroundImage:'url("../img/gillette/html_img/product/conBox_01/product_0'+k+'.png")'});
 	}
 
 	for(i=0; i<4; i+=1){
 		var k = i+1;
-	 	con02Product.eq(i).css({backgroundImage:'url("../../../../img/gillette/html_img/product/conBox_02/product_0'+k+'.png")'});
+	 	con02Product.eq(i).css({backgroundImage:'url("../img/gillette/html_img/product/conBox_02/product_0'+k+'.png")'});
 	}
 
 	

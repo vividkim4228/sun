@@ -28,6 +28,7 @@
  		con02.fadeIn(500);
  		answer.eq(uI).fadeIn(500);
  		aLi.fadeIn(500);
+    $(window).scrollTop(0);
 
  	});
 

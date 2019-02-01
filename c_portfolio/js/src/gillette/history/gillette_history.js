@@ -103,12 +103,14 @@ subLi.slice(-3).prependTo(subUl);
 // subLi.eq(5).addClass('third')
 // subLi.eq(6).addClass('fourth')
 
-var WheelData = function(n){
-  var wheel = n | false;
+var WheelData = function(i){
+  var wheel = i | false;
   if(wheel < 0){
-    subLi.eq(-1).prependTo(subUl);
-  }else if(wheel > 0){
     subLi.eq(0).appendTo(subUl);
+
+  }else if(wheel > 0){
+    subLi.eq(-1).prependTo(subUl);
+
   }
   subLi  =  subUl.children('li');
   subLi.removeAttr('class');
@@ -117,7 +119,12 @@ var WheelData = function(n){
   subLi.eq(2).add(subLi.eq(4)).addClass('second');
   subLi.eq(3).addClass('center');
   subLi  =  subUl.children('li');
+
+  var liData = subLi.eq(3).children('a').attr('data-link')
   go=true;
+  console.log(liData)
+  conBox.stop(true,false).animate({marginLeft:liData*-100+'%'},300,'easeOutQuint')
+
 };
 WheelData();
 
