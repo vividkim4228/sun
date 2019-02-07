@@ -1,0 +1,33 @@
+/* moreBtn.css */
+
+#wrap{margin: auto; width: 60rem; height: auto;}
+#headBox{width: 100%; height: 3rem; background-color: #06d;}
+h1{text-indent: 1rem; color: #fff}
+h1 a{color: #fff}
+
+/*====================================*/
+#conBox{padding: 2rem 1rem; box-sizing: border-box; width: 100%; height: auto; background-color: #dfdfdf;}
+#conBox h2{padding: 0.5rem; border-bottom: 1px solid  #333;}
+/*====================================*/
+.people{width: 100%; height: auto; background-color: #ccc;}
+.people ul{margin-bottom: 3rem; width: 100%; height: auto; border-bottom: 1px solid  #888;}
+.people ul li{padding: 1rem; box-sizing: border-box; width: 100%; height: 5rem; background-color: #0ac; margin-bottom: 0.5rem; border-bottom: 1px solid  #85a;}
+/*====================================*/
+.key{float: left; width: 5%; height: 2rem; color:#fc0; font-size: 2rem;}
+.name{float: left; width: 85%; height: 2rem; font-size: 1.3rem; font-weight: bold; }
+.mail{float: left; margin-left: 5%; font-size: 1.1rem; color:#fff;}
+.country{float: left; font-size: 1.1rem; color:#fff; margin-left: 1rem; }
+.date{float: right; }
+/*====================================*/
+.list_indi{width: 100%; height: 2rem; background-color: #fff;}
+.list_indi ol{width: 100%; height: 100%; }
+.list_indi li{width: 2rem; height: 100%; float: left; background-color: #037; margin-right: 0.5rem;}
+.list_indi button{width: 100%; height: 100%; color: #fff; font-weight: bold;}
+
+/*====================================*/
+.more_btn{margin: auto; width: 150px; height: 50px; background-color: #0ca; color:#fff;}
+.more_btn button{width: 100%; height: 100%; color:inherit;}
+
+/*====================================*/
+#footBox{padding-top: 1rem; width: 100%; height: 3rem; background-color: #0a6;}
+#footBox h2{color:#fff; text-indent: 1rem; }
