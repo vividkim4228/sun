@@ -1,0 +1,1 @@
+git clone -b gh-pages https://github.com/vividkimweb/gillette.git
