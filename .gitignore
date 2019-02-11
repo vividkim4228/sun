@@ -16,8 +16,8 @@
 
 # design파일(psd, ai, indd, psb...)
 # **/*.psd
-**/*.indd
-**/*.eps
+# **/*.indd
+# **/*.eps
 <<<<<<< HEAD
 **/*.ps
 =======
