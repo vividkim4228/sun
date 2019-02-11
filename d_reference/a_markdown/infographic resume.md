@@ -27,6 +27,3 @@ kt, t, interpark, 제주 등등 무료서체 이용
 - 문자스타일 font family, color, font size ...
 
 띄어쓰기 x, 영문, 축약명칭 x, 스타일을 습관화
-
-
-
