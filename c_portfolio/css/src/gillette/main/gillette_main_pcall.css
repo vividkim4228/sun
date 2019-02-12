@@ -6,9 +6,9 @@
   .m_wrap{position: relative; width: 500%; height: 100%;}
   .s_wrap{width: 20%; height: 100%;  box-sizing: border-box; float: left; padding-top: 60px; padding-bottom:40px;}
   
-  .indicator{width: 100%; height: 8px; top: auto; bottom: 40px; left: 50%; transform: translateX(-50%); border-radius: 50%;} 
+  .indicator{width: 100%; height: 8px; top: auto; bottom: 40px; left: 50%; transform: translateX(-50%);} 
   .indicator:hover{height: 12px;}
-  .indicator>ul>li{width: 20%; height: 100%; float:left; border-radius: 4px;}
+  .indicator>ul>li{width: 20%; height: 100%; float:left;}
   .indicator>ul>li:last-child{margin-right: 0;}
   .indicator>ul>li:last-child{display: none}
 

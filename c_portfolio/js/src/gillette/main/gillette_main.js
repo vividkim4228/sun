@@ -144,7 +144,7 @@ if(winW>800){
 var hScroll = function(){
     indiActive();
     setTimeout(contentShow(),800);
-    mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},1500,'easeOutQuint',function(){
+    mWrap.stop(true,false).animate({marginLeft:n*-100+'%'},1200,'easeOutQuint',function(){
       go = true
     });
     }
