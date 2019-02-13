@@ -2,7 +2,7 @@
 
 /*============conBox===========================*/
 .m_wrap{width: 100%; height: auto;}
-.title{width: 100%; height: auto; background-image: linear-gradient(to right, rgba(3,26,70), rgba(3,26,70,0.85)); text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
+.title{width: 100%; height: auto; background-color: #171717; text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
 .s_wrap{background-color: #f0f1f2;}
 .title a{color:#f0f1f2;}
 .product{position: relative; float: left; background-color: #fff; background-size: auto 90%; background-repeat: no-repeat; background-position: 80% 100%;

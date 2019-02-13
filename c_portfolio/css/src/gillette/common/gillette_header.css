@@ -80,7 +80,7 @@
 h1{width: 160px; height: 44px; background-size: auto 70%; left:25px; transform:translateY(-50%);}
 .menu_btn{display: none;}
 .menu{display: block; float: left; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60%; height: 60px;  min-width: 700px; max-width: 800px; background-color: transparent;}
-.menu dl{padding: 0 1rem; box-sizing: border-box; width: 20%; height: auto; float: left;}
+.menu dl{padding: 0 1rem; box-sizing: border-box; width: 25%; height: auto; float: left;}
 .menu dt{margin: 0; width: 100%; height: 100%; line-height: 60px;}
 .menu dt a{display: block; width: 100%; height: 100%; text-align: center; line-height: 60px; font-size: 14px;}
 .menu dd{margin-top: 10px; width: 100%; height: auto;}
