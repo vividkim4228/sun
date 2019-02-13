@@ -10,15 +10,16 @@ button:focus, a:focus{outline: 2px solid rgba(255,255,255,0.4); outline-offset: 
 
 /* indicator ============================================== */
   .indicator{position: fixed; bottom: 25px; left: 50%; z-index: 700; width: 80%; height: 5px; transform: translateX(-50%); transition: all 400ms ease} 
-  .indicator>ul{width: 100%; height: 100%;background-color: rgba(255,255,255,0.3); transform: skew(-45deg)}
+  .indicator>ul{width: 100%; height: 100%;background-color: rgba(255,2\
+    55,255,0.3); transform: skew(-45deg)}
   .indicator>ul>li{width: 20%; height: 100%; float:left;}
-  .indicator>ul>li.active{background-color: #0af;}
+  .indicator>ul>li.active{background-color: #0073C2 ;}
   .indicator>ul>li:last-child{margin-right: 0;}
   .indicator>ul>li:hover{background-color: rgba(0,170,255,0.4);}
 
 /* logoBox =================================================*/
   #logoBox{position: absolute; z-index: 1000; bottom: 0; right: 0; width: 100%; height: 100%; background-color: #0e0e0e;}
-  .main_logo{display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); /*background-color: rgba(0,0,0,0.8);*/ background-image: url(../../../../img/gillette/html_img/main/logo_gillette.svg); background-size: 90% auto ; background-repeat: no-repeat; background-position: center; z-index: 700;}
+  .main_logo{display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url(../../../../img/gillette/html_img/main/logo_gillette.svg); background-size: 90% auto ; background-repeat: no-repeat; background-position: center; z-index: 700;}
   .main_logo_bg{position: absolute; top: 0; left: 0; width: 0; height: 100%; background-color: #0e0e0e; }
   .scroll_btn{position: absolute; z-index: 800; top: 50%; right: 0; transform: translateY(-50%); width: 46px; height: 50px; background-image: url("../../../../img/gillette/html_img/main/right_btn.png");}
 
@@ -35,7 +36,7 @@ button:focus, a:focus{outline: 2px solid rgba(255,255,255,0.4); outline-offset: 
   .icon_wrap li{ float: left;}
 
 /* conBox02 ================================================= */
-  .background{position: absolute; transform: skew(-20deg); background-color:#031a46   /*#171717*/;}
+  .background{position: absolute; transform: skew(-20deg); background-color: #202020;}
   .background::after{content: ""; position: absolute; display: block; background-color: inherit;}
 
   .product{width: 100%; height: 100%;}
