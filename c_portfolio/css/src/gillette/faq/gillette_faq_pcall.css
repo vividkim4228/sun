@@ -21,10 +21,10 @@
 .question .text{left: 6.25vw/*60px*/; width: 80%; height: 3.125vw/*30px*/; max-height: 50px; text-indent: 1.5rem; text-align: left; font-size: 14px;}
 
 .answer{top: 0; left: 0; width: 100%; height: 100%;}
-.answer li{padding: 2rem; width: 70%; height: 60%;}
+.answer li{padding: 3rem; width: 70vw; height: 60vh;}
 .answer li button{display: block; width: 35px; height: 35px; float: right;}
 .answer li p:nth-of-type(1){width: 35px; height: 35px; font-size: 2rem; font-weight: 800;}
-.answer li p:nth-of-type(2){margin-top: 3.125vw/*30px*/; width: 100%; height: 80%; line-height: 1.6}
+.answer li p:nth-of-type(2){margin: 30px auto 0 ; width: 95%; height: 100%; line-height: 1.6}
 .answer li:nth-child(1){display: block;}
 
 }

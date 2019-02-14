@@ -2,11 +2,8 @@
 
 /*============conBox===========================*/
 .m_wrap{width: 100%; height: auto;}
-<<<<<<< HEAD
-.title{width: 100%; height: auto; background-color: #171717; text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
-=======
+
 .title{width: 100%; height: auto; background-color: #171717;;text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
->>>>>>> b272125ffc8dda45f5791ebe2a8dbf7ec745ff40
 .s_wrap{background-color: #f0f1f2;}
 .title a{color:#f0f1f2;}
 .product{position: relative; float: left; background-color: #fff; background-size: auto 90%; background-repeat: no-repeat; background-position: 80% 100%;
