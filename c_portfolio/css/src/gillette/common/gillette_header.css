@@ -4,6 +4,7 @@
 #headBox{position: fixed; z-index: 1000; box-sizing: border-box; top: 0; left: 0; width: 100%; height: 60px; background-color: #0e0e0e }
   h1{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); float: left; background-image: url(../../../../img/gillette/html_img/main/logo_gillette.svg); background-size: auto 70%; background-repeat: no-repeat; background-position: center;}
   h1 a{display: block; width: 100%; height: 100%; }
+  a:focus{outline: 1px solid #ddd}
 
   .menu_btn{position: relative; z-index: 800; float: left; width: 50px; height: 44px; transition: all 500ms ease;}
   .menu_btn button{position: absolute; z-index: 1000; width: 100%; height: 100%;}
@@ -27,7 +28,7 @@
   .menu a{display: block; width: 100%; height: 100%; text-align: left; color: #f0f1f2;}
 
   .menu dt{position: relative; display: inline-block; margin: 10px 0; width: auto; height: 35px; }
-  .menu dt a{font-size: 1.5rem; font-weight: 400; letter-spacing: 2px; font-size: 14px;}
+  .menu dt a{font-size: 1.4rem; font-weight: 500; letter-spacing: 2px;}
 
   .menu dd{display: none; font-size: 12px; width: 100%; height: auto; margin-bottom: 20px;}
   .menu dd li{width: 100%; height: 20px; margin-bottom: 20px;}
@@ -66,7 +67,7 @@
 #headBox{width: 100%; height: 70px; padding: 15px 15px; box-sizing: border-box;}
   h1{width: 280px; height: 45px; }
   .menu_btn{width: 45px; height: 45px;}
-  .menu{left: -60vw; padding: 100px 40px; width: 60vw; }
+  .menu{left: -60vw; padding: 100px 40px; width: 60vw;}
   
   .search_wrap{width: 45px; height: 45px;}
   .search_bar{top: 70px; right: 0; width: 100%; height: 60px; background-color: #0e0e0e}
@@ -84,12 +85,12 @@ h1{width: 160px; height: 44px; background-size: auto 70%; left:25px; transform:t
 .menu dt{margin: 0; width: 100%; height: 100%; line-height: 60px;}
 .menu dt a{display: block; width: 100%; height: 100%; text-align: center; line-height: 60px; font-size: 14px;}
 .menu dd{margin-top: 10px; width: 100%; height: auto;}
-.menu dd li{margin-bottom: 12px;}
+.menu dd li{margin-bottom: 15px;}
 .menu dd a{display: block; width: 100%; height: 100%; text-align: center; line-height: 30px; font-size: 11px; text-indent: 0;}
 
 .menu .dt_border{height: 4px;}
 
-.menu_bg{display: none; position: fixed; top: 60px; left: -100%; z-index: -1; width: 200vw; height: 15rem;}
+.menu_bg{display: none; position: fixed; top: 60px; left: -100%; z-index: -1; width: 200vw; height: 12rem;}
 
 .search_wrap{width: 40px; height: 40px;}
 .search_bar{top: 60px; right: 0; width: 100%; height: 60px; background-color: #0e0e0e}
