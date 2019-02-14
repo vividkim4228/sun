@@ -97,28 +97,22 @@ horizontalScroll();
 // 마우스 올렸을때 효과
 	productA.on('mouseenter',function(e){
  		e.preventDefault();
-		var thisDl = $(this).find('dl');
 		var thisDt = $(this).find('dt').eq(0);
 		var thisDd = $(this).find('dd').eq(0);
- 		winW = $(window).width();
 
  		thisDd.stop(true,false).slideDown(700);
  		thisDt.stop(true,false).animate({'marginBottom':10+'px'});
-
  	});
 
 	productA.on('mouseleave',function(e){
-		e.preventDefault();
-		
-		var thisDl = $(this).find('dl');
+		e.preventDefault();		
 		var thisDt = $(this).find('dt').eq(0);
 		var thisDd = $(this).find('dd').eq(0);
 
-		winW = $(window).width();
 		thisDd.stop(true,false).slideUp(700);
- 		thisDt.stop(true,false).animate({'marginBottom':25+'px'});
- 	
+ 		thisDt.stop(true,false).animate({'marginBottom':25+'px'}); 	
  	});
+
 
 
 	for(i=0; i<4; i+=1){

@@ -2,7 +2,7 @@
 
 /*============conBox===========================*/
 .m_wrap{width: 100%; height: auto;}
-.title{width: 100%; height: auto; background-image: linear-gradient(to right, rgba(3,26,70), rgba(3,26,70,0.85)); text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
+.title{width: 100%; height: auto; background-color: #171717;;text-transform: uppercase; color:#fff; text-align: center; font-weight: bold; letter-spacing: 2px;}
 .s_wrap{background-color: #f0f1f2;}
 .title a{color:#f0f1f2;}
 .product{position: relative; float: left; background-color: #fff; background-size: auto 90%; background-repeat: no-repeat; background-position: 80% 100%;
@@ -17,6 +17,8 @@
 /*.product dd:nth-of-type(2){position: absolute;}*/
 
 
+.product a:focus{color:#000; outline: 2px solid #333}
+.product a:hover{color:#000;}
 
 .more{float: right; width: auto; height: auto;}
 .more a{display: inline-block; z-index: 10; position: relative; width: auto; height: auto; color: #fff; background-color: #ee6600; transition: all 700ms ease}
