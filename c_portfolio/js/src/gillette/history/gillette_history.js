@@ -3,7 +3,7 @@
   var winW    =  $(window).width();
   var history =  $('.history')
   var n       =  0;
-  var mob     =  480;
+  var mob     =  463;
   var tab     =  768;
   var pc      =  1366;
   var myDevice;
@@ -13,7 +13,7 @@ var Device = function(w){
   if(w <= mob){  
     myDevice = 'mobile';
   }else if(w > mob && w <= tab){
-    myDevice = 'table';
+    myDevice = 'tab';
   }else if(w > tab && w <= pc){
     myDevice = 'pc';
   }else{
@@ -26,7 +26,7 @@ var beforeDevice = Device(winW);
 $(window).on('resize',function(){
   var nowW = $(window).width();
   var afterDevice = Device(nowW);
-  // console.log(beforeDevice, afterDevice);
+  console.log(beforeDevice, afterDevice);
   if(beforeDevice !== afterDevice){location.reload();}
 });
 
@@ -85,48 +85,63 @@ horizontalScroll();
 }
 
 // 사이드메뉴 
-var sideMenu  =  $('#sideMenu');
-var subMenu   =  sideMenu.children('div');
-var subUl     =  subMenu.children('ul');
-var subLi     =  subUl.children('li');
+var indicator  =  $('#indicator');
+var indiUl     =  indicator.children('ul');
+var indiLi     =  indiUl.children('li');
+var indiOffset =  indicator.offset().top;
+var h;
 
 
-// 마지막요소 3개 앞에 붙여넣기 
-// subLi.eq(-1).prependTo(subUl);
-// subLi.eq(-2).prependTo(subUl);
-// subLi.eq(-3).prependTo(subUl);
-subLi.slice(-3).prependTo(subUl);
+$(window).on('scroll',function(){
+  var scrollTop = $(window).scrollTop();
+    if(scrollTop >= indiOffset){
+      indicator.addClass('fixed')
+    }else{
+      indicator.removeClass();
+      // indicator.removeAttr();
+    }
+})
 
-//기본상태 
 
-// subLi.eq(4).addClass('second')
-// subLi.eq(5).addClass('third')
-// subLi.eq(6).addClass('fourth')
 
-var WheelData = function(i){
-  var wheel = i | false;
-  if(wheel < 0){
-    subLi.eq(0).appendTo(subUl);
 
-  }else if(wheel > 0){
-    subLi.eq(-1).prependTo(subUl);
 
-  }
-  subLi  =  subUl.children('li');
-  subLi.removeAttr('class');
-  subLi.eq(0).add(subLi.eq(6)).addClass('fourth');
-  subLi.eq(1).add(subLi.eq(5)).addClass('third');
-  subLi.eq(2).add(subLi.eq(4)).addClass('second');
-  subLi.eq(3).addClass('center');
-  subLi  =  subUl.children('li');
+// // 마지막요소 3개 앞에 붙여넣기 
+// // subLi.eq(-1).prependTo(subUl);
+// // subLi.eq(-2).prependTo(subUl);
+// // subLi.eq(-3).prependTo(subUl);
+// subLi.slice(-3).prependTo(subUl);
 
-  var liData = subLi.eq(3).children('a').attr('data-link')
-  go=true;
-  console.log(liData)
-  conBox.stop(true,false).animate({marginLeft:liData*-100+'%'},300,'easeOutQuint')
+// //기본상태 
 
-};
-WheelData();
+// // subLi.eq(4).addClass('second')
+// // subLi.eq(5).addClass('third')
+// // subLi.eq(6).addClass('fourth')
+
+// var WheelData = function(i){
+//   var wheel = i | false;
+//   if(wheel < 0){
+//     subLi.eq(0).appendTo(subUl);
+
+//   }else if(wheel > 0){
+//     subLi.eq(-1).prependTo(subUl);
+
+//   }
+//   subLi  =  subUl.children('li');
+//   subLi.removeAttr('class');
+//   subLi.eq(0).add(subLi.eq(6)).addClass('fourth');
+//   subLi.eq(1).add(subLi.eq(5)).addClass('third');
+//   subLi.eq(2).add(subLi.eq(4)).addClass('second');
+//   subLi.eq(3).addClass('center');
+//   subLi  =  subUl.children('li');
+
+//   var liData = subLi.eq(3).children('a').attr('data-link')
+//   go=true;
+//   console.log(liData)
+//   conBox.stop(true,false).animate({marginLeft:liData*-100+'%'},300,'easeOutQuint')
+
+// };
+// WheelData();
 
 
 // var upWheel = function(){
@@ -166,20 +181,20 @@ WheelData();
 //   subLi.eq(7).addClass('fourth');
 // }
 
-var go=true;
-subMenu.on('mousewheel DOMMouseScroll',function(e){
-  // subLi  =  subUl.children('li');
-  if(go){
-    go=false;
+// var go=true;
+// subMenu.on('mousewheel DOMMouseScroll',function(e){
+//   // subLi  =  subUl.children('li');
+//   if(go){
+//     go=false;
   
-    var e = e.originalEvent;
-    var delta;
+//     var e = e.originalEvent;
+//     var delta;
     
-    if(e.wheelDelta){
-      delta = e.wheelDelta;
-    }else{
-      delta = -e.detail;
-    }
+//     if(e.wheelDelta){
+//       delta = e.wheelDelta;
+//     }else{
+//       delta = -e.detail;
+//     }
 
     // if(n>=14){
     //   n=14
@@ -195,8 +210,8 @@ subMenu.on('mousewheel DOMMouseScroll',function(e){
     //   downWheel();
     // }
     // console.log(delta)
-    WheelData(delta);
-  }
-});
+//     WheelData(delta);
+//   }
+// });
 
 })(jQuery);

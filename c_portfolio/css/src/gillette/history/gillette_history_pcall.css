@@ -11,36 +11,33 @@
 
 .scroll_btn button{width: 100%; height: 100%;}  
 .scroll_btn:hover{background-color: rgba(0,0,0,0.8);}
-.scroll_btn{position: absolute;  bottom: auto; left: auto;   }
+.scroll_btn{position: absolute;  bottom: auto; left: auto;}
 
-/*  sideMenu   */
-#sideMenu{position: fixed; top: 0; left: 0; z-index: 500; padding: 70px 1.041666vw/*10px*/ 40px; box-sizing: border-box; width: 18.75vw/*180px*/; min-width: 180px; max-width: 240px; height: 100%; background-color: #f0f1f2;}
-.sub_menu{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width: 100%; height: auto; overflow: hidden }
-.sub_menu ul{width: 100%; height: 100%;}
-.sub_menu li{display: none; width: 100%; height: auto; font-weight: 600; margin: 0.5rem 0;}
-.sub_menu li.center a{font-size: 45px; font-weight: 800; color:#e60; transition: color 300ms ease;}
-.sub_menu li.second a{font-size: 30px; opacity: 0.75}
-.sub_menu li.third a{font-size: 20px; opacity: 0.5}
-.sub_menu li.fourth a{font-size: 15px; opacity: 0.25}
-.sub_menu a{display: inline-block; width: 100%; height: auto; color:#0e0e0e; text-align:center; text-transform: uppercase;}
-
-.sub_menu li.center{display: inline-block;}
-.sub_menu li.second{display: inline-block;}
-.sub_menu li.third{display: inline-block;}
-.sub_menu li.fourth{display: inline-block;}
-
+/*  indicator   */
+#indicator{position: fixed; top: auto; bottom: 40px; left: 0; z-index: 500; box-sizing: border-box; width: 100%; height: 50px; background-color: #f0f1f2; border-top: 1px solid #aaa;}
+#indicator ul{width: 100%; height: 100%;}
+#indicator li{width: calc(100%/14);}
+#indicator a{color:#0e0e0e; text-align:center; text-transform: uppercase; line-height: 50px;}
 
 /* conBox */
 
 #conBox{width: 1400%; height: 100%;}
-.history{float: left; width: calc(100% / 14); height: 100%; padding: 60px 0 40px 180px; box-sizing: border-box; background-color: #f0f1f2;}
+.history{float: left; width: calc(100% / 14); height: 100%; padding: 60px 0 40px; box-sizing: border-box; background-color: #f0f1f2;}
+
+
+
 .v_line{display: none;}
 .h_line{position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 100%; height: 100px; background-color: #171717;}
-.num_box{left: 20.833333vw/*200*/;; top: 50%; transform: translateY(-50%); width: 140px; height: 50px;}
+.num_box{left: 10%;; top: 50%; transform: translateY(-50%); width: 140px; height: 50px;}
 .pic_box{top: 0; right: 0; width: 50%; height: 100%; background-size: 100%; background-position: 70%; background-size: 70%;}
-.history dl{position: absolute; top: 0; left: 20.833333vw/*200*/; width: 35%; height: 100%; line-height: 1.6; z-index: 100; }
+.history dl{position: absolute; top: 0; left: 10%; width: 35%; height: 100%; line-height: 1.6; z-index: 100; }
 .history dt{position: absolute; bottom: calc(50% + 70px); width: 100%; height: auto; font-size: 3rem; }
 .history dd{position: absolute; top: calc(50% + 70px); padding: 0.5rem; width: 100%; height: auto; font-size: 16px;}
+
+#conBox .history_01 dl{width: 60%;}
+#conBox .history_01 dt{position: static; font-size: 1.3rem;}
+#conBox .history_01 dd{position: static; font-size: 13px;}
+
 
 
 /*=======bg setting=========*/
@@ -53,24 +50,14 @@
 .history:nth-of-type(12) .pic_box{background-position: 70% 100%}
 .history:nth-of-type(13) .pic_box{background-position: 70% 100%}
 .history:nth-of-type(14) .pic_box{background-position: 70% 100%}
-.history:nth-of-type(15) .pic_box{background-position: 70% 100%}
-
-
+.history:nth-of-type(15) .pic_box{background-position: 100% 80%}
 
 }
 
-@media screen and (min-width: 801px) and (max-width: 959px) {
-
-.history{padding: 60px 0 40px 180px;}
-.num_box{left: 200px;}
-.history dl{left: 200px;}
+@media screen and (min-width: 1366px){
+  #conBox .history_01 dt{font-size: 1.5rem;}
+  #conBox .history_01 dd{font-size: 16px;}
+  #conBox .history_01 dd:last-child{width: 100%; height: 50px;}
 }
-
-@media screen and (min-width: 1280px) {
-.history{padding: 60px 0 40px 240px;}
-.num_box{left: 260px;}
-.history dl{left: 260px;}
-}
-
 
 

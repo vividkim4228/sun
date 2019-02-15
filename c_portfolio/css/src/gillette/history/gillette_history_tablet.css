@@ -4,27 +4,32 @@
 #wrap{width: 100%; height: auto;}
   
 /* sidemenu */
-#sideMenu{display: none;}
+#indicator{top: 430px;}
+#indicator.fixed{position:fixed; top: 70px;}
 
 /* conBox */
 
-#conBox{margin-top: 60px; width: 100%; height: auto;}
+#conBox{margin-top: 70px; width: 100%; height: auto;}
 .v_line{top: 360px; width: 100px; height: calc(100% - 360px);}
 .history{width: 100%; height: 380px;}
 .history_01{width: 100%; height: 360px;}
+#conBox .history_01 dt{font-size: 18px;}
+#conBox .history_01 dd{font-size: 11px;}
+
 .history_02{margin-top: 70px;}
 
 .history dl{top: 60px; left: 0; padding: 1rem;  box-sizing: border-box; width: calc(50% - 50px); height: auto; text-align: right; }
 .history:nth-of-type(2n) dl{left: auto; right: 0; text-align: left; }
-#conBox .history_01 dl{left: 0; width: 50%;}
+
 .history dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.8rem; letter-spacing: 2px; }
 .history dd{width: 100%; height: auto; line-height: 1.8; font-size: 11px; letter-spacing: 2px;}
 
 .num_box{top: 0; left: 45%; width: 130px; height: 180px;}
 .history:nth-of-type(2n) .num_box{left: auto; right: 45%;}
 
-.pic_box{right: 0; width: 50%; height: 100%; background-position: right;}
-.history:nth-of-type(2n) .pic_box{left: 0; background-position: top left ;}
+.pic_box{background-size: 80%}
+.pic_box{right: 0; width: 50%; height: 100%; background-position: /*bottom*/ right;}
+.history:nth-of-type(2n) .pic_box{left: 0; background-position: /*bottom*/ left ;}
 
 
 

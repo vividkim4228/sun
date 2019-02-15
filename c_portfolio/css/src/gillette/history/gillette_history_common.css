@@ -2,8 +2,16 @@
 
 #wrap{width: 100%; height: auto;}
   
-/* common */
 
+#indicator{position: absolute; z-index: 500; top: 290px; left: 0; width: 100%; height: 30px; overflow: hidden;}
+#indicator ul{width: 300%; height: 100%; background-color: #fff; border: 1px solid #171717; box-sizing: border-box; }
+#indicator li{float: left; width: calc(100%/14); border-right: 1px solid #171717; box-sizing: border-box; }
+#indicator a{display: block; width: 100%; height: 100%; font-weight: 600;line-height: 30px; text-align: center; text-transform: uppercase;}
+
+#indicator li.active a{background-color: #171717; color:#fff; }
+
+
+/* common */
 #conBox{position: relative; padding-bottom: 40px; box-sizing: border-box;}
 .v_line{position: absolute; left: 50%; transform: translateX(-50%); background-color: #171717; }
 .history{position: relative;}
@@ -11,6 +19,20 @@
 .history dt{font-weight: 600;}
 .num_box{position: absolute; background-repeat: no-repeat; background-size: contain; background-position: center;}
 .pic_box{position: absolute; background-repeat: no-repeat; background-position: top left; background-size: contain; }
+
+/*.history{background-image: url("../../../../img/gillette/html_img/history/history_bg_03.png"); background-repeat: repeat-y; background-size: cover; background-position: center;}*/
+.history_01{background-image: url("../../../../img/gillette/html_img/history/history_bg.png"); background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+#conBox .history_01 dl{left: 0; top: 50%; transform: translateY(-50%); width: 70%; height: auto; text-align: center;}
+#conBox .history_01 dl{left: 0; right: auto; width: 70%;}
+#conBox .history_01 dt{margin-bottom: 15px;}
+#conBox .history_01 dd{margin-bottom: 10px;}
+#conBox .history_01 dd:nth-child(3){font-weight: 500;}
+#conBox .history_01 dd:last-child{width: 100%; height: 30px; background-image: url("../../../../img/gillette/html_img/history/signature.png"); background-repeat: no-repeat; background-size: auto 100%; background-position: center;}
+
+
+
+
 
 .history:nth-of-type(3) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_02_tab.png");}
 .history:nth-of-type(4) .pic_box{background-image: url("../../../../img/gillette/html_img/history/pic_03_tab.png");}
