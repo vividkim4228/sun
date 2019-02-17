@@ -4,7 +4,7 @@
 #wrap{width: 100%; height: auto;}
   
 /* sidemenu */
-#indicator{top: 430px;}
+#indicator{position: absolute; top: 430px;}
 #indicator.fixed{position:fixed; top: 70px;}
 
 /* conBox */

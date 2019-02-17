@@ -84,7 +84,8 @@ if(winW>800){
 horizontalScroll();
 }
 
-// 사이드메뉴 
+
+// 인디케이터 
 var indicator  =  $('#indicator');
 var indiUl     =  indicator.children('ul');
 var indiLi     =  indiUl.children('li');
@@ -95,10 +96,12 @@ var h;
 $(window).on('scroll',function(){
   var scrollTop = $(window).scrollTop();
     if(scrollTop >= indiOffset){
-      indicator.addClass('fixed')
+      // indicator.addClass('fixed')
+      indicator.css({position:'fixed', top: 60+'px' })
     }else{
-      indicator.removeClass();
-      // indicator.removeAttr();
+      // indicator.removeClass();
+      indicator.removeAttr();
+      console.log('ttt')
     }
 })
 

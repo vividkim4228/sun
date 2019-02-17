@@ -9,17 +9,6 @@
  	var close = $('.close');
 
  
-
- 	qLi.on('mouseenter',function(e){
- 		e.preventDefault();
- 		$(this).css({'transform':'translateX('+10+'px) skew('+-30+'deg)'});
- 	});
-
- 	qLi.on('mouseleave',function(e){
- 		e.preventDefault();
- 		$(this).css({'transform':'translateX('+0+')skew('+-30+'deg)'});
- 	});
-	
 	qLi.on('click',function(e){
  		e.preventDefault();
  		var uI = $(this).parent('ul').index();
@@ -28,7 +17,6 @@
  		con02.fadeIn(500);
  		answer.eq(uI).fadeIn(500);
  		aLi.fadeIn(500);
-    $(window).scrollTop(0);
 
  	});
 
@@ -36,7 +24,17 @@
  		e.preventDefault();
  		con02.fadeOut(500);
  		answer.fadeOut(500);
- 		answer.children('li').fadeOut(500);
+	 	answer.children('li').fadeOut(500);
+  });
+
+ 	answer.on('click',function(e){
+ 		console.log($(this))
+ 		if($(this).class !== 'answer_li'){
+	 		con02.fadeOut(500);
+	 		answer.fadeOut(500);
+	 		answer.children('li').fadeOut(500);
+ 		}
 	});
+
 
 })(jQuery);
