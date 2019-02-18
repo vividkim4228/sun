@@ -61,6 +61,35 @@ for(; i<4; i++){
  sciencePic.css({backgroundImage:'url("../img/gillette/html_img/tip/science/science_0'+k+'.jpg")'});
 };
 
+
+// top버튼 나타나기 & 사라지기
+var topBtn = $('.top_btn')
+
+var topBtnShow = function(){
+  var scrollTop = $(this).scrollTop();
+  if(scrollTop>=500){
+      topBtn.fadeIn();
+    }else{
+      topBtn.fadeOut();
+    };
+};
+
+// 최초실행 
+topBtnShow();
+
+// 스크롤 시 실행 
+$(window).on('scroll',function(){
+  topBtnShow();
+});
+
+// top버튼 클릭 시 상단으로 
+topBtn.on('click',function(e){
+  e.preventDefault();
+  $('html,body').animate({scrollTop:0},500);
+});
+
+
+
 // m_wrap의 가로값 설정
   var mWrap    =  $('.m_wrap');
   var sWrap    =  $('.s_wrap');

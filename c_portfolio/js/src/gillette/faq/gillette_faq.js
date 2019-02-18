@@ -15,24 +15,26 @@
  		var lI = $(this).index();
  		var aLi = answer.eq(uI).children('li').eq(lI);
  		con02.fadeIn(500);
- 		answer.eq(uI).fadeIn(500);
+ 		answer.fadeIn(500);
  		aLi.fadeIn(500);
 
  	});
 
+var hide = function(){
+  con02.fadeOut(500);
+  answer.fadeOut(500);
+  answer.children('li').fadeOut(500);
+}
+
  	close.on('click',function(e){
  		e.preventDefault();
- 		con02.fadeOut(500);
- 		answer.fadeOut(500);
-	 	answer.children('li').fadeOut(500);
+    hide();
   });
 
- 	answer.on('click',function(e){
+ 	con02.on('click',function(e){
  		console.log($(this))
- 		if($(this).class !== 'answer_li'){
-	 		con02.fadeOut(500);
-	 		answer.fadeOut(500);
-	 		answer.children('li').fadeOut(500);
+ 		if($(this).attr('class') !== 'answer_li'){
+	 		hide();
  		}
 	});
 
