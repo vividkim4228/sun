@@ -71,17 +71,23 @@ var horizontalScroll = function(){
       }     
     }
      hScroll();
+     indiActive();
   }
   });
 }
-  // scrollBtn.on('click',function(e){
-  //   e.preventDefault();
-  //   n=1;
-  //   hScroll();
-  // });
+
+var scrollBtn = $('.scroll_btn');
+
+scrollBtn.on('click',function(e){
+  e.preventDefault();
+  n=1;
+  hScroll();
+  indiActive();
+});
 
 if(winW>800){
-horizontalScroll();
+  horizontalScroll();
+  hClick();
 }
 
 
@@ -95,19 +101,38 @@ var h;
 
 $(window).on('scroll',function(){
   var scrollTop = $(window).scrollTop();
-    if(scrollTop >= indiOffset){
-      // indicator.addClass('fixed')
-      indicator.css({position:'fixed', top: 60+'px' })
+    if(scrollTop >= indiOffset-60){
+      indicator.addClass('fixed')
     }else{
-      // indicator.removeClass();
-      indicator.removeAttr();
-      console.log('ttt')
+      indicator.removeClass();
     }
 })
 
+// 인디케이터 
+var indiActive = function(){
+    indiLi.eq(n).addClass('active');
+    indiLi.eq(n).siblings('li').removeClass('active');
+};
 
+indiActive();
 
+var hClick = function(){
+    indiLi.on('click', function(e){
+      e.preventDefault();
+      n = $(this).index();
+      indiActive();
+      conBox.stop(true,false).animate({marginLeft:n*-100+'%'},1000,'easeOutQuint');
+});
+};
 
+var vClick = function(){
+  indiLi.on('click',function(e){
+    e.preventDefault();
+    n = $(this).index();
+    indiActive();
+  })
+}
+vClick();
 
 // // 마지막요소 3개 앞에 붙여넣기 
 // // subLi.eq(-1).prependTo(subUl);

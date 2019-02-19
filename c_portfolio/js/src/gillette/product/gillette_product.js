@@ -39,30 +39,27 @@
 	  if(beforeDevice !== afterDevice){ location.reload(); }
 	});
 
+
 // 가로스크롤 이동
 var go = true
 var n  =  0;
 
 var hScroll = function(){
-  mWrap.animate({marginLeft:n*-100+'%'},1500,'easeOutQuint',function(){
+  mWrap.animate({marginLeft:n*-100+'%'},1200,'easeOutQuint',function(){
       go = true
     });
-}
+};
 
 var horizontalScroll = function(){
   
   $('body').on('mousewheel DOMMouseScroll',function(e){
     e.preventDefault();
     sLen = sWrap.length -1;
-  if(go){ 
-    go = false;    
-    var e = e.originalEvent
-    var delta
-    if(e.wheelDelta){
-      delta = e.wheelDelta;
-    }else{
-      delta = e.detail*-40;
-    }
+    if(go){
+      go = false;
+      var e = e.originalEvent;
+      var delta;
+      e.wheelDelta ? delta = e.wheelDelta : delta = e.detail*-40
 
     if(delta<0){
       if(n<sLen){
@@ -80,20 +77,15 @@ var horizontalScroll = function(){
      hScroll();
   }
   });
-}
-  // scrollBtn.on('click',function(e){
-  //   e.preventDefault();
-  //   n=1;
-  //   hScroll();
-  // });
+};
 
 if(winW>800){
-horizontalScroll();
+  horizontalScroll();
 }
 
 
 // top버튼 나타나기 & 사라지기
-var topBtn = $('.top_btn')
+var topBtn = $('.top_btn');
 
 var topBtnShow = function(){
   var scrollTop = $(this).scrollTop();
@@ -112,6 +104,7 @@ $(window).on('scroll',function(){
   topBtnShow();
 })
 
+
 // top버튼 클릭 시 상단으로 
 topBtn.on('click',function(e){
   e.preventDefault();
@@ -125,6 +118,7 @@ topBtn.on('click',function(e){
  		e.preventDefault();
 		var thisDt = $(this).find('dt').eq(0);
 		var thisDd = $(this).find('dd').eq(0);
+
 
  		thisDd.stop(true,false).slideDown(700);
  		thisDt.stop(true,false).animate({'marginBottom':10+'px'});
@@ -150,6 +144,12 @@ topBtn.on('click',function(e){
 		var k = i+1;
 	 	con02Product.eq(i).css({backgroundImage:'url("../img/gillette/html_img/product/conBox_02/product_0'+k+'.png")'});
 	}
+
+  for(i=0; i<4; i+=1){
+    var k = i+1;
+    con03Product.eq(i).css({backgroundImage:'url("../img/gillette/html_img/product/conBox_03/product_0'+k+'.png")'});
+  }
+
 
 	
 })(jQuery);

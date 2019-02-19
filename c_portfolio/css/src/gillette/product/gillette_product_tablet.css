@@ -7,13 +7,13 @@
 /*==============conBox============================ */
 .s_wrap{padding: 70px 0 0; box-sizing: border-box; float: left; width: 100%; height: auto;}
 #conBox03{padding-bottom: 30px;}
-  .title{padding: 3rem 0px;  width: 100%; height: auto; font-size: 3rem;}
+  .title{padding: 3rem 0px;  width: 100%; height: auto; font-size: 2.5rem;}
   .product_wrap{margin: 50px auto; width: 83.333333vw/*640px*/; height: 117.171875vw/*900px*/; }
   .product{margin-bottom: 5.208333vw/*40px*/ ;width: 39.0625vw/*300px*/; height: 55.989583vw/*430px*/;}
 
   .product:nth-child(2n){float: right;}
   .product dl{padding: 10px 10px; width: 100%; height: auto;}
-  .product dt{margin-bottom: 25px; width: 100%; height: auto; font-size: 22px;}
+  .product dt{margin-bottom: 25px; width: 100%; height: auto; font-size: 16px;}
   .product dd:nth-of-type(1){margin-bottom: 15px; width: 100%; height: auto; font-size: 11px;}
   .product dd:nth-of-type(1) p{width: 100%; height: auto;}
   .product dd:nth-of-type(1) p:nth-child(1){margin-bottom: 5px; font-weight: 700;}

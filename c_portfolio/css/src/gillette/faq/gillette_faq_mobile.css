@@ -13,10 +13,10 @@
   .question li button{position: relative; width: 100%; height: 100%; text-align: left;}
   .question .num{width: 40px; height: 85%;}
   .question .num::before{height: 60px; top: -10%;}
-  .question .num p{line-height: 30px;}
+  .question .num span{line-height: 30px;}
 
   .question .text{position: absolute; top: 50%; left: 40px; transform: translateY(-50%); width: 85%; height: auto; min-height: 40px;}
-  .question .text p{position: absolute; top: 50%; transform: translateY(-50%) skew(30deg); padding: 0 1rem ; box-sizing: border-box; width: 100%; height: auto; font-size: 11px; line-height: 1.6; text-indent: 0.5rem;}
+  .question .text span{position: absolute; top: 50%; transform: translateY(-50%) skew(30deg); padding: 0 1rem ; box-sizing: border-box; width: 100%; height: auto; font-size: 11px; line-height: 1.6; text-indent: 0.5rem;}
 
   .answer{top: 0; left: 0; width: 100%; height: 100%;}
   .answer>li{padding: 5.20833vw/*25px*/;}

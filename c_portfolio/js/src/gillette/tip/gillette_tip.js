@@ -114,15 +114,11 @@ var horizontalScroll = function(){
   $('body').on('mousewheel DOMMouseScroll',function(e){
     e.preventDefault();
     sLen = sWrap.length -1;
-  if(go){ 
-    go = false;    
-    var e = e.originalEvent
-    var delta
-    if(e.wheelDelta){
-      delta = e.wheelDelta;
-    }else{
-      delta = e.detail*-40;
-    }
+    if(go){
+      go = false;
+      var e = e.originalEvent;
+      var delta;
+      e.wheelDelta ? delta = e.wheelDelta : delta = e.detail*-40
 
     if(delta<0){
       if(n<sLen){
@@ -140,15 +136,10 @@ var horizontalScroll = function(){
      hScroll();
   }
   });
-}
-  // scrollBtn.on('click',function(e){
-  //   e.preventDefault();
-  //   n=1;
-  //   hScroll();
-  // });
+};
 
 if(winW>800){
-horizontalScroll();
+  horizontalScroll();
 }
 
 })(jQuery);

@@ -46,17 +46,10 @@ $(window).on('resize',function(){
 
 
 // 메인로고 애니메이션
-var logoBox    = $('#logoBox')
-var mainLogo   = $('.main_logo')
+var logoBox    = $('#logoBox');
+var mainLogo   = $('.main_logo');
 var mainLogoBg = $('.main_logo_bg');
 
-// var mainLogoAni = function(){
-//   mainLogo.fadeIn(1000);
-//   mainLogoBg.delay(2000).animate({width:150+'%'},500,'linear');
-//   logoBox.delay(2400).animate({width:0},400,'linear',function(){
-//     logoBox.css({height:0, display:'none'})
-//   });
-// }
 var mainLogoAni = function(){
   mainLogo.fadeIn(1000);
   mainLogoBg.delay(2000).animate({width:100+'%'},1500,'easeInOutExpo');
@@ -65,7 +58,6 @@ var mainLogoAni = function(){
   });
 }
 
-// logoBox.css({display:'none'})
 mainLogoAni();
 
 
@@ -74,8 +66,7 @@ mainLogoAni();
 var indiActive = function(){
     indiLi.eq(n).addClass('active');
     indiLi.eq(n).siblings('li').removeClass('active');
-
-}
+};
 
 var hClick = function(){
     indiLi.on('click', function(e){
