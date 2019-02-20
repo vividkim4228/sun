@@ -5,7 +5,6 @@
 #wrap{width: 100%; height: 100%; overflow-x: hidden;}
 
 /* scrollBtn */
-
 .scroll_btn{position: absolute; z-index: 200; width: 46px; height: 50px; top: 50%; right: 0; transform: translateY(-50%); background-image: url("../../../../img/gillette/html_img/history/right_btn.png"); background-repeat: no-repeat;
    background-size: contain; background-position: left;}
 
@@ -14,11 +13,12 @@
 .scroll_btn{position: absolute;  bottom: auto; left: auto;}
 
 /*  indicator   */
-#indicator{position: fixed; top: auto; bottom: 40px; left: 0; z-index: 500; box-sizing: border-box; width: 100%; height: 50px; background-color: #f0f1f2; border-top: 1px solid #aaa;}
+#indicator{position: fixed; top: auto; bottom: 40px; left: 0; z-index: 500; box-sizing: border-box; width: 100%; height: 50px; background-color: #f0f1f2; border-top: 1px solid #aaa; transform: none;}
+#indicator .indi_wrap{width: 100%; height: 100%; }
 #indicator ul{width: 100%; height: 100%;}
 #indicator li{width: calc(100%/14);}
 #indicator a{color:#0e0e0e; text-align:center; text-transform: uppercase; line-height: 50px;}
-
+.button{display: none;}
 /* conBox */
 
 #conBox{width: 1400%; height: 100%;}

@@ -31,6 +31,87 @@ $(window).on('resize',function(){
 });
 
 
+// 인디케이터 
+var indicator  =  $('#indicator');
+var indiUl     =  indicator.find('ul');
+var indiLi     =  indiUl.find('li');
+var indiOffset =  indicator.offset().top;
+var h;
+
+
+$(window).on('scroll',function(){
+  var scrollTop = $(window).scrollTop();
+    if(scrollTop >= indiOffset-60){
+      indicator.addClass('fixed')
+    }else{
+      indicator.removeClass();
+    }
+})
+
+// 인디케이터 
+var indiActive = function(){
+    indiLi.eq(n).addClass('active');
+    indiLi.eq(n).siblings('li').removeClass('active');
+};
+
+indiActive();
+
+var indiClick = function(){
+    indiLi.on('click', function(e){
+      e.preventDefault();
+      n = $(this).index();
+      indiActive();
+      conBox.stop(true,false).animate({marginLeft:n*-100+'%'},1000,'easeOutQuint');
+});
+};
+
+// 모바일, 태블릿 인디케이터
+ 
+var vClick = function(){
+var offTop;
+  indiLi.on('click',function(e){
+    e.preventDefault();
+    n = $(this).index();
+    indiActive();
+    if(n<=0){
+      offTop = history.eq(n).offset().top-70;
+    }else{
+      offTop = history.eq(n).offset().top-130;
+    }
+    $('html,body').animate({scrollTop:offTop},500) 
+  })
+};
+
+vClick();
+
+// 좌우버튼 
+var nBtn = $('.n_btn');
+var pBtn = $('.p_btn');
+var a = 0;
+var indiLen = indiLi.length;
+
+nBtn.on('click',function(){
+  if(a<indiLen-5){
+    a+=1;
+  }else{
+    a=indiLen-5;
+  }
+  console.log(a)
+  indiUl.animate({marginLeft:-20*a+'%'})
+})
+
+pBtn.on('click',function(){
+  if(a<=0){
+    a=0;
+  }else{
+    a-=1;
+  }
+  console.log(a)
+  indiUl.animate({marginLeft:-20*a+'%'})
+})
+
+
+
 // 가로스크롤 이동
 var go = true
 var n  =  0;
@@ -87,52 +168,13 @@ scrollBtn.on('click',function(e){
 
 if(winW>800){
   horizontalScroll();
-  hClick();
+  indiClick();
+}else{
+  // vClick();
 }
 
 
-// 인디케이터 
-var indicator  =  $('#indicator');
-var indiUl     =  indicator.children('ul');
-var indiLi     =  indiUl.children('li');
-var indiOffset =  indicator.offset().top;
-var h;
 
-
-$(window).on('scroll',function(){
-  var scrollTop = $(window).scrollTop();
-    if(scrollTop >= indiOffset-60){
-      indicator.addClass('fixed')
-    }else{
-      indicator.removeClass();
-    }
-})
-
-// 인디케이터 
-var indiActive = function(){
-    indiLi.eq(n).addClass('active');
-    indiLi.eq(n).siblings('li').removeClass('active');
-};
-
-indiActive();
-
-var hClick = function(){
-    indiLi.on('click', function(e){
-      e.preventDefault();
-      n = $(this).index();
-      indiActive();
-      conBox.stop(true,false).animate({marginLeft:n*-100+'%'},1000,'easeOutQuint');
-});
-};
-
-var vClick = function(){
-  indiLi.on('click',function(e){
-    e.preventDefault();
-    n = $(this).index();
-    indiActive();
-  })
-}
-vClick();
 
 // // 마지막요소 3개 앞에 붙여넣기 
 // // subLi.eq(-1).prependTo(subUl);

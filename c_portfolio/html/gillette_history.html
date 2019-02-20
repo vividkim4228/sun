@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/src/gillette/common/gillette_header.css" />
     <link rel="stylesheet" href="../css/src/gillette/gillette_history.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">   
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    
     <!--[if lte ie 9]>
       <srcipt src="../ie/html5shiv/dist/html5shiv.js"><srcipt>     
@@ -35,28 +35,31 @@
 <!-- layout -->
     <div id="wrap">
 <!--   conBox   -->
-      <section id="indicator">
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">1900</a></li>
-          <li><a href="#">1920</a></li>
-          <li><a href="#">1957</a></li>
-          <li><a href="#">1965</a></li>
-          <li><a href="#">1971</a></li>
-          <li><a href="#">1977</a></li>
-          <li><a href="#">1985</a></li>
-          <li><a href="#">1990</a></li>
-          <li><a href="#">1998</a></li>
-          <li><a href="#">2004</a></li>
-          <li><a href="#">2010</a></li>
-          <li><a href="#">2014</a></li>
-          <li><a href="#">2016</a></li>
-        </ul>
-        <div class="button">
-          <button class="n_btn">다음목록</button>
-          <button class="p_btn">이전목록</button>
+      <div id="indicator">
+        <div class="indi_wrap">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">1900</a></li>
+            <li><a href="#">1920</a></li>
+            <li><a href="#">1957</a></li>
+            <li><a href="#">1965</a></li>
+            <li><a href="#">1971</a></li>
+            <li><a href="#">1977</a></li>
+            <li><a href="#">1985</a></li>
+            <li><a href="#">1990</a></li>
+            <li><a href="#">1998</a></li>
+            <li><a href="#">2004</a></li>
+            <li><a href="#">2010</a></li>
+            <li><a href="#">2014</a></li>
+            <li><a href="#">2016</a></li>
+          </ul>
         </div>
-      </section>
+        <div class="button">
+          <button class="n_btn hidden_wrap"><span>다음목록</span><i class="fas fa-angle-right"></i></button>
+          <button class="p_btn hidden_wrap"><span>이전목록</span><i class="fas fa-angle-left"></i></button>
+        </div>
+      </div>
+     
       <article id="conBox">
         <h2 class="hidden"></h2>
         <!--  sideMenu   -->
