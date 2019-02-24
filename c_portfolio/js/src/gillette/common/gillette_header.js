@@ -15,78 +15,81 @@
   var searchInput =  searchBar.children('input'); 
 
 
+// pc 헤더 애니메이션
+var menuShow  = function(){
+  menuDd.stop(true,false).delay(300).fadeIn(400),
+  menuBg.stop(true,false).slideDown(500)
+};
+var menuHide  = function(){
+  menuDd.stop(true,false).fadeOut(400),
+  menuBg.stop(true,false).delay(200).slideUp(500)
+};
 
-  var pcHeader = function(){
-    menuDt.on({'focus':function(e){
-                  menuDd.stop(true,false).delay(300).fadeIn(400),
-                  menuBg.stop(true,false).slideDown(500);},
-               'blur':function(e){
-                  menuDd.stop(true,false).fadeOut(400),
-                  menuBg.stop(true,false).delay(200).slideUp(500);}
-              });
-    menu.on({'mouseenter':function(e){
-                menuDd.stop(true,false).delay(300).fadeIn(400),
-                menuBg.stop(true,false).slideDown(500)},
-             'mouseleave':function(e){
-                menuDd.stop(true,false).fadeOut(400),
-                menuBg.stop(true,false).delay(200).slideUp(500)}
-            });
-    }
+var pcHeader = function(){ 
+  menuDt.on({'mouseenter':function(e){
+              menuShow();
+            },'mouseleave':function(e){
+              menuHide();
+            }});
+
+  menuDt.on({'focus':function(e){
+              menuShow();
+            },'blur':function(e){
+              menuHide();
+            }});
+  };  
   
-// tab header
-  var tabHeader = function(){
-    menuDl.on({'mouseenter':function(e){
-                  $(this).children('dd').stop(true,false).slideDown(700)
-                  },
-               'mouseleave':function(e){
-                  $(this).children('dd').stop(true,false).slideUp(700)}
-            });
-    menuDt.on({'focus':function(e){
-                  $(this).parents('dl').children('dd').stop(true,false).slideDown(700)
-                  },
-               'blur':function(e){
-                  $(this).parents('dl').children('dd').stop(true,false).slideUp(700)}
-            });
-    }
+//태블릿, 모바일 이하 메뉴버튼 클릭시 
+menuBtn.on('click',function(e){
+  e.preventDefault();
+  var menuDp = menu.css('display');
+  var menuW  = menu.outerWidth();
+  if(menuDp == 'none'){
+    menu.css({display:'block'})
+    menu.animate({left:0},500)
+  }else{
+    menu.animate({left:-menuW},500,function(){
+    menu.css({display:'none'})
+    })        
+  }
+});
 
 
-// 헤더 애니메이션 함수실행 
+//태블릿 이하 헤더 애니메이션
+
+var tabHeader = function(){
+  menuDl.on({'mouseenter':function(e){
+                $(this).children('dd').stop(true,false).slideDown(700)
+                },
+             'mouseleave':function(e){
+                $(this).children('dd').stop(true,false).slideUp(700)}
+                });
+  menuDt.on({'focus':function(e){
+                $(this).parents('dl').children('dd').stop(true,false).slideDown(700)
+                },
+             'blur':function(e){
+                $(this).parents('dl').children('dd').stop(true,false).slideUp(700)}
+                });
+  };
+
+//브라우저 크기별 헤더 애니메이션 실행 
   if(winW>960){
     pcHeader();
   }else{
     tabHeader();
   }
 
-// 메뉴버튼
-  
 
-    menuBtn.on('click',function(e){
-      e.preventDefault();
-      var menuDp = menu.css('display')
-      var menuW  = menu.outerWidth();
-      console.log(menuW)
-      // menu.stop(true,false).css({display:'block'})
-      // menu.stop(true,false).animate({left:0},800)
-      // menu.toggleClass('menu_active')
-      if(menuDp == 'none'){
-        menu.css({display:'block'});
-        menu.animate({left:0},500);
-      }else{
-        menu.animate({left:-menuW},500,function(){
-          menu.css({display:'none'});
-        });
-        
-      }
-      console.log(menuDp)
-  });
+
+
+
 
 // 메뉴버튼 애니메이션
   menuBtn.each(function(e){
     $(this).on('click', function(e){
       e.preventDefault();
       $(this).toggleClass('active');
-
-    })
+    });
   });
 
  
