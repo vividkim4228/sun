@@ -1,0 +1,16 @@
+/* kellogg_main_pc.css */
+
+#footBox{padding: 60px 0; box-sizing: border-box; width: 100%; height: 270px; background-color: #d50842}
+	#footBox div{margin: 0 auto 20px; color: #fff; font-size: 0.9rem; text-align: center;}
+	#footBox a{display: block; width: 100%; height: 100%; color: #fff;}
+	#footBox .copyright a{display: inline-block; width: auto;}
+	#footBox>div{height: 20px;}
+	#footBox>div:nth-child(1){width: 350px;}
+	#footBox>div:nth-child(2){width: 240px;}
+	#footBox>.policy{width: 130px;}
+	#footBox>.policy>div{float: left; width: 60px;}
+	#footBox>.policy>div:last-child{float: right;}
+	#footBox>.sns_box{width: 80px; height: 30px;}
+	.sns_box>div{float: left; width: 30px; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat;}
+	.sns_box>div:nth-child(1){background-image: url('../../../img/footer/facebook.svg')}
+	.sns_box>div:nth-child(2){float: right; background-image: url('../../../img/footer/instagram.svg')}

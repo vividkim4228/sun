@@ -1,0 +1,40 @@
+/* kellogg_header.css */
+
+#headBox{padding: 20px 30px; box-sizing: border-box; width: 100%; height: 250px; background-color: #d50842;}
+	.unb{float: right; width: 300px; height: 20px;}
+	.language{float: left; width: 120px; height: 100%; color: #fff; text-align: center; text-transform: capitalize;}
+	.search_box{float: right; width: 160px; height: 100%; background-color: #fff}
+#search{width: 100%; height: 100%;}
+	h1{margin: 40px auto 0; width: 240px; height: 80px; background-image: url("../../../img/main/logo_white.svg");
+	background-repeat: no-repeat; background-position: center;}
+
+	.gnb{position: relative; z-index: 500; margin: 70px auto 0; width: 620px; height: 40px;}
+	.gnb>ul{width: 100%; height: 100%;}
+	.gnb>ul>li{margin-right: 20px; float: left; width: 140px; height: auto; min-height: 40px;}
+	.gnb>ul>li:last-child{margin-right: 0;}
+	.gnb>ul>li>a{text-align: center; line-height: 30px; color: #fff;}
+	 a{display: block; width: 100%; height: 100%;}
+
+	.sub_menu{position: absolute; top: 40px; left: 55%; transform: translateX(-50%); padding: 0.5rem; width: 100%; height: auto; min-height: 300px; background-color: #fff; border-bottom: 5px solid  #d50842; text-align: left;}
+	.sub_menu>dl,
+	.sub_menu>ul{padding: 0.5rem; width: 170px; height: auto; float: left;}
+
+	.sub_menu>dl>dt{margin-bottom: 15px; width: 100%; height: auto; float: left; font-weight: 600; transition: all 500ms}
+	.sub_menu>dl>dt::after{content:""; display: block;
+	; width: 0; height: 3px; background-color: #d50842; transition: all 500ms}
+	.sub_menu>dl>dt:hover::after{width: 70%;}
+
+	.sub_menu>dl>dd,
+	.sub_menu>ul>li{margin-bottom: 10px; width: 100%; height: auto; float: left; border-bottom: 1px solid  #cdcdcd; font-size: 14px; text-indent: 0.3rem; transition: all 500ms}
+	.sub_menu>dl>dd:hover,
+	.sub_menu>ul>li:hover{background-color: #cdcdcd;}
+	.sub_menu a{padding: 5px; color: #000;}
+
+
+	.sub_menu{display: none;}
+	.gnb>ul>li:nth-child(4)>.sub_menu{left: 98%; width: auto;}
+
+	.pic{position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 400px; height: 80%; background-size: 100%; background-repeat: no-repeat;}
+	.s_wrap .pic{background-image: url('../../../img/story/story_01.png'); background-size: cover; border-radius: 0.5rem;}
+	.b_wrap .pic{background-image: url('../../../img/event/event_01.jpg');}
+	.gnb>ul>li:nth-child(1) .pic{width: 250px; height: 350px; background-position: center; background-size: 90%; background-repeat: no-repeat; background-image: url('../../../img/brand/brand_01.png');}

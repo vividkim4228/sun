@@ -1,0 +1,21 @@
+/* kellogg_story_pc.css */
+
+#wrap{width: 100%; height: auto;}
+
+#banner{width: 100%; height: 400px; background-color: #aca}
+#conBox{padding: 80px 40px; box-sizing: border-box; width: 100%; height: auto;}
+	.conlist{position: relative; margin-bottom: 20px; width: 100%; height: 380px;}
+	.pic_box{position: absolute; top: 50%; transform: translateY(-50%);width: 100%; height: 340px; background-size: contain; background-position: right; background-repeat: no-repeat; box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.1)}
+	.conlist:nth-child(2n) .pic_box{background-position: left;}
+	.conlist:nth-child(1) .pic_box{background-image: url('../../../img/story/story_li_01.png');;}
+	.conlist:nth-child(2) .pic_box{background-image: url('../../../img/story/story_li_02.png');}
+	.conlist:nth-child(3) .pic_box{background-image: url('../../../img/story/story_li_03.png');}
+	.conlist:nth-child(4) .pic_box{background-image: url('../../../img/story/story_li_04.png');}
+	
+	.conlist>a{position: absolute; left: 0; padding: 45px 25px; box-sizing: border-box; width: 300px; height: 100%; background-color: #fff; border: 1px solid  #cdcdcd; box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.1) }
+	.conlist dl{position: relative;	width: 100%; height: 100%;}
+	.conlist:nth-child(2n)>a{left: auto; right: 0;}
+	.conlist dl>dt{margin-bottom: 35px; width: 100%; height: auto; text-align: center; font-size: 1.5rem; font-weight: 600;}
+	.conlist dl>dd:first-of-type{/*position: absolute; top: 50%; left: 0;	 transform: translateY(-50%);*/ width: 100%; height: auto; font-size: 14px; line-height: 1.6;}
+	.conlist dl>dd:nth-of-type(2){position: absolute;	bottom: 10px;	left: 50%;	transform: translateX(-50%); width: 60%; height: 40px; border: 2px solid #d50842; border-radius: 2rem; text-align: center; line-height: 40px; color: #d50842; font-weight: 600; transition: all 500ms ease}
+	.conlist a:hover>dl>dd:nth-of-type(2){background-color: #d50842; color: #fff; }
